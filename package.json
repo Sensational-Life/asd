@@ -1,7 +1,7 @@
 {
-	"name": "starter-kit",
+	"name": "asd-project",
 	"version": "0.0.1",
-	"description": "Starter kit for full-stack JavaScript projects",
+	"description": "Autism Spectrum Disorder web-app",
 	"private": true,
 	"scripts": {
 		"prebuild": "npm run cleanup",
@@ -81,7 +81,7 @@
 		"styled-components": "^5.3.3"
 	},
 	"engines": {
-		"node": "^12 || ^14",
-		"npm": "^8"
+		"node": "^12 || ^14 || ^16",
+		"npm": "^6 || ^8"
 	}
 }
