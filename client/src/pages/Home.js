@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
-import "./Home.css";
-import WeSupportYou from "./WeSupportYou/WeSupportYou";
-import Footer from "./Footer/Footer";
-
-
+import { Link } from "react-router-dom";
+import AboutUs from "./AboutUs/AboutUs";
+import Welcome from "./Welcome/Welcome";
+import WhatWeDo from "./WhatWeDo/WhatWeDo";
 
 export function Home() {
 	const [message, setMessage] = useState("Loading...");
@@ -30,10 +29,11 @@ export function Home() {
 				<h1 className="message" data-qa="message">
 					{message}
 				</h1>
+				<Link to="/about/this/site">About</Link>
+				<Welcome />
+				<AboutUs />
+				<WhatWeDo />
 			</div>
-		<WeSupportYou />
-		<Footer />
-
 		</main>
 	);
 }

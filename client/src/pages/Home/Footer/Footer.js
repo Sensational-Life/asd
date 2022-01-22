@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import logo from "/Users/megumi/Documents/GitHub/asd/client/src/Logo.jpeg";
+import logo from "https://i.postimg.cc/VkdMYP4S/Logo.jpg";
 import { FacebookOption, Twitter, Instagram } from "grommet-icons";
 
 export function Footer() {

@@ -1,9 +1,9 @@
 
 #footer{
-	font-family: Ambit-Regular;
+	font-family: 'Ambit-Regular';
 	font-size: 15px;
-    color: #FFF8F3;
-	background-color: #0A2229;
+    color: var(--main-bg-color);
+	background-color: var(--darkgreen-color);
     width: 100%;
 }
 
@@ -18,7 +18,7 @@ Section11
     flex-direction: row;
     justify-content: space-between;
     padding: 50px 80px 30px 80px;
-    border-bottom: 1px solid #FFF8F3;
+    border-bottom: 1px solid var(--main-bg-color);
 }
 
 .footer-logo{
@@ -32,22 +32,22 @@ Section11
 }
 
 .home_section11_child2 p{
-    color: #FFF8F3;
+    color: var(--main-bg-color);
     font-size: 24px;
     margin-right: 25px;
 }
 .footer-button{
-    background-color:#FFF8F3;
+    background-color: var(--main-bg-color);
     padding: 15px 40px;
-    color: #0A2229;
+    color: var(--darkgreen-color);
     font-size: 20px;
     text-decoration: none;
 }
 .footer_hidden-show{
-    font-family: Ambit SemiBold;
+    font-family: 'Ambit SemiBold';
 	font-size: 20px;
-	background-color: #0A2229;
-	color: #FFF8F3;
+	background-color: var(--darkgreen-color);
+	color: var(--main-bg-color);
 	padding: 10px 30px;
     width: 70px; 
 }
@@ -72,7 +72,7 @@ Section12
 }
 
 .home_section12_child2 span{
-    border-top: 1px solid #FFF8F3;
+    border-top: 1px solid var(--main-bg-color);
 }
 
 /* 
@@ -91,7 +91,7 @@ Section13
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    color: "#FFF8F3";
+    color: var(--main-bg-color);
     width: 150px;
 } 
 

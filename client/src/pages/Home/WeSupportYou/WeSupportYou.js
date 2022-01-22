@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./WeSupportYou.css";
-import section7Image from "/Users/megumi/Documents/GitHub/asd/client/src/supporting-elderly-woman-2021-09-24-03-07-01-utc.jpg";
+import section7Image from "https://i.postimg.cc/Xvq2SPBx/supporting-elderly-woman-2021-09-24-03-07-01-utc.jpg";
 
 
 export function WeSupportYou() {
