@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 import logo from "../logo.svg";
 import AboutUs from "./AboutUs/AboutUs";
+import FooterIcon from "./FooterIcon/FooterIcon";
 import Welcome from "./Welcome/Welcome";
 import WhatWeDo from "./WhatWeDo/WhatWeDo";
 
@@ -43,6 +44,7 @@ export function Home() {
 				<Welcome/>
 				<AboutUs/>
 				<WhatWeDo/>
+				<FooterIcon />
 			</div>
 		</main>
 	);
