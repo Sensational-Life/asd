@@ -1,11 +1,9 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-import logo from "../logo.svg";
 import AboutUs from "./AboutUs/AboutUs";
+import FooterIcon from "./FooterIcon/FooterIcon";
 import Welcome from "./Welcome/Welcome";
 import WhatWeDo from "./WhatWeDo/WhatWeDo";
 import WeSupportYou from "./WeSupportYou/WeSupportYou";
-import Footer from "./Footer/Footer";
 
 export function Home() {
 	const [message, setMessage] = useState("Loading...");
@@ -28,23 +26,11 @@ export function Home() {
 
 	return (
 		<main role="main">
-			<div>
-				<img
-					className="logo"
-					data-qa="logo"
-					src={logo}
-					alt="Just the React logo"
-				/>
-				<h1 className="message" data-qa="message">
-					{message}
-				</h1>
-				<Link to="/about/this/site">About</Link>
 				<Welcome />
 				<AboutUs />
 				<WhatWeDo />
 				<WeSupportYou />
-				<Footer />
-			</div>
+				<FooterIcon />
 		</main>
 	);
 }
