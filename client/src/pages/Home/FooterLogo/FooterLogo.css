@@ -1,0 +1,62 @@
+
+#footerlogo{
+	font-family: 'Ambit-Regular';
+	font-size: 15px;
+    color: var(--main-bg-color);
+	background-color: var(--darkgreen-color);
+    width: 100%;
+}
+
+.footerlogo_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--main-bg-color);
+}
+
+.footer-logo-img_container{
+    padding: 30px 0px 10px 80px;
+}
+
+.footer-logo-img{
+	width: 250px;
+}
+
+.fotter-button_container{
+    display: flex;
+    flex-direction: row;
+    padding: 55px 80px 0px 0px;
+}
+
+.fotter-button_container p{
+    color: var(--main-bg-color);
+    font-size: 24px;
+    margin-right: 25px;
+    margin-top: 0px;
+}
+.footer-button{
+    font-family: 'Ambit SemiBold';
+    background-color: var(--main-bg-color);
+    padding: 15px 40px;
+    color: var(--darkgreen-color);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.footer-button:hover{
+    background-color: var(--lightorange);
+}
+
+.footer_hidden-show{
+    font-family: 'Ambit SemiBold';
+	font-size: 18px;
+	background-color: var(--main-bg-color);
+	color: var(--darkgreen-color);
+    width: 150px; 
+    padding:5px;
+    text-align: center;
+    position: relative;
+    top:25px;
+    left:70px;
+}
