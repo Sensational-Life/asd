@@ -5,6 +5,7 @@ import "./Navbar.css";
 import ResourcesDropdown from "./ResourcesDropdown";
 
 import AboutDropdown from "./AboutDropdown";
+import LoginIcon from "./LoginIcon";
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -97,13 +98,9 @@ function Navbar() {
 							Contact
 						</Link>
 					</li>
-					<li className="nav-item">
-						<Link className="nav-links"
-             to="/login">
-							Login <i className="fas fa-user "></i>
-						</Link>
-					</li>
+					
 				</ul>
+				<LoginIcon />
 			</nav>
 		</>
 	);
