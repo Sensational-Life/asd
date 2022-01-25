@@ -12,8 +12,8 @@ function Welcome() {
             <span>SENsational Life</span>
           </div>
           <div className='welcome_text'>            
-              <span><input  type="checkbox"  checked  className='welcome_input'   />Supporting Families</span><br />
-              <span><input type="checkbox" checked className='welcome_input' />Empowering Neuradiverse Families</span>
+              <span><input  type="checkbox"  defaultChecked  className='welcome_input'   />Supporting Families</span><br />
+              <span><input type="checkbox" defaultChecked className='welcome_input' />Empowering Neuradiverse Families</span>
            </div>
           <button className='welcome_button'>Click here to Register</button>
         </div>

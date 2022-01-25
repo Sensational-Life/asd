@@ -100,7 +100,7 @@ function Navbar() {
 					<li className="nav-item">
 						<Link className="nav-links"
              to="/login">
-							Login <i class="fas fa-user "></i>
+							Login <i className="fas fa-user "></i>
 						</Link>
 					</li>
 				</ul>
