@@ -25,7 +25,7 @@ export function WeSupportYou() {
 							Join Us
 						</a>
 					</div>
-					{isShown && <div className="wesupportyou_hidden-show"> Join Us</div>}
+					{isShown && <div className="wesupportyou_button_tooltip"> Join Us</div>}
 				</div>
 			</div>
 			<div className="wesupportyou_img_container">
