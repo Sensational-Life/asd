@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./FooterLogo.css";
 
-export function Footer1() {
+export function FooterLogo() {
 	const [isShown, setIsShown] = useState(false);
 	return (
 		<div id="footerlogo">
@@ -28,7 +28,7 @@ export function Footer1() {
 						>
 							Get started
 						</a>
-						{isShown && <div className="footer_hidden-show"> Get started</div>}
+						{isShown && <div className="footer_buttun_tooltip"> Get started</div>}
 					</div>
 				</div>
 			</div>
@@ -36,4 +36,4 @@ export function Footer1() {
 	);
 }
 
-export default Footer1;
+export default FooterLogo;
