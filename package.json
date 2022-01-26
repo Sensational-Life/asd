@@ -63,19 +63,22 @@
 		"wait-on": "^6.0.0",
 		"webpack": "^5.59.1",
 		"webpack-cli": "^4.9.1",
-		"webpack-dev-server": "^4.3.1",
+		"webpack-dev-server": "^4.7.3",
 		"webpack-merge": "^5.8.0"
 	},
 	"dependencies": {
 		"@babel/runtime": "^7.15.4",
+		"@react-icons/all-files": "^4.1.0",
 		"express": "^4.17.1",
+		"grommet-icons": "^4.7.0",
 		"helmet": "^4.6.0",
 		"morgan": "^1.10.0",
 		"pg": "^8.7.1",
-		"react-icons": "^4.3.1"
+		"react-icons": "^4.3.1",
+		"react-social-icons": "^5.7.0"
 	},
 	"engines": {
-		"node": "^12 || ^14 || ^16 || ^17",
-		"npm": "^6 || ^7 || ^8"
+		"node": "^12 || ^14 || >=16",
+		"npm": ">=6"
 	}
 }
