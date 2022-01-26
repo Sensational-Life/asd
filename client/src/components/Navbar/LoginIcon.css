@@ -3,15 +3,12 @@
   text-decoration: none;
   padding: 0.5rem 0.5rem;
   text-transform: uppercase;
-
 }
 
 .login-icon:hover {
-
   border-radius: 10px;
   transition: all 0.2s ease-out;
   color: black;
   border: 3px solid #1e6dd0;
- 
 }
 
