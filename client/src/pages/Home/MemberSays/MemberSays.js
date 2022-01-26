@@ -1,8 +1,8 @@
 import React from "react";
 import Cards from "./Cards";
-import "./Home.css";
+import "./Member.css";
 
-function MemberSays () {
+function MemberSays() {
 	return (
 		<div
 			style={{
@@ -10,15 +10,13 @@ function MemberSays () {
 				display: "flex",
 				flexDirection: "column",
 				alignContent: "center",
-				height: "700px",
+				height: "75vh",
 				alignItems: "stretch",
-				gap: "50px",
+				gap: "40px",
 				padding: "5px",
 			}}
 		>
-			<h1 style={{ textAlign: "center", color: "white" , paddingTop: "20px" }}>
-				What Our Beloved Members Say
-			</h1>
+			<h1 className="member-header">What Our Beloved Members Say</h1>
 			<Cards />
 			<button className="button" hover>
 				Click here to Register

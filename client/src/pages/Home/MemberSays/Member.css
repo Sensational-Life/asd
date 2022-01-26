@@ -1,16 +1,9 @@
-.card {
-	border-color: red;
-	padding: 3px;
-	background-color: yellow;
-	height: 200px;
-	width: 200px;
-}
 .grid-container {
 	display: grid;
 	grid-template-columns: auto auto auto;
 	padding-right: 60px;
-  padding-left: 60px;
-  padding-bottom: 20px;
+	padding-left: 60px;
+	padding-bottom: 10px;
 	column-gap: 60px;
 }
 .grid-item {
@@ -33,4 +26,11 @@
 	padding: 5px;
 	background-color: black;
 	color: white;
+}
+.member-header {
+	text-align: center;
+	color: white;
+	padding-top: 20px;
+	font-family: RobotoSlab-Regular;
+	font-size: 48px;
 }
