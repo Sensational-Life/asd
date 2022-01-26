@@ -1,0 +1,73 @@
+.logo {
+	width: 100px;
+}
+
+.message {
+	color: blue;
+}
+
+.message:hover {
+	background-color: yellow;
+}
+
+/* 
+===============
+Section7
+=============== 
+*/
+.home-section7{
+	background-color: #FFF8F3;
+	display: flex;
+}
+
+.home-section7-desc{
+	width: 600px;
+	height: 600px;
+	margin:60px;
+}
+
+.home-section7-title{
+	font-family: "RobotoSlab-Regular";
+	font-size: 48px;
+	margin-left:60px;
+}
+
+.home-section7-paragraph{
+    font-family: "Nexa Demo";
+	font-size: 20px;
+	margin-left: 60px;
+}
+
+.home-section7-button{
+	font-family: "Ambit SemiBold";
+	font-size: 24px;
+	background-color: #0A2229;
+	color: white;
+	padding: 20px 40px; 
+	margin: 10px 0px;
+    cursor: pointer;
+	margin-left: 60px;
+	margin-top:40px;
+}
+
+.home-section7-img-parent{
+	position: relative;
+	width: 1000px;
+	height: 600px;
+	margin:60px;
+}
+.home-section7-img-children1{
+	position:absolute;
+	background-color: #F4DFD0;
+	border-radius: 15px;
+	width: 600px;
+	height: 466px;
+	top:80px;
+	left:140px;
+}
+.home-section7-img-children2{
+	position:absolute;
+	border-radius: 15px;
+    width: 700px;
+	height: 466px;
+}

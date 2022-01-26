@@ -1,6 +1,6 @@
 {
-	"name": "Starter Kit",
-	"description": "Starter kit for full-stack JavaScript projects",
+	"name": "ASD Project",
+	"description": "Autism Spectrum Disorder",
 	"stack": "heroku-20",
 	"addons": [
 		{
