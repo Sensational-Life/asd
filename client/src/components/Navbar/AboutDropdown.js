@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { AboutMenuItems } from "./AboutMenuItems";
+import { AboutMenuItems } from "../../helpers/AboutMenuItems";
 import "./Dropdown.css";
 import { Link } from "react-router-dom";
 
