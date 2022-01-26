@@ -15,7 +15,7 @@ export function FooterLogo() {
 				</div>
 				<div className="fotter-button_container">
 					<div>
-						<p>Do want to be part of us?</p>
+						<p>Do you want to be part of us?</p>
 					</div>
 					<div>
 						<a

@@ -1,9 +1,9 @@
 
 #footerlogo{
-	font-family: 'Ambit-Regular';
-	font-size: 15px;
+    font-family: 'Ambit-Regular';
+    font-size: 15px;
     color: var(--main-bg-color);
-	background-color: var(--darkgreen-color);
+    background-color: var(--darkgreen-color);
     width: 100%;
 }
 
@@ -20,7 +20,7 @@
 }
 
 .footer-logo-img{
-	width: 250px;
+    width: 250px;
 }
 
 .fotter-button_container{
@@ -50,9 +50,9 @@
 
 .footer_buttun_tooltip{
     font-family: 'Ambit SemiBold';
-	font-size: 18px;
-	background-color: var(--main-bg-color);
-	color: var(--darkgreen-color);
+    font-size: 18px;
+    background-color: var(--main-bg-color);
+    color: var(--darkgreen-color);
     width: 150px; 
     padding:5px;
     text-align: center;
