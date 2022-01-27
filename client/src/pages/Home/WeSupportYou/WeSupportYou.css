@@ -15,15 +15,16 @@ Section7
 }
 
 .wesupportyou_header{
-	font-family: 'RobotoSlab-VariableFont_wght';
+	font-family: 'RobotoSlab-Regular';
 	font-size: 48px;
-	margin-left:60px;
+	margin: 0 0 40px 60px;
 }
 
 .wesupportyou_text{
     font-family: "NexaDemo-Light";
 	font-size: 20px;
 	margin-left: 60px;
+	line-height: 2rem;
 }
 .wesupportyou_join-us{
 	position: relative;
