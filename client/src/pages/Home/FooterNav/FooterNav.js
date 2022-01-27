@@ -4,9 +4,9 @@ import "./FooterNav.css";
 
 export function FooterNav() {
 	return (
-		<div id="footer">
-			<div className="home_section12_parent">
-				<div className="home_section12_child1">
+		<div id="footernav">
+			<div className="footernav_container">
+				<div className="nav_container">
 					<div className="nav-box">
 						<p className="title">About</p>
 						<a href="http://example.com/">Out Story</a>
@@ -23,7 +23,8 @@ export function FooterNav() {
 						<a href="http://example.com/">FAQs</a>
 					</div>
 				</div>
-				<div className="home_section12_child2">
+
+				<div className="mail_container">
 					<p>Our Email address</p>
 					<span>
 						<GrMail className="mail-icon" />
