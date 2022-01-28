@@ -33,6 +33,21 @@
 	font-size: 24px;
 	font-family: 'Ambit SemiBold';
 }
+.Aboutus_button:hover {
+	background-color: var(--blue-color);
+	cursor: pointer;
+}
+.Aboutus_button_hover {
+	background-color: var(--darkgreen-color);
+	width: 150px;
+	height: 40px;
+	border: none;
+	font-size: 18px;
+	font-family: "Ambit SemiBold";
+	margin-top: 10px;
+	color: var(--white-color);
+	margin-left: 100px;
+}
 
 .Aboutus_img_color {
 	background-color: var(--green-bg-color);
