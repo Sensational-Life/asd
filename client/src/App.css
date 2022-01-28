@@ -30,3 +30,7 @@
     font-family: "Ambit SemiBold";
     src: url("./assets/Ambit SemiBold.otf") format("opentype");
 }
+@font-face {
+    font-family: "DMSans-Regular";
+    src: url("./assets/DMSans-Regular.ttf") format("opentype");
+}
