@@ -12,7 +12,6 @@
 .welcome_text_container {
 	display: flex;
 	flex-direction: column;
-	/* background-color: rgb(204, 188, 219); */
 	height: 540px;
 	margin-top: 2%;
 }
@@ -20,19 +19,32 @@
 	font-size: 48px;
 	line-height: 1.5;
 	margin-top: 60px;
-	font-family: 'RobotoSlab-VariableFont_wght';
-
+	font-family: "NexaDemo-Light";
 }
-.welcome_input {
-	border-radius: 50% !important;
-	background-color: brown !important;
+.welcome_circle {
+	width: 16px;
+	height: 10px;
+	margin: 4px;
+}
+.welcome_icon_box {
 	margin-right: 10px;
+	background-color: rgb(233, 230, 186);
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+}
+.welcome_icon_box1 {
+	margin-right: 10px;
+	background-color: #f4dfdd;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
 }
 .welcome_text {
 	line-height: 3;
-	font-size: 20px;
+	font-size: 25px;
 	margin-top: 50px;
-	font-family: 'NexaDemo-Light';
+	font-family: "NexaDemo-Light";
 }
 .welcome_button {
 	background-color: var(--blue-color);
@@ -40,9 +52,24 @@
 	height: 55px;
 	border: none;
 	font-size: 24px;
-	font-family: 'Ambit SemiBold';
+	font-family: "Ambit SemiBold";
 	margin-top: 20px;
 	color: var(--white-color);
+}
+.welcome_button:hover {
+	background-color: var(--darkgreen-color);
+	cursor: pointer;
+}
+.welcome_button_hover {
+	background-color: var(--blue-color);
+	width: 200px;
+	height: 40px;
+	border: none;
+	font-size: 18px;
+	font-family: "Ambit SemiBold";
+	margin-top: 20px;
+	color: var(--white-color);
+	margin-left: 140px;
 }
 .welcome_img_container {
 	margin-top: 2%;
