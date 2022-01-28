@@ -58,6 +58,7 @@
 }
 .welcome_button:hover {
 	background-color: var(--darkgreen-color);
+	cursor: pointer;
 }
 .welcome_button_hover {
 	background-color: var(--darkgreen-color);
