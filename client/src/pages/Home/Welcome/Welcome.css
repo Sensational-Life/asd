@@ -61,7 +61,7 @@
 	cursor: pointer;
 }
 .welcome_button_hover {
-	background-color: var(--darkgreen-color);
+	background-color: var(--blue-color);
 	width: 200px;
 	height: 40px;
 	border: none;
