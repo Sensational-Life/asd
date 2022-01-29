@@ -1,14 +1,19 @@
+/* DM Sans Regular 400 */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+/* DM Sans Medium 500 */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap');
+
+
 #footernav{
-    font-family: "Ambit SemiBold";
-    font-size: 16px;
-    color: rgb(199, 202, 202);
-    /* color: var(--main-bg-color); */
+    font-family: 'DM Sans';
+    font-size: 15px;
+    color: var(--main-bg-color);
     background-color: var(--darkgreen-color);
 }
 
 .title{
-    font-size: 19px;
-    color: rgb(206, 242, 248);
+    font-size: 17px;
+    color: var(--pattens-blue);
 }
 
 .footernav_container{
@@ -29,6 +34,10 @@
 .nav-box{
     display: flex;
     flex-direction: column;
+}
+
+.nav-box a{
+    opacity: 60%;
 }
 
 a{
