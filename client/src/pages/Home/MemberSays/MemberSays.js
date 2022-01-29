@@ -4,23 +4,10 @@ import "./Member.css";
 
 function MemberSays() {
 	return (
-		<div
-			style={{
-				backgroundColor: "#1E6DD0",
-				display: "flex",
-				flexDirection: "column",
-				alignContent: "center",
-				height: "75vh",
-				alignItems: "stretch",
-				gap: "40px",
-				padding: "5px",
-			}}
-		>
+		<div className="memberSays-container ">
 			<h1 className="member-header">What Our Beloved Members Say</h1>
 			<Cards />
-			<button className="button" hover>
-				Click here to Register
-			</button>
+			<button className="register-btn">Click here to Register</button>
 		</div>
 	);
 }
