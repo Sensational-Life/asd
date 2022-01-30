@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import './AboutUs.css'
-import AboutUsImg from '../../../assets/images/about-us-concept-2021-08-31-16-59-05-utc.jpg'
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import "./AboutUs.css";
+import AboutUsImg from "../../../assets/images/about-us-concept-2021-08-31-16-59-05-utc.jpg";
 
 function AboutUs() {
 
@@ -36,7 +36,11 @@ function AboutUs() {
 							professionally and personally.
 						</span>
 					</div>
-					<Link to="/about-us">
+					<a
+					href="https://example.com/"
+					target="_blank"
+					rel="noreferrer"
+					>
 						<button
 							className="aboutus_button"
 							onMouseEnter={() => setButtonShow(true)}
@@ -44,7 +48,7 @@ function AboutUs() {
 						>
 							Read More
 						</button>
-					</Link>{" "}
+					</a>{" "}
 					<br />
 					{buttonShow && (
 						<button className="aboutus_button_hover">Read More</button>
