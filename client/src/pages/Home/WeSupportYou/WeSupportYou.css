@@ -16,7 +16,7 @@
 }
 
 .wesupportyou_text{
-    font-family: "NexaDemo-Light";
+    font-family: "NexaTextDemo-Light";
 	font-size: 20px;
 	margin-left: 150px;
 	line-height: 2rem;
@@ -45,7 +45,7 @@
 
 .wesupportyou_button_tooltip {
 	font-family: 'Ambit SemiBold';
-	font-size: 20px;
+	font-size: 18px;
 	background-color: var(--darkgreen-color);
 	color: var(--main-bg-color);
 	padding: 10px 30px;

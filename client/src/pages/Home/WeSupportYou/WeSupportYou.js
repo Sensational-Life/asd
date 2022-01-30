@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./WeSupportYou.css";
 import ImgHands from "../../../image/supporting-elderly-woman-2021-09-24-03-07-01-utc.jpg";
 
@@ -16,7 +17,8 @@ export function WeSupportYou() {
 				</p>
 				<div>
 					<div className="wesupportyou_join-us">
-						<a
+						<Link
+							to="/login"
 							href="https://example.com/"
 							target="_blank"
 							rel="noreferrer"
@@ -25,7 +27,7 @@ export function WeSupportYou() {
 							onMouseLeave={() => setIsShown(false)}
 						>
 							Join Us
-						</a>
+						</Link>
 					</div>
 					{isShown && (
 						<div className="wesupportyou_button_tooltip"> Join Us</div>
