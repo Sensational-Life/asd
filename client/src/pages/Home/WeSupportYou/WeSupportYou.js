@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./WeSupportYou.css";
+import ImgHands from "../../../image/supporting-elderly-woman-2021-09-24-03-07-01-utc.jpg";
 
 export function WeSupportYou() {
 	const [isShown, setIsShown] = useState(false);
@@ -33,11 +34,7 @@ export function WeSupportYou() {
 			</div>
 			<div className="wesupportyou_img_container">
 				<div className="wesupportyou_img_color">children1</div>
-				<img
-					className="wesupportyou_img"
-					src="https://i.postimg.cc/Xvq2SPBx/supporting-elderly-woman-2021-09-24-03-07-01-utc.jpg"
-					alt="we-support-you"
-				/>
+				<img className="wesupportyou_img" src={ImgHands} alt="we-support-you" />
 			</div>
 		</div>
 	);

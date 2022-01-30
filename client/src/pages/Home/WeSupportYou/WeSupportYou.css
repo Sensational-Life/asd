@@ -1,29 +1,24 @@
-/* 
-===============
-Section7
-=============== 
-*/
 .wesupportyou_main_container{
 	background-color: var(--main-bg-color);
 	display: flex;
+	height: 700px;
 }
 
 .wesupportyou_container{
 	width: 600px;
 	height: 600px;
-	margin:60px 40px;
 }
 
 .wesupportyou_header{
 	font-family: 'RobotoSlab-Regular';
 	font-size: 48px;
-	margin: 0 0 40px 60px;
+	margin: 150px 0 40px 150px;
 }
 
 .wesupportyou_text{
     font-family: "NexaDemo-Light";
 	font-size: 20px;
-	margin-left: 60px;
+	margin-left: 150px;
 	line-height: 2rem;
 }
 .wesupportyou_join-us{
@@ -32,14 +27,14 @@ Section7
 
 .wesupportyou_button{
 	font-family: 'Ambit SemiBold';
-	font-size: 24px;
+	font-size: 20px;
 	background: var(--darkgreen-color);
 	color: #FFF8F3;
 	text-decoration: none;
 	border: 4px solid var(--darkgreen-color);
 	padding: 20px 40px; 
     cursor: pointer;
-	margin: 50px 50px 0px 60px;
+	margin: 40px 50px 0px 150px;
 	position: absolute;
 }
 
@@ -54,21 +49,20 @@ Section7
 	background-color: var(--darkgreen-color);
 	color: var(--main-bg-color);
 	padding: 10px 30px;
-	margin: 140px 0px 0px 150px;
+	margin: 140px 0px 0px 240px;
     position: absolute;
 } 
 
 .wesupportyou_img_container{
-	width: 1000px;
-	height: 600px;
-	margin:60px;
+	width: 700px;
+	margin: 100px 0 0 30px;
 	position:relative;
 }
 
 .wesupportyou_img{
 	position:absolute;
 	border-radius: 15px;
-    width: 600px;
+    width: 650px;
 	height: 400px;
 	max-width: 100%;
     height: auto;
@@ -78,8 +72,8 @@ Section7
 	position:absolute;
 	background-color: var(--lightorange);
 	border-radius: 15px;
-	width: 500px;
-	height: 400px;
+	width: 530px;
+	height: 434px;
 	top:60px;
-	left:150px;
+	left:160px;
 }
