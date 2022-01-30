@@ -78,6 +78,9 @@ a.nav-links {
 .menu-icon {
 	display: none;
 }
+.active-nav-links{
+    font-weight: bold;
+}
 
 @media screen and (min-device-width: 1200px) and (max-device-width: 1870px) and (-webkit-min-device-pixel-ratio: 1) {
 	.nav-menu {

@@ -1,12 +1,16 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./LoginIcon.css";
 
 function LoginIcon() {
 	return (
-		<Link className="login-icon" to="/login">
+		<NavLink
+			to="/login"
+			className="login-icon"
+			activeClassName="active-nav-links"
+		>
 			Login <i className="fas fa-user "></i>
-		</Link>
+		</NavLink>
 	);
 }
 export default LoginIcon;
