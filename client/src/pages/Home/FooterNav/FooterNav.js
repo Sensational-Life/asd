@@ -7,19 +7,19 @@ export function FooterNav() {
 		<div id="footernav">
 			<div className="footernav_container">
 				<div className="nav_container">
-					<div className="nav-box">
-						<p className="title">About</p>
-						<a href="http://example.com/">Out Story</a>
+					<div className="nav_box">
+						<p>About</p>
+						<a href="http://example.com/">Our Story</a>
 						<a href="http://example.com/">Team</a>
 					</div>
-					<div className="nav-box">
-						<p className="title">Resources</p>
+					<div className="nav_box">
+						<p>Resources</p>
 						<a href="http://example.com/">Timetables</a>
 						<a href="http://example.com/">Referrals</a>
 						<a href="http://example.com/">Useful Links</a>
 					</div>
-					<div className="nav-box">
-						<p className="title">Help</p>
+					<div className="nav_box">
+						<p>Help</p>
 						<a href="http://example.com/">FAQs</a>
 					</div>
 				</div>
@@ -28,7 +28,7 @@ export function FooterNav() {
 					<p>Our Email address</p>
 					<span>
 						<GrMail className="mail-icon" />
-						<a href="http://example.com/">info@sensational-life.com</a>
+						<a href="info@sensational-life.com">info@sensational-life.com</a>
 					</span>
 				</div>
 			</div>

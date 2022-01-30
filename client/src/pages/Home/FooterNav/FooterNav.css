@@ -5,15 +5,7 @@
 
 
 #footernav{
-    font-family: 'DM Sans';
-    font-size: 15px;
-    color: var(--main-bg-color);
     background-color: var(--darkgreen-color);
-}
-
-.title{
-    font-size: 17px;
-    color: var(--pattens-blue);
 }
 
 .footernav_container{
@@ -21,7 +13,6 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 100px 150px 50px 150px;
-    
 }
 
 .nav_container{
@@ -31,24 +22,30 @@
     width: 45%;
 }
 
-.nav-box{
+.nav_box{
     display: flex;
     flex-direction: column;
 }
 
-.nav-box a{
+.nav_box p{
+    font-family: "DM Sans Medium";
+    font-size: 17px;
+    color: var(--pattens-blue);
+}
+
+.nav_box a{
+    font-family: "DM Sans";
+    font-size: 15px;
+    text-decoration: none;
+    padding-top: 20px;
+    color: var(--white-color);
     opacity: 60%;
 }
 
-a{
-    text-decoration: none;
-    padding-top: 20px;
-    color: rgb(199, 202, 202);
-}
-
-a:hover {
-text-decoration: underline;
-color: var(--main-bg-color);
+.nav_box a:hover {
+    text-decoration: underline;
+    color: var(--main-bg-color);
+    opacity: 100%;
 }
 
 .mail_container{
@@ -57,13 +54,20 @@ color: var(--main-bg-color);
     flex-direction: column;
     justify-content: center;
     align-items: center;
+     color: var(--white-color);
 }
 
 .mail_container p{
-    font-family: "Ambit SemiBold";
-    font-size: 18px;
-    color: var(--main-bg-color);
+    font-family: "NexaDemo-Light";
+    font-size: 16px;
+    transform: scale(1,1);
     margin:10px;
+}
+
+.mail_container span{
+    border-top: 1px solid var(--main-bg-color);
+    padding:5px 0 0 10px;
+    width:230px;
 }
 
 .mail-icon{
@@ -74,8 +78,17 @@ color: var(--main-bg-color);
     right:10px;
 }
 
-.mail_container span{
-    border-top: 1px solid var(--main-bg-color);
-    padding:5px 0 0 10px;
-    width:230px;
+.mail_container a{
+    font-family: "NexaDemo-Light";
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--white-color);
+    opacity: 60%;
 }
+
+.mail_container a:hover{
+    text-decoration: underline;
+    color: var(--main-bg-color);
+    opacity: 100%;
+}
+
