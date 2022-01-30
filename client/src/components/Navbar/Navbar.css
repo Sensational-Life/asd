@@ -1,5 +1,6 @@
 .navbar {
 	background: #fff8f3;
+  font-family: 'NexaDemo-Light';
 
 	height: 100px;
 	display: flex;
@@ -79,7 +80,7 @@ a.nav-links {
 }
 
 
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+@media screen and (min-device-width: 1200px) and (max-device-width: 1870px) and (-webkit-min-device-pixel-ratio: 1) {
   .nav-menu {
     
     width: 65%;
