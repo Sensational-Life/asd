@@ -70,7 +70,7 @@ function Navbar() {
 						onMouseLeave={onMouseLeave2}
 					>
 						<Link to="/about" className="nav-links" onClick={closeMobileMenu}>
-							About <i className="fas fa-caret-down" />
+							About 
 						</Link>
 						{dropdown2 && <AboutDropdown />}
 					</li>
@@ -84,7 +84,7 @@ function Navbar() {
 							className="nav-links"
 							onClick={closeMobileMenu}
 						>
-							Resources <i className="fas fa-caret-down" />
+							Resources 
 						</Link>
 						{dropdown && <ResourcesDropdown />}
 					</li>
