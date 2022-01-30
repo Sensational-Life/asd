@@ -70,7 +70,7 @@ function Navbar() {
 						onMouseLeave={onMouseLeave2}
 					>
 						<Link to="/about" className="nav-links" onClick={closeMobileMenu}>
-							About 
+							About
 						</Link>
 						{dropdown2 && <AboutDropdown />}
 					</li>
@@ -84,7 +84,7 @@ function Navbar() {
 							className="nav-links"
 							onClick={closeMobileMenu}
 						>
-							Resources 
+							Resources
 						</Link>
 						{dropdown && <ResourcesDropdown />}
 					</li>
@@ -98,9 +98,10 @@ function Navbar() {
 							Contact
 						</Link>
 					</li>
-					
+					<li className="nav-item">
+						<LoginIcon />
+					</li>
 				</ul>
-				<LoginIcon />
 			</nav>
 		</>
 	);
