@@ -98,16 +98,7 @@ function Navbar() {
 							Contact
 						</Link>
 					</li>
-<<<<<<< HEAD:client/src/components/Navbar.js
-					<li className="nav-item">
-						<Link className="nav-links"
-             to="/login">
-							Login <i className="fas fa-user "></i>
-						</Link>
-					</li>
-=======
 					
->>>>>>> main:client/src/components/Navbar/Navbar.js
 				</ul>
 				<LoginIcon />
 			</nav>
