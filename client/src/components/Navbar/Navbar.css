@@ -1,6 +1,6 @@
 .navbar {
 	background: #fff8f3;
-  font-family: 'NexaDemo-Light';
+	font-family: "NexaDemo-Light";
 
 	height: 100px;
 	display: flex;
@@ -21,8 +21,8 @@
 
 .nav-menu {
 	display: grid;
-	grid-template-columns: repeat(5, auto);
-	grid-gap: 50px;
+	grid-template-columns: repeat(6, auto);
+	grid-gap: 35px;
 	list-style: none;
 	text-align: center;
 	width: 50vw;
@@ -79,24 +79,22 @@ a.nav-links {
 	display: none;
 }
 
-
 @media screen and (min-device-width: 1200px) and (max-device-width: 1870px) and (-webkit-min-device-pixel-ratio: 1) {
-  .nav-menu {
-    
-    width: 65%;
-    margin-right: 1rem;
-    grid-gap: 20px;
-    justify-content: normal;
-  }
+	.nav-menu {
+		width: 65%;
+		margin-right: 1rem;
+		grid-gap: 30px;
+		justify-content: normal;
+	}
 }
+
 @media only screen and (min-device-width: 768px) and (max-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
-  .nav-menu {
-  
-    width: 65%;
-    margin-right: 0rem;
-    grid-gap: 5px;
-    justify-content: normal;
-  }
+	.nav-menu {
+		width: 65%;
+		margin-right: 0rem;
+		grid-gap: 5px;
+		justify-content: normal;
+	}
 }
 @media screen and (max-width: 768px) {
 	.navbar {
