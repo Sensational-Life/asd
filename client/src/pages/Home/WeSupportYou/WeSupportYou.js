@@ -8,9 +8,10 @@ export function WeSupportYou() {
 			<div className="wesupportyou_container">
 				<h2 className="wesupportyou_header">We support you</h2>
 				<p className="wesupportyou_text">
-					If you are a parent of an autistic child (whether oicially diagnosed,
-					on the long winded journey or just having some concerns), then this is
-					the group for you!
+					If you are a parent of an autistic child <br /> (whether oicially
+					diagnosed, on the long <br />
+					winded journey or just having some <br />
+					concerns), then this is the group for you!
 				</p>
 				<div>
 					<div className="wesupportyou_join-us">
@@ -25,7 +26,9 @@ export function WeSupportYou() {
 							Join Us
 						</a>
 					</div>
-					{isShown && <div className="wesupportyou_button_tooltip"> Join Us</div>}
+					{isShown && (
+						<div className="wesupportyou_button_tooltip"> Join Us</div>
+					)}
 				</div>
 			</div>
 			<div className="wesupportyou_img_container">
