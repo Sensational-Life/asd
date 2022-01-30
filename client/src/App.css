@@ -1,9 +1,3 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'PT Sans', sans-serif;
-}
 :root {
     --main-bg-color:#FFF8F3;
     --green-bg-color:#A4E4DB;
@@ -11,7 +5,6 @@
     --white-color:#FFF;
     --darkgreen-color:#0A2229;
     --lightorange:#F4DFD0;
-    --pattens-blue: #D0ECF5;
   }
 
 
@@ -19,10 +12,32 @@
     font-family: "NexaDemo-Light";
     src: url("./assets/NexaDemo-Light.otf") format("opentype");
 }
+
+@font-face {
+    font-family: "NexaDemo-Bold";
+    src: url("./assets/NexaDemo-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "NexaTextDemo-Light";
+    src: url("./assets/NexaTextDemo-Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "NexaTextDemo-Bold";
+    src: url("./assets/NexaTextDemo-Bold.otf") format("opentype");
+}
+
 @font-face {
     font-family: "RobotoSlab-VariableFont_wght";
     src: url("./assets/RobotoSlab-VariableFont_wght.ttf") format("opentype");
 }
+
+@font-face {
+    font-family: "RobotoSlab-Regular";
+    src: url("./assets/RobotoSlab-Regular.ttf") format("opentype");
+}
+
 @font-face {
     font-family: "Ambit SemiBold Italic";
     src: url("./assets/Ambit SemiBold Italic.otf") format("opentype");
