@@ -10,8 +10,8 @@
 
 
 @font-face {
-    font-family: "NexaDemo-Light";
-    src: url("./assets/NexaDemo-Light.otf") format("opentype");
+    font-family: "NexaTextDemo-Light";
+    src: url("./assets/NexaTextDemo-Light.otf") format("opentype");
 }
 @font-face {
     font-family: "RobotoSlab-VariableFont_wght";
