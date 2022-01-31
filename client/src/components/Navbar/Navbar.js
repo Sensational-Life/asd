@@ -7,6 +7,8 @@ import ResourcesDropdown from "./ResourcesDropdown";
 import AboutDropdown from "./AboutDropdown";
 import LoginIcon from "./LoginIcon";
 
+import SearchBox from "./SearchBox";
+
 function Navbar() {
   const [click, setClick] = useState(false);
   const [dropdown, setDropdown] = useState(false);
@@ -109,6 +111,9 @@ function Navbar() {
 						>
 							Contact
 						</NavLink>
+					</li>
+					<li className="nav-item">
+						<SearchBox />
 					</li>
 					<li className="nav-item">
 						<LoginIcon />
