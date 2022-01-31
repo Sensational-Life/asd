@@ -22,22 +22,14 @@ function Navbar() {
   };
 
   const onMouseLeaveResourcesMenu = () => {
-    if (window.innerWidth < 960) {
-      setMenuResourcesSelected(false);
-    } else {
-      setMenuResourcesSelected(false);
-    }
+	setMenuResourcesSelected(false);
   };
   const onMouseEnterAboutMenu = () => {
 	setMenuAboutSelected(true);
   };
 
   const onMouseLeaveAboutMenu = () => {
-    if (window.innerWidth < 960) {
-      setMenuAboutSelected(false);
-    } else {
-      setMenuAboutSelected(false);
-    }
+	  setMenuAboutSelected(false);
   };
 
   return (
