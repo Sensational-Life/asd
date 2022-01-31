@@ -5,8 +5,8 @@ export const AboutMenuItems = [
     cName: "dropdown-link",
   },
   {
-    title: "Signs & Symptoms",
-    path: "/signsandsymptoms",
+    title: "Signs of Autism",
+    path: "/signs-of-autism",
     cName: "dropdown-link",
   },
   {
