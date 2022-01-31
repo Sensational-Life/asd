@@ -54,14 +54,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-     color: var(--white-color);
+    color: var(--white-color);
 }
 
 .mail_container p{
-    font-family: "NexaDemo-Light";
+    font-family: "NexaTextDemo-Bold";
     font-size: 16px;
-    transform: scale(1,1);
-    margin:10px;
+    margin:0 40px 5px 0;
 }
 
 .mail_container span{
@@ -76,14 +75,14 @@
     height:20px ;
     top:5px;
     right:10px;
+     stroke: #fff; 
 }
 
 .mail_container a{
-    font-family: "NexaDemo-Light";
+    font-family: "NexaTextDemo-Light";
     font-size: 16px;
     text-decoration: none;
     color: var(--white-color);
-    opacity: 60%;
 }
 
 .mail_container a:hover{
@@ -91,4 +90,3 @@
     color: var(--main-bg-color);
     opacity: 100%;
 }
-

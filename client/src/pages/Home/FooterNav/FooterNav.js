@@ -1,5 +1,5 @@
 import React from "react";
-import { GrMail } from "react-icons/gr";
+import { AiOutlineMail } from "react-icons/ai";
 import "./FooterNav.css";
 
 export function FooterNav() {
@@ -27,7 +27,7 @@ export function FooterNav() {
 				<div className="mail_container">
 					<p>Our Email address</p>
 					<span>
-						<GrMail className="mail-icon" />
+						<AiOutlineMail color="var(--pattens-blue)" className="mail-icon" />
 						<a href="info@sensational-life.com">info@sensational-life.com</a>
 					</span>
 				</div>
