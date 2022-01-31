@@ -5,7 +5,7 @@
 	align-items: stretch;
 }
 
-form {
+.search-box-form {
 	color: #555;
 	display: flex;
 	padding: 2px;
@@ -13,7 +13,7 @@ form {
 	border-radius: 5px;
 }
 
-input[type="search"] {
+.search-input {
 	font-size: 15px;
 	padding: 7px 8px;
 	background: transparent;
@@ -21,11 +21,11 @@ input[type="search"] {
 	border: 1px solid transparent;
 }
 
-input[type="search"]::placeholder {
+.search-input::placeholder {
 	opacity: 0.4;
 }
 
-button[type="submit"] {
+.search-button {
 	cursor: pointer;
 	width: 25px;
 	background: transparent
@@ -35,23 +35,19 @@ button[type="submit"] {
 	opacity: 0.7;
 }
 
-button[type="submit"]:focus,
-input[type="search"]:focus {
+.search-button:focus,
+.search-input:focus {
 	border-color: inherit;
 	outline: none;
 }
 @media screen and (min-device-width: 1200px) and (max-device-width: 1378px) and (-webkit-min-device-pixel-ratio: 1) {
 	.search-box-container {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: stretch;
-}
-input[type="search"] {
-
-    padding: 6px 0px;
-
-}
-	
-
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: stretch;
+	}
+	.search-input {
+		padding: 6px 0px;
+	}
 }
