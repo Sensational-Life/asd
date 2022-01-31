@@ -10,41 +10,33 @@ import LoginIcon from "./LoginIcon";
 import SearchBox from "./SearchBox";
 
 function Navbar() {
-  const [click, setClick] = useState(false);
-  const [dropdown, setDropdown] = useState(false);
-  const [dropdown2, setDropdown2] = useState(false);
+  const [isClicked, setIsClicked] = useState(false);
+  const [menuResourcesSelected, setMenuResourcesSelected] = useState(false);
+  const [menuAboutSelected, setMenuAboutSelected] = useState(false);
 
-  const handleClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false);
+  const handleClick = () => setIsClicked(!isClicked);
+  const closeMobileMenu = () => setIsClicked(false);
 
-  const onMouseEnter = () => {
-    if (window.innerWidth < 960) {
-      setDropdown(false);
-    } else {
-      setDropdown(true);
-    }
+  const onMouseEnterResourcesMenu = () => {
+	setMenuResourcesSelected(true);
   };
 
-  const onMouseLeave = () => {
+  const onMouseLeaveResourcesMenu = () => {
     if (window.innerWidth < 960) {
-      setDropdown(false);
+      setMenuResourcesSelected(false);
     } else {
-      setDropdown(false);
+      setMenuResourcesSelected(false);
     }
   };
-  const onMouseEnter2 = () => {
-    if (window.innerWidth < 960) {
-      setDropdown2(false);
-    } else {
-      setDropdown2(true);
-    }
+  const onMouseEnterAboutMenu = () => {
+	setMenuAboutSelected(true);
   };
 
-  const onMouseLeave2 = () => {
+  const onMouseLeaveAboutMenu = () => {
     if (window.innerWidth < 960) {
-      setDropdown2(false);
+      setMenuAboutSelected(false);
     } else {
-      setDropdown2(false);
+      setMenuAboutSelected(false);
     }
   };
 
@@ -58,9 +50,9 @@ function Navbar() {
 					></img>
 				</NavLink>
 				<div className="menu-icon" onClick={handleClick}>
-					<i className={click ? "fas fa-times" : "fas fa-bars"} />
+					<i className={isClicked ? "fas fa-times" : "fas fa-bars"} />
 				</div>
-				<ul className={click ? "nav-menu active" : "nav-menu"}>
+				<ul className={isClicked ? "nav-menu active" : "nav-menu"}>
 					<li className="nav-item">
 						<NavLink
 							exact to="/"
@@ -73,8 +65,8 @@ function Navbar() {
 					</li>
 					<li
 						className="nav-item"
-						onMouseEnter={onMouseEnter2}
-						onMouseLeave={onMouseLeave2}
+						onMouseEnter={onMouseEnterAboutMenu}
+						onMouseLeave={onMouseLeaveAboutMenu}
 					>
 						<NavLink
 							to="/about"
@@ -84,12 +76,12 @@ function Navbar() {
 						>
 							About
 						</NavLink>
-						{dropdown2 && <AboutDropdown />}
+						{menuAboutSelected && <AboutDropdown />}
 					</li>
 					<li
 						className="nav-item"
-						onMouseEnter={onMouseEnter}
-						onMouseLeave={onMouseLeave}
+						onMouseEnter={onMouseEnterResourcesMenu}
+						onMouseLeave={onMouseLeaveResourcesMenu}
 					>
 						<NavLink
 							to="/resources"
@@ -99,7 +91,7 @@ function Navbar() {
 						>
 							Resources
 						</NavLink>
-						{dropdown && <ResourcesDropdown />}
+						{menuResourcesSelected && <ResourcesDropdown />}
 					</li>
 
 					<li className="nav-item">

@@ -53,17 +53,18 @@ a.nav-links {
 	padding: 12px;
 }
 /* About Button */
-#root > nav > ul > li:nth-child(2) > a {
+.navbar > ul > li:nth-child(2) > a {
 	width: 200px;
 }
 /* Resources Button */
-#root > nav > ul > li:nth-child(3) > a {
+.navbar > ul > li:nth-child(3) > a {
 	width: 200px;
 }
 /* Sign Up Button */
-#root > nav > ul > li:nth-child(5) > a {
+.navbar > ul > li:nth-child(5) > a {
 	padding: 12px;
 	width: 115px;
+	font-weight: bold;
 }
 .fa-bars {
 	color: black;
@@ -164,13 +165,13 @@ a.nav-links {
 		background-color: #1888ff;
 		border-radius: 0;
 	}
-	#root > nav > ul > li:nth-child(2) > a {
+ 		.navbar > ul > li:nth-child(2) > a {
 		width: 100%;
 	}
-	#root > nav > ul > li:nth-child(3) > a {
+ 		.navbar > ul > li:nth-child(3) > a {
 		width: 100%;
 	}
-	#root > nav > ul > li:nth-child(5) > a {
+ 		.navbar > ul > li:nth-child(5) > a {
 		width: 100%;
 	}
 	.navbar-logo img {
