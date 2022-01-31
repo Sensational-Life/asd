@@ -1,5 +1,6 @@
 import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
+import { Link } from "react-router-dom";
 import "./FooterNav.css";
 
 export function FooterNav() {
@@ -9,18 +10,30 @@ export function FooterNav() {
 				<div className="nav_container">
 					<div className="nav_box">
 						<p>About</p>
-						<a href="http://example.com/">Our Story</a>
-						<a href="http://example.com/">Team</a>
+						<Link to="/our-story" className="footernav_link">
+							Our Story
+						</Link>
+						<Link to="/team" className="footernav_link">
+							Team
+						</Link>
 					</div>
 					<div className="nav_box">
 						<p>Resources</p>
-						<a href="http://example.com/">Timetables</a>
-						<a href="http://example.com/">Referrals</a>
-						<a href="http://example.com/">Useful Links</a>
+						<Link to="/timetables" className="footernav_link">
+							Timetables
+						</Link>
+						<Link to="/referrals" className="footernav_link">
+							Referrals
+						</Link>
+						<Link to="/links" className="footernav_link">
+							Useful Links
+						</Link>
 					</div>
 					<div className="nav_box">
 						<p>Help</p>
-						<a href="http://example.com/">FAQs</a>
+						<Link to="/faqs" className="footernav_link">
+							FAQs
+						</Link>
 					</div>
 				</div>
 
@@ -28,7 +41,7 @@ export function FooterNav() {
 					<p>Our Email address</p>
 					<span>
 						<AiOutlineMail color="var(--pattens-blue)" className="mail-icon" />
-						<a href="info@sensational-life.com">info@sensational-life.com</a>
+						<Link to="/contact-us">info@sensational-life.com</Link>
 					</span>
 				</div>
 			</div>
