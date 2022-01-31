@@ -1,33 +1,34 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import logo from "../../../image/Logo.jpeg";
 import "./FooterLogo.css";
 
 export function FooterLogo() {
 	const [isShown, setIsShown] = useState(false);
 	return (
-		<div id="footerlogo">
-			<div className="footerlogo_container">
-				<div className="footer-logo-img_container">
+		<div id="footer_logo">
+			<div className="footer_logo_container">
+				<div className="footer_logo_img_container">
 					<img
-						className="footer-logo-img"
-						src="https://i.postimg.cc/VkdMYP4S/Logo.jpg"
+						className="footer_logo_img"
+						src={logo}
 						alt="logo"
 					/>
 				</div>
-				<div className="fotter-button_container">
+				<div className="fotter_button_container">
 					<div>
 						<p>Do you want to be part of us?</p>
 					</div>
 					<div>
-						<a
-							href="https://example.com/"
+						<Link to="/getstarted"
 							target="_blank"
 							rel="noreferrer"
-							className="footer-button"
+							className="footer_button"
 							onMouseEnter={() => setIsShown(true)}
 							onMouseLeave={() => setIsShown(false)}
 						>
 							Get started
-						</a>
+						</Link>
 						{isShown && <div className="footer_buttun_tooltip"> Get started</div>}
 					</div>
 				</div>
