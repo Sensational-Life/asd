@@ -1,4 +1,3 @@
-
 :root {
     --main-bg-color:#FFF8F3;
     --green-bg-color:#A4E4DB;
@@ -6,8 +5,8 @@
     --white-color:#FFF;
     --darkgreen-color:#0A2229;
     --lightorange:#F4DFD0;
+    --pattens-blue: #D0ECF5;
   }
-
 
 @font-face {
     font-family: "NexaDemo-Light";

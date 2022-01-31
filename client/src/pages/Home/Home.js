@@ -6,6 +6,7 @@ import WhatWeDo from "./WhatWeDo/WhatWeDo";
 import WeSupportYou from "./WeSupportYou/WeSupportYou";
 import MemberSays from "./MemberSays/MemberSays";
 import FooterLogo from "./FooterLogo/FooterLogo";
+import FooterNav from "./FooterNav/FooterNav";
 
 export function Home() {
 	return (
@@ -16,6 +17,7 @@ export function Home() {
 			<WeSupportYou />
 			<MemberSays />
 			<FooterLogo />
+			<FooterNav />
 			<FooterIcon />
 		</main>
 	);
