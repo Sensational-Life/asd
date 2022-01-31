@@ -1,56 +1,53 @@
-
-#footerlogo{
-    font-family: 'Ambit-Regular';
-    font-size: 15px;
-    color: var(--main-bg-color);
+#footer_logo{
     background-color: var(--darkgreen-color);
     width: 100%;
 }
 
-.footerlogo_container{
+.footer_logo_container{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-bottom: 40px;
-    border-bottom: 1px solid var(--main-bg-color);
+    padding-bottom: 20px;
+    /* border-bottom: 1px solid var(--main-bg-color); */
 }
 
-.footer-logo-img_container{
-    padding: 30px 0px 10px 80px;
+.footer_logo_img_container{
+    padding: 50px 0px 10px 100px;
 }
 
-.footer-logo-img{
-    width: 250px;
+.footer_logo_img{
+    width: 220px;
 }
 
-.fotter-button_container{
+.fotter_button_container{
     display: flex;
     flex-direction: row;
     padding: 55px 80px 0px 0px;
 }
 
-.fotter-button_container p{
+.fotter_button_container p{
     color: var(--main-bg-color);
-    font-size: 24px;
+    font-family: "Ambit SemiBold";
+    font-size: 22px;
     margin-right: 25px;
     margin-top: 0px;
 }
-.footer-button{
-    font-family: 'Ambit SemiBold';
+.footer_button{
     background-color: var(--main-bg-color);
-    padding: 15px 40px;
     color: var(--darkgreen-color);
-    font-size: 20px;
+    font-family: 'Ambit SemiBold';
+    font-size: 17px;
     text-decoration: none;
+    padding: 15px 40px;
 }
 
-.footer-button:hover{
-    background-color: var(--lightorange);
+.footer_button:hover{
+    background-color: var(--blue-color);
 }
 
 .footer_buttun_tooltip{
     font-family: 'Ambit SemiBold';
-    font-size: 18px;
+    font-size: 17px;
     background-color: var(--main-bg-color);
     color: var(--darkgreen-color);
     width: 150px; 

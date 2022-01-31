@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Register from "./pages/RegisterPage/Register";
+import AboutUsMore from "./pages/AboutUSMore/AboutUsMore";
 import "./App.css";
 import Resources from "./pages/Resources/Resources";
 import Contact from "./pages/Contact/Contact";
@@ -21,6 +22,7 @@ function App() {
 					<Route path="/contact" component={Contact} />
 					<Route path="/login" component={Login} />
 					<Route path="/register" component={Register} />
+					<Route path="/about-us" component={AboutUsMore} />
 				</Switch>
 			</Router>
 		</>

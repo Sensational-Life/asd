@@ -1,0 +1,93 @@
+/* DM Sans Regular 400 */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+/* DM Sans Medium 500 */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap');
+
+
+#footernav{
+    background-color: var(--darkgreen-color);
+}
+
+.footernav_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 150px 50px 170px;
+}
+
+.nav_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.nav_box{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav_box p{
+    font-family: "DM Sans Medium";
+    font-size: 17px;
+    color: var(--pattens-blue);
+}
+
+.footernav_link{
+    font-family: "DM Sans";
+    font-size: 15px;
+    text-decoration: none;
+    padding: 10px 0 10px 0;
+    color: var(--white-color);
+    opacity: 60%;
+}
+
+.nav_box a:hover {
+    text-decoration: underline;
+    color: var(--main-bg-color);
+    opacity: 100%;
+}
+
+.mail_container{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--white-color);
+    margin-bottom: 30px;
+}
+
+.mail_container p{
+    font-family: "NexaTextDemo-Bold";
+    font-size: 16px;
+    margin:0 40px 5px 0;
+}
+
+.mail_container span{
+    border-top: 1px solid var(--main-bg-color);
+    padding:5px 0 0 10px;
+    width:230px;
+}
+
+.mail-icon{
+    position:relative;
+    width: 15px;
+    height:15px ;
+    top:2px;
+    right:10px;
+     stroke: #fff; 
+}
+
+.mail_container a{
+    font-family: "NexaTextDemo-Light";
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.mail_container a:hover{
+    text-decoration: underline;
+    color: var(--main-bg-color);
+    opacity: 100%;
+}
