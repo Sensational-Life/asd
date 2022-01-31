@@ -1,4 +1,5 @@
 .dropdown-menu {
+	font-family: "NexaTextDemo-Light";
 	width: 200px;
 	position: absolute;
 	top: 70px;
@@ -29,7 +30,7 @@
 	width: 100%;
 	text-decoration: none;
 	color: black;
-	padding: 16px;
+	padding: 12px;
 }
 .dropdown-link:hover {
 	color: white;

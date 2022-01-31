@@ -1,7 +1,6 @@
 .navbar {
 	background: #fff8f3;
-	font-family: "NexaDemo-Light";
-
+	font-family: "NexaTextDemo-Light";
 	height: 100px;
 	display: flex;
 	justify-content: center;
@@ -25,9 +24,8 @@
 	grid-gap: 35px;
 	list-style: none;
 	text-align: center;
-	width: 50vw;
+	width: 64vw;
 	justify-content: end;
-	margin-right: 15rem;
 }
 
 .nav-item {
@@ -52,7 +50,7 @@
 }
 
 a.nav-links {
-	padding: 16px;
+	padding: 12px;
 }
 /* About Button */
 #root > nav > ul > li:nth-child(2) > a {
@@ -64,7 +62,7 @@ a.nav-links {
 }
 /* Sign Up Button */
 #root > nav > ul > li:nth-child(5) > a {
-	padding: 16px;
+	padding: 12px;
 	width: 115px;
 }
 .fa-bars {
@@ -78,33 +76,52 @@ a.nav-links {
 .menu-icon {
 	display: none;
 }
-.active-nav-links{
-    font-weight: bold;
+.active-nav-links {
+	font-weight: bold;
 }
 
-@media screen and (min-device-width: 1200px) and (max-device-width: 1870px) and (-webkit-min-device-pixel-ratio: 1) {
+@media screen and (min-device-width: 1690px) and (max-device-width: 1760px) and (-webkit-min-device-pixel-ratio: 1) {
 	.nav-menu {
-		width: 65%;
-		margin-right: 1rem;
-		grid-gap: 30px;
-		justify-content: normal;
+		grid-gap: 35px;
+		width: 66vw;
 	}
-  .navbar-logo img {
-	padding-right: 10px;
 }
-}
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
+@media screen and (min-device-width: 1630px) and (max-device-width: 1690px) and (-webkit-min-device-pixel-ratio: 1) {
 	.nav-menu {
-		width: 65%;
-		margin-right: 0rem;
+		grid-gap: 25px;
+		width: 66vw;
+	}
+}
+@media screen and (min-device-width: 1578px) and (max-device-width: 1630px) and (-webkit-min-device-pixel-ratio: 1) {
+	.nav-menu {
+		grid-gap: 20px;
+		width: 66vw;
+	}
+}
+@media screen and (min-device-width: 1478px) and (max-device-width: 1578px) and (-webkit-min-device-pixel-ratio: 1) {
+	.nav-menu {
+		grid-gap: 10px;
+		width: 69vw;
+	}
+}
+@media screen and (min-device-width: 1378px) and (max-device-width: 1478px) and (-webkit-min-device-pixel-ratio: 1) {
+	.nav-menu {
 		grid-gap: 5px;
-		justify-content: normal;
+		width: 70vw;
 	}
-  .navbar-logo img {
-	padding-right: 10px;
 }
+@media screen and (min-device-width: 1200px) and (max-device-width: 1378px) and (-webkit-min-device-pixel-ratio: 1) {
+	.nav-menu {
+		grid-template-columns: repeat(7, auto);
+		grid-gap: 4px;
+		width: 77vw;
+		padding-left: 20px;
+	}
+	.navbar-logo{
+		padding-right: 1%;
+	}
 }
+
 @media screen and (max-width: 768px) {
 	.navbar {
 		position: static;
