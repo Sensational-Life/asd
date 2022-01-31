@@ -8,7 +8,7 @@ import AboutDropdown from "./AboutDropdown";
 import LoginIcon from "./LoginIcon";
 
 import SearchBox from "./SearchBox";
-
+import logo from "../../images/Logo.jpg";
 function Navbar() {
   const [isClicked, setIsClicked] = useState(false);
   const [menuResourcesSelected, setMenuResourcesSelected] = useState(false);
@@ -45,7 +45,7 @@ function Navbar() {
 			<nav className="navbar">
 				<NavLink to="/" className="navbar-logo" onClick={closeMobileMenu}>
 					<img
-						src="https://i.postimg.cc/Z55sJJwz/Logo.jpg"
+						src={logo}
 						alt="sensational life logo"
 					></img>
 				</NavLink>
