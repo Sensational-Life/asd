@@ -18,7 +18,6 @@
 	padding: 7px 8px;
 	background: transparent;
 	border: none;
-	border: 1px solid transparent;
 }
 
 .search-input::placeholder {
