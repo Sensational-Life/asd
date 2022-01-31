@@ -51,7 +51,7 @@ function Navbar() {
   return (
 		<>
 			<nav className="navbar">
-				<NavLink to="/home" className="navbar-logo" onClick={closeMobileMenu}>
+				<NavLink to="/" className="navbar-logo" onClick={closeMobileMenu}>
 					<img
 						src="https://i.postimg.cc/Z55sJJwz/Logo.jpg"
 						alt="sensational life logo"
@@ -63,7 +63,7 @@ function Navbar() {
 				<ul className={click ? "nav-menu active" : "nav-menu"}>
 					<li className="nav-item">
 						<NavLink
-							to="/home"
+							exact to="/"
 							className="nav-links"
 							activeClassName="active-nav-links"
 							onClick={closeMobileMenu}
