@@ -29,10 +29,6 @@
 }
 
 @font-face {
-    font-family: "NexaTextDemo-Light";
-    src: url("./assets/NexaTextDemo-Light.otf") format("opentype");
-}
-@font-face {
     font-family: "RobotoSlab-VariableFont_wght";
     src: url("./assets/RobotoSlab-VariableFont_wght.ttf") format("opentype");
 }
@@ -46,6 +42,22 @@
     font-family: "Ambit SemiBold Italic";
     src: url("./assets/Ambit SemiBold Italic.otf") format("opentype");
 }
+
+@font-face {
+    font-family: "Ambit Light";
+    src: url("./assets/Ambit-Light.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: "Ambit Regular";
+    src: url("./assets/Ambit-Regular.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: "Ambit Bold";
+    src: url("./assets/Ambit-Bold.ttf") format("opentype");
+}
+
 @font-face {
     font-family: "Ambit SemiBold";
     src: url("./assets/Ambit SemiBold.otf") format("opentype");
