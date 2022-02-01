@@ -1,0 +1,32 @@
+.additional-support-container{
+    background-color: #fff8f3;
+}
+.hero-image{
+    width: 100%;
+}
+.content{
+       display: flex;
+    flex-direction: row;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+
+}
+.content-child1{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+}
+.content-child1 p{
+width: 500px;
+}
+
+.content-child2{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    
+}
