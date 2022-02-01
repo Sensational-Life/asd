@@ -35,6 +35,22 @@
 	font-size: 24px;
 	font-family: 'Ambit SemiBold';
 }
+.whatwedo_button:hover {
+	cursor: pointer;
+	background-color: var(--blue-color);
+}
+.whatwedo_button_hover {
+	width: 150px;
+	background-color: var(--darkgreen-color);
+	border: none;
+	height: 50px;
+	color: var(--white-color);
+	font-size: 20px;
+	margin-top: 10px;
+	margin-left: 90px;
+	font-family: 'Ambit SemiBold';
+	
+}
 .whatwedo_img_container {
 	margin-left: -580px;
 }

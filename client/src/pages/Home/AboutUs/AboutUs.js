@@ -5,7 +5,7 @@ import AboutUsImg from "../../../assets/images/about-us-concept-2021-08-31-16-59
 
 function AboutUs() {
 
-  const[buttonShow, setButtonShow] = useState(false)
+  const[buttonShow, setButtonShow] = useState(false);
 
   return (
 		<div className="aboutus_main_container">
@@ -36,11 +36,7 @@ function AboutUs() {
 							professionally and personally.
 						</span>
 					</div>
-					<a
-					href="https://example.com/"
-					target="_blank"
-					rel="noreferrer"
-					>
+					<Link to="about-us-more">
 						<button
 							className="aboutus_button"
 							onMouseEnter={() => setButtonShow(true)}
@@ -48,7 +44,7 @@ function AboutUs() {
 						>
 							Read More
 						</button>
-					</a>{" "}
+					</Link>{" "}
 					<br />
 					{buttonShow && (
 						<button className="aboutus_button_hover">Read More</button>

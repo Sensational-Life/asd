@@ -1,14 +1,11 @@
-import React,{ useState }  from 'react';
-import { Link } from 'react-router-dom';
-import './Welcome.css';
+import React,{ useState }  from "react";
+import { Link } from "react-router-dom";
+import "./Welcome.css";
 import { FaCheck } from "react-icons/fa";
-
-
-
+import GirlImg from "../../../assets/images/autistic-little-girl-close-up.jpg";
 
 function Welcome() {
-	const [buttonShow, setButtonShow ] =useState(false);
-
+  const [buttonShow, setButtonShow ] =useState(false);
 
   return (
 		<div className="welcome_main_container">
@@ -28,7 +25,7 @@ function Welcome() {
 					</div>
 					<Link to="/register">
 						{" "}
-						<button className="welcome_button" 
+						<button className="welcome_button"
 						onMouseEnter={() => setButtonShow(true)}
 						onMouseLeave={() => setButtonShow(false)}
 						>Click here to Register</button>
@@ -39,7 +36,7 @@ function Welcome() {
 					<div className="welcome_img_color">
 						<div className="welcome_img">
 							<img
-								src="https://i.postimg.cc/kgnHYHV3/autistic-little-girl-close-up-2021-09-24-04-06-23-utc.jpg"
+								src={GirlImg}
 								alt="img"
 							/>
 						</div>
@@ -48,6 +45,6 @@ function Welcome() {
 			</div>
 		</div>
 	);
-};
+}
 
 export default Welcome;
