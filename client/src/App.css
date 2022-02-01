@@ -6,6 +6,8 @@
     --white-color:#FFFFFF;
     --darkgreen-color:#0A2229;
     --lightorange:#F4DFD0;
+    --pattens-blue: #D0ECF5;
+    --icon-bg-color:rgb(233, 230, 186);
     --lightblue-color:#D9DEEA;
     --black-color:#000000;
     --black-shadow-color:#00000029;
@@ -14,8 +16,8 @@
   }
 
 @font-face {
-    font-family: "NexaDemo-Light";
-    src: url("./assets/NexaDemo-Light.otf") format("opentype");
+    font-family: "NexaTextDemo-Light";
+    src: url("./assets/NexaTextDemo-Light.otf") format("opentype");
 }
 
 @font-face {
