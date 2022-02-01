@@ -30,6 +30,9 @@
 .content-child1 p:nth-child(2) a{
 	font-family: "Ambit Regular";
 }
+.content-child1 p:nth-child(2) a:hover{
+	font-weight: bold;
+}
 
 .content-child1 > p:nth-child(2) {
 	width: 315px;
@@ -62,4 +65,8 @@
 	letter-spacing: 0.2px;
 	color: var(--blue-color);
     text-decoration: none;
+}
+.content-child2 a:hover{
+	font-weight: bold;
+	text-decoration: underline;
 }

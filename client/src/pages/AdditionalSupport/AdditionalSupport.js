@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./AdditionalSupport.css";
 import additionalSupportImg from "../../images/additional-support.jpg";
 import FooterNav from "../Home/FooterNav/FooterNav";
@@ -8,7 +9,9 @@ import FooterIcon from "../Home/FooterIcon/FooterIcon";
 function AdditionalSupport() {
 	return (
 		<div className="additional-support-container">
-			<div><span></span></div>
+			<div>
+				<span></span>
+			</div>
 			<img
 				className="hero-image"
 				src={additionalSupportImg}
@@ -24,7 +27,10 @@ function AdditionalSupport() {
 					</p>
 					<p>
 						To learn more about Additional Support needs please{" "}
-						<a href="">Sign in or Sign Up.</a>
+						<Link to="/login">
+							<a href="">Sign in or Sign Up.</a>
+						</Link>
+					
 					</p>
 				</div>
 				<div className="content-child2">
@@ -32,11 +38,11 @@ function AdditionalSupport() {
 					<a href="https://www.autism.org.uk/advice-and-guidance/topics/education/extra-help-at-school/scotland">
 						https://www.autism.org.uk/advice-and-guidance/topics/education/extra-help-at-school/scotland
 					</a>
-                    <br></br>
+					<br></br>
 					<a href="https://enquire.org.uk/parents/what-is-asl/">
 						https://enquire.org.uk/parents/what-is-asl/
 					</a>
-                    <br></br>
+					<br></br>
 					<a
 						href="https://www.nhs.uk/conditions/autism/autism-and-everyday-life/help-for-families/
 "
@@ -45,9 +51,9 @@ function AdditionalSupport() {
 					</a>
 				</div>
 			</div>
-            <FooterLogo />
+			<FooterLogo />
 			<FooterNav />
-            <FooterIcon />
+			<FooterIcon />
 		</div>
 	);
 }
