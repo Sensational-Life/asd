@@ -1,7 +1,7 @@
-import React from 'react';
-import './FooterIcon.css';
+import React from "react";
+import "./FooterIcon.css";
 import { GrFacebookOption, GrTwitter, GrInstagram  } from "react-icons/gr";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 function FooterIcon() {
   return (
@@ -13,7 +13,7 @@ function FooterIcon() {
            <a href="https://www.instagram.com">    <GrInstagram className='footericon_icon' /></a>
             </div>
             <div >
-                <Link to="/termsConditions" className='footericon_text'>Terms & Conditions</Link>
+                <Link to="/termsConditions" className='footericon_text'>Terms &amp; Conditions</Link>
                 <Link to="/privacyPolicy" className='footericon_text' >Privacy Policy</Link>
             </div>
         </div>
