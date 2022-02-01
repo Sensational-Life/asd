@@ -1,11 +1,16 @@
 :root {
     --main-bg-color:#FFF8F3;
     --green-bg-color:#A4E4DB;
+    --pattens-blue: #D0ECF5;
     --blue-color:#1E6DD0;
-    --white-color:#FFF;
+    --white-color:#FFFFFF;
     --darkgreen-color:#0A2229;
     --lightorange:#F4DFD0;
-    --pattens-blue: #D0ECF5;
+    --lightblue-color:#D9DEEA;
+    --black-color:#000000;
+    --black-shadow-color:#00000029;
+    --black-title-color:#0F2420;
+    --black-placeholder-color: #00000080;
   }
 
 @font-face {
