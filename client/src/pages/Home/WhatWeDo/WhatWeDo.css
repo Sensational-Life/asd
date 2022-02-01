@@ -7,7 +7,6 @@
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-around;
-
 	padding-top: 8%;
 }
 .whatwedo_text_container {
@@ -18,13 +17,13 @@
 .whatwedo_header {
 	font-size: 48px;
 	margin-bottom: 30px;
-	font-family: "RobotoSlab-VariableFont_wght";
+	font-family: "RobotoSlab-Regular";
 }
 .whatwedo_text {
 	font-size: 20px;
 	line-height: 2rem;
 	margin-bottom: 40px;
-	font-family: "NexaDemo-Light";
+	font-family: "NexaTextDemo-Light";
 }
 .whatwedo_button {
 	width: 190px;
@@ -34,6 +33,21 @@
 	color: var(--white-color);
 	font-size: 24px;
 	font-family: 'Ambit SemiBold';
+}
+.whatwedo_button:hover {
+	cursor: pointer;
+	background-color: var(--blue-color);
+}
+.whatwedo_button_hover {
+	width: 150px;
+	background-color: var(--darkgreen-color);
+	border: none;
+	height: 50px;
+	color: var(--white-color);
+	font-size: 20px;
+	margin-top: 10px;
+	margin-left: 90px;
+	font-family: "Ambit SemiBold";
 }
 .whatwedo_img_container {
 	margin-left: -580px;

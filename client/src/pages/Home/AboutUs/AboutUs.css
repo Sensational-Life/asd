@@ -1,8 +1,8 @@
-.Aboutus_main_container {
-	background-color: var(main-bg-color);
+.aboutus_main_container {
+	background-color: var(--main-bg-color);
 	height: 800px;
 }
-.Aboutus_container {
+.aboutus_container {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -10,21 +10,21 @@
 
 	padding-top: 8%;
 }
-.Aboutus_text_container {
+.aboutus_text_container {
 	padding-top: 5%;
 }
-.Aboutus_header {
+.aboutus_header {
 	font-size: 48px;
 	margin-bottom: 30px;
-	font-family: 'RobotoSlab-VariableFont_wght';
+	font-family: 'RobotoSlab-Regular';
 }
-.Aboutus_text {
-	font-size: 20px;
+.aboutus_text {
+	font-size: 25px;
 	line-height: 2rem;
 	margin-bottom: 40px;
-	font-family: 'NexaDemo-Light';
+	font-family: "NexaTextDemo-Light";
 }
-.Aboutus_button {
+.aboutus_button {
 	width: 190px;
 	background-color: var(--darkgreen-color);
 	border: none;
@@ -33,15 +33,30 @@
 	font-size: 24px;
 	font-family: 'Ambit SemiBold';
 }
+.aboutus_button:hover {
+	background-color: var(--blue-color);
+	cursor: pointer;
+}
+.aboutus_button_hover {
+	background-color: var(--darkgreen-color);
+	width: 150px;
+	height: 40px;
+	border: none;
+	font-size: 18px;
+	font-family: "Ambit SemiBold";
+	margin-top: 10px;
+	color: var(--white-color);
+	margin-left: 100px;
+}
 
-.Aboutus_img_color {
+.aboutus_img_color {
 	background-color: var(--green-bg-color);
 	height: 540px;
 	width: 556px;
 	border-radius: 5%;
 	position: relative;
 }
-.Aboutus_img_container img {
+.aboutus_img_container img {
 	width: 624px;
 	height: 430px;
 	border-radius: 5%;

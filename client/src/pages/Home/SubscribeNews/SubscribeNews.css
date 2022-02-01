@@ -6,18 +6,16 @@
 	justify-content: space-evenly;
 	width: 100%;
 	height: 740px;
-    background-color: var(--lightorange);
+	background-color: var(--lightorange);
 }
 .subscribeNews_title {
 	font-size: 48px;
-	font-family: "RobotoSlab-VariableFont_wght";
+ font-family: 'RobotoSlab-Regular';
 }
-
 .subscribeNews_form {
 	margin-top: 70px;
 	position: relative;
 }
-
 .subscribeNews_input {
 	height: 30px;
 	width: 250px;
@@ -28,28 +26,24 @@
 }
 .subscribeNews_input:hover {
 	border: 2px solid var(--darkgreen-color);
-  
 }
 .subscribeNews_input:hover::placeholder {
 	color: transparent;
 }
-
 .subscribeNews_button {
 	height: 35px;
 	background-color: var(--darkgreen-color);
 	color: var(--white-color);
 	border: 5px solid var(--darkgreen-color);
-	position:relative;
+	position: relative;
 	z-index: 6;
 	left: 255px;
-
 }
 .subscribeNews_button:hover {
 	cursor: pointer;
 	background-color: var(--blue-color);
 	border: 5px solid var(--blue-color);
 }
-
 .subscribeNews_img img {
 	width: 620px;
 	height: 460;
