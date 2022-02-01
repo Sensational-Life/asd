@@ -1,11 +1,16 @@
 :root {
     --main-bg-color:#FFF8F3;
     --green-bg-color:#A4E4DB;
+    --pattens-blue: #D0ECF5;
     --blue-color:#1E6DD0;
-    --white-color:#FFF;
+    --white-color:#FFFFFF;
     --darkgreen-color:#0A2229;
     --lightorange:#F4DFD0;
-    --pattens-blue: #D0ECF5;
+    --lightblue-color:#D9DEEA;
+    --black-color:#000000;
+    --black-shadow-color:#00000029;
+    --black-title-color:#0F2420;
+    --black-placeholder-color: #00000080;
   }
 
 @font-face {
@@ -42,6 +47,22 @@
     font-family: "Ambit SemiBold Italic";
     src: url("./assets/Ambit SemiBold Italic.otf") format("opentype");
 }
+
+@font-face {
+    font-family: "Ambit Light";
+    src: url("./assets/Ambit-Light.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: "Ambit Regular";
+    src: url("./assets/Ambit-Regular.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: "Ambit Bold";
+    src: url("./assets/Ambit-Bold.ttf") format("opentype");
+}
+
 @font-face {
     font-family: "Ambit SemiBold";
     src: url("./assets/Ambit SemiBold.otf") format("opentype");
