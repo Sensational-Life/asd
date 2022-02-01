@@ -8,7 +8,7 @@ import FooterIcon from "../Home/FooterIcon/FooterIcon";
 function AdditionalSupport() {
 	return (
 		<div className="additional-support-container">
-			<h1>additional support</h1>
+			<div><span></span></div>
 			<img
 				className="hero-image"
 				src={additionalSupportImg}
@@ -24,17 +24,19 @@ function AdditionalSupport() {
 					</p>
 					<p>
 						To learn more about Additional Support needs please{" "}
-						<a href="">Sign in Or Sign Up.</a>
+						<a href="">Sign in or Sign Up.</a>
 					</p>
 				</div>
 				<div className="content-child2">
-					<h2>Useful Links:</h2>
+					<h2>Useful links:</h2>
 					<a href="https://www.autism.org.uk/advice-and-guidance/topics/education/extra-help-at-school/scotland">
 						https://www.autism.org.uk/advice-and-guidance/topics/education/extra-help-at-school/scotland
 					</a>
+                    <br></br>
 					<a href="https://enquire.org.uk/parents/what-is-asl/">
 						https://enquire.org.uk/parents/what-is-asl/
 					</a>
+                    <br></br>
 					<a
 						href="https://www.nhs.uk/conditions/autism/autism-and-everyday-life/help-for-families/
 "

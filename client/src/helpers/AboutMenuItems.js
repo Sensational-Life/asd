@@ -11,7 +11,7 @@ export const AboutMenuItems = [
   },
   {
     title: "Additional Support",
-    path: "/additional-support",
+    path: "/about/additional-support",
     cName: "dropdown-link",
   },
   {
