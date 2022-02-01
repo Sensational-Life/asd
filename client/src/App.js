@@ -2,6 +2,9 @@ import React from "react";
 import Navbar from "./components/Navbar/Navbar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
+import AboutUs from "./pages/Home/AboutUs/AboutUs";
+import TermsConditions from "./pages/Terms&Condition/TermsConditions";
+import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
 import WhatWeDoMore from "./pages/WhatWeDoMore/WhatWeDoMore";
 import About from "./pages/About/About";
 import Register from "./pages/RegisterPage/Register";
@@ -27,6 +30,10 @@ function App() {
 					<Route path="/resources" component={Resources} />
 					<Route path="/contact" component={Contact} />
 					<Route path="/login" component={Login} />
+					{/* Footer links: */}
+					<Route path="/about" component={AboutUs} />
+					<Route path="/termsConditions" component={TermsConditions} />
+					<Route path="/privacyPolicy" component={PrivacyPolicy} />
 				</Switch>
 			</Router>
 		</>
