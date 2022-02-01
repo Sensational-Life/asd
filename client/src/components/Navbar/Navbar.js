@@ -1,106 +1,108 @@
 import React, { useState } from "react";
 
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 import ResourcesDropdown from "./ResourcesDropdown";
 
 import AboutDropdown from "./AboutDropdown";
 import LoginIcon from "./LoginIcon";
 
+import SearchBox from "./SearchBox";
+import logo from "../../images/Logo.jpg";
 function Navbar() {
-  const [click, setClick] = useState(false);
-  const [dropdown, setDropdown] = useState(false);
-  const [dropdown2, setDropdown2] = useState(false);
+  const [isClicked, setIsClicked] = useState(false);
+  const [menuResourcesSelected, setMenuResourcesSelected] = useState(false);
+  const [menuAboutSelected, setMenuAboutSelected] = useState(false);
 
-  const handleClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false);
+  const handleClick = () => setIsClicked(!isClicked);
+  const closeMobileMenu = () => setIsClicked(false);
 
-  const onMouseEnter = () => {
-    if (window.innerWidth < 960) {
-      setDropdown(false);
-    } else {
-      setDropdown(true);
-    }
+  const onMouseEnterResourcesMenu = () => {
+	setMenuResourcesSelected(true);
   };
 
-  const onMouseLeave = () => {
-    if (window.innerWidth < 960) {
-      setDropdown(false);
-    } else {
-      setDropdown(false);
-    }
+  const onMouseLeaveResourcesMenu = () => {
+	setMenuResourcesSelected(false);
   };
-  const onMouseEnter2 = () => {
-    if (window.innerWidth < 960) {
-      setDropdown2(false);
-    } else {
-      setDropdown2(true);
-    }
+  const onMouseEnterAboutMenu = () => {
+	setMenuAboutSelected(true);
   };
 
-  const onMouseLeave2 = () => {
-    if (window.innerWidth < 960) {
-      setDropdown2(false);
-    } else {
-      setDropdown2(false);
-    }
+  const onMouseLeaveAboutMenu = () => {
+	  setMenuAboutSelected(false);
   };
 
   return (
 		<>
 			<nav className="navbar">
-				<Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+				<NavLink to="/" className="navbar-logo" onClick={closeMobileMenu}>
 					<img
-						src="https://i.postimg.cc/Z55sJJwz/Logo.jpg"
+						src={logo}
 						alt="sensational life logo"
 					></img>
-				</Link>
+				</NavLink>
 				<div className="menu-icon" onClick={handleClick}>
-					<i className={click ? "fas fa-times" : "fas fa-bars"} />
+					<i className={isClicked ? "fas fa-times" : "fas fa-bars"} />
 				</div>
-				<ul className={click ? "nav-menu active" : "nav-menu"}>
+				<ul className={isClicked ? "nav-menu active" : "nav-menu"}>
 					<li className="nav-item">
-						<Link to="/" className="nav-links" onClick={closeMobileMenu}>
-							Home
-						</Link>
-					</li>
-					<li
-						className="nav-item"
-						onMouseEnter={onMouseEnter2}
-						onMouseLeave={onMouseLeave2}
-					>
-						<Link to="/about" className="nav-links" onClick={closeMobileMenu}>
-							About <i className="fas fa-caret-down" />
-						</Link>
-						{dropdown2 && <AboutDropdown />}
-					</li>
-					<li
-						className="nav-item"
-						onMouseEnter={onMouseEnter}
-						onMouseLeave={onMouseLeave}
-					>
-						<Link
-							to="/resources"
+						<NavLink
+							exact to="/"
 							className="nav-links"
+							activeClassName="active-nav-links"
 							onClick={closeMobileMenu}
 						>
-							Resources <i className="fas fa-caret-down" />
-						</Link>
-						{dropdown && <ResourcesDropdown />}
+							Home
+						</NavLink>
+					</li>
+					<li
+						className="nav-item"
+						onMouseEnter={onMouseEnterAboutMenu}
+						onMouseLeave={onMouseLeaveAboutMenu}
+					>
+						<NavLink
+							to="/about"
+							className="nav-links"
+							activeClassName="active-nav-links"
+							onClick={closeMobileMenu}
+						>
+							About
+						</NavLink>
+						{menuAboutSelected && <AboutDropdown />}
+					</li>
+					<li
+						className="nav-item"
+						onMouseEnter={onMouseEnterResourcesMenu}
+						onMouseLeave={onMouseLeaveResourcesMenu}
+					>
+						<NavLink
+							to="/resources"
+							className="nav-links"
+							activeClassName="active-nav-links"
+							onClick={closeMobileMenu}
+						>
+							Resources
+						</NavLink>
+						{menuResourcesSelected && <ResourcesDropdown />}
 					</li>
 
 					<li className="nav-item">
-						<Link
-							to="/contact-us"
+						<NavLink
+							to="/contact"
 							className="nav-links"
+							activeClassName="active-nav-links"
 							onClick={closeMobileMenu}
 						>
 							Contact
-						</Link>
+						</NavLink>
 					</li>
-					
+					<li className="nav-item">
+						<SearchBox />
+					</li>
+					<li className="nav-item">
+						<LoginIcon />
+					</li>
 				</ul>
-				<LoginIcon />
 			</nav>
 		</>
 	);
