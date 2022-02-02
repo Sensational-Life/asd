@@ -1,0 +1,84 @@
+.what-is-autism-container {
+	background-color: #fff8f3;
+}
+.hero-image {
+	width: 100%;
+}
+.main-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	column-gap: 80px;
+	height: 90vh;
+}
+.discription-container {
+	display: flex;
+	flex-direction: column;
+	font-size: 20px;
+}
+.discription {
+	width: 610px;
+	height: 210px;
+	font-family: "Ambit Light";
+	letter-spacing: 0.2px;
+	line-height: 25px;
+	padding: 100px 0 40px 15px;
+}
+
+.more-info-autism {
+	width: 610px;
+	font-family: "Ambit Light";
+	line-height: 25px;
+	padding: 0 0 0 15px;
+}
+.more-info-autism a {
+	font-family: "Ambit SemiBold";
+	color: var(--blue-color);
+	padding-left:5px;
+}
+.video-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 65vh;
+	height: 60vh;
+	margin-top: 115px;
+}
+
+.video-wrapper{
+position: relative;
+  padding-top: 56.25%;
+}
+
+.player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* button{
+padding:0;
+margin:0;
+background-color:transparent;
+border:none;
+} */
+
+.player-button{
+width: 90px;
+height: 90px;
+color: var(--blue-color);
+cursor: pointer;
+}
+
+.video-container p {
+	font-size: 18px;
+	font-family: "Ambit Light";
+		letter-spacing: 0.2px;
+	line-height: 25px;
+	text-align: center;
+	margin-top: 75px;
+	padding-left:15px;
+}
+

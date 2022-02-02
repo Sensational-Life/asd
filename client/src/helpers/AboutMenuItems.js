@@ -1,7 +1,7 @@
 export const AboutMenuItems = [
   {
     title: "What Is Autism",
-    path: "/WhatIsAutism",
+    path: "/about/what-is-autism",
     cName: "dropdown-link",
   },
   {
