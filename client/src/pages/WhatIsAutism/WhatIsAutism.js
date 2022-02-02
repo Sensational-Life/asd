@@ -40,7 +40,11 @@ function WhatIsAutism() {
 					<div className="more-info-autism">
 						For more info and a guide about Autism <br />
 						visit the NHS website:
-						<a href="https://www.nhs.uk/conditions/autism/">
+						<a
+							href="https://www.nhs.uk/conditions/autism/"
+							target="_blank"
+							rel="noreferrer"
+						>
 							https://www.nhs.uk/conditions/autism/
 						</a>
 					</div>
