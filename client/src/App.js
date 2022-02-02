@@ -27,15 +27,11 @@ function App() {
 					<Route path="/about-us-more" component={AboutUsMore} />
 					<Route path="/whatwedo" component={WhatWeDoMore} />
 					{/* routes from nav bar: */}
-
-					<Route path="/about" component={About}>
-							<Route
-								path="/about/additional-support"
-								component={AdditionalSupport}
-							/>
-						</Route>
-				
-
+					<Route exact path="/about" component={About} />
+					<Route
+						path="/about/additional-support"
+						component={AdditionalSupport}
+					/>
 					<Route path="/resources" component={Resources} />
 					<Route path="/contact" component={Contact} />
 					<Route path="/login" component={Login} />

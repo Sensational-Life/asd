@@ -13,37 +13,38 @@
 	align-items: center;
 	column-gap: 90px;
 }
-.content-child1 {
+.content-left-container {
 	display: flex;
 	flex-direction: column;
 	height: 50vh;
 	justify-content: center;
-	row-gap:20px;
+	row-gap:27px;
 }
-.content-child1 p:nth-child(1) {
-	width: 433px;
+.content-left-container p:nth-child(1) {
+	width: 522px;
 	height: 98px;
 	font-family: "Ambit Light";
 	letter-spacing: 0.2px;
 	line-height: 21px;
+	font-size: 20px
 }
-.content-child1 p:nth-child(2) a{
+.content-left-container p:nth-child(2) a{
 	font-family: "Ambit Regular";
 }
-.content-child1 p:nth-child(2) a:hover{
+.content-left-container p:nth-child(2) a:hover{
 	font-weight: bold;
 }
 
-.content-child1 > p:nth-child(2) {
-	width: 315px;
+.content-left-container > p:nth-child(2) {
+	width: 410px;
 	font-family: "Ambit Light";
-
+	font-size: 20px;
 	line-height: 21px;
 }
-.content-child1 > p:nth-child(2) a {
+.content-left-container > p:nth-child(2) a {
 	color: var(--blue-color);
 }
-.content-child2 {
+.content-right-container {
 	display: flex;
 	flex-direction: column;
 	width: 438px;
@@ -53,20 +54,21 @@
 	font-family: "Ambit Light";
 	padding: 0 0 30px 0;
 }
-.content-child2 > h2 {
-	font-size: 16px;
+.content-right-container > h2 {
+	font-size: 20px;
 	font-family: "Ambit SemiBold";
-	padding-bottom: 15px;
+	padding-bottom: 20px;
 }
-.content-child2 a {
+.content-right-container a {
+	font-size: 20px;
 	line-height: 20px;
-	width: 476px;
+	width: 547px;
 	line-height: 24px;
 	letter-spacing: 0.2px;
 	color: var(--blue-color);
     text-decoration: none;
 }
-.content-child2 a:hover{
+.content-right-container a:hover{
 	font-weight: bold;
 	text-decoration: underline;
 }
