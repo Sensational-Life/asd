@@ -14,7 +14,7 @@ function AdditionalSupport() {
 					className="hero-image"
 					src={additionalSupportImg}
 					alt="sensational life logo"
-				></img>
+				/>
 				<section className="content">
 					<section className="content-left-container">
 						<p>
