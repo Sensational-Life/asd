@@ -20,7 +20,7 @@ export function FooterLogo() {
 						<p>Do you want to be part of us?</p>
 					</div>
 					<div>
-						<Link to="/getstarted"
+						<Link to="/Register"
 							target="_blank"
 							rel="noreferrer"
 							className="footer_button"
