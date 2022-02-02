@@ -37,9 +37,9 @@ return <div className='Login-container'>
 						<button className="Login_button"
 						onMouseEnter={() => setButtonShow(true)}
 						onMouseLeave={() => setButtonShow(false)}
-						> Sign Up</button>
+						> Sign In</button>
 		
-					{buttonShow && <button className="Login_button_hover">Sign UP</button>}
+					{buttonShow && <button className="Login_button_hover">Sign In</button>}
 
                         {/* CheckBox  remember me and Forogt password */}
 					<div className="login-remember-me">
@@ -50,7 +50,7 @@ return <div className='Login-container'>
                          {/* forgot password */}
 						 <span className="Login-Forogt-password"> Forgot <Link  
 						   className="Login-forgotPassword-link"
-						 to="/RestPassword">Password</Link></span>
+						 to="/ResetPassword">Password</Link></span>
 
 		            </div>
 	            </form>
