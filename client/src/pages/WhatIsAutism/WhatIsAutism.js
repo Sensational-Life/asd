@@ -1,6 +1,6 @@
 import React from "react";
-import { BsPlayCircleFill } from "react-icons/bs";
 import ReactPlayer from "react-player/youtube";
+import { BsPlayCircleFill } from "react-icons/bs";
 import whatIsAutismImg from "../../assets/images/what-is-autism.jpeg";
 import whatIsAutismVideoImg from "../../assets/images/what-is-autism-video.jpg";
 import FooterNav from "../Home/FooterNav/FooterNav";
@@ -28,7 +28,7 @@ function WhatIsAutism() {
 						very <br />
 						young.
 						<br />
-						Everyone with autism is different, that’s what makes it a spectrum.{" "}
+						Everyone with autism is different, that’s what makes it a spectrum.
 						<br />
 						Some people may need little or no support. Other may need extra
 						<br />
@@ -51,11 +51,7 @@ function WhatIsAutism() {
 							className="player"
 							url={"https://www.youtube.com/watch?v=0Pp8jcQ97pY"}
 							playing
-							playIcon={
-								// <button>
-									<BsPlayCircleFill className="player-button" />
-								// </button>
-							}
+							playIcon={<BsPlayCircleFill className="player-button" />}
 							light={whatIsAutismVideoImg}
 							width="100%"
 							height="130%"
