@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./AboutUs.css";
-import AboutUsImg from "../../../assets/images/about-us-concept.jpg";
+import AboutUsImg from "~/assets/images/about-us-concept.jpg";
 
 function AboutUs() {
 
