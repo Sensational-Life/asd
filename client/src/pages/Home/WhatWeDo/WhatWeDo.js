@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./WhatWeDo.css";
-import CuteGirl from "../../../assets/images/cute-girl-with-down-syndrome-in-mothers-arms.jpg";
+import CuteGirl from "~/assets/images/cute-girl-with-down-syndrome-in-mothers-arms.jpg";
 
 function WhatWeDo() {
 	const [buttonShow, setButtonShow] = useState(false);
@@ -9,8 +9,8 @@ function WhatWeDo() {
 		<div className="whatwedo_main_container">
 			<div className="whatwedo_container">
 				<div className="whatwedo_text_container">
-					<div className="whatwedo_header">
-						<span>What We Do? </span>
+					<div>
+						<h2 className="whatwedo_header">What We Do? </h2>
 					</div>
 					<div className="whatwedo_text">
 						<span>

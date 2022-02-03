@@ -6,14 +6,18 @@ import WhatWeDo from "./WhatWeDo/WhatWeDo";
 import WeSupportYou from "./WeSupportYou/WeSupportYou";
 import MemberSays from "./MemberSays/MemberSays";
 import FooterLogo from "./FooterLogo/FooterLogo";
+import SubscribeNews from "./SubscribeNews/SubscribeNews";
 import FooterNav from "./FooterNav/FooterNav";
+import ScrollDown from "./ScrollDown/ScrollDown";
 
 export function Home() {
 	return (
 		<main role="main">
 			<Welcome />
+			<ScrollDown />
 			<AboutUs />
 			<WhatWeDo />
+			<SubscribeNews />
 			<WeSupportYou />
 			<MemberSays />
 			<FooterLogo />
