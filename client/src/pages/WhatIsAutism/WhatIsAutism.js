@@ -20,22 +20,14 @@ function WhatIsAutism() {
 				<div className="discription-container">
 					<div className="discription">
 						Autism or Autism Spectrum Disorder is not an illness or a disease.
-						<br />
 						Autism is not a medical condition with treatments or a “cure”. It
-						<br />
 						means your brain works in a different way from other people.
-						<br /> It’s something you’re born with or first appears when you’re
-						very <br />
-						young.
-						<br />
+						It’s something you’re born with or first appears when you’re
+						very young.<br />
 						Everyone with autism is different, that’s what makes it a spectrum.
-						<br />
 						Some people may need little or no support. Other may need extra
-						<br />
 						help to manage certain things such as daily tasks, activities, jobs
-						or
-						<br />
-						relationships.
+						or relationships.
 					</div>
 					<div className="more-info-autism">
 						For more info and a guide about Autism <br />
