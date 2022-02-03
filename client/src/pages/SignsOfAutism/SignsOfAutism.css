@@ -1,3 +1,64 @@
-.signs-of-autism-container{
-    background-color: var(--main-bg-color);
+.layout {
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  margin: 100px 0;
 }
+
+.textGrid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 700px;
+  max-width: 700px;
+  min-width: 350px;
+}
+ .textGrid__inner {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    height: 100%;
+  }
+
+  .textGrid__blockColour {
+    justify-self: center;
+    background-color: green;
+    grid-row: 1/10;
+    grid-column: 4/7;
+    min-width: 200px;
+  }
+
+
+    .textGrid__textContainer {
+    justify-self: center;
+    grid-row: 2/9;
+    grid-column: 4/7;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 50px;
+    @media screen and (max-width: 992px) {
+       grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+      }
+    }
+
+.textGrid__textContainer___module{
+        background: white;
+        border: 1px solid black;
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+        height: 250px;
+        width: 250px;
+}
+.textGrid__textContainer___moduleTitle {
+          font-size: 25px;
+          margin: 0;
+        }
