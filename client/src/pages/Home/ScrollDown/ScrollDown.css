@@ -1,0 +1,27 @@
+.scrolldown-container {
+	height: 100px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	position: absolute;
+	z-index: 10;
+	left: 40%;
+	color: var(--blue-color);
+	border: none;
+	background-color: transparent;
+}
+.scrolldown-text {
+	font-family: "Ambit SemiBold";
+	letter-spacing: 0.45px;
+	font-size: 27px;
+}
+.scrolldown_icon {
+	width: 30px;
+	height: 30px;
+}
+.scrolldown-container:hover,
+.scrolldown-text:hover {
+	font-weight: bolder;
+	font-size: 28px;
+	color: var(--purple-color);
+}
