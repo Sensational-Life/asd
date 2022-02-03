@@ -1,5 +1,5 @@
 import React from "react";
-import "./Member.css";
+import "./MemberSays.css";
 import cardContent from "./cardContent";
 
 export default function Cards() {

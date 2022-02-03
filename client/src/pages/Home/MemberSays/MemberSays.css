@@ -16,7 +16,7 @@
 .member-header {
 	text-align: center;
 	color: white;
-	padding-top: 20px;
+	padding: 20px;
 	font-family: RobotoSlab-Regular;
 	font-size: 48px;
 }
@@ -28,8 +28,13 @@
 	height: fit-content;
 	align-items: stretch;
 	gap: 40px;
-	padding: 5px 5px 50px 5px;
+	padding: 5px 5px 70px 5px;
 }
+.memberSays-button-container {
+	display: flex;
+	justify-content: center;
+}
+
 .card-header {
 	font-family: "Ambit SemiBold";
 	font-size: 24px;
@@ -39,15 +44,16 @@
 	font-size: 20px;
 }
 .register-btn {
-	border: none;
-	font-size: 24px;
-	font-family: "Ambit SemiBold";
-	margin-top: 20px;
-	color: var(--white-color);
-	width: 335px;
-	align-self: center;
-	padding: 10px;
-	background-color: black;
+	font-family: 'Ambit SemiBold';
+	font-size: 20px;
+	background: var(--darkgreen-color);
+	color: #FFF8F3;
+	text-decoration: none;
+	border: 4px solid var(--darkgreen-color);
+	padding: 15px 40px; 
+    cursor: pointer;
+	margin: 40px auto;
+	position: relative;
 }
 .register-btn:hover {
 	background-color: var(--darkgreen-color);
@@ -63,9 +69,12 @@
 	color: var(--white-color);
 	margin-left: 140px;
 }
-.register-btn-container {
-	align-self: center;
-	display: flex;
-	flex-direction: column;
-	gap: 5px;
+.register-btn-tooltip {
+	font-family: 'Ambit SemiBold';
+	font-size: 18px;
+	background-color: var(--darkgreen-color);
+	color: var(--main-bg-color);
+	padding: 10px 30px;
+	margin: 130px 0px 0px 240px;
+    position: absolute;
 }
