@@ -56,6 +56,7 @@ function WhatIsAutism() {
 							url={"https://www.youtube.com/watch?v=0Pp8jcQ97pY"}
 							playing
 							playIcon={<BsPlayCircleFill className="player-button" />}
+							controls={true}
 							light={whatIsAutismVideoImg}
 							width="100%"
 							height="130%"
