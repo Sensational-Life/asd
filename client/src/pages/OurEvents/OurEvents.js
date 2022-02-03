@@ -1,15 +1,13 @@
 import React from "react";
-import imgEvent from "~/assets/images/our_event.jpg";
-// import imgHouse from "~/assets/images/play-house.jpg";
-// import imgXmas from "~/assets/images/xmas.jpg";
-// import imgAspire from "~/assets/images/aspire.jpg";
+import imgEvent from "~/assets/images/events-hero.jpg";
 
 import "./OurEvents.css";
 import Data from "./event.json";
 import { FaAngleRight } from "react-icons/fa";
 
+const images = require.context("../../assets/images", true);
+
 function OurEvents() {
-	console.log(Data);
 	return (
 		<div className="ourevent_container_main">
 			<div className="ourevent_img">
@@ -17,11 +15,10 @@ function OurEvents() {
 			</div>
 			<div className="container_cart">
 				{Data.map((event, i) => {
-					// const imgLink = require(event.img);
 					return (
 						<div key={i} className="ourevent_container">
 							<div className="ourevent_small_img">
-								<img src={event.img} alt="img" />
+								<img src={images(`./${event.img}`).default} alt="img" />
 							</div>
 							<div className="ourevent_title_date">
 								<h3 className="ourevent_title">{event.title}</h3>
