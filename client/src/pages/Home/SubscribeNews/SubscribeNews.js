@@ -1,7 +1,7 @@
 import React from "react";
 import "./SubscribeNews.css";
 import { FaChevronRight } from "react-icons/fa";
-import ImgWomen from "../../../assets/images/woman-using-a-mobile-phone-in-the-kitchen.jpg";
+import ImgWomen from "~/assets/images/woman-using-a-mobile-phone-in-the-kitchen.jpg";
 
 function SubscribeNews() {
 	const alertMess = () => {

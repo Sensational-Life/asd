@@ -8,7 +8,7 @@ import AboutDropdown from "./AboutDropdown";
 import LoginIcon from "./LoginIcon";
 
 import SearchBox from "./SearchBox";
-import logo from "../../images/Logo.jpg";
+import logo from "~/assets/images/Logo.jpg";
 function Navbar() {
   const [isClicked, setIsClicked] = useState(false);
   const [menuResourcesSelected, setMenuResourcesSelected] = useState(false);
