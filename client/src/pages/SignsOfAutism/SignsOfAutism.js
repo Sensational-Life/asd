@@ -6,7 +6,7 @@ import FooterIcon from "../Home/FooterIcon/FooterIcon";
 
 function SignsOfAutism() {
 	return (
-		<div>
+		<div className="signs-of-autism-container">
 			<FooterLogo />
 			<FooterNav />
 			<FooterIcon />
