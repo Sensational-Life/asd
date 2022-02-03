@@ -13,69 +13,70 @@
     --black-shadow-color:#00000029;
     --black-title-color:#0F2420;
     --black-placeholder-color: #00000080;
+    --purple-color:rgb(128, 0, 128);
   }
 
 @font-face {
     font-family: "NexaTextDemo-Light";
-    src: url("./assets/NexaTextDemo-Light.otf") format("opentype");
+    src: url("./assets/fonts/NexaTextDemo-Light.otf") format("opentype");
 }
 
 @font-face {
     font-family: "NexaDemo-Bold";
-    src: url("./assets/NexaDemo-Bold.otf") format("opentype");
+    src: url("./assets/fonts/NexaDemo-Bold.otf") format("opentype");
 }
 
 @font-face {
     font-family: "NexaTextDemo-Light";
-    src: url("./assets/NexaTextDemo-Light.otf") format("opentype");
+    src: url("./assets/fonts/NexaTextDemo-Light.otf") format("opentype");
 }
 
 @font-face {
     font-family: "NexaTextDemo-Bold";
-    src: url("./assets/NexaTextDemo-Bold.otf") format("opentype");
+    src: url("./assets/fonts/NexaTextDemo-Bold.otf") format("opentype");
 }
 
 @font-face {
-    font-family: "RobotoSlab-VariableFont_wght";
-    src: url("./assets/RobotoSlab-VariableFont_wght.ttf") format("opentype");
+    font-family: "RobotoSlab-Variable";
+    src: url("./assets/fonts/RobotoSlab-Variable.ttf") format("opentype");
 }
 
 @font-face {
     font-family: "RobotoSlab-Regular";
-    src: url("./assets/RobotoSlab-Regular.ttf") format("opentype");
-}
-
-@font-face {
-    font-family: "Ambit SemiBold Italic";
-    src: url("./assets/Ambit SemiBold Italic.otf") format("opentype");
+    src: url("./assets/fonts/RobotoSlab-Regular.ttf") format("opentype");
 }
 
 @font-face {
     font-family: "Ambit Light";
-    src: url("./assets/Ambit-Light.ttf") format("opentype");
+    src: url("./assets/fonts/Ambit-Light.ttf") format("opentype");
 }
 
 @font-face {
     font-family: "Ambit Regular";
-    src: url("./assets/Ambit-Regular.ttf") format("opentype");
+    src: url("./assets/fonts/Ambit-Regular.ttf") format("opentype");
 }
 
 @font-face {
     font-family: "Ambit Bold";
-    src: url("./assets/Ambit-Bold.ttf") format("opentype");
+    src: url("./assets/fonts/Ambit-Bold.ttf") format("opentype");
 }
 
 @font-face {
     font-family: "Ambit SemiBold";
-    src: url("./assets/Ambit SemiBold.otf") format("opentype");
+    src: url("./assets/fonts/Ambit-SemiBold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Ambit SemiBold Italic";
+    src: url("./assets/fonts/Ambit-SemiBold-Italic.otf") format("opentype");
 }
 
 @font-face {
     font-family: "DM Sans Regular";
-    src: url("./assets/DMSans-Regular.ttf") format("opentype");
+    src: url("./assets/fonts/DMSans-Regular.ttf") format("opentype");
 }
 
 @font-face {
     font-family: "DM Sans Medium";
-    src: url("./assets/DMSans-Medium.ttf") format("opentype");
+    src: url("./assets/fonts/DMSans-Medium.ttf") format("opentype");
 }

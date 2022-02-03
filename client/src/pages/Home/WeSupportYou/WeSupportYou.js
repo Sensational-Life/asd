@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./WeSupportYou.css";
-import ImgHands from "../../../images/supporting-elderly-woman.jpg";
+import ImgHands from "~/assets/images/supporting-elderly-woman.jpg";
 
 export function WeSupportYou() {
 	const [isShown, setIsShown] = useState(false);

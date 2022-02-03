@@ -33,4 +33,7 @@ module.exports = {
 			template: "./client/src/index.html",
 		}),
 	],
+	resolve: {
+		enforceExtension: false,
+	},
 };

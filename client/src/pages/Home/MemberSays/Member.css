@@ -39,10 +39,10 @@
 	display: flex;
 	flex-direction: column;
 	align-content: center;
-	height: 130vh;
+	height: fit-content;
 	align-items: stretch;
 	gap: 40px;
-	padding: 5px;
+	padding: 5px 5px 50px 5px;
 }
 .card-header {
 	font-family: "Ambit SemiBold";

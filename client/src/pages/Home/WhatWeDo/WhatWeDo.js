@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./WhatWeDo.css";
-import CuteGirl from "../../../assets/images/cute-girl-with-down-syndrome-in-mothers-arms.jpg";
+import CuteGirl from "~/assets/images/cute-girl-with-down-syndrome-in-mothers-arms.jpg";
 
 function WhatWeDo() {
 	const [buttonShow, setButtonShow] = useState(false);

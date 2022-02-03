@@ -6,7 +6,6 @@
 	position: absolute;
 	z-index: 10;
 	left: 40%;
-	/* opacity: 1; */
 	color: var(--blue-color);
 	border: none;
 	background-color: transparent;
@@ -20,9 +19,9 @@
 	width: 30px;
 	height: 30px;
 }
-.scrolldown-container:hover, .scrolldown-text:hover{
-    font-weight: bolder; 
+.scrolldown-container:hover,
+.scrolldown-text:hover {
+	font-weight: bolder;
 	font-size: 28px;
-    color: purple;
-
+	color: var(--purple-color);
 }
