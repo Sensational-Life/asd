@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ResourcesMenuItems } from "../../helpers/ResourcesMenuItems";
+import { ResourcesMenuItems } from "~/helpers/ResourcesMenuItems";
 import "./Dropdown.css";
 import { Link } from "react-router-dom";
 

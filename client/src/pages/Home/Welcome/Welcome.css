@@ -19,7 +19,7 @@
 	font-size: 48px;
 	line-height: 1.5;
 	margin-top: 60px;
-	font-family: 'RobotoSlab-VariableFont_wght';
+    font-family: 'RobotoSlab-Regular';
 }
 .welcome_circle {
 	width: 16px;
@@ -28,14 +28,14 @@
 }
 .welcome_icon_box {
 	margin-right: 10px;
-	background-color: rgb(233, 230, 186);
+	background-color: var(--icon-bg-color);
 	width: 30px;
 	height: 30px;
 	border-radius: 50%;
 }
 .welcome_icon_box1 {
 	margin-right: 10px;
-	background-color: #f4dfdd;
+	background-color: var(--lightorange);
 	width: 30px;
 	height: 30px;
 	border-radius: 50%;
@@ -44,7 +44,7 @@
 	line-height: 3;
 	font-size: 25px;
 	margin-top: 50px;
-	font-family: "NexaDemo-Light";
+	font-family: "NexaTextDemo-Light";
 }
 .welcome_button {
 	background-color: var(--blue-color);
@@ -52,7 +52,7 @@
 	height: 55px;
 	border: none;
 	font-size: 24px;
-	font-family: "Ambit SemiBold";
+	font-family: 'Ambit SemiBold';
 	margin-top: 20px;
 	color: var(--white-color);
 }
@@ -66,7 +66,7 @@
 	height: 40px;
 	border: none;
 	font-size: 18px;
-	font-family: "Ambit SemiBold";
+	font-family: 'Ambit SemiBold';
 	margin-top: 20px;
 	color: var(--white-color);
 	margin-left: 140px;

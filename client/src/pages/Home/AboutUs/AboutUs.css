@@ -1,5 +1,5 @@
 .aboutus_main_container {
-	background-color: var(main-bg-color);
+	background-color: var(--main-bg-color);
 	height: 800px;
 }
 .aboutus_container {
@@ -16,13 +16,13 @@
 .aboutus_header {
 	font-size: 48px;
 	margin-bottom: 30px;
-	font-family: 'RobotoSlab-VariableFont_wght';
+	font-family: 'RobotoSlab-Regular';
 }
 .aboutus_text {
 	font-size: 25px;
 	line-height: 2rem;
 	margin-bottom: 40px;
-	font-family: 'NexaDemo-Light';
+	font-family: "NexaTextDemo-Light";
 }
 .aboutus_button {
 	width: 190px;

@@ -6,6 +6,7 @@ import WhatWeDo from "./WhatWeDo/WhatWeDo";
 import WeSupportYou from "./WeSupportYou/WeSupportYou";
 import MemberSays from "./MemberSays/MemberSays";
 import FooterLogo from "./FooterLogo/FooterLogo";
+import SubscribeNews from "./SubscribeNews/SubscribeNews";
 import FooterNav from "./FooterNav/FooterNav";
 
 export function Home() {
@@ -14,6 +15,7 @@ export function Home() {
 			<Welcome />
 			<AboutUs />
 			<WhatWeDo />
+			<SubscribeNews />
 			<WeSupportYou />
 			<MemberSays />
 			<FooterLogo />

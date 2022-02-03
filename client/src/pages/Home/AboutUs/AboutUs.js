@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./AboutUs.css";
-import AboutUsImg from "../../../assets/images/about-us-concept-2021-08-31-16-59-05-utc.jpg";
+import AboutUsImg from "~/assets/images/about-us-concept.jpg";
 
 function AboutUs() {
 
@@ -22,8 +22,8 @@ function AboutUs() {
 				</div>
 
 				<div className="aboutus_text_container">
-					<div className="aboutus_header">
-						<span>About Us </span>
+					<div >
+						<h2 className="aboutus_header">About Us </h2>
 					</div>
 					<div className="aboutus_text">
 						<span>

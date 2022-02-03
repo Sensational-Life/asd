@@ -3,5 +3,8 @@
 	"presets": [
 		["@babel/preset-env", { "targets": "defaults" }],
 		["@babel/preset-react", { "runtime": "automatic" }]
+	],	
+	"plugins": [
+		["babel-plugin-root-import", { "rootPathPrefix": "~", "rootPathSuffix": "client/src" } ]
 	]
 }
