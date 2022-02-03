@@ -62,12 +62,14 @@ function WhatIsAutism() {
 							height="130%"
 						/>
 					</div>
-					<p>
-						Here is an informative video about Autism
-						<br />
-						Spectrum Disorder by The National Center <br />
-						for Learning Disabilities.
-					</p>
+					<div className="vide-discription">
+						<p>
+							Here is an informative video about Autism
+							<br />
+							Spectrum Disorder by The National Center <br />
+							for Learning Disabilities.
+						</p>
+					</div>
 				</div>
 			</div>
 			<FooterLogo />

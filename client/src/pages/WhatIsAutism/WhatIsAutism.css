@@ -52,8 +52,8 @@
 	height: 60vh;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	margin-top: 90px;
+	justify-content: space-between;
+	margin-top: 100px;
 }
 
 .video-wrapper{
@@ -75,8 +75,7 @@
 	color: var(--blue-color);
 }
 
-.video-container p {
-	margin-top: 75px;
+.vide-discription p {
 	padding-left:15px;
 	text-align: center;
 	font-size: 18px;
