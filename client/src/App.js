@@ -27,7 +27,7 @@ function App() {
 					<Route path="/whatwedo" component={WhatWeDoMore} />
 					{/* routes from nav bar: */}
 					<Route path="/about" component={About} />
-					<Route path="/about/signs-of-autism" component={SignsOfAutism} />
+					<Route path="/signs-of-autism" component={SignsOfAutism} />
 					<Route path="/resources" component={Resources} />
 					<Route path="/contact" component={Contact} />
 					<Route path="/login" component={Login} />
