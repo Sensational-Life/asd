@@ -1,0 +1,49 @@
+.ourevent_container{
+/* width: 100%; */
+}
+.ourevent_img > img{
+ height: 365px;
+ width: 100%;
+
+}
+.ourevent_grid_container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 50px;
+    align-content: space-around;
+    justify-content: center;
+    background-color: yellow;
+    padding-top: 100px;
+}
+.ourevent_grid_1 >img{
+    width: 220px;
+    height: 160px;
+}
+.ourevent_grid_1{
+    width: 220px;
+}
+
+.ourevent_grid_2{
+    width: 220px;
+
+}
+.ourevent_grid_2_title{
+    font-family: "Ambit SemiBold";
+}
+.ourevent_grid_2_text{
+    font-family: "Ambit Regular";  
+    font-size: 16px;
+    text-align: left;
+    letter-spacing: 0.16px;
+}
+.ourevent_grid_3{
+    width: 220px;
+}
+.ourevent_grid_3_text{
+    font-family: "Ambit Light";
+    font-size: 16px;
+    text-align: left;
+    letter-spacing: 0.16px;
+line-height: 25px;
+
+}

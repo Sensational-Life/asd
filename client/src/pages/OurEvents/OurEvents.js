@@ -5,23 +5,23 @@ import imgEvent from "~/assets/images/our_event.jpg";
 // import imgAspire from "~/assets/images/aspire.jpg";
 
 import "./OurEvents.css";
-import Data from "./event.json";
+import  events   from "./event.json";
 import { FaAngleRight } from "react-icons/fa";
 
 function OurEvents() {
-	console.log(Data);
+	console.log(events);
 	return (
 		<div className="ourevent_container_main">
 			<div className="ourevent_img">
 				<img src={imgEvent} alt="Event" />
 			</div>
 			<div className="container_cart">
-				{Data.map((event, i) => {
+				{events.map((event, i) => {
 					// const imgLink = require(event.img);
 					return (
 						<div key={i} className="ourevent_container">
 							<div className="ourevent_small_img">
-								<img src={event.img} alt="img" />
+								<img src={require(event.img).default} alt="img" />
 							</div>
 							<div className="ourevent_title_date">
 								<h3 className="ourevent_title">{event.title}</h3>

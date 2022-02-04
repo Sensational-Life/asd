@@ -13,6 +13,8 @@ import "./App.css";
 import Resources from "./pages/Resources/Resources";
 import Contact from "./pages/Contact/Contact";
 import Login from "./pages/Login/Login";
+import OurEvents from "./pages/OurEvents/OurEvents";
+
 
 function App() {
 	return (
@@ -30,11 +32,14 @@ function App() {
 					<Route path="/resources" component={Resources} />
 					<Route path="/contact" component={Contact} />
 					<Route path="/login" component={Login} />
+					<Route path="/events" component={OurEvents} />
+
 					{/* Footer links: */}
 					<Route path="/about" component={AboutUs} />
 					<Route path="/termsConditions" component={TermsConditions} />
 					<Route path="/privacyPolicy" component={PrivacyPolicy} />
 				</Switch>
+				
 			</Router>
 		</>
 	);
