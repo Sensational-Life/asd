@@ -2,7 +2,7 @@ import React,{ useState }  from "react";
 import { Link } from "react-router-dom";
 import "./Welcome.css";
 import { FaCheck } from "react-icons/fa";
-import GirlImg from "../../../assets/images/autistic-little-girl-close-up.jpg";
+import GirlImg from "~/assets/images/autistic-little-girl-close-up.jpg";
 
 function Welcome() {
   const [buttonShow, setButtonShow ] =useState(false);

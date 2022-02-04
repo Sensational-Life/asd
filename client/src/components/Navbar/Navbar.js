@@ -8,38 +8,35 @@ import AboutDropdown from "./AboutDropdown";
 import LoginIcon from "./LoginIcon";
 
 import SearchBox from "./SearchBox";
-import logo from "../../images/Logo.jpg";
+import logo from "~/assets/images/Logo.jpg";
 function Navbar() {
-  const [isClicked, setIsClicked] = useState(false);
-  const [menuResourcesSelected, setMenuResourcesSelected] = useState(false);
-  const [menuAboutSelected, setMenuAboutSelected] = useState(false);
+	const [isClicked, setIsClicked] = useState(false);
+	const [menuResourcesSelected, setMenuResourcesSelected] = useState(false);
+	const [menuAboutSelected, setMenuAboutSelected] = useState(false);
 
-  const handleClick = () => setIsClicked(!isClicked);
-  const closeMobileMenu = () => setIsClicked(false);
+	const handleClick = () => setIsClicked(!isClicked);
+	const closeMobileMenu = () => setIsClicked(false);
 
-  const onMouseEnterResourcesMenu = () => {
-	setMenuResourcesSelected(true);
-  };
+	const onMouseEnterResourcesMenu = () => {
+		setMenuResourcesSelected(true);
+	};
 
-  const onMouseLeaveResourcesMenu = () => {
-	setMenuResourcesSelected(false);
-  };
-  const onMouseEnterAboutMenu = () => {
-	setMenuAboutSelected(true);
-  };
+	const onMouseLeaveResourcesMenu = () => {
+		setMenuResourcesSelected(false);
+	};
+	const onMouseEnterAboutMenu = () => {
+		setMenuAboutSelected(true);
+	};
 
-  const onMouseLeaveAboutMenu = () => {
-	  setMenuAboutSelected(false);
-  };
+	const onMouseLeaveAboutMenu = () => {
+		setMenuAboutSelected(false);
+	};
 
-  return (
+	return (
 		<>
 			<nav className="navbar">
 				<NavLink to="/" className="navbar-logo" onClick={closeMobileMenu}>
-					<img
-						src={logo}
-						alt="sensational life logo"
-					></img>
+					<img src={logo} alt="sensational life logo"></img>
 				</NavLink>
 				<div className="menu-icon" onClick={handleClick}>
 					<i className={isClicked ? "fas fa-times" : "fas fa-bars"} />
@@ -47,7 +44,8 @@ function Navbar() {
 				<ul className={isClicked ? "nav-menu active" : "nav-menu"}>
 					<li className="nav-item">
 						<NavLink
-							exact to="/"
+							exact
+							to="/"
 							className="nav-links"
 							activeClassName="active-nav-links"
 							onClick={closeMobileMenu}

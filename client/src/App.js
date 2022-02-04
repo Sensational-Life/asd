@@ -14,6 +14,8 @@ import Resources from "./pages/Resources/Resources";
 import Contact from "./pages/Contact/Contact";
 import Login from "./pages/Login/Login";
 import ResetPassword from "./pages/ResetPassword/ResstPassword";
+import AdditionalSupport from "./pages/AdditionalSupport/AdditionalSupport";
+
 
 function App() {
 	return (
@@ -27,7 +29,11 @@ function App() {
 					<Route path="/about-us-more" component={AboutUsMore} />
 					<Route path="/whatwedo" component={WhatWeDoMore} />
 					{/* routes from nav bar: */}
-					<Route path="/about" component={About} />
+					<Route exact path="/about" component={About} />
+					<Route
+						path="/about/additional-support"
+						component={AdditionalSupport}
+					/>
 					<Route path="/resources" component={Resources} />
 					<Route path="/contact" component={Contact} />
 					<Route path="/login" component={Login} />
