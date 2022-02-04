@@ -7,7 +7,7 @@ export const configuredHelmet = () =>
 			directives: {
 				defaultSrc: ["'self'"],
 				objectSrc: ["'none'"],
-				scriptSrc: ["'self'", "unpkg.com", "*.youtube.com", "polyfill.io"],
+				scriptSrc: ["'self'", "unpkg.com", "polyfill.io", "*.youtube.com"],
 				styleSrc: ["'self'", "https: 'unsafe-inline'"],
 				frameSrc: ["'self'", "*.youtube.com"],
 				upgradeInsecureRequests: [],
@@ -26,8 +26,8 @@ export const permissionsPolicy = () => (req, res, next) => {
 	res.setHeader(
 		"Permissions-Policy",
 		"interest-cohort=()"
-	  );
-	  next();
+	);
+	next();
 };
 
 export const logErrors = () => (err, _, res, next) => {

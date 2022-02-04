@@ -37,7 +37,7 @@ function App() {
 					 */}
 					<Route path="/register" component={Register} />
 
-					<Route path="/about-us-more" component={AboutUsPage} />			
+					<Route path="/about-us-more" component={AboutUsPage} />
 					<Route path="/what-we-do" component={WhatWeDoPage} />
 
 					{/**
