@@ -65,3 +65,8 @@
 	font-family: "Ambit Light";
 	font-size: 20px;
 }
+@media screen and (max-width: 1500px) {
+	.about-us-content {
+		height: 120vh;
+	}
+}
