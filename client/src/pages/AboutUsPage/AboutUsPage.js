@@ -18,6 +18,9 @@ function AboutUsPage() {
 										alt="a mother kissing daughters forehead"
 									/>
 								</div>
+								<div className="about-us-name-tag">
+									<span>Kelly-Anne Smith</span>
+								</div>
 							</div>
 						</div>
 					</section>
@@ -44,10 +47,10 @@ function AboutUsPage() {
 							off work with depression. After receiving professional help and
 							support. I returned to teaching but couldn’t get past the lack of
 							support available for families similar to mine so I decided to
-							make some changes! Fast forward, in 2015 I left my teaching
-							position and set up what is now ‘SENsational Life’, with a view to
-							reaching out and supporting other parents of autistic children.
-							And here I am Today!
+							make some changes! <br></br> Fast forward, in 2015 I left my
+							teaching position and set up what is now ‘SENsational Life’, with
+							a view to reaching out and supporting other parents of autistic
+							children. <br></br>And here I am Today!
 						</p>
 					</section>
 				</section>
