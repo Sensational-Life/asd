@@ -1,0 +1,67 @@
+.about-us-main-container {
+	background-color: #fff8f3;
+}
+.about-us-hero-image img {
+	width: 220px;
+	height: 315px;
+	position: absolute;
+	top: 19px;
+	left: -40px;
+}
+.about-us-img-container-colour-blob {
+	background-color: var(--green-bg-color);
+	height: 360px;
+	width: 220px;
+	border-radius: 130px;
+	bottom: 125px;
+	left: 21px;
+	position: relative;
+}
+.about-us-name-tag {
+	font-family: "RobotoSlab-Regular";
+	font-size: 25px;
+	position: relative;
+	top: 375px;
+}
+
+.about-us-content {
+	display: flex;
+	flex-direction: row;
+	height: 80vh;
+	justify-content: center;
+	align-items: center;
+	column-gap: 90px;
+}
+
+.about-us-content-middle-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 312px;
+	height: 50vh;
+	padding: 0 0 30px 0;
+	font-family: "Ambit Light";
+	font-size: 20px;
+	text-align: left;
+	row-gap: 8px;
+}
+.about-us-content-middle-container > p {
+	width: 305px;
+}
+.about-us-content-middle-container > h1 {
+	width: 315px;
+	font-size: 38px;
+	font-family: "RobotoSlab-Regular";
+	font-weight: lighter;
+	letter-spacing: 1px;
+}
+.about-us-content-middle-container > span {
+	font-size: 25px;
+	font-style: italic;
+	padding: 0 0 30px 0;
+}
+.about-us-content-right-container {
+	width: 292px;
+	font-family: "Ambit Light";
+	font-size: 20px;
+}
