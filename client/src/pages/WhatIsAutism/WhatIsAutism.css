@@ -35,6 +35,10 @@
 	align-items:flex-start;
 }
 
+.what-is-autism-section .description-container p {
+	margin-top: 1.5rem;
+}
+
 a.what-is-autism-link {
 	text-decoration: none;
 	color: var(--blue-color);
@@ -49,11 +53,12 @@ a.what-is-autism-link:hover{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	margin: 1.8rem 0 2rem 30px;
+	margin: 1.5rem 0 2rem 30px;
 }
 
 .what-is-autism-section .video-wrapper {
 	min-height: 300px;
+	margin-top: 1.5rem;
 }
 
 .what-is-autism-section .player-button{
