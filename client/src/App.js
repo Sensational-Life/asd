@@ -4,9 +4,6 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 // Home:
 import Home from "./pages/Home/Home";
-import AboutUs from "./pages/Home/AboutUs/AboutUs";
-import TermsConditions from "./pages/Terms&Condition/TermsConditions";
-import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
 
 import About from "./pages/About/About";
 import AboutUsMore from "./pages/AboutUSMore/AboutUsMore";
@@ -19,7 +16,7 @@ import Contact from "./pages/Contact/Contact";
 // Registration:
 import Register from "./pages/RegisterPage/Register";
 import Login from "./pages/Login/Login";
-import AdditionalSupport from "./pages/AdditionalSupport/AdditionalSupport";
+
 import WhatWeDoPage from "~/pages/WhatWeDoPage/WhatWeDoPage";
 // Footer links:
 import TermsConditions from "./pages/Terms&Condition/TermsConditions";
