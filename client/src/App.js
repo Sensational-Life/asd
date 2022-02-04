@@ -7,7 +7,7 @@ import Home from "./pages/Home/Home";
 import WhatWeDoMore from "./pages/WhatWeDoMore/WhatWeDoMore";
 // About:
 import About from "./pages/About/About";
-import AboutUsMore from "./pages/AboutUSMore/AboutUsMore";
+import AboutUsMore from "./pages/AboutUsPage/AboutUsPage";
 import WhatIsAutism from "./pages/WhatIsAutism/WhatIsAutism";
 import AdditionalSupport from "./pages/AdditionalSupport/AdditionalSupport";
 // Resources:
