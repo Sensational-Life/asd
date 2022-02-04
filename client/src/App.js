@@ -4,8 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 // Home:
 import Home from "./pages/Home/Home";
-import WhatWeDoMore from "./pages/WhatWeDoMore/WhatWeDoMore";
-// About:
+
 import About from "./pages/About/About";
 import AboutUsMore from "./pages/AboutUSMore/AboutUsMore";
 import WhatIsAutism from "./pages/WhatIsAutism/WhatIsAutism";
@@ -20,13 +19,13 @@ import Login from "./pages/Login/Login";
 
 import ResetPassword from "./pages/ResetPassword/ResstPassword";
 
+import WhatWeDoPage from "~/pages/WhatWeDoPage/WhatWeDoPage";
+
 // Footer links:
 import TermsConditions from "./pages/Terms&Condition/TermsConditions";
 import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
 // Styling:
 import "./App.css";
-
-
 
 
 function App() {
@@ -35,7 +34,6 @@ function App() {
 			<Router>
 				<Navbar />
 				<Switch>
-
 					<Route path="/" exact component={Home} />
 
 					{/**
@@ -43,13 +41,16 @@ function App() {
 					 */}
 					<Route path="/register" component={Register} />
 					<Route path="/about-us-more" component={AboutUsMore} />
-					<Route path="/whatwedo" component={WhatWeDoMore} />
+					<Route path="/what-we-do" component={WhatWeDoPage} />
 
 					{/**
 					 * routes from nav bar:
 					 */}
 					<Route exact path="/about" component={About} />
-					<Route path="/about/additional-support" component={AdditionalSupport} />
+					<Route
+						path="/about/additional-support"
+						component={AdditionalSupport}
+					/>
 					<Route path="/about/what-is-autism" component={WhatIsAutism} />
 					<Route path="/resources" component={Resources} />
 					<Route path="/contact" component={Contact} />
@@ -59,9 +60,9 @@ function App() {
 					{/* Footer links: */}
 					<Route path="/about" component={AboutUs} />
 
+
 					<Route path="/termsConditions" component={TermsConditions} />
 					<Route path="/privacyPolicy" component={PrivacyPolicy} />
-
 				</Switch>
 			</Router>
 		</>
