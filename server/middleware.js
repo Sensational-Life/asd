@@ -7,8 +7,10 @@ export const configuredHelmet = () =>
 			directives: {
 				defaultSrc: ["'self'"],
 				objectSrc: ["'none'"],
-				scriptSrc: ["'self'", "unpkg.com", "polyfill.io"],
+				scriptSrc: ["'self'", "unpkg.com", "polyfill.io", "*.youtube.com"],
 				styleSrc: ["'self'", "https: 'unsafe-inline'"],
+				frameSrc: ["'self'", "*.youtube.com"],
+				fontSrc: ["'self'", "fonts.google.com"],
 				upgradeInsecureRequests: [],
 			},
 		},
@@ -18,6 +20,14 @@ export const httpsOnly = () => (req, res, next) => {
 	if (!req.secure) {
 		return res.redirect(301, `https://${req.headers.host}${req.originalUrl}`);
 	}
+	next();
+};
+
+export const permissionsPolicy = () => (req, res, next) => {
+	res.setHeader(
+		"Permissions-Policy",
+		"interest-cohort=()"
+	);
 	next();
 };
 
