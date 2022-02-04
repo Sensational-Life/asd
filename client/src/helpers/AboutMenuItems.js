@@ -1,12 +1,12 @@
 export const AboutMenuItems = [
 	{
 		title: "What Is Autism",
-		path: "/what-is-autism",
+		path: "/about/what-is-autism",
 		cName: "dropdown-link",
 	},
 	{
 		title: "Signs of Autism",
-		path: "/signs-of-autism",
+		path: "/about/signs-of-autism",
 		cName: "dropdown-link",
 	},
 	{
@@ -16,7 +16,7 @@ export const AboutMenuItems = [
 	},
 	{
 		title: "Our Events",
-		path: "/events",
+		path: "/about/events",
 		cName: "dropdown-link",
 	},
 ];
