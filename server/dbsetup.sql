@@ -2,7 +2,7 @@
 create extension if not exists "uuid-ossp";
 
 -- drop existing tables:
-drop table if exists public.users;
+drop table if exists public.users cascade;
 drop table if exists public.patients;
 
 CREATE TABLE public.users (
