@@ -19,13 +19,14 @@ import Login from "./pages/Login/Login";
 
 import ResetPassword from "./pages/ResetPassword/ResstPassword";
 
-import WhatWeDoPage from "~/pages/WhatWeDoPage/WhatWeDoPage";
+
 
 // Footer links:
 import TermsConditions from "./pages/Terms&Condition/TermsConditions";
 import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
 // Styling:
 import "./App.css";
+import WhatWeDoPage from "./pages/WhatWeDoPage/WhatWeDoPage";
 
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
 					<Route path="/register" component={Register} />
 					<Route path="/about-us-more" component={AboutUsMore} />
 					<Route path="/what-we-do" component={WhatWeDoPage} />
+					{/* <Route path="/what-we-do" component={WhatWeDoPage} /> */}
 
 					{/**
 					 * routes from nav bar:
@@ -55,12 +57,9 @@ function App() {
 					<Route path="/resources" component={Resources} />
 					<Route path="/contact" component={Contact} />
 					<Route path="/login" component={Login} />
-
 					<Route path="/ResetPassword" component={ResetPassword} />
 					{/* Footer links: */}
-					<Route path="/about" component={AboutUs} />
-
-
+					<Route path="/about" component={About} />
 					<Route path="/termsConditions" component={TermsConditions} />
 					<Route path="/privacyPolicy" component={PrivacyPolicy} />
 				</Switch>
