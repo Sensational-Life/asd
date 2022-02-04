@@ -11,7 +11,7 @@ function MemberSays() {
 			<h1 className="member-header">What Our Beloved Members Say</h1>
 			<Cards />
 
-			<button className="register-btn"><span><Link to='Register'>Click here to Register</Link></span></button>
+			{/* <button className="register-btn"><span><Link to='Register'>Click here to Register</Link></span></button> */}
 			<div className="memberSays-button-container">
 				<Link to="/register">
 					<button
