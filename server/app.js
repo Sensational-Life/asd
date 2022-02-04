@@ -4,6 +4,7 @@ import path from "path";
 
 import router from "./api";
 import {
+	permissionsPolicy,
 	configuredHelmet,
 	httpsOnly,
 	logErrors,
@@ -16,6 +17,7 @@ const staticDir = path.join(__dirname, "static");
 const app = express();
 
 app.use(express.json());
+app.use(permissionsPolicy());
 app.use(configuredHelmet());
 app.use(morgan("dev"));
 
