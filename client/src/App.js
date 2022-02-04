@@ -39,7 +39,7 @@ function App() {
 					<Route path="/termsConditions" component={TermsConditions} />
 					<Route path="/privacyPolicy" component={PrivacyPolicy} />
 				</Switch>
-				
+
 			</Router>
 		</>
 	);
