@@ -5,7 +5,7 @@ import path from "path";
 import router from "./api";
 import {
 	permissionsPolicy,
-	configuredHelmet,
+	// configuredHelmet, // helmet makes life more complicated
 	httpsOnly,
 	logErrors,
 	pushStateRouting,
