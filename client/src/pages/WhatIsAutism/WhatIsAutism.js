@@ -21,13 +21,13 @@ function WhatIsAutism() {
 					<div className="discription">
 						Autism or Autism Spectrum Disorder is not an illness or a disease.
 						Autism is not a medical condition with treatments or a “cure”. It
-						means your brain works in a different way from other people.
-						It’s something you’re born with or first appears when you’re
-						very young.<br />
+						means your brain works in a different way from other people. It’s
+						something you’re born with or first appears when you’re very young.
+						<br />
 						Everyone with autism is different, that’s what makes it a spectrum.
-						Some people may need little or no support. Other may need extra
-						help to manage certain things such as daily tasks, activities, jobs
-						or relationships.
+						Some people may need little or no support. Other may need extra help
+						to manage certain things such as daily tasks, activities, jobs or
+						relationships.
 					</div>
 					<div className="more-info-autism">
 						For more info and a guide about Autism <br />
@@ -42,17 +42,19 @@ function WhatIsAutism() {
 					</div>
 				</div>
 				<div className="video-container">
-					<div className="video-wrapper">
-						<ReactPlayer
-							className="player"
-							url={"https://www.youtube.com/watch?v=0Pp8jcQ97pY"}
-							playing
-							playIcon={<BsPlayCircleFill className="player-button" />}
-							controls={true}
-							light={whatIsAutismVideoImg}
-							width="100%"
-							height="130%"
-						/>
+					<div>
+						<div className="video-wrapper">
+							<ReactPlayer
+								className="player"
+								url={"https://www.youtube.com/watch?v=0Pp8jcQ97pY"}
+								playing
+								playIcon={<BsPlayCircleFill className="player-button" />}
+								controls={true}
+								light={whatIsAutismVideoImg}
+								width="100%"
+								height="130%"
+							/>
+						</div>
 					</div>
 					<div className="vide-discription">
 						<p>
