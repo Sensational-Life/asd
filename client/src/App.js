@@ -20,7 +20,6 @@ import Login from "./pages/Login/Login";
 
 import ResetPassword from "./pages/ResetPassword/ResstPassword";
 
-=======
 // Footer links:
 import TermsConditions from "./pages/Terms&Condition/TermsConditions";
 import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
