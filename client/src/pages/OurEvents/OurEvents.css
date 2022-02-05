@@ -19,6 +19,11 @@
 	flex-direction: column;
 	margin-right: 50px;
 }
+
+.ourevent_container * {
+	margin: 0.5rem 0;
+ }
+ 
 .ourevent_small_img > img {
 	height: 160px;
 	width: 220px;
