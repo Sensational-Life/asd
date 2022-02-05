@@ -27,6 +27,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
 // Styling:
 import "./App.css";
 import WhatWeDoPage from "./pages/WhatWeDoPage/WhatWeDoPage";
+import AboutUs from "./pages/Home/AboutUs/AboutUs";
 
 
 function App() {
@@ -59,7 +60,7 @@ function App() {
 					<Route path="/login" component={Login} />
 					<Route path="/ResetPassword" component={ResetPassword} />
 					{/* Footer links: */}
-					<Route path="/about" component={About} />
+					<Route path="/about" component={AboutUs} />
 					<Route path="/termsConditions" component={TermsConditions} />
 					<Route path="/privacyPolicy" component={PrivacyPolicy} />
 				</Switch>
