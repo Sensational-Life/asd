@@ -9,6 +9,7 @@ export default function Cards() {
 				<div className="textGrid__inner">
 					{/* <!--       Green background --> */}
 					<div className="textGrid__blockColour"></div>
+					<h1 className="header">Signs of Autism</h1>
 					{/* <!--       container for cards --> */}
 					<div className="textGrid__textContainer">
 						{/* <!--           card1 -->     */}
