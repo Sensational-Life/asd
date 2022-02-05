@@ -5,6 +5,7 @@ import path from "path";
 import router from "./api";
 import {
 	configuredHelmet,
+	permissionsPolicy,
 	httpsOnly,
 	logErrors,
 	pushStateRouting,
@@ -17,6 +18,7 @@ const app = express();
 
 app.use(express.json());
 app.use(configuredHelmet());
+app.use(permissionsPolicy());
 app.use(morgan("dev"));
 
 if (app.get("env") === "production") {
