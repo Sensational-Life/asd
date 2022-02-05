@@ -2,6 +2,7 @@ import helmet from "helmet";
 import path from "path";
 
 export const configuredHelmet = () =>
+	// more here: https://helmetjs.github.io/ and here: https://csplite.com/csp222/
 	helmet({
 		contentSecurityPolicy: {
 			directives: {
@@ -9,8 +10,7 @@ export const configuredHelmet = () =>
 				objectSrc: ["'none'"],
 				scriptSrc: ["'self'", "unpkg.com", "polyfill.io", "*.youtube.com"],
 				styleSrc: ["'self'", "https: 'unsafe-inline'"],
-				frameSrc: ["'self'", "*.youtube.com"],
-				fontSrc: ["'self'", "fonts.google.com"],
+				fontSrc: ["'self'", "https://*"],
 				upgradeInsecureRequests: [],
 			},
 		},
