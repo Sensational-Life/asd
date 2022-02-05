@@ -11,6 +11,7 @@ import WhatIsAutism from "./pages/WhatIsAutism/WhatIsAutism";
 import AdditionalSupport from "./pages/AdditionalSupport/AdditionalSupport";
 // Resources:
 import Resources from "./pages/Resources/Resources";
+import TimetableNotRegistered from "~/pages/Timetables/TimetableNotRegistered";
 // Contacts:
 import Contact from "./pages/Contact/Contact";
 // Registration:
@@ -49,7 +50,11 @@ function App() {
 						component={AdditionalSupport}
 					/>
 					<Route path="/about/what-is-autism" component={WhatIsAutism} />
-					<Route path="/resources" component={Resources} />
+					<Route exact path="/resources" component={Resources} />
+					<Route
+						path="/resources/timetables"
+						component={TimetableNotRegistered}
+					/>
 					<Route path="/contact" component={Contact} />
 					<Route path="/login" component={Login} />
 
