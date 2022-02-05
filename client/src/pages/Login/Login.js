@@ -8,14 +8,12 @@ function Login() {
 	const [buttonShow, setButtonShow ] =useState(false);
 return <div className='Login-container'>
 	        <div className='Login-form-div'>
-
 	               <h6 className='p-Login'>Sign In </h6>
 		           <p className="to-conutinue-text"> To continue </p>
-
 	             {/* form */}
 	            <form className='Login-form'>
 	                {/*Email  */}
-	                 <input
+	                 <input 
 	                    className='input-form'
                         required
 	                    id="email"
@@ -33,14 +31,11 @@ return <div className='Login-container'>
 	                    name="Password"
 	                      />
 		         {/* Sign in-Button */}
-						
 						<button className="Login_button"
 						onMouseEnter={() => setButtonShow(true)}
 						onMouseLeave={() => setButtonShow(false)}
 						> Sign In</button>
-		
 					{buttonShow && <button className="Login_button_hover">Sign In</button>}
-
                         {/* CheckBox  remember me and Forogt password */}
 					<div className="login-remember-me">
                         <input type="checkbox" 
@@ -51,7 +46,6 @@ return <div className='Login-container'>
 						 <span className="Login-Forogt-password"> Forgot <Link  
 						   className="Login-forgotPassword-link"
 						 to="/ResetPassword">Password</Link></span>
-
 		            </div>
 	            </form>
                  {/* link to Sign up if you have an account */}
@@ -59,12 +53,10 @@ return <div className='Login-container'>
 		            <p> Don't have an account? <span><Link  className='login-link-sgining' to={"/Register"}> Sign Up</Link></span></p>
 		        </div>
 	        </div>
-
            {/* img/side/sectio */}
              <div className='Login-img-div'>
                <img className="Login_img" src={Loginimg} alt="register-form" />
             </div>
-
         </div>;
 }
 
