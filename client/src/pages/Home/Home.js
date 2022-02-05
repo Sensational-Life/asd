@@ -15,10 +15,10 @@ export function Home() {
 			<Welcome />
 			<AboutUs />
 			<WhatWeDo />
-			<SubscribeNews />
 			<WeSupportYou />
 			<MemberSays />
 			<FooterLogo />
+			<SubscribeNews />
 			<FooterNav />
 			<FooterIcon />
 		</main>
