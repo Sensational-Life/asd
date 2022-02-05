@@ -1,0 +1,99 @@
+.timetables-main-container {
+	background-color: var(--main-bg-color);
+}
+.timetables-content-container {
+	display: flex;
+	flex-direction: row;
+	/* flex-wrap: wrap; */
+	justify-content: space-around;
+	align-items: center;
+	column-gap: 11rem;
+
+}
+
+/* hello */
+.timestables-text-container {
+	display: flex;
+	flex-direction: column;
+	height: 16rem;
+	justify-content: center;
+	row-gap: 20px;
+}
+.timestables-text-container p:nth-child(1) {
+	width: 26.0625rem;
+	height: 98px;
+	font-family: "Ambit Light";
+	letter-spacing: 0.2px;
+	line-height: 21px;
+	font-size: 20px;
+	
+}
+.timestables-text-container p:nth-child(2) {
+	font-weight: bold;
+}
+.timestables-text-container p:nth-child(2) a {
+	font-family: "Ambit Regular";
+	text-decoration: none;
+
+}
+
+
+.timestables-text-container > p:nth-child(2) {
+	width: 410px;
+	font-family: "Ambit Light";
+	font-size: 20px;
+	line-height: 21px;
+}
+.timestables-text-container > p:nth-child(2) a {
+	color: var(--blue-color);
+}
+
+/* above keep */
+
+.register-button {
+	background-color: var(--blue-color);
+	width: 277px;
+	height: 55px;
+	border: none;
+	font-size: 24px;
+	font-family: "Ambit SemiBold";
+
+	color: var(--white-color);
+}
+.register-button:hover {
+	background-color: var(--darkgreen-color);
+	cursor: pointer;
+}
+/* second button */
+.register-button_hover {
+	background-color: var(--blue-color);
+	width: 200px;
+	height: 40px;
+	border: none;
+	font-size: 18px;
+	font-family: "Ambit SemiBold";
+	margin-top: 20px;
+	color: var(--white-color);
+	margin-left: 140px;
+}
+.timetables-img-container {
+	margin-top: 2%;
+	width: 30rem;
+}
+.timetables-img-color-blob {
+	background-color: var(--green-bg-color);
+	height: 340px;
+	width: 590px;
+	border-radius: 5%;
+	position: relative;
+	right: 200px;
+	top: 100px
+}
+.timetables-img-container img {
+	height: 390px;
+    width: 590px;
+	border-radius: 5%;
+	position: absolute;
+	left: 50px;
+	top: -115px;
+}
