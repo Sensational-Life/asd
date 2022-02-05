@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home/Home";
 
 import About from "./pages/About/About";
-import AboutUsMore from "./pages/AboutUSMore/AboutUsMore";
+
 import WhatIsAutism from "./pages/WhatIsAutism/WhatIsAutism";
 import AdditionalSupport from "./pages/AdditionalSupport/AdditionalSupport";
 // Resources:
@@ -36,7 +36,7 @@ function App() {
 					 * routes from home page:
 					 */}
 					<Route path="/register" component={Register} />
-					<Route path="/about-us-more" component={AboutUsMore} />
+
 					<Route path="/what-we-do" component={WhatWeDoPage} />
 
 					{/**
