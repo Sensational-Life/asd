@@ -5,7 +5,7 @@ const dbUrl = process.env.DATABASE_URL || "postgres://localhost:5432/asd";
 const pool = new Pool({
 	connectionString: dbUrl,
 	connectionTimeoutMillis: 5000,
-	ssl: dbUrl.includes("localhost") ? false : { rejectUnauthorized: false },
+	ssl: /localhost|192.168./ig.test(dbUrl) ? false : { rejectUnauthorized: false },
 });
 
 /**
@@ -16,7 +16,7 @@ const pool = new Pool({
  * 1. log in to psql and connect to the asd db, the run below script:
  *
  * create user "Username" with login;
- * --- Username must be your name use use to loging to your computer
+ * --- Username must be your name used to loging to your computer
  *
  * 2. edit connection policy to your Postgres db server to trust for
  * all connections localhost. this needs to be set in <path to pgsql server>\data\pg_hba.conf:
@@ -40,4 +40,5 @@ export const connectDb = async () => {
 };
 
 export const disconnectDb = () => pool.close();
-export default { query: pool.query.bind(pool) };
+
+export default { query: pool.query.bind(pool), connect: connectDb, disconnect: disconnectDb };

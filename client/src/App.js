@@ -7,6 +7,10 @@ import Home from "./pages/Home/Home";
 
 import About from "./pages/About/About";
 
+
+
+import AboutUsPage from "./pages/AboutUsPage/AboutUsPage";
+
 import WhatIsAutism from "./pages/WhatIsAutism/WhatIsAutism";
 import AdditionalSupport from "./pages/AdditionalSupport/AdditionalSupport";
 // Resources:
@@ -36,6 +40,8 @@ function App() {
 					 * routes from home page:
 					 */}
 					<Route path="/register" component={Register} />
+
+					<Route path="/about-us-more" component={AboutUsPage} />
 
 					<Route path="/what-we-do" component={WhatWeDoPage} />
 
