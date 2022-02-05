@@ -1,3 +1,7 @@
+*{
+    padding: 0;
+    margin:0;
+}
 :root {
     --main-bg-color:#FFF8F3;
     --green-bg-color:#A4E4DB;
@@ -13,6 +17,7 @@
     --black-shadow-color:#00000029;
     --black-title-color:#0F2420;
     --black-placeholder-color: #00000080;
+    --purple-color:rgb(128, 0, 128);
   }
 
 @font-face {

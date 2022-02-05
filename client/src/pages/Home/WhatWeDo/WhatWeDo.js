@@ -22,7 +22,7 @@ function WhatWeDo() {
 						</span>
 					</div>
 					<Link
-						to="/whatwedo"
+						to="/what-we-do"
 						onMouseEnter={() => setButtonShow(true)}
 						onMouseLeave={() => setButtonShow(false)}
 					>
