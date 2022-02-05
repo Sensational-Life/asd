@@ -5,7 +5,7 @@ import "./LoginIcon.css";
 function LoginIcon() {
 	return (
 		<NavLink
-			to="/login"
+			to="/signin"
 			className="login-icon"
 			activeClassName="active-nav-links"
 		>
