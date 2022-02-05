@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 // Home:
 import Home from "./pages/Home/Home";
-
+import AboutUs from "./pages/Home/AboutUs/AboutUs";
 import About from "./pages/About/About";
 import AboutUsPage from "./pages/AboutUsPage/AboutUsPage";
 import WhatIsAutism from "./pages/WhatIsAutism/WhatIsAutism";
@@ -16,6 +16,8 @@ import Contact from "./pages/Contact/Contact";
 // Registration:
 import Register from "./pages/RegisterPage/Register";
 import Login from "./pages/Login/Login";
+import OurEvents from "./pages/OurEvents/OurEvents";
+
 
 import WhatWeDoPage from "~/pages/WhatWeDoPage/WhatWeDoPage";
 // Footer links:
@@ -52,6 +54,10 @@ function App() {
 					<Route path="/resources" component={Resources} />
 					<Route path="/contact" component={Contact} />
 					<Route path="/login" component={Login} />
+					<Route path="/about/events" component={OurEvents} />
+
+					{/* Footer links: */}
+					<Route path="/about-us-more" component={AboutUs} />
 
 					{/**
 					 * Footer links:
@@ -59,6 +65,7 @@ function App() {
 					<Route path="/termsConditions" component={TermsConditions} />
 					<Route path="/privacyPolicy" component={PrivacyPolicy} />
 				</Switch>
+
 			</Router>
 		</>
 	);

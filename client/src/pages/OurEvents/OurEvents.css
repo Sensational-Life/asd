@@ -1,0 +1,61 @@
+.ourevent_container_main {
+	height: 365px;
+	background-color: var(--main-bg-color);
+}
+.ourevent_img > img {
+	height: 365px;
+	width: 100%;
+}
+.ourevent_container_cart {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin-top: 100px;
+	align-items: stretch;    
+}
+.ourevent_container {
+	display: flex;
+	flex-direction: column;
+	margin-right: 50px;
+}
+.ourevent_small_img > img {
+	height: 160px;
+	width: 220px;
+}
+.ourevent_title_date {
+	width: 220px;
+}
+.ourevent_title {
+	font-family: "Ambit SemiBold";
+	font-size: 16px;
+	letter-spacing: 0.18px;
+}
+.ourevent_date {
+	font-family: "Ambit Regular";
+	letter-spacing: 0.16px;
+	font-size: 16px;
+}
+.ourevent_long_text {
+	width: 220px;
+	font-family: "Ambit Light";
+	line-height: 25px;
+	font-size: 16px;
+	letter-spacing: 0.16px;
+}
+.ourevent_arrow_cont{
+    position: relative;  
+    margin-right: 35px !important;
+    height: 160px;
+    width: 80px;
+}
+.ourevent_arrow {
+	width: 30px;
+	height: 44px;
+	color: var(--blue-color);
+	margin-top: 55px;
+ }
+.ourevent_arrow:hover {  
+    width: 40px;
+	height: 60px;  
+}
