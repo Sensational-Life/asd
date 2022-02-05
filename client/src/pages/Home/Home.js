@@ -17,8 +17,8 @@ export function Home() {
 			<WhatWeDo />
 			<WeSupportYou />
 			<MemberSays />
-			<FooterLogo />
 			<SubscribeNews />
+			<FooterLogo />
 			<FooterNav />
 			<FooterIcon />
 		</main>
