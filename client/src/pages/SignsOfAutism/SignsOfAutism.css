@@ -28,7 +28,7 @@
 	position: relative;
 	display: grid;
 	grid-template-columns: repeat(9, 1fr);
-	grid-template-rows: repeat(10, 1fr);
+	grid-template-rows: repeat(9, 1fr);
 	height: 100%;
 }
 
@@ -47,7 +47,7 @@
 	flex-direction: column;
 	justify-content: start;
 	align-items: center;
-	margin-top: 1.5rem;
+	margin-top: 3rem;
 	width: 737px;
 	height: 1420px;
 }
