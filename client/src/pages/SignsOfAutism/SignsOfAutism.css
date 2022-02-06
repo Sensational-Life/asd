@@ -55,7 +55,10 @@
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: repeat(2, 1fr);
 	grid-gap: 70px;
-	@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 992px) {
+	.signs-of-autism-wrapper .card-container {
 		grid-template-columns: repeat(1, 1fr);
 		grid-template-rows: repeat(1, 1fr);
 	}
