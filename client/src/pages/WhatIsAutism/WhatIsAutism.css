@@ -47,6 +47,7 @@ a.what-is-autism-link {
 
 a.what-is-autism-link:hover{
 	text-shadow: 0 0 1px var(--blue-color);
+	text-decoration: underline;
 }
 
 .what-is-autism-section .video-container {
