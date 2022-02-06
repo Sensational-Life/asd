@@ -24,6 +24,7 @@ import TermsConditions from "./pages/Terms&Condition/TermsConditions";
 import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
 // Styling:
 import "./App.css";
+import Footer from "./components/Footer/Footer";
 
 function App() {
 	return (
@@ -61,7 +62,7 @@ function App() {
 					<Route path="/termsConditions" component={TermsConditions} />
 					<Route path="/privacyPolicy" component={PrivacyPolicy} />
 				</Switch>
-
+<Footer />
 			</Router>
 		</>
 	);
