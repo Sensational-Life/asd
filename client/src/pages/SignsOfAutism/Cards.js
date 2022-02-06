@@ -8,7 +8,7 @@ export default function Cards() {
 			<div className="signs-of-autism-grid">
 				<div className="signs-of-autism-container">
 					<div className="cards-bg">
-						<div>
+						<div className="header-container">
 							<h1 className="header">Signs of Autism</h1>
 						</div>
 					</div>
