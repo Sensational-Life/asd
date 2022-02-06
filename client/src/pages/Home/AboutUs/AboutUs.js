@@ -6,7 +6,6 @@ import AboutUsImg from "~/assets/images/about-us-concept.jpg";
 function AboutUs() {
 
   const[buttonShow, setButtonShow] = useState(false);
-
   return (
 		<div className="aboutus_main_container">
 			<div className="aboutus_container">

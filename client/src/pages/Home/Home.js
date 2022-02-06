@@ -17,9 +17,9 @@ export function Home() {
 			<ScrollDown />
 			<AboutUs />
 			<WhatWeDo />
-			<SubscribeNews />
 			<WeSupportYou />
 			<MemberSays />
+			<SubscribeNews />
 			<FooterLogo />
 			<FooterNav />
 			<FooterIcon />
