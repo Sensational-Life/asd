@@ -5,6 +5,7 @@ import FooterNav from "~/pages/Home/FooterNav/FooterNav";
 import "./AboutUsPage.css"
 import KellyAnneImg from "~/images/KellyAnneSmithProfilePic.png"
 function AboutUsPage() {
+	
   return (
 		<>
 			<main className="about-us-main-container">
