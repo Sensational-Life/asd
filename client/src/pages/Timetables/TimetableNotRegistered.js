@@ -1,73 +1,81 @@
 import React from "react";
 import "./TimetableNotRegistered.css";
-
-
-
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { FaCheck } from "react-icons/fa";
-import GirlImg from "~/assets/images/autistic-little-girl-close-up.jpg";
-import arrowImg from "~/images/dummyArrow.png";
-import leftTopImg from "~/images/dummyLeft1.jpg";
-import rightImg from "~/images/dummyRight.jpg";
-import leftBottomImg from "~/images/dummyLeftbottom.jpg";
-
+import motherAndDaughterImg from "~/images/mother-daughter-laptop.jpeg";
+import arrowImg from "~/images/arrow-heart.png";
+import leftTopImg from "~/images/timetable-small-top.jpg";
+import rightImg from "~/images/timetable-illustration-large.jpg";
+import leftBottomImg from "~/images/timetable-small-bottom.jpg";
 import FooterNav from "~/pages/Home/FooterNav/FooterNav";
 import FooterLogo from "~/pages/Home/FooterLogo/FooterLogo";
 import FooterIcon from "~/pages/Home/FooterIcon/FooterIcon";
-function TimetableNotRegistered(){
-const [buttonShow, setButtonShow] = useState(false);
-    return (
-			<>
-				<main className="timetables-main-container">
-					<section className="timetables-content-container">
-						<section className=" timestables-text-container">
-							<p>
-								Our visual timetables will help your Child to settle into a
-								routine with clear a clear structure. We also offer a guide and
-								a video that will teach you how to use visual timetable.
-							</p>
-							<p>
-								To access online or download <br></br> FREE Timetable{" "}
-								<Link to="/login">Sign Up.</Link>
-							</p>
-							<Link to="/register">
-								<button
-									className="register-button"
-									onMouseEnter={() => setButtonShow(true)}
-									onMouseLeave={() => setButtonShow(false)}
-								>
-									Click here to Register
-								</button>
-							</Link>
-							{buttonShow && (
-								<button className="welcome_button_hover">
-									Click here to Register
-								</button>
-							)}
-						</section>
 
-						<section className="timetables-img-container">
-							<section className="timetables-img-color-blob">
-								<section className="img">
-									<img src={GirlImg} alt="img" />
-								</section>
+
+function TimetableNotRegistered() {
+	const [buttonShow, setButtonShow] = useState(false);
+	return (
+		<>
+			<main className="timetables-main-container">
+				<section className="timetables-content-container">
+					<section className=" timestables-text-container">
+						<p>
+							Our visual timetables will help your Child to settle into a
+							routine with a clear structure. We also offer a guide and a video
+							that will teach you how to use visual timetable.
+						</p>
+						<p>
+							To access online or download <br></br> FREE Timetable{" "}
+							<Link to="/login">Sign Up.</Link>
+						</p>
+						<Link to="/register">
+							<button
+								className="register-button"
+								onMouseEnter={() => setButtonShow(true)}
+								onMouseLeave={() => setButtonShow(false)}
+							>
+								Click here to Register
+							</button>
+						</Link>
+						{buttonShow && (
+							<button className="welcome_button_hover">
+								Click here to Register
+							</button>
+						)}
+					</section>
+
+					<section className="timetables-img-container">
+						<section className="timetables-img-color-blob">
+							<section className="img">
+								<img
+									src={motherAndDaughterImg}
+									alt="mother and daughter browsing internet"
+								/>
 							</section>
 						</section>
 					</section>
-					<section className="section2">
-						<div>
-							<img src={leftTopImg} alt="img" />
-							<img src={leftBottomImg} alt="img" />
-						</div>
-						<img className="arrowImg" src={arrowImg} alt="img" />
-						<img className="rightImg" src={rightImg} alt="img" />
-					</section>
-				</main>
-				<FooterLogo />
-				<FooterNav />
-				<FooterIcon />
-			</>
-		);
+				</section>
+				<section className="bottom-container">
+					<div>
+						<img src={leftTopImg} alt="timetable illustration" />
+						<img src={leftBottomImg} alt="timetable illustration" />
+					</div>
+					<img
+						className="arrowImg"
+						src={arrowImg}
+						alt="an arrow forming a heart"
+					/>
+					<img
+						className="rightImg"
+						src={rightImg}
+						alt="timetable illustration"
+					/>
+				</section>
+			</main>
+			<FooterLogo />
+			<FooterNav />
+			<FooterIcon />
+		</>
+	);
 }
 export default TimetableNotRegistered;

@@ -16,16 +16,16 @@
 	flex-direction: column;
 	height: 27rem;
 	justify-content: start;
-	row-gap: 27px;
+	row-gap: 1.6875rem;
 	width: 25%;
 }
 .timestables-text-container p:nth-child(1) {
-	width: 26.0625rem;
-	height: 98px;
+	width: 90%;
+	max-height: 6.125em;
 	font-family: "Ambit Light";
-	letter-spacing: 0.2px;
-	line-height: 21px;
-	font-size: 20px;
+	letter-spacing: 0.0125rem;
+	line-height: 1.3125rem;
+	font-size: 1.25rem;
 }
 .timestables-text-container p:nth-child(2) {
 	font-weight: bold;
@@ -36,25 +36,21 @@
 }
 
 .timestables-text-container > p:nth-child(2) {
-	width: 410px;
+	width: 90%;
 	font-family: "Ambit Light";
-	font-size: 20px;
-	line-height: 21px;
+	font-size: 1.25rem;
+	line-height: 1.3125rem;
 }
 .timestables-text-container > p:nth-child(2) a {
 	color: var(--blue-color);
 }
 
-
-
 .register-button {
 	background-color: var(--blue-color);
-	width: 277px;
-	height: 55px;
+	padding: 1rem;
 	border: none;
-	font-size: 24px;
+	font-size: 1.5rem;
 	font-family: "Ambit SemiBold";
-
 	color: var(--white-color);
 }
 .register-button:hover {
@@ -63,15 +59,12 @@
 }
 
 .register-button_hover {
-	background-color: var(--blue-color);
-	width: 200px;
-	height: 40px;
-	border: none;
-	font-size: 18px;
 	font-family: "Ambit SemiBold";
-	margin-top: 20px;
+	background-color: var(--blue-color);
 	color: var(--white-color);
-	margin-left: 140px;
+	font-size: 1.125rem;
+	padding: 1rem;
+	border: none;
 }
 .timetables-img-container {
 	position: relative;
@@ -79,46 +72,38 @@
 }
 .timetables-img-color-blob {
 	background-color: var(--green-bg-color);
-	height: 340px;
-	width: 590px;
+	height: 21.25rem;
+	width: 36.875rem;
 	border-radius: 5%;
 	position: relative;
-	right: 200px;
+	right: 41%;
 }
 .timetables-img-container img {
-	height: 390px;
-	width: 590px;
+	max-height: 24.375rem;
+	max-width: 36.875rem;
 	border-radius: 5%;
 	position: absolute;
-	left: 50px;
-	top: -115px;
+	left: 8%;
+	top: -30%;
 }
 
-.section2 {
+.bottom-container {
 	background-color: var(--main-bg-color);
 
 	display: flex;
-	width: 0.5rem;
+	width: 10%;
 	position: relative;
 	top: -4rem;
 	left: 16%;
 	column-gap: 4.5rem;
-	
 }
 
 .imageRight img {
-	width: 470px;
-	height: 370px;
 	border-radius: 0;
 }
 
-.arrowImg img {
-	width: 390px;
-	height: 290px;
-}
-
 @media screen and (min-device-width: 1000px) and (max-device-width: 1100px) {
-	.section2 {
+	.bottom-container {
 		left: 9%;
 		column-gap: 0rem;
 		top: -8rem;
@@ -148,22 +133,19 @@
 	}
 }
 @media screen and (min-device-width: 1100px) and (max-device-width: 1200px) {
-	.section2 {
+	.bottom-container {
 		left: 9%;
 		column-gap: 0rem;
 		top: -8rem;
 	}
 	.rightImg {
-		width: 340px;
-		height: 240px;
+		max-width: 400px;
+		max-height: 300px;
 	}
 	.timetables-img-color-blob {
 		background-color: var(--green-bg-color);
 		height: 240px;
 		width: 490px;
-		border-radius: 5%;
-		position: relative;
-		right: 200px;
 	}
 	.timetables-img-container img {
 		height: 290px;
@@ -175,7 +157,7 @@
 	}
 }
 @media screen and (min-device-width: 1200px) and (max-device-width: 1300px) {
-	.section2 {
+	.bottom-container {
 		background-color: var(--main-bg-color);
 
 		display: flex;
@@ -187,7 +169,7 @@
 	}
 }
 @media screen and (min-device-width: 1300px) and (max-device-width: 1400px) {
-	.section2 {
+	.bottom-container {
 		background-color: var(--main-bg-color);
 
 		display: flex;
@@ -199,7 +181,7 @@
 	}
 }
 @media screen and (min-device-width: 1400px) and (max-device-width: 1500px) {
-	.section2 {
+	.bottom-container {
 		background-color: var(--main-bg-color);
 
 		display: flex;
@@ -211,7 +193,7 @@
 	}
 }
 @media screen and (min-device-width: 1500px) and (max-device-width: 1600px) {
-	.section2 {
+	.bottom-container {
 		background-color: var(--main-bg-color);
 
 		display: flex;
@@ -223,7 +205,7 @@
 	}
 }
 @media screen and (min-device-width: 1600px) and (max-device-width: 1700px) {
-	.section2 {
+	.bottom-container {
 		background-color: var(--main-bg-color);
 
 		display: flex;
@@ -235,7 +217,7 @@
 	}
 }
 @media screen and (min-device-width: 1700px) and (max-device-width: 1800px) {
-	.section2 {
+	.bottom-container {
 		background-color: var(--main-bg-color);
 
 		display: flex;
@@ -247,7 +229,7 @@
 	}
 }
 @media screen and (min-device-width: 1800px) and (max-device-width: 1900px) {
-	.section2 {
+	.bottom-container {
 		background-color: var(--main-bg-color);
 
 		display: flex;
@@ -259,8 +241,15 @@
 	}
 }
 @media screen and (min-device-width: 800px) and (max-device-width: 1000px) {
-	.section2 {
+	.bottom-container {
 		left: 8%;
 		column-gap: 0rem;
+	}
+	.rightImg img {
+		max-width: 200px;
+		max-height: 100px;
+	}
+	.timestables-text-container {
+		width: 30%;
 	}
 }
