@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // Navigation:
 import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
 // Home:
 import Home from "./pages/Home/Home";
 import AboutUs from "./pages/Home/AboutUs/AboutUs";
@@ -23,6 +24,7 @@ import WhatWeDoPage from "~/pages/WhatWeDoPage/WhatWeDoPage";
 // Footer links:
 import TermsConditions from "./pages/Terms&Condition/TermsConditions";
 import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
+
 // Styling:
 import "./App.css";
 
@@ -65,7 +67,7 @@ function App() {
 					<Route path="/termsConditions" component={TermsConditions} />
 					<Route path="/privacyPolicy" component={PrivacyPolicy} />
 				</Switch>
-
+              <Footer />
 			</Router>
 		</>
 	);

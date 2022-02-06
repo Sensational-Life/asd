@@ -1,11 +1,7 @@
 import React from "react";
-import FooterLogo from "~/pages/Home/FooterLogo/FooterLogo";
-import FooterIcon from "~/pages/Home/FooterIcon/FooterIcon";
-import FooterNav from "~/pages/Home/FooterNav/FooterNav";
 import "./AboutUsPage.css"
 import KellyAnneImg from "~/images/KellyAnneSmithProfilePic.png"
 function AboutUsPage() {
-	
   return (
 		<>
 			<main className="about-us-main-container">
@@ -56,9 +52,6 @@ function AboutUsPage() {
 					</section>
 				</section>
 			</main>
-			<FooterLogo />
-			<FooterNav />
-			<FooterIcon />
 		</>
 	);
 

@@ -2,9 +2,6 @@ import React from "react";
 
 import "./WhatWeDoPage.css";
 import momAndGirlImg from "~/images/mom-and-girl.png";
-import FooterNav from "../Home/FooterNav/FooterNav";
-import FooterLogo from "../Home/FooterLogo/FooterLogo";
-import FooterIcon from "../Home/FooterIcon/FooterIcon";
 
 function WhatWeDoPage() {
 	return (
@@ -45,9 +42,6 @@ function WhatWeDoPage() {
 					</section>
 				</section>
 			</main>
-			<FooterLogo />
-			<FooterNav />
-			<FooterIcon />
 		</>
 	);
 }
