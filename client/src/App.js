@@ -16,9 +16,8 @@ import Contact from "./pages/Contact/Contact";
 // Registration:
 import Register from "./pages/RegisterPage/Register";
 import Login from "./pages/Login/Login";
+import SignsOfAutism from "./pages/SignsOfAutism/SignsOfAutism";
 import OurEvents from "./pages/OurEvents/OurEvents";
-
-
 import WhatWeDoPage from "~/pages/WhatWeDoPage/WhatWeDoPage";
 // Footer links:
 import TermsConditions from "./pages/Terms&Condition/TermsConditions";
@@ -39,19 +38,16 @@ function App() {
 					 * routes from home page:
 					 */}
 					<Route path="/register" component={Register} />
-
 					<Route path="/about-us-more" component={AboutUsPage} />
 					<Route path="/what-we-do" component={WhatWeDoPage} />
-
-					{/**
-					 * routes from nav bar:
-					 */}
+					{/* routes from nav bar: */}
 					<Route exact path="/about" component={About} />
+					<Route path="/about/what-is-autism" component={WhatIsAutism} />
+					<Route path="/about/signs-of-autism" component={SignsOfAutism} />
 					<Route
 						path="/about/additional-support"
 						component={AdditionalSupport}
 					/>
-					<Route path="/about/what-is-autism" component={WhatIsAutism} />
 					<Route path="/resources" component={Resources} />
 					<Route path="/contact" component={Contact} />
 					<Route path="/login" component={Login} />
