@@ -2,9 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./AdditionalSupport.css";
 import additionalSupportImg from "../../images/additional-support.jpg";
-import FooterNav from "../Home/FooterNav/FooterNav";
-import FooterLogo from "../Home/FooterLogo/FooterLogo";
-import FooterIcon from "../Home/FooterIcon/FooterIcon";
 
 function AdditionalSupport() {
 	return (
@@ -47,9 +44,6 @@ function AdditionalSupport() {
 					</section>
 				</section>
 			</main>
-			<FooterLogo />
-			<FooterNav />
-			<FooterIcon />
 		</>
 	);
 }
