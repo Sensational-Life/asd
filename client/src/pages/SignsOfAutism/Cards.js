@@ -1,47 +1,42 @@
 import React from "react";
-// import cardContent from "./CardContent";
+import cardContent from "./Cards.json";
 import "./SignsOfAutism.css";
 
 export default function Cards() {
 	return (
-		<div id="root" className="layout">
-			<div className="textGrid">
-				<div className="textGrid__inner">
-					{/* <!--       Green background --> */}
-					<div className="textGrid__blockColour"></div>
-					<h1 className="header">Signs of Autism</h1>
-					{/* <!--       container for cards --> */}
-					<div className="textGrid__textContainer">
-						{/* <!--           card1 -->     */}
-						<div className="textGrid__textContainer___module">
-							<h3 className="textGrid__textContainer___moduleTitle">text</h3>
-							<p>body text</p>
+		<div className="signs-of-autism-wrapper">
+			<div className="signs-of-autism-grid">
+				<div className="signs-of-autism-container">
+
+					<div className="cards-bg">
+						<div>
+							<h1 className="header">Signs of Autism</h1>
 						</div>
-						{/* <!--           card2 --> */}
-						<div className="textGrid__textContainer___module">
-							<h3 className="textGrid__textContainer___moduleTitle">text</h3>
-							<p>body text</p>
-						</div>
-						{/* <!--           card3 --> */}
-						<div className="textGrid__textContainer___module">
-							{" "}
-							<h3 className="textGrid__textContainer___moduleTitle">text</h3>
-							<p>body text</p>
-						</div>
-						{/* <!--           card4 --> */}
-						<div className="textGrid__textContainer___module">
-							{" "}
-							<h3 className="textGrid__textContainer___moduleTitle">text</h3>
-							<p>body text</p>
-						</div>
-						{/* <!--     card 4 done    --> */}
-						{/* <!--         textGrid__textContainer end --> */}
 					</div>
-					{/* <!--       textGrid__inner end --> */}
+					<div className="card-container">
+						{
+							cardContent.map((card) => {
+								const cardKey = card.title.toLowerCase().replace(/\s/ig, "");
+								return (
+									<div className="card" key={cardKey}>
+										<h3 className="card-header">{card.title}</h3>
+										<div dangerouslySetInnerHTML={{ __html: card.text }} />
+										<ul className="options">
+											{
+												card.options.map((option, idx) => {
+													return (
+														<li key={`${idx}_${cardKey}`}>{option}</li>
+													);
+												})
+											}
+										</ul>
+									</div>
+								);
+							})
+						}
+					</div>
 				</div>
-				{/* <!--     textGrid end --> */}
 			</div>
-			{/* <!--   layout end --> */}
 		</div>
 	);
 }

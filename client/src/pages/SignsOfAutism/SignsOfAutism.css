@@ -1,69 +1,103 @@
-.header {
-  position: absolute;
-  left:230px;
+
+.signs-of-autism-container .header {
+	font-family: "RobotoSlab-Regular";
+	font-size: 48px;
+	color: var(--black-title-color);
 }
 
-.layout {
-    display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  margin: 100px 0;
+.signs-of-autism-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	padding-top: 5rem;
+	background-color: var(--main-bg-color);
 }
 
-.textGrid {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 700px;
-  max-width: 700px;
-  min-width: 350px;
+.signs-of-autism-grid {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 700px;
+	max-width: 700px;
+	min-width: 350px;
 }
- .textGrid__inner {
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: repeat(10, 1fr);
-    height: 100%;
-  }
-
-  .textGrid__blockColour {
-    justify-self: center;
-    background-color: green;
-    grid-row: 1/10;
-    grid-column: 4/7;
-    min-width: 200px;
-  }
-
-
-    .textGrid__textContainer {
-    justify-self: center;
-    grid-row: 2/9;
-    grid-column: 4/7;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 50px;
-    @media screen and (max-width: 992px) {
-       grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(1, 1fr);
-      }
-    }
-
-.textGrid__textContainer___module{
-        background: white;
-        border: 1px solid black;
-        display: flex;
-        height: 100%;
-        flex-direction: column;
-        align-items: center;
-        justify-content:center;
-        height: 250px;
-        width: 250px;
+.signs-of-autism-container {
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(9, 1fr);
+	grid-template-rows: repeat(10, 1fr);
+	height: 100%;
 }
-.textGrid__textContainer___moduleTitle {
-          font-size: 25px;
-          margin: 0;
-        }
+
+.signs-of-autism-container .cards-bg {
+	justify-self: center;
+	background-color: var(--green-bg-color);
+	grid-row: 1/10;
+	grid-column: 4/7;
+	min-width: 700px;
+}
+
+.signs-of-autism-container .cards-bg > div {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+	margin-top: 1.5rem;
+	width: 737px;
+	height: 1420px;
+}
+.signs-of-autism-wrapper .card-container {
+	justify-self: center;
+	grid-row: 2/9;
+	grid-column: 4/7;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-gap: 70px;
+	@media screen and (max-width: 992px) {
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: repeat(1, 1fr);
+	}
+}
+
+.signs-of-autism-wrapper .card {
+	background: var(--white-color);
+	border: 1px solid black;
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+	/* align-items: center; */
+	/* justify-content: center; */
+	height: 500px;
+	width: 430px;
+	box-shadow: 3px 3px 6px var(--black-shadow-color);
+	border: 1px solid rgb(190, 190, 190);
+    padding: 60px 40px 0 60px;
+	line-height: 27px;
+	letter-spacing: 0.2px;
+}
+.signs-of-autism-wrapper .card .card-header {
+	font-size: 25px;
+	font-family: "Ambit SemiBold";
+	/* text-align:left; */
+}
+
+.signs-of-autism-wrapper .card p {
+	font-family: "Ambit Light";
+	font-size: 16px;
+}
+
+.signs-of-autism-wrapper .card p:first-of-type {
+ 	margin-top: 30px;
+}
+
+.signs-of-autism-wrapper .card .options li {
+	list-style-type: disc;
+	font-family: "Ambit Light";
+	font-size: 16px;
+}

@@ -7,12 +7,12 @@ import FooterIcon from "../Home/FooterIcon/FooterIcon";
 
 function SignsOfAutism() {
 	return (
-		<div>
+		<>
 			<Cards />
 			<FooterLogo />
 			<FooterNav />
 			<FooterIcon />
-		</div>
+		</>
 	);
 }
 
