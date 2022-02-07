@@ -6,11 +6,13 @@ import Navbar from "./components/Navbar/Navbar";
 
 // Home dependant pages:
 import Home from "./pages/Home/Home";
-import About from "./pages/About/About";
-import AboutUsMore from "./pages/AboutUSMore/AboutUsMore";
-import WhatIsAutism from "./pages/WhatIsAutism/WhatIsAutism";
-import AdditionalSupport from "./pages/AdditionalSupport/AdditionalSupport";
 import WhatWeDoPage from "./pages/WhatWeDoPage/WhatWeDoPage";
+
+import AboutUsPage from "./pages/AboutUsPage/AboutUsPage";
+import WhatIsAutism from "./pages/WhatIsAutism/WhatIsAutism";
+import SignsOfAutism from "./pages/SignsOfAutism/SignsOfAutism";
+import AdditionalSupport from "./pages/AdditionalSupport/AdditionalSupport";
+import OurEvents from "./pages/OurEvents/OurEvents";
 
 // Resources:
 import Resources from "./pages/Resources/Resources";
@@ -29,6 +31,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
 
 // Styling:
 import "./App.css";
+import Footer from "./components/Footer/Footer";
 
 function App() {
 	return (
@@ -38,26 +41,30 @@ function App() {
 				<Switch>
 					<Route path="/" exact component={Home} />
 
-					{/* routes from home page: */}
-					<Route path="/about-us-more" component={AboutUsMore} />
+					{/* custom routes from home page: */}
 					<Route path="/what-we-do" component={WhatWeDoPage} />
 
 					{/* routes from nav bar: */}
-					<Route exact path="/about" component={About} />
-					<Route path="/about/additional-support" component={AdditionalSupport} />
-					<Route path="/about/what-is-autism" component={WhatIsAutism} />
-					<Route path="/resources" component={Resources} />
+					<Route exact path="/about" component={AboutUsPage} />
+						<Route path="/about/what-is-autism" component={WhatIsAutism} />
+						<Route path="/about/signs-of-autism" component={SignsOfAutism} />
+						<Route path="/about/additional-support" component={AdditionalSupport} />
+						<Route path="/about/events" component={OurEvents} />
+
+					<Route exact path="/resources" component={Resources} />
+
 					<Route path="/contact" component={Contact} />
 
 					{/* User Authantication: */}
 					<Route path="/signin" component={SignInPage} />
-					<Route path="/signup" component={SignUpPage} />
+ 					<Route path="/signup" component={SignUpPage} />
 					<Route path="/password-reset" component={PasswordResetPage} />
 
 					{/* Footer links: */}
-					<Route path="/termsConditions" component={TermsConditions} />
-					<Route path="/privacyPolicy" component={PrivacyPolicy} />
+					<Route path="/terms-conditions" component={TermsConditions} />
+					<Route path="/privacy-policy" component={PrivacyPolicy} />
 				</Switch>
+				<Footer />
 			</Router>
 		</>
 	);

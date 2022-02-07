@@ -101,8 +101,8 @@
 }
 
 .user-form-footer .link {
-    font-family: "Ambit Bold";
     margin-left: 0.5rem;
+    font-family: "Ambit Bold";
 }
 
 .user-form-footer a,
@@ -110,4 +110,8 @@
 .user-form-footer a:link {
     text-decoration: none;
     color: var(--blue-color);
+}
+
+.user-form-footer a:hover {
+    text-decoration: underline;
 }

@@ -3,9 +3,6 @@ import ResponsivePlayer from "react-player";
 import { BsPlayCircleFill } from "react-icons/bs";
 import whatIsAutismImg from "~/assets/images/what-is-autism.jpeg";
 import whatIsAutismVideoImg from "~/assets/images/what-is-autism-video.jpg";
-import FooterNav from "../Home/FooterNav/FooterNav";
-import FooterIcon from "../Home/FooterIcon/FooterIcon";
-import FooterLogo from "../Home/FooterLogo/FooterLogo";
 import "./WhatIsAutism.css";
 
 function WhatIsAutism() {
@@ -67,9 +64,6 @@ function WhatIsAutism() {
 					</div>
 				</div>
 			</div>
-			<FooterLogo />
-			<FooterNav />
-			<FooterIcon />
 		</div>
 	);
 }

@@ -6,7 +6,6 @@ import AboutUsImg from "~/assets/images/about-us-concept.jpg";
 function AboutUs() {
 
   const[buttonShow, setButtonShow] = useState(false);
-
   return (
 		<div className="aboutus_main_container">
 			<div className="aboutus_container">
@@ -36,7 +35,7 @@ function AboutUs() {
 							professionally and personally.
 						</span>
 					</div>
-					<Link to="about-us-more">
+					<Link to="about">
 						<button
 							className="aboutus_button"
 							onMouseEnter={() => setButtonShow(true)}
