@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import Cards from "./Cards";
 import "./MemberSays.css";
@@ -25,6 +26,7 @@ function MemberSays() {
 						</button>
 				)}
 			</div>
+
 		</div>
 	);
 }
