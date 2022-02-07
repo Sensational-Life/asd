@@ -160,14 +160,17 @@
 		display: flex;
 		position: relative;
 		top: -4rem;
-		left: 9%;
-		column-gap: 0rem;
-		
-		
+		left: 6%;
+		column-gap: .8rem;	
+	}
+
+	.timetables-img-container {
+    position: relative;
+    width: 30%;
+    margin-right:30px ;
 	}
 	.timetables-content-container {
-		/* margin-right: 10%; */
-		padding-right: 10%;
+	column-gap: 23rem;
 	}
 }
 @media screen and (min-device-width: 1300px) and (max-device-width: 1400px) {
