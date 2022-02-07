@@ -35,7 +35,11 @@ function AboutUs() {
 							professionally and personally.
 						</span>
 					</div>
+
 					<Link to="about">
+
+					
+
 						<button
 							className="aboutus_button"
 							onMouseEnter={() => setButtonShow(true)}

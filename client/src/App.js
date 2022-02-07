@@ -6,9 +6,16 @@ import Navbar from "./components/Navbar/Navbar";
 
 // Home dependant pages:
 import Home from "./pages/Home/Home";
-import WhatWeDoPage from "./pages/WhatWeDoPage/WhatWeDoPage";
+
+
+// About:
+import AboutUs from "./pages/Home/AboutUs/AboutUs";
+import About from "./pages/About/About";
+
+
 
 import AboutUsPage from "./pages/AboutUsPage/AboutUsPage";
+
 import WhatIsAutism from "./pages/WhatIsAutism/WhatIsAutism";
 import SignsOfAutism from "./pages/SignsOfAutism/SignsOfAutism";
 import AdditionalSupport from "./pages/AdditionalSupport/AdditionalSupport";
@@ -24,6 +31,7 @@ import Contact from "./pages/Contact/Contact";
 import SignUpPage from "./pages/User/SignUpPage";
 import SignInPage from "./pages/User/SignInPage";
 import PasswordResetPage from "./pages/User/PasswordResetPage";
+import WhatWeDoPage from "./pages/WhatWeDoPage/WhatWeDoPage";
 
 // Footer links:
 import TermsConditions from "./pages/Terms&Condition/TermsConditions";
@@ -44,7 +52,14 @@ function App() {
 				<Switch>
 					<Route path="/" exact component={Home} />
 
-					{/* custom routes from home page: */}
+
+					
+					{/**
+					 * routes from home page:
+					 */}
+					<Route path="/register" component={Register} />
+					<Route path="/about-us" component={AboutUsPage} />		
+
 					<Route path="/what-we-do" component={WhatWeDoPage} />
 
 					{/* routes from nav bar: */}
