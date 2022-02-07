@@ -7,11 +7,7 @@ import Home from "./pages/Home/Home";
 // About:
 import AboutUs from "./pages/Home/AboutUs/AboutUs";
 import About from "./pages/About/About";
-
-
-
 import AboutUsPage from "./pages/AboutUsPage/AboutUsPage";
-
 import WhatIsAutism from "./pages/WhatIsAutism/WhatIsAutism";
 import AdditionalSupport from "./pages/AdditionalSupport/AdditionalSupport";
 // Resources:
@@ -43,12 +39,13 @@ function App() {
 					 * routes from home page:
 					 */}
 					<Route path="/register" component={Register} />
-					<Route path="/about-us" component={AboutUsPage} />		
+					<Route path="/about-us" component={AboutUsPage} />
 					<Route path="/what-we-do" component={WhatWeDoPage} />
 					{/* routes from nav bar: */}
 					<Route exact path="/about" component={About} />
 					<Route path="/about/what-is-autism" component={WhatIsAutism} />
 					<Route path="/about/signs-of-autism" component={SignsOfAutism} />
+					<Route path="/about/events" component={OurEvents} />
 					<Route
 						path="/about/additional-support"
 						component={AdditionalSupport}
@@ -56,7 +53,6 @@ function App() {
 					<Route path="/resources" component={Resources} />
 					<Route path="/contact" component={Contact} />
 					<Route path="/login" component={Login} />
-					<Route path="/about/events" component={OurEvents} />
 
 					{/* Footer links: */}
 					<Route path="/about-us-more" component={AboutUs} />
