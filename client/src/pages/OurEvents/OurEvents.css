@@ -1,5 +1,4 @@
-.ourevent_container_main {
-	height: 365px;
+.ourevent_container_main {	
 	background-color: var(--main-bg-color);
 }
 .ourevent_img > img {
@@ -19,12 +18,10 @@
 	flex-direction: column;
 	margin-right: 50px;
 }
-
 .ourevent_container * {
 	margin: 0.5rem 0;
  }
- 
-.ourevent_small_img > img {
+ .ourevent_small_img > img {
 	height: 160px;
 	width: 220px;
 }
