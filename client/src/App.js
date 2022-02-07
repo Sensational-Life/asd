@@ -29,6 +29,9 @@ import PasswordResetPage from "./pages/User/PasswordResetPage";
 import TermsConditions from "./pages/Terms&Condition/TermsConditions";
 import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
 
+//Not Found Page:
+import NotFound from "./pages/NotFound/NotFound";
+
 // Styling:
 import "./App.css";
 import Footer from "./components/Footer/Footer";
@@ -63,6 +66,9 @@ function App() {
 					{/* Footer links: */}
 					<Route path="/terms-conditions" component={TermsConditions} />
 					<Route path="/privacy-policy" component={PrivacyPolicy} />
+
+					{/* Default route for 'Not Found' page */}
+					<Route component={NotFound} />
 				</Switch>
 				<Footer />
 			</Router>
