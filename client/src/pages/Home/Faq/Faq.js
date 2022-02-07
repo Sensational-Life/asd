@@ -9,7 +9,7 @@ function Faq() {
 		<div className="faq_container">
 			<div className="faq_button">
 				<Link
-                to="/faq"
+					to="/frequently-asked-questions"
 					className="faq_button_link"
 					onMouseEnter={() => setIsShown(true)}
 					onMouseLeave={() => setIsShown(false)}
@@ -25,4 +25,3 @@ function Faq() {
 }
 
 export default Faq;
-

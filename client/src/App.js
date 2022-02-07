@@ -4,11 +4,12 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 // Home:
 import Home from "./pages/Home/Home";
-import AboutUs from "./pages/Home/AboutUs/AboutUs";
 import About from "./pages/About/About";
 import AboutUsPage from "./pages/AboutUsPage/AboutUsPage";
 import WhatIsAutism from "./pages/WhatIsAutism/WhatIsAutism";
 import AdditionalSupport from "./pages/AdditionalSupport/AdditionalSupport";
+import OurEvents from "./pages/OurEvents/OurEvents";
+import FrequentlyAskedQuestions from "./pages/FrequentlyAskedQuestions/FrequentlyAskedQuestions";
 // Resources:
 import Resources from "./pages/Resources/Resources";
 // Contacts:
@@ -17,7 +18,6 @@ import Contact from "./pages/Contact/Contact";
 import Register from "./pages/RegisterPage/Register";
 import Login from "./pages/Login/Login";
 import SignsOfAutism from "./pages/SignsOfAutism/SignsOfAutism";
-import OurEvents from "./pages/OurEvents/OurEvents";
 import WhatWeDoPage from "~/pages/WhatWeDoPage/WhatWeDoPage";
 // Footer links:
 import TermsConditions from "./pages/Terms&Condition/TermsConditions";
@@ -48,13 +48,11 @@ function App() {
 						path="/about/additional-support"
 						component={AdditionalSupport}
 					/>
+					<Route path="/frequently-asked-questions" component={FrequentlyAskedQuestions} />
 					<Route path="/resources" component={Resources} />
 					<Route path="/contact" component={Contact} />
 					<Route path="/login" component={Login} />
 					<Route path="/about/events" component={OurEvents} />
-
-					{/* Footer links: */}
-					<Route path="/about-us-more" component={AboutUs} />
 
 					{/**
 					 * Footer links:
