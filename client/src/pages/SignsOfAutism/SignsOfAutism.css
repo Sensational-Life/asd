@@ -1,0 +1,98 @@
+.header-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 3rem;
+}
+
+.signs-of-autism-container .header {
+	font-family: "RobotoSlab-Regular";
+	font-size: 48px;
+	color: var(--black-title-color);
+}
+
+.signs-of-autism-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	padding-top: 5rem;
+	background-color: var(--main-bg-color);
+}
+
+.signs-of-autism-grid {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 700px;
+	max-width: 700px;
+	min-width: 350px;
+}
+
+.signs-of-autism-container {
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(9, 1fr);
+	grid-template-rows: repeat(9, 1fr);
+	height: 100%;
+}
+
+.signs-of-autism-container .cards-bg {
+	justify-self: center;
+	grid-row: 1/10;
+	grid-column: 4/7;
+	min-width: 700px;
+	background-color: var(--green-bg-color);
+}
+
+.signs-of-autism-wrapper .card-container {
+	justify-self: center;
+	grid-row: 2/9;
+	grid-column: 4/7;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-gap: 70px;
+}
+
+@media screen and (max-width: 992px) {
+	.signs-of-autism-wrapper .card-container {
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: repeat(1, 1fr);
+	}
+}
+
+.signs-of-autism-wrapper .card {
+	background: var(--white-color);
+	display: flex;
+	flex-direction: column;
+	height: 500px;
+	width: 430px;
+	padding: 60px 40px 0 60px;
+	box-shadow: 3px 3px 6px var(--black-shadow-color);
+	border: 1px solid rgb(190, 190, 190);
+	line-height: 27px;
+	letter-spacing: 0.2px;
+}
+
+.signs-of-autism-wrapper .card .card-header {
+	font-family: "Ambit SemiBold";
+	font-size: 25px;
+}
+
+.signs-of-autism-wrapper .card p {
+	font-family: "Ambit Light";
+	font-size: 16px;
+}
+
+.signs-of-autism-wrapper .card p:first-of-type {
+	margin-top: 30px;
+}
+
+.signs-of-autism-wrapper .card .options li {
+	font-family: "Ambit Light";
+	font-size: 16px;
+	list-style-type: disc;
+}
