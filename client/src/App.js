@@ -59,8 +59,8 @@ function App() {
 					{/**
 					 * Footer links:
 					 */}
-					<Route path="/termsConditions" component={TermsConditions} />
-					<Route path="/privacyPolicy" component={PrivacyPolicy} />
+					<Route path="/terms-conditions" component={TermsConditions} />
+					<Route path="/privacy-policy" component={PrivacyPolicy} />
 				</Switch>
 <Footer />
 			</Router>
