@@ -7,10 +7,6 @@ import arrowImg from "~/images/arrow-heart.png";
 import leftTopImg from "~/images/timetable-small-top.jpg";
 import rightImg from "~/images/timetable-illustration-large.jpg";
 import leftBottomImg from "~/images/timetable-small-bottom.jpg";
-import FooterNav from "~/pages/Home/FooterNav/FooterNav";
-import FooterLogo from "~/pages/Home/FooterLogo/FooterLogo";
-import FooterIcon from "~/pages/Home/FooterIcon/FooterIcon";
-
 
 function TimetableNotRegistered() {
 	const [buttonShow, setButtonShow] = useState(false);
@@ -47,10 +43,7 @@ function TimetableNotRegistered() {
 					<section className="timetables-img-container">
 						<section className="timetables-img-color-blob">
 							<section className="img">
-								<img
-									src={motherAndDaughterImg}
-									alt="mother and daughter browsing internet"
-								/>
+								<img src={motherAndDaughterImg} alt="mother and daughter browsing internet"/>
 							</section>
 						</section>
 					</section>
@@ -60,21 +53,10 @@ function TimetableNotRegistered() {
 						<img src={leftTopImg} alt="timetable illustration" />
 						<img src={leftBottomImg} alt="timetable illustration" />
 					</div>
-					<img
-						className="arrowImg"
-						src={arrowImg}
-						alt="an arrow forming a heart"
-					/>
-					<img
-						className="rightImg"
-						src={rightImg}
-						alt="timetable illustration"
-					/>
+					<img className="arrowImg" src={arrowImg} alt="an arrow forming a heart"/>
+					<img className="rightImg" src={rightImg} alt="timetable illustration"/>
 				</section>
 			</main>
-			<FooterLogo />
-			<FooterNav />
-			<FooterIcon />
 		</>
 	);
 }

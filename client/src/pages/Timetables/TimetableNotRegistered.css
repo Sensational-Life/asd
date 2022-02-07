@@ -5,7 +5,6 @@
 .timetables-content-container {
 	display: flex;
 	flex-direction: row;
-
 	justify-content: center;
 	align-items: center;
 	column-gap: 20rem;
@@ -89,7 +88,6 @@
 
 .bottom-container {
 	background-color: var(--main-bg-color);
-
 	display: flex;
 	width: 10%;
 	position: relative;
@@ -159,7 +157,6 @@
 @media screen and (min-device-width: 1200px) and (max-device-width: 1300px) {
 	.bottom-container {
 		background-color: var(--main-bg-color);
-
 		display: flex;
 		width: 10rem;
 		position: relative;
@@ -171,7 +168,6 @@
 @media screen and (min-device-width: 1300px) and (max-device-width: 1400px) {
 	.bottom-container {
 		background-color: var(--main-bg-color);
-
 		display: flex;
 		width: 10rem;
 		position: relative;
@@ -183,7 +179,6 @@
 @media screen and (min-device-width: 1400px) and (max-device-width: 1500px) {
 	.bottom-container {
 		background-color: var(--main-bg-color);
-
 		display: flex;
 		width: 10rem;
 		position: relative;
@@ -195,7 +190,6 @@
 @media screen and (min-device-width: 1500px) and (max-device-width: 1600px) {
 	.bottom-container {
 		background-color: var(--main-bg-color);
-
 		display: flex;
 		width: 10rem;
 		position: relative;
@@ -207,7 +201,6 @@
 @media screen and (min-device-width: 1600px) and (max-device-width: 1700px) {
 	.bottom-container {
 		background-color: var(--main-bg-color);
-
 		display: flex;
 		width: 10rem;
 		position: relative;
@@ -219,7 +212,6 @@
 @media screen and (min-device-width: 1700px) and (max-device-width: 1800px) {
 	.bottom-container {
 		background-color: var(--main-bg-color);
-
 		display: flex;
 		width: 10rem;
 		position: relative;
@@ -231,7 +223,6 @@
 @media screen and (min-device-width: 1800px) and (max-device-width: 1900px) {
 	.bottom-container {
 		background-color: var(--main-bg-color);
-
 		display: flex;
 		width: 10rem;
 		position: relative;
