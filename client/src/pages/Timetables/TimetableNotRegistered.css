@@ -161,16 +161,16 @@
 		position: relative;
 		top: -4rem;
 		left: 6%;
-		column-gap: .8rem;	
+		column-gap: 0.8rem;
 	}
 
 	.timetables-img-container {
-    position: relative;
-    width: 30%;
-    margin-right:30px ;
+		position: relative;
+		width: 30%;
+		margin-right: 30px;
 	}
 	.timetables-content-container {
-	column-gap: 23rem;
+		column-gap: 23rem;
 	}
 }
 @media screen and (min-device-width: 1300px) and (max-device-width: 1400px) {
@@ -191,8 +191,8 @@
 		width: 10rem;
 		position: relative;
 		top: -4rem;
-		left: 15%;
-		column-gap: 0rem;
+		left: 13%;
+		column-gap: .7rem;
 	}
 }
 @media screen and (min-device-width: 1500px) and (max-device-width: 1600px) {
