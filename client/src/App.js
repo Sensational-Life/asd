@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 // Home:
 import Home from "./pages/Home/Home";
+// About:
 import AboutUs from "./pages/Home/AboutUs/AboutUs";
 import About from "./pages/About/About";
 import AboutUsPage from "./pages/AboutUsPage/AboutUsPage";
@@ -38,7 +39,7 @@ function App() {
 					 * routes from home page:
 					 */}
 					<Route path="/register" component={Register} />
-					<Route path="/about-us-more" component={AboutUsPage} />
+					<Route path="/about-us" component={AboutUsPage} />		
 					<Route path="/what-we-do" component={WhatWeDoPage} />
 					{/* routes from nav bar: */}
 					<Route exact path="/about" component={About} />

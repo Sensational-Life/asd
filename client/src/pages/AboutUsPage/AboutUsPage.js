@@ -13,7 +13,7 @@ function AboutUsPage() {
 								<div className="about-us-hero-image">
 									<img
 										src={KellyAnneImg}
-										alt="a mother kissing daughters forehead"
+										alt="Kelly Anne Smith"
 									/>
 								</div>
 								<div className="about-us-name-tag">
