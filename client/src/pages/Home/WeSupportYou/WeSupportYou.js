@@ -18,8 +18,7 @@ export function WeSupportYou() {
 				<div>
 					<div className="wesupportyou_join-us">
 						<Link
-							to="/Register"
-							href="https://example.com/"
+							to="/signup"
 							target="_blank"
 							rel="noreferrer"
 							className="wesupportyou_button"
