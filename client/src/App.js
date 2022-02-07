@@ -7,15 +7,8 @@ import Navbar from "./components/Navbar/Navbar";
 // Home dependant pages:
 import Home from "./pages/Home/Home";
 
-
 // About:
-import AboutUs from "./pages/Home/AboutUs/AboutUs";
-import About from "./pages/About/About";
-
-
-
 import AboutUsPage from "./pages/AboutUsPage/AboutUsPage";
-
 import WhatIsAutism from "./pages/WhatIsAutism/WhatIsAutism";
 import SignsOfAutism from "./pages/SignsOfAutism/SignsOfAutism";
 import AdditionalSupport from "./pages/AdditionalSupport/AdditionalSupport";
@@ -33,10 +26,6 @@ import SignInPage from "./pages/User/SignInPage";
 import PasswordResetPage from "./pages/User/PasswordResetPage";
 import WhatWeDoPage from "./pages/WhatWeDoPage/WhatWeDoPage";
 
-// Footer links:
-import TermsConditions from "./pages/Terms&Condition/TermsConditions";
-import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
-
 //Not Found Page:
 import NotFound from "./pages/NotFound/NotFound";
 
@@ -52,14 +41,7 @@ function App() {
 				<Switch>
 					<Route path="/" exact component={Home} />
 
-
-					
-					{/**
-					 * routes from home page:
-					 */}
-					<Route path="/register" component={Register} />
-					<Route path="/about-us" component={AboutUsPage} />		
-
+					{/* routes from home page: */}
 					<Route path="/what-we-do" component={WhatWeDoPage} />
 
 					{/* routes from nav bar: */}
@@ -77,10 +59,6 @@ function App() {
 					<Route path="/signin" component={SignInPage} />
  					<Route path="/signup" component={SignUpPage} />
 					<Route path="/password-reset" component={PasswordResetPage} />
-
-					{/* Footer links: */}
-					<Route path="/terms-conditions" component={TermsConditions} />
-					<Route path="/privacy-policy" component={PrivacyPolicy} />
 
 					{/* Default route for 'Not Found' page */}
 					<Route component={NotFound} />
