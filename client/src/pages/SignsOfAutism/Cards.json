@@ -1,0 +1,53 @@
+[
+    {
+        "title": "Autism in Younger Children",
+        "text": "<p>Early signs of Autism in children involve the absence of 'normal' behaviours, rather than the presence of abnormal ones. First symptoms often arise between 12 and 18 months.</p><p>These include:</p>",
+        "options": [
+            "Not babbling - the sounds that babies make before they begin to talk, such as ba, da, and gee.",
+            "No more than one word by 16 months",
+            "Poor eye contact when communicating or playing.",
+            "No eye following.",
+            "Spinning objects or other repetitive actions.",
+            "Not wanting to be touched."
+        ]
+    },
+    {
+        "title": "Autism in Older Children",
+        "text": "<p>Some of the main social communication and behaviour signs of autism become noticeable in school-age children. This is because the school environment can be overwhelming and might trigger autism signs or make them more obvious.</p><p>These include:</p>",
+        "options": [
+            "Not understanding what others are thinking or feeling",
+            "Liking a strict daily routine and getting very upset if it changes",
+            "Having a very keen interest in certain subjects or activities",
+            "Getting very upset if you ask them to do something",
+            "Finding it hard to make friends or preferring to be on their own",
+            "Taking things very literally - for example, they may not understand phrases like 'break a leg'"
+        ]
+    },
+    {
+        "title": "Autism in Younger Adults",
+        "text": "<p>While autism is most often diagnosed in young children, it's possible for adults with autism spectrum disorder to go undiagnosed. Signs of Autism in adults manifest in different ways.</p><p>These include:</p>",
+        "options": [
+            "impaired spoken language",
+            "difficulty regulating emotions",
+            "difficulty interpreting what others are thinking or feeling",
+            "trouble keeping up a conversation",
+            "strict consistency to daily routines; outbursts when changes occur",
+            "tendency to engage in repetitive or routine behaviors"
+        ]
+    },
+    {
+        "title": "What to look out for",
+        "text": "<p>The three main areas to look out for:</p>",
+        "options": [
+            "Social interactions",
+            "Verbal and nonverbal communication",
+            "Repetitive or ritualistic behaviours It is important to note that children with Autism may not have all or any of the behaviours as below:",
+            "Challenges with Social interactions",
+            "Challenges with verbal and nonverbal communication",
+            "Repetitive or ritualistic behaviours",
+            "Unusual mood or emotional reactions",
+            "Unusual eating or sleeping habits",
+            "Anxiety, stress or excessive worry"
+        ]
+    }
+]
