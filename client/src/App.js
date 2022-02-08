@@ -23,7 +23,6 @@ import Resources from "./pages/Resources/Resources";
 import Contact from "./pages/Contact/Contact";
 // Registration:
 
-import SignsOfAutism from "./pages/SignsOfAutism/SignsOfAutism";
 import WhatWeDoPage from "~/pages/WhatWeDoPage/WhatWeDoPage";
 // Footer links:
 import TermsConditions from "./pages/Terms&Condition/TermsConditions";
