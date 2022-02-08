@@ -8,7 +8,7 @@
 	font-size: 1.2rem;
 	border-bottom: 1px solid lightgray;
 	position: relative;
-	z-index: 1;
+	z-index: 20;
 }
 
 .navbar-logo {
@@ -112,7 +112,7 @@ a.nav-links {
 		width: 70vw;
 	}
 }
-/* @media screen and (min-device-width: 1200px) and (max-device-width: 1378px) and (-webkit-min-device-pixel-ratio: 1) {
+@media screen and (min-device-width: 1200px) and (max-device-width: 1378px) and (-webkit-min-device-pixel-ratio: 1) {
 	.nav-menu {
 		grid-template-columns: repeat(7, auto);
 		grid-gap: 4px;
@@ -125,7 +125,7 @@ a.nav-links {
 	.navbar-logo img{
 		max-height: 51px;
 	}
-} */
+}
 @media screen and (min-device-width: 1200px) and (max-device-width: 1280px) and (-webkit-min-device-pixel-ratio: 1) {
 	.nav-menu {
 		grid-template-columns: repeat(7, auto);
@@ -135,14 +135,6 @@ a.nav-links {
 	}
 	.navbar-logo img{
 		max-height: 51px;
-	}
-}
-@media screen and (min-device-width: 1280px) and (max-device-width: 1300px) and (-webkit-min-device-pixel-ratio: 1) {
-	.nav-menu {
-		grid-template-columns: repeat(7, auto);
-		grid-gap: 4px;
-		width: 74vw;
-		padding-left: 0px;
 	}
 }
 
@@ -173,7 +165,7 @@ a.nav-links {
 		left: 0;
 		opacity: 1;
 		transition: all 0.5s ease;
-		z-index: 1;
+		z-index: 20;
 	}
 
 	.nav-links {
