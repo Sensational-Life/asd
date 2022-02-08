@@ -22,8 +22,7 @@ import Resources from "./pages/Resources/Resources";
 // Contacts:
 import Contact from "./pages/Contact/Contact";
 // Registration:
-import Register from "./pages/RegisterPage/Register";
-import Login from "./pages/Login/Login";
+
 import SignsOfAutism from "./pages/SignsOfAutism/SignsOfAutism";
 import WhatWeDoPage from "~/pages/WhatWeDoPage/WhatWeDoPage";
 // Footer links:
