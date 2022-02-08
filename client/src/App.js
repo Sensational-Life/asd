@@ -25,12 +25,10 @@ import Contact from "./pages/Contact/Contact";
 import WhatWeDoPage from "~/pages/WhatWeDoPage/WhatWeDoPage";
 // Footer links:
 
-
 // User and Authorisation:
 import SignUpPage from "./pages/User/SignUpPage";
 import SignInPage from "./pages/User/SignInPage";
 import PasswordResetPage from "./pages/User/PasswordResetPage";
-import WhatWeDoPage from "./pages/WhatWeDoPage/WhatWeDoPage";
 
 //Not Found Page:
 import NotFound from "./pages/NotFound/NotFound";
