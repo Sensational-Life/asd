@@ -1,4 +1,4 @@
-.ourevent_container_main {
+.ourevent_container_main {	
 	background-color: var(--main-bg-color);
 	padding-bottom: 5%;
 }
@@ -21,8 +21,8 @@
 }
 .ourevent_container * {
 	margin: 0.5rem 0;
- } 
-.ourevent_small_img > img {
+ }
+ .ourevent_small_img > img {
 	height: 160px;
 	width: 220px;
 }

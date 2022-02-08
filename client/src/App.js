@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar/Navbar";
 
 // Home dependant pages:
 import Home from "./pages/Home/Home";
+import WhatWeDoPage from "./pages/WhatWeDoPage/WhatWeDoPage";
 
 // About:
 import AboutUsPage from "./pages/AboutUsPage/AboutUsPage";
@@ -24,14 +25,15 @@ import Contact from "./pages/Contact/Contact";
 import SignUpPage from "./pages/User/SignUpPage";
 import SignInPage from "./pages/User/SignInPage";
 import PasswordResetPage from "./pages/User/PasswordResetPage";
-import WhatWeDoPage from "./pages/WhatWeDoPage/WhatWeDoPage";
+
+// Footer:
+import Footer from "./components/Footer/Footer";
 
 //Not Found Page:
 import NotFound from "./pages/NotFound/NotFound";
 
 // Styling:
 import "./App.css";
-import Footer from "./components/Footer/Footer";
 
 function App() {
 	return (
