@@ -38,6 +38,15 @@ function SignUpForm() {
 						name="Password"
 					/>
 
+                    <input
+						className="text-field"
+						required
+						id="Confirm-password"
+						type="password"
+						placeholder="Confirm Password"
+						name="confirm-Password"
+					/>
+
 					<button
 						className="submit-button"
 						onMouseEnter={() => setShowSubmitBtnToolTip(true)}
