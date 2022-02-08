@@ -1,14 +1,13 @@
 const express = require("express");
 const router = express.Router();
 const jwt = require("jsonwebtoken");
-const db = require("../services/database/users");
+const db = require("../Controller/services/repository/users");
 
 /**
  * Users Login
  */
 router.post("/login", async (req, res, next) => {
 	const { email, pwd } = req.body;
-	console.log("aksa;ls",email,pwd);
 	console.log(`Login attempt ${email}`);
 	try {
 		const user = await db.getUserByEmail(email);
@@ -33,10 +32,14 @@ router.post("/login", async (req, res, next) => {
  */
 router.post("/register", async (req, res, next) => {
 	const { name, email, pwd } = req.body;
-
-	console.log("------<<<<<<<<<<<<>>>>>>>>>>>>>>>",name,email,pwd);
 	const user = { name,  email, pwd };
-
+	console.log(user);
+db.getUserByEmail(email).then((data)=>
+	data&&data.length? res.send({
+				success: false,
+				message: "Account Already Exist",
+				data,
+			}):
 	db.createUser(user)
 		.then((data) => {
 			res.send({
@@ -48,7 +51,7 @@ router.post("/register", async (req, res, next) => {
 		.catch((err) => {
 			console.log(err);
 			next(err);
-		});
+		}));
 });
 
 module.exports = router;
