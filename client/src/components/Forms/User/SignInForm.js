@@ -4,6 +4,14 @@ import "./UserForms.css";
 
 const SignInForm = () => {
     const [showSubmitBtnToolTip, setShowSubmitBtnToolTip] = useState(false);
+
+	const[user, setUser] = useState({
+		password: '',
+		cpassword: ''
+	});
+    const handelinputs  = (e) => {
+         console.log(e);
+	};
     return (
         <div className="user-form-container">
 				<div className="user-form-header">
@@ -14,6 +22,8 @@ const SignInForm = () => {
 				<form className="user-form">
 					{/*Email  */}
 					<input
+				        value={user.password}
+						onChange={handelinputs}
 						className="text-field"
 						required
 						id="email"
@@ -23,6 +33,8 @@ const SignInForm = () => {
 					/>
 
 					<input
+					    value={user.cpassword}
+						onChange={handelinputs}
 						className="text-field"
 						required
 						id="password"
