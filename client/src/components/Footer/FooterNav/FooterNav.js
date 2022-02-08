@@ -31,7 +31,7 @@ export function FooterNav() {
 					</div>
 					<div className="nav_box">
 						<p>Help</p>
-						<Link to="/faqs" className="footernav_link">
+						<Link to="/frequently-asked-questions" className="footernav_link">
 							FAQs
 						</Link>
 					</div>
