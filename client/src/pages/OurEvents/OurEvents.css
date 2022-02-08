@@ -1,5 +1,6 @@
 .ourevent_container_main {	
 	background-color: var(--main-bg-color);
+	padding-bottom: 5%;
 }
 .ourevent_img > img {
 	height: 365px;
