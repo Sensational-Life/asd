@@ -1,0 +1,24 @@
+.timetable-registered-section .video-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 1.5rem 0 2rem 30px;
+}
+
+.timetable-registered-section .video-wrapper {
+	min-height: 300px;
+	margin-top: 1.5rem;
+}
+
+.timetable-registered-section .player-button{
+	width: 90px;
+	height: 90px;
+	color: var(--blue-color);
+}
+
+.timetable-registered-section .video-description p {
+	padding:15px;
+	text-align: center;
+	font-size: 18px;
+	font-family: "Ambit Light";
+}
