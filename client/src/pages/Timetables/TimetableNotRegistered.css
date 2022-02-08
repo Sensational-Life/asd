@@ -86,7 +86,7 @@
 	height: 400px;
 	border-radius: 5%;
 	position: absolute;
-	top:-70px;
+	top: -70px;
 	left: -50px;
 }
 .timetables-img-container img {
@@ -120,7 +120,7 @@
 .arrow-img {
 	max-height: 100px;
 }
-.primary-img{
+.primary-img {
 	max-height: 100%;
 }
 .bottom-container img {
@@ -128,15 +128,15 @@
 }
 
 @media only screen and (max-width: 1023px) {
-	.timetables-img-color-blob{
+	.timetables-img-color-blob {
 		display: none;
 	}
 	.timetables-img-container img {
-	margin-top: 0;
+		margin-top: 0;
 	}
 }
 @media only screen and (min-width: 1024px) {
-	.timetables-content-container{
+	.timetables-content-container {
 		padding: 10px;
 	}
 	.bottom-container {
@@ -146,46 +146,88 @@
 	.timetables-content-container {
 		flex-direction: row;
 	}
-	.right-image-card-lg{
-		 margin-top: -120px;
+	.right-image-card-lg {
+		margin-top: -120px;
 	}
-	.bottom-two-cards{
-		margin-top: -75px ;
+	.bottom-two-cards {
+		margin-top: -75px;
 	}
 }
+
 @media only screen and (min-width: 1200px) {
-	.timetables-content-container{
-		padding: 10px;
+	.timetables-content-container {
+		margin-top: -2rem;
 	}
 	.bottom-container {
 		display: flex;
 		flex-direction: row;
+		max-width: 1114px;
 	}
 	.timetables-content-container {
 		flex-direction: row;
 	}
-	.right-image-card-lg{
-		 margin-top: -100px;
+	.right-image-card-lg {
+		margin-top: -195px;
+		max-height: 320px;
+		margin-right: 40px;
 	}
-	.bottom-two-cards{
-		margin-top: -75px ;
+	.bottom-two-cards {
+		margin-top: -75px;
+	}
+	.timetables-img-container img {
+		max-height: 100%;
+		max-width: 100%;
+		margin-top: -150px;
+		height: 350px;
+	}
+	.timetables-img-color-blob {
+		height: 350px;
+		width: 540px;
+	}
+
+	.timestables-text-container {
+		width: 45%;
+	}
+	.timetables-img-container {
+		width: 47%;
 	}
 }
-@media only screen and (min-width: 1200px) {
-	.timetables-content-container{
+@media only screen and (min-width: 1400px) {
+	.timetables-content-container {
 		padding: 10px;
+		margin-top: -1rem;
 	}
 	.bottom-container {
 		display: flex;
 		flex-direction: row;
+		max-width: 1216px;
 	}
 	.timetables-content-container {
 		flex-direction: row;
 	}
-	.right-image-card-lg{
-		 margin-top: -100px;
+
+	.bottom-two-cards {
+		margin-top: -75px;
 	}
-	.bottom-two-cards{
-		margin-top: -75px ;
+	.timetables-img-container img {
+		max-height: 100%;
+		max-width: 100%;
+		margin-top: -150px;
+		height: auto;
+	}
+	.timestables-text-container {
+		width: 50%;
+	}
+	.timetables-img-container {
+		width: 50%;
+	}
+	.timetables-img-color-blob {
+		height: 380px;
+		width: 600px;
+	}
+	.right-image-card-lg {
+		margin-top: -100px;
+		max-height: 360px;
+		margin-right: 0;
 	}
 }
