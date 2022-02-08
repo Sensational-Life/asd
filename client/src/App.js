@@ -24,8 +24,7 @@ import Contact from "./pages/Contact/Contact";
 
 import WhatWeDoPage from "~/pages/WhatWeDoPage/WhatWeDoPage";
 // Footer links:
-import TermsConditions from "./pages/Terms&Condition/TermsConditions";
-import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
+
 
 // User and Authorisation:
 import SignUpPage from "./pages/User/SignUpPage";
@@ -74,8 +73,7 @@ function App() {
 					{/**
 					 * Footer links:
 					 */}
-					<Route path="/terms-conditions" component={TermsConditions} />
-					<Route path="/privacy-policy" component={PrivacyPolicy} />
+					
 					{/* User Authantication: */}
 					<Route path="/signin" component={SignInPage} />
  					<Route path="/signup" component={SignUpPage} />
