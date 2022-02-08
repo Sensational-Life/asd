@@ -16,13 +16,17 @@ function TimetableNotRegistered() {
 				<section className="timetables-content-container">
 					<section className=" timestables-text-container">
 						<p>
-							Our visual timetables will help your Child to settle into a
-							routine with a clear structure. We also offer a guide and a video
-							that will teach you how to use visual timetable.
+							We offer FREE visual timetables with a clear structure, which can
+							help your child to settle into a routine. We have several
+							different types of visual timetables suitable for all children of
+							different ages.
 						</p>
 						<p>
 							To access online or download <br></br> FREE Timetable{" "}
 							<Link to="/login">Sign Up.</Link>
+						</p>
+						<p>
+							If you want to access our visual<br></br> timetables online or Download:
 						</p>
 						<Link to="/register">
 							<button
@@ -34,7 +38,7 @@ function TimetableNotRegistered() {
 							</button>
 						</Link>
 						{buttonShow && (
-							<button className="welcome_button_hover">
+							<button className="register-button-hover">
 								Click here to Register
 							</button>
 						)}
@@ -42,19 +46,38 @@ function TimetableNotRegistered() {
 
 					<section className="timetables-img-container">
 						<section className="timetables-img-color-blob">
-							<section className="img">
-								<img src={motherAndDaughterImg} alt="mother and daughter browsing internet"/>
+							<section className="primary-img">
+								<img
+									src={motherAndDaughterImg}
+									alt="mother and daughter browsing internet"
+								/>
 							</section>
 						</section>
 					</section>
 				</section>
 				<section className="bottom-container">
 					<div>
-						<img src={leftTopImg} alt="timetable illustration" />
-						<img src={leftBottomImg} alt="timetable illustration" />
+						<img
+							className="left-top-img"
+							src={leftTopImg}
+							alt="timetable illustration"
+						/>
+						<img
+							className="left-bottom-img"
+							src={leftBottomImg}
+							alt="timetable illustration"
+						/>
 					</div>
-					<img className="arrowImg" src={arrowImg} alt="an arrow forming a heart"/>
-					<img className="rightImg" src={rightImg} alt="timetable illustration"/>
+					<img
+						className="arrow-img"
+						src={arrowImg}
+						alt="an arrow forming a heart"
+					/>
+					<img
+						className="right-image-card-lg"
+						src={rightImg}
+						alt="timetable illustration"
+					/>
 				</section>
 			</main>
 		</>
