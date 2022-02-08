@@ -22,7 +22,7 @@ import Resources from "./pages/Resources/Resources";
 import Contact from "./pages/Contact/Contact";
 // Registration:
 
-import WhatWeDoPage from "~/pages/WhatWeDoPage/WhatWeDoPage";
+import WhatWeDoPage from "./pages/WhatWeDoPage/WhatWeDoPage";
 // Footer links:
 
 // User and Authorisation:
