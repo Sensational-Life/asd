@@ -6,7 +6,6 @@ import Navbar from "./components/Navbar/Navbar";
 
 // Home dependant pages:
 import Home from "./pages/Home/Home";
-import About from "./pages/About/About";
 
 // About:
 import AboutUsPage from "./pages/AboutUsPage/AboutUsPage";
@@ -53,7 +52,7 @@ function App() {
 					<Route path="/what-we-do" component={WhatWeDoPage} />
 
 					{/* routes from nav bar: */}
-					<Route exact path="/about" component={About} />
+				
 					<Route path="/about/what-is-autism" component={WhatIsAutism} />
 					<Route path="/about/signs-of-autism" component={SignsOfAutism} />
 					<Route
