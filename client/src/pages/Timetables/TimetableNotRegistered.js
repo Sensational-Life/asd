@@ -26,7 +26,8 @@ function TimetableNotRegistered() {
 							<Link to="/login">Sign Up.</Link>
 						</p>
 						<p>
-							If you want to access our visual<br></br> timetables online or Download:
+							If you want to access our visual<br></br> timetables online or
+							Download:
 						</p>
 						<Link to="/register">
 							<button
@@ -45,14 +46,13 @@ function TimetableNotRegistered() {
 					</section>
 
 					<section className="timetables-img-container">
-						<section className="timetables-img-color-blob">
-							<section className="primary-img">
-								<img
-									src={motherAndDaughterImg}
-									alt="mother and daughter browsing internet"
-								/>
-							</section>
-						</section>
+						<img
+							className="primary-img"
+							src={motherAndDaughterImg}
+							alt="mother and daughter browsing internet"
+						/>
+						<section className="timetables-img-color-blob"></section>
+						{/* <section className="primary-img"></section> */}
 					</section>
 				</section>
 				<section className="bottom-container">
