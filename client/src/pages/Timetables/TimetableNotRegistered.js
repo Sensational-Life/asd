@@ -56,7 +56,7 @@ function TimetableNotRegistered() {
 					</section>
 				</section>
 				<section className="bottom-container">
-					<div>
+					<div className="bottom-two-cards">
 						<img
 							className="left-top-img"
 							src={leftTopImg}

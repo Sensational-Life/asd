@@ -4,10 +4,11 @@
 }
 .timetables-content-container {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	column-gap: 20rem;
+	margin: auto;
+	max-width: 1200px;
 }
 
 .timestables-text-container {
@@ -16,7 +17,7 @@
 	height: 27rem;
 	justify-content: start;
 	row-gap: 1.6875rem;
-	width: 25%;
+	width: 50%;
 }
 .timestables-text-container p:nth-child(1) {
 	width: 90%;
@@ -63,132 +64,70 @@
 
 .register-button-hover {
 	background-color: var(--blue-color);
-    width: 200px;
-    height: 40px;
-    border: none;
-    font-size: 1.1rem;
-    font-family: 'Ambit SemiBold';
-    color: var(--white-color);
+	width: 200px;
+	height: 40px;
+	border: none;
+	font-size: 1.1rem;
+	font-family: "Ambit SemiBold";
+	color: var(--white-color);
 	margin-top: -0.7rem;
-    margin-left: 140px;
+	margin-left: 140px;
 	z-index: 10;
 }
 .timetables-img-container {
 	position: relative;
-	width: 25%;
+	width: 50%;
 }
 .timetables-img-color-blob {
 	background-color: var(--green-bg-color);
-	height: 21.25rem;
-	width: 36.875rem;
-	border-radius: 5%;
-	position: relative;
-	right: 41%;
-}
-.timetables-img-container img {
-	max-height: 24.375rem;
 	max-width: 36.875rem;
 	border-radius: 5%;
-	position: absolute;
-	left: 8%;
-	top: -30%;
+	position: relative;
+	/* right: 41%; */
+}
+.timetables-img-container img {
+	max-height: 100%;
+	max-width: 100%;
+	border-radius: 5%;
+	/* position: absolute;
+	top: -30%; */
+	position: relative;
 }
 
 .bottom-container {
 	background-color: var(--main-bg-color);
 	display: flex;
-	width: 10%;
+	flex-direction: column;
 	position: relative;
-	top: -4rem;
-	left: 16%;
-	column-gap: 2.9rem;
+	max-width: 1260px;
+	margin: auto;
+	justify-content: space-between;
+	align-items: center;
+}
+.bottom-two-cards {
+	display: flex;
+	flex-direction: column;
 }
 
 .imageRight img {
+	max-width: 100%;
 	border-radius: 0;
 }
-@media screen and (min-device-width: 1200px) and (max-device-width: 1300px) {
-	.timetables-main-container {
-		padding-top: 5rem;
-	}
-	.timetables-content-container {
+.arrow-img {
+	max-height: 100px;
+}
+.primary-img{
+	max-height: 100%;
+}
+.bottom-container img {
+	max-width: 100%;
+}
+@media only screen and (min-width: 1024px) {
+	.bottom-container {
 		display: flex;
 		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-		column-gap: 17rem;
 	}
-	.timestables-text-container {
-		width: 39%;
-	}
-	.timestables-text-container p:nth-child(2) {
-      font-size: 1.25rem;
-	}
-	.timestables-text-container p:nth-child(3) {
-      font-size: 1.25rem;
-	}
-	.register-button {
-    background-color: var(--blue-color);
-    color: var(--white-color);
-    font-family: "Ambit Regular";
-    font-size: 1.26rem;
-	
-	letter-spacing: 1px;
-    padding: 1rem 1.5rem;
-    border: none;
-}
-	.timetables-img-container {
-		position: relative;
-	}
-	.timetables-img-color-blob {
-		background-color: var(--green-bg-color);
-		height: 22rem;
-		width: 32.875rem;
-		border-radius: 5%;
-		position: relative;
-		right: 96%;
-		top: -25px;
-	}
-	.primary-img img {
-		max-height: 21.5rem;
-		border-radius: 5%;
-		position: absolute;
-		left: 7%;
-		top: -15%;
-	}
-	
-	.bottom-container {
-		background-color: var(--main-bg-color);
-		display: flex;
-		width: 10%;
-		position: relative;
-		top: -5.5rem;
-		left: 0%;
-		column-gap: 5rem;
-	}
-	.left-top-img{
-		max-height: 10.5rem;
-		position: relative;
-		left: 22%;
-		
-	}
-	.left-bottom-img{
-		max-height: 10.5rem;
-		position: relative;
-		left: 22%;
-		
-	}
-	.arrow-img{
-		position: relative;
-		align-self: center;
-		max-height: 5.55rem;
-		bottom: 1.5rem;
-	}
-	.right-image-card-lg{
-		position: relative;
-		top:-1rem;
-		right: 5rem;
-		max-height: 20.8rem;
+	.timetables-content-container {
+		flex-direction: row;
 	}
 }
-
