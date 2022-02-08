@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar/Navbar";
 
 // Home dependant pages:
 import Home from "./pages/Home/Home";
-import About from "./pages/About/About";
+import WhatWeDoPage from "./pages/WhatWeDoPage/WhatWeDoPage";
 
 // About:
 import AboutUsPage from "./pages/AboutUsPage/AboutUsPage";
@@ -14,34 +14,26 @@ import WhatIsAutism from "./pages/WhatIsAutism/WhatIsAutism";
 import SignsOfAutism from "./pages/SignsOfAutism/SignsOfAutism";
 import AdditionalSupport from "./pages/AdditionalSupport/AdditionalSupport";
 import OurEvents from "./pages/OurEvents/OurEvents";
-import FrequentlyAskedQuestions from "./pages/FrequentlyAskedQuestions/FrequentlyAskedQuestions";
 
 // Resources:
 import Resources from "./pages/Resources/Resources";
 
 // Contacts:
 import Contact from "./pages/Contact/Contact";
-// Registration:
-import Register from "./pages/RegisterPage/Register";
-import Login from "./pages/Login/Login";
-import SignsOfAutism from "./pages/SignsOfAutism/SignsOfAutism";
-import WhatWeDoPage from "~/pages/WhatWeDoPage/WhatWeDoPage";
-// Footer links:
-import TermsConditions from "./pages/Terms&Condition/TermsConditions";
-import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
 
 // User and Authorisation:
 import SignUpPage from "./pages/User/SignUpPage";
 import SignInPage from "./pages/User/SignInPage";
 import PasswordResetPage from "./pages/User/PasswordResetPage";
-import WhatWeDoPage from "./pages/WhatWeDoPage/WhatWeDoPage";
+
+// Footer:
+import Footer from "./components/Footer/Footer";
 
 //Not Found Page:
 import NotFound from "./pages/NotFound/NotFound";
 
 // Styling:
 import "./App.css";
-import Footer from "./components/Footer/Footer";
 
 function App() {
 	return (
@@ -55,15 +47,6 @@ function App() {
 					<Route path="/what-we-do" component={WhatWeDoPage} />
 
 					{/* routes from nav bar: */}
-					<Route exact path="/about" component={About} />
-					<Route path="/about/what-is-autism" component={WhatIsAutism} />
-					<Route path="/about/signs-of-autism" component={SignsOfAutism} />
-					<Route
-						path="/about/additional-support"
-						component={AdditionalSupport}
-					/>
-					<Route path="/frequently-asked-questions" component={FrequentlyAskedQuestions} />
-					<Route path="/resources" component={Resources} />
 					<Route exact path="/about" component={AboutUsPage} />
 						<Route path="/about/what-is-autism" component={WhatIsAutism} />
 						<Route path="/about/signs-of-autism" component={SignsOfAutism} />
@@ -74,11 +57,6 @@ function App() {
 
 					<Route path="/contact" component={Contact} />
 
-					{/**
-					 * Footer links:
-					 */}
-					<Route path="/terms-conditions" component={TermsConditions} />
-					<Route path="/privacy-policy" component={PrivacyPolicy} />
 					{/* User Authantication: */}
 					<Route path="/signin" component={SignInPage} />
  					<Route path="/signup" component={SignUpPage} />
