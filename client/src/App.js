@@ -17,6 +17,7 @@ import OurEvents from "./pages/OurEvents/OurEvents";
 
 // Resources:
 import Resources from "./pages/Resources/Resources";
+import TimetableNotRegistered from "~/pages/Resources/Timetable/NotRegistered/TimetableNotRegistered";
 
 // Contacts:
 import Contact from "./pages/Contact/Contact";
@@ -46,7 +47,7 @@ function App() {
 					{/* routes from home page: */}
 					<Route path="/what-we-do" component={WhatWeDoPage} />
 
-					{/* routes from nav bar: */}
+					{/* routes from nav bar: */}			
 					<Route exact path="/about" component={AboutUsPage} />
 						<Route path="/about/what-is-autism" component={WhatIsAutism} />
 						<Route path="/about/signs-of-autism" component={SignsOfAutism} />
@@ -54,6 +55,7 @@ function App() {
 						<Route path="/about/events" component={OurEvents} />
 
 					<Route exact path="/resources" component={Resources} />
+          <Route path="/resources/timetables" component={TimetableNotRegistered}/>
 
 					<Route path="/contact" component={Contact} />
 
