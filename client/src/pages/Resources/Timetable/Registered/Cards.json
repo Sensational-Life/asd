@@ -2,27 +2,32 @@
     {
         "title": "Early routine cards",
         "text": "<p>Suitable for age: 2 – 4</p><p>Quantity: 40</p>",
-        "src": ""
+        "src": "~/assets/images/timetable-2-4age.jpg",
+        "alt": "Timetable for age from 2 years to 4 years"
     },
      {
         "title": "Homework cards",
         "text": "<p>Suitable for age: 3 – 5</p><p>Quantity: 54</p>",
-        "src": ""
+        "src": "~/assets/images/timetable-3-5age.jpg",
+        "alt": "Timetable for age from 3 years to 5 years"
     },
      {
         "title": "Organisational cards",
         "text": "<p>Suitable for age: 7 – 11</p><p>Quantity: 54</p>",
-        "src": ""
+        "src": "~/assets/images/timetable7-11age.jpg",
+        "alt": "Timetable for age from 7 years to 11 years"
     },
      {
         "title": "Organisational cards",
         "text": "<p>Suitable for age: 9 – 14</p><p>Quantity: 54</p>",
-        "src": ""
+        "src": "~/assets/images/timetable-9-14.jpg",
+        "alt": "Timetable for age from 9 years to 14 years"
     },
      {
         "title": "Mix & Match routine cards",
         "text": "<p>Suitable for all ages</p>",
-        "src": ""
+        "src": "~/assets/images/timetable-mix-match-routine.jpg",
+        "alt": "Timetable for mix match routine"
     }
    
 ]

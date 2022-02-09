@@ -1,24 +1,113 @@
-.timetable-registered-section .video-container {
+.header-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 3rem;
+}
+
+.timetable-registered-container .header {
+	font-family: "RobotoSlab-Regular";
+	font-size: 48px;
+	color: var(--black-title-color);
+}
+
+.timetable-registered-wrapper {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	margin: 1.5rem 0 2rem 30px;
+	align-items: center;
+	width: 100vw;
+	background-color: var(--main-bg-color);
 }
 
-.timetable-registered-section .video-wrapper {
-	min-height: 300px;
-	margin-top: 1.5rem;
+/* .timetable-registered-grid {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	/* align-items: center; */
+	/* min-height: 700px;
+	max-width: 700px;
+	min-width: 350px; */
+/* }  */
+
+.timetable-registered-container {
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(9, 1fr);
+	grid-template-rows: repeat(9, 1fr);
+	height: 100%;
+
 }
 
-.timetable-registered-section .player-button{
-	width: 90px;
-	height: 90px;
-	color: var(--blue-color);
+.timetable-registered-container .cards-bg {
+	justify-self: center;
+	grid-row: 1/10;
+	grid-column: 4/7;
+	min-width: 1100px;
+	background-color: var(--green-bg-color);
 }
 
-.timetable-registered-section .video-description p {
-	padding:15px;
-	text-align: center;
-	font-size: 18px;
+.timetable-registered-wrapper .card-container {
+	justify-self: center;
+	grid-row: 2/9;
+	grid-column: 4/7;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-gap: 40px;
+}
+
+@media screen and (max-width: 992px) {
+	.timetable-registered-wrapper .card-container {
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: repeat(1, 1fr);
+	}
+}
+
+.timetable-registered-wrapper .card {
+	background: var(--white-color);
+	display: flex;
+	flex-direction: column;
+	height: 430px;
+	width: 240px;
+	padding: 30px 30px 0 30px;
+	box-shadow: 3px 3px 6px var(--black-shadow-color);
+	border: 1px solid rgb(190, 190, 190);
+	line-height: 27px;
+	letter-spacing: 0.2px;
+}
+
+.timetable-registered-wrapper .card .card-header {
+	font-family: "Ambit SemiBold";
+	font-size: 25px;
+}
+
+.timetable-registered-wrapper .card p {
 	font-family: "Ambit Light";
+	font-size: 20px;
+}
+
+.timetable-registered-wrapper .card p:first-of-type {
+	margin-top: 30px;
+}
+
+/* .timetable-registered-wrapper .card .options li {
+	font-family: "Ambit Light";
+	font-size: 16px;
+	list-style-type: disc;
+} */
+
+.card-image{
+	max-width: 15rem;
+}
+
+.timetable-icon-container{
+	display: flex;
+	justify-content: end;
+}
+
+.timetable-icon{
+	padding:10px 20px 0 0;
+	width: 25px;
+	height: 25px;
 }

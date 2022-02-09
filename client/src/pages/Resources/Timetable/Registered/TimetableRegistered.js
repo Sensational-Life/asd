@@ -2,12 +2,14 @@ import React from "react";
 import ResponsivePlayer from "react-player";
 import { BsPlayCircleFill } from "react-icons/bs";
 import TimetableVideoImg from "~/assets/images/timetable-video.jpg";
-
 import "./TimetableRegistered.css";
+import Cards from "./Cards";
+
 function TimetableRegistered() {
 	return (
 		<div className="timetable-registered-container">
 			<div className="timetable-registered-section">
+				<Cards />
 				<div className="video-container">
 					<div className="video-wrapper">
 						<ResponsivePlayer
