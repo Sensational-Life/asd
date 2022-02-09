@@ -23,13 +23,13 @@ function TimetableNotRegistered() {
 						</p>
 						<p>
 							To access online or download <br></br> FREE Timetable{" "}
-							<Link to="/login">Sign Up.</Link>
+							<Link to="/signin">Log In.</Link>
 						</p>
 						<p>
 							If you want to access our visual<br></br> timetables online or
 							Download:
 						</p>
-						<Link to="/register">
+						<Link to="/signup">
 							<button
 								className="register-button"
 								onMouseEnter={() => setButtonShow(true)}
