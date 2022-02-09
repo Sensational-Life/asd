@@ -2,7 +2,7 @@ import React from "react";
 import "./TimetableNotRegistered.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import motherAndDaughterImg from "~/images/mother-daughter-laptop.jpeg";
+import motherAndDaughterImg from "~/images/mother-daughter-laptop-lowres.png";
 import arrowImg from "~/images/arrow-heart.png";
 import leftTopImg from "~/images/timetable-small-top.jpg";
 import rightImg from "~/images/timetable-illustration-large.jpg";
