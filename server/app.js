@@ -2,6 +2,8 @@ import express from "express";
 import morgan from "morgan";
 import path from "path";
 import router from "./api/index";
+const  cors = require("cors");
+
 
 const bodyParser = require("body-parser");
 const auth = require("./auth/routes");
@@ -21,6 +23,7 @@ const staticDir = path.join(__dirname, "static");
 
 const app = express();
 
+app.use(cors());
 app.use(bodyParser.json());
 app.use(express.json());
 app.use(configuredHelmet());
