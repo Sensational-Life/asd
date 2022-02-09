@@ -33,10 +33,9 @@
 .timetable-registered-container {
 	position: relative;
 	display: grid;
-	grid-template-columns: repeat(9, 1fr);
-	grid-template-rows: repeat(9, 1fr);
-	height: 100%;
-
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: repeat(1, 1fr);
+	height: fit-content;
 }
 
 .timetable-registered-container .cards-bg {
@@ -55,6 +54,8 @@
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(2, 1fr);
 	grid-gap: 40px;
+	margin-top: 10rem;
+	margin-bottom: 5rem;
 }
 
 @media screen and (max-width: 992px) {
@@ -110,4 +111,40 @@
 	padding:10px 20px 0 0;
 	width: 25px;
 	height: 25px;
+}
+
+
+.timetable-registered-section .video-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: top;
+	width: 300px;
+}
+
+.timetable-registered-section .video-wrapper {
+	min-height: 250px;
+}
+
+.timetable-registered-section .player-button{
+	width: 75px;
+	height: 75px;
+	color: var(--blue-color);
+}
+
+.timetable-registered-section .video-description{
+	padding:15px;
+	font-size: 20px;
+	font-family: "Ambit Light";
+	line-height: 27px;
+	letter-spacing: 0.2px;
+}
+
+.timetable-registered-section .video-link{
+	font-size: 19px;
+	font-family: "Ambit SemiBold";
+}
+
+.timetable-registered-section .video-link:hover{
+	text-shadow: 0 0 1px var(--blue-color);
+	text-decoration: underline;
 }
