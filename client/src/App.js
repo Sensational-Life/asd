@@ -18,6 +18,7 @@ import OurEvents from "./pages/OurEvents/OurEvents";
 // Resources:
 import Resources from "./pages/Resources/Resources";
 import SelfReferralPathway from "./pages/Resources/Referrals/NotRegistered/SelfReferralPathway";
+import TimetableNotRegistered from "~/pages/Resources/Timetable/NotRegistered/TimetableNotRegistered";
 
 // Contacts:
 import Contact from "./pages/Contact/Contact";
@@ -47,19 +48,18 @@ function App() {
 					{/* routes from home page: */}
 					<Route path="/what-we-do" component={WhatWeDoPage} />
 
-					{/* routes from nav bar: */}
+					{/* routes from nav bar: */}			
 					<Route exact path="/about" component={AboutUsPage} />
 					<Route path="/about/what-is-autism" component={WhatIsAutism} />
 					<Route path="/about/signs-of-autism" component={SignsOfAutism} />
-					<Route
-						path="/about/additional-support"
-						component={AdditionalSupport}
-					/>
+					<Route path="/about/additional-support" component={AdditionalSupport}/>
 					<Route path="/about/events" component={OurEvents} />
 
 					<Route exact path="/resources" component={Resources} />
 					<Route path="/resources/self-referral-pathway" component={SelfReferralPathway} />
+          <Route path="/resources/timetables" component={TimetableNotRegistered}/>
 
+          
 					<Route path="/contact" component={Contact} />
 
 					{/* User Authantication: */}
