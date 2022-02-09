@@ -1,8 +1,7 @@
 import React from "react";
 import "./TimetableRegistered.css";
 import CardContent from "./CardContent.js";
-import { GrFavorite, GrDownload } from "react-icons/gr";
-
+import { BsHeart, BsDownload } from "react-icons/bs";
 import ResponsivePlayer from "react-player";
 import { BsPlayCircleFill } from "react-icons/bs";
 import TimetableVideoImg from "~/assets/images/timetable-video.jpg";
@@ -28,12 +27,16 @@ function TimetableRegistered() {
 										<h3 className="card-header">{card.title}</h3>
 										<div dangerouslySetInnerHTML={{ __html: card.text }} />
 										<div>
-											<img className="card-image" src={card.src} alt={card.alt} />
+											<img
+												className="card-image"
+												src={card.src}
+												alt={card.alt}
+											/>
 										</div>
 										<div className="timetable-icon-container">
-											<GrFavorite className="timetable-icon" />
+											<BsHeart className="timetable-icon-heart" />
 											<a href={card.pdflink}>
-												<GrDownload className="timetable-icon" />
+												<BsDownload className="timetable-icon" />
 											</a>
 										</div>
 									</div>
