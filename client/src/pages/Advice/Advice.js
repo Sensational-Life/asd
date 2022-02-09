@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Advice.css";
 import AdviceImg from "~/assets/images/Advice.jpg";
 import AdviceCard from "./AdviceCard";
-git
+
 function Advice() {
 	const [buttonShow, setButtonShow] = useState(false);
 	return (
