@@ -13,7 +13,7 @@ export const CardContent = [
 		src: Timetable2to4,
 		alt: "Timetable for age from 2 years to 4 years",
 		pdflink:
-			"https://drive.google.com/drive/folders/1ndM1WyLegxUu8kpSJ-Nth8rk4onKiR9K",
+			"https://drive.google.com/file/d/1JY-gs3S27LQGsxsN64f_JQbPJzXbHaaM/view",
 	},
 	{
 		title: "Homework cards",
@@ -21,7 +21,7 @@ export const CardContent = [
 		src: Timetable3to5,
 		alt: "Timetable for age from 3 years to 5 years",
 		pdflink:
-			"https://drive.google.com/drive/folders/1ndM1WyLegxUu8kpSJ-Nth8rk4onKiR9K",
+			"https://drive.google.com/file/d/10usfMuYAVesK8Hbt8N8zmH_BjYl8eNi7/view",
 	},
 	{
 		title: "Organisational cards",
@@ -29,7 +29,7 @@ export const CardContent = [
 		src: Timetable7to11,
 		alt: "Timetable for age from 7 years to 11 years",
 		pdflink:
-			"https://drive.google.com/drive/folders/1ndM1WyLegxUu8kpSJ-Nth8rk4onKiR9K",
+			"https://drive.google.com/file/d/1HKA5pI9wXQNlVzRyCjSek9JjvXUfkCRk/view",
 	},
 	{
 		title: "Organisational cards",
@@ -37,7 +37,7 @@ export const CardContent = [
 		src: Timetable9to14,
 		alt: "Timetable for age from 9 years to 14 years",
 		pdflink:
-			"https://drive.google.com/drive/folders/1ndM1WyLegxUu8kpSJ-Nth8rk4onKiR9K",
+			"https://drive.google.com/file/d/113EgZb-o2v0KWSjV1QOXlNJzk9feYn5x/view",
 	},
 	{
 		title: "Mix & Match routine cards",
@@ -45,7 +45,7 @@ export const CardContent = [
 		src: TimetableMixMatchRoutine,
 		alt: "Timetable for mix match routine",
 		pdflink:
-			"https://drive.google.com/drive/folders/1ndM1WyLegxUu8kpSJ-Nth8rk4onKiR9K",
+			"https://drive.google.com/file/d/1Zh_HZwedmiHphlQs5fJtPiEc7PKfk4GW/view",
 	},
 ];
 
