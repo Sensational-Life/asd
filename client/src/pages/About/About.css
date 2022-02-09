@@ -1,8 +1,0 @@
-.about-container {
-    display: flex;
-    height: 80vh;
-    justify-content: center;
-    align-items: center;
-    font-family: "RobotoSlab-VariableFont_wght";
-    text-transform: uppercase;
-}

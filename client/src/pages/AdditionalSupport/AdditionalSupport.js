@@ -2,9 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./AdditionalSupport.css";
 import additionalSupportImg from "../../images/additional-support.jpg";
-import FooterNav from "../Home/FooterNav/FooterNav";
-import FooterLogo from "../Home/FooterLogo/FooterLogo";
-import FooterIcon from "../Home/FooterIcon/FooterIcon";
 
 function AdditionalSupport() {
 	return (
@@ -30,26 +27,28 @@ function AdditionalSupport() {
 					</section>
 					<section className="content-right-container">
 						<h2>Useful links:</h2>
-						<a href="https://www.autism.org.uk/advice-and-guidance/topics/education/extra-help-at-school/scotland">
+						<a
+							href="https://www.autism.org.uk/advice-and-guidance/topics/education/extra-help-at-school/scotland"
+							target="_blank"
+						>
 							https://www.autism.org.uk/advice-and-guidance/topics/education/extra-help-at-school/scotland
 						</a>
 						<br></br>
-						<a href="https://enquire.org.uk/parents/what-is-asl/">
+						<a
+							href="https://enquire.org.uk/parents/what-is-asl/"
+							target="_blank"
+						>
 							https://enquire.org.uk/parents/what-is-asl/
 						</a>
 						<br></br>
 						<a
-							href="https://www.nhs.uk/conditions/autism/autism-and-everyday-life/help-for-families/
-"
+							href="https://www.nhs.uk/conditions/autism/autism-and-everyday-life/help-for-families/"							target="_blank"
 						>
 							https://www.nhs.uk/conditions/autism/autism-and-everyday-life/help-for-families/
 						</a>
 					</section>
 				</section>
 			</main>
-			<FooterLogo />
-			<FooterNav />
-			<FooterIcon />
 		</>
 	);
 }

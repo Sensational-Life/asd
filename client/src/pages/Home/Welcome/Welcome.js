@@ -23,7 +23,7 @@ function Welcome() {
 						<span className="welcome_icon_box1" ><FaCheck className="welcome_circle" /></span>
 						<span>Empowering Neuradiverse Families</span>
 					</div>
-					<Link to="/register">
+					<Link to="/signup">
 						{" "}
 						<button className="welcome_button"
 						onMouseEnter={() => setButtonShow(true)}

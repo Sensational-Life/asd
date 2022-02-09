@@ -10,6 +10,7 @@ require("./auth/passport");
 
 import {
 	configuredHelmet,
+	permissionsPolicy,
 	httpsOnly,
 	logErrors,
 	pushStateRouting,
@@ -23,6 +24,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(express.json());
 app.use(configuredHelmet());
+app.use(permissionsPolicy());
 app.use(morgan("dev"));
 
 if (app.get("env") === "production") {
