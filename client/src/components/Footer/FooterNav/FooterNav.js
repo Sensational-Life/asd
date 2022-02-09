@@ -31,7 +31,7 @@ export function FooterNav() {
 					</div>
 					<div className="nav_box">
 						<p>Help</p>
-						<Link to="/faqs" className="footernav_link">
+						<Link to="/frequently-asked-questions" className="footernav_link">
 							FAQs
 						</Link>
 					</div>
@@ -41,7 +41,11 @@ export function FooterNav() {
 					<p>Our Email address</p>
 					<span>
 						<AiOutlineMail color="var(--pattens-blue)" className="mail-icon" />
-						<Link to="/contact-us">info@sensational-life.com</Link>
+						<Link to="#"
+							onClick={(e) => {
+								window.location = "mailto:info@sensational-life.com";
+								e.preventDefault();
+							}}>info@sensational-life.com</Link>
 					</span>
 				</div>
 			</div>

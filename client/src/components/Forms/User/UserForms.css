@@ -1,0 +1,117 @@
+.user-form-container {
+    margin: 3rem 3rem;
+    min-width: 380px;
+}
+
+.user-form {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 380px;
+}
+
+.user-form-header h1 {
+    font-family: "RobotoSlab-Regular";
+    font-size: 2.5rem;
+}
+
+.user-form-header p {
+    font-family: "Ambit Light";
+    font-size: 23px;
+    margin-top: 0.8rem;
+    margin-left: 2.5rem;
+}
+
+.user-form .text-field {
+    width: 100%;
+    height: 2.5rem;
+    padding: 4px;
+    margin: 0.7rem 0;
+    border: 1px solid #D9DEEA;
+    font-family: "Ambit Light";
+    font-size: large;
+    background-color: transparent;
+}
+
+.user-form .text-field::placeholder {
+    color: var(--black-placeholder-color);
+    letter-spacing: 0.16px;
+    font-size: large;
+}
+
+.user-form .text-field[type="password"] {
+    font-size: xx-large;
+}
+
+.user-form label {
+    color: var(--black-color);
+    font-family: "Ambit Light";
+    font-size: medium;
+    font-weight: 500;
+}
+
+.user-form .submit-button {
+    width: 100%;
+    height: 2.8rem;
+    margin-top: 0.7rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    display: inline-block;
+    font-family: 'Ambit SemiBold';
+    font-size: large;
+    border: none;
+    color: var(--white-color);
+    background-color: var(--blue-color);
+    border-radius: 4px;
+}
+
+.user-form .submit-button:hover {
+    cursor: pointer;
+}
+
+.user-form .submit-button-tooltip-container {
+    min-height: 4rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.user-form .submit-button-tooltip {
+    text-transform: uppercase;
+    display: inline-block;
+    border: none;
+    background-color: var(--darkgreen-color);
+    color: var(--white-color);
+    font-size: medium;
+    margin-right: 1rem;
+    width: 50%;
+    height: 2.5rem;
+    border-radius: 0.2rem;
+}
+
+.user-form-footer {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.3rem;
+    align-items: center;
+}
+
+.user-form-footer .text {
+    font-family: "Ambit Light";
+}
+
+.user-form-footer .link {
+    margin-left: 0.5rem;
+    font-family: "Ambit Bold";
+}
+
+.user-form-footer a,
+.user-form-footer a:visited,
+.user-form-footer a:link {
+    text-decoration: none;
+    color: var(--blue-color);
+}
+
+.user-form-footer a:hover {
+    text-decoration: underline;
+}

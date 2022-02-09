@@ -6,6 +6,7 @@ import WeSupportYou from "./WeSupportYou/WeSupportYou";
 import MemberSays from "./MemberSays/MemberSays";
 import SubscribeNews from "./SubscribeNews/SubscribeNews";
 import ScrollDown from "./ScrollDown/ScrollDown";
+import Faq from "./Faq/Faq";
 
 export function Home() {
 	return (
@@ -17,6 +18,7 @@ export function Home() {
 			<WeSupportYou />
 			<MemberSays />
 			<SubscribeNews />
+			<Faq />
 		</main>
 	);
 }
