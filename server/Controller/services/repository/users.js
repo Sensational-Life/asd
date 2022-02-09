@@ -14,16 +14,15 @@ export const getUserByEmail = (email) => {
 			if (err) {
 				reject(err);
 			}
-			resolve(result.rows);
+			resolve(result.rows[0]);
 		});
 	});
 };
 
 export const createUser = ({ name, email, pwd }) => {
-	console.log(name, email, pwd);
 	return new Promise((resolve, reject) => {
 		db.query(
-			"INSERT INTO users (name,email, pwd) values ($1, $2,$3) RETURNING user_id",
+			"INSERT INTO users (name,email, pwd) values ($1, $2,$3) RETURNING id",
 			[name, email, pwd],
 			(err, result) => {
 				if (err) {
@@ -49,7 +48,7 @@ export const getUserById = (id) => {
 export const editPassword = (userId, newPassword) => {
 	return new Promise((resolve, reject) => {
 		db.query(
-			"UPDATE users SET  PASSWORD=$1 WHERE user_id=$2",
+			"UPDATE users SET  PASSWORD=$1 WHERE id=$2",
 			[newPassword, userId],
 			(err, result) => {
 				err ? reject(err) : resolve(result.rows);
