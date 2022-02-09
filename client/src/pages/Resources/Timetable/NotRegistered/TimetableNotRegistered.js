@@ -52,32 +52,15 @@ function TimetableNotRegistered() {
 							alt="mother and daughter browsing internet"
 						/>
 						<section className="timetables-img-color-blob"></section>
-						{/* <section className="primary-img"></section> */}
 					</section>
 				</section>
 				<section className="bottom-container">
 					<div className="bottom-two-cards">
-						<img
-							className="left-top-img"
-							src={leftTopImg}
-							alt="timetable illustration"
-						/>
-						<img
-							className="left-bottom-img"
-							src={leftBottomImg}
-							alt="timetable illustration"
-						/>
+						<img className="left-top-img" src={leftTopImg} alt="timetable illustration"/>
+						<img className="left-bottom-img" src={leftBottomImg} alt="timetable illustration"/>
 					</div>
-					<img
-						className="arrow-img"
-						src={arrowImg}
-						alt="an arrow forming a heart"
-					/>
-					<img
-						className="right-image-card-lg"
-						src={rightImg}
-						alt="timetable illustration"
-					/>
+					<img className="arrow-img" src={arrowImg} alt="an arrow forming a heart"/>
+					<img className="right-image-card-lg" src={rightImg} alt="timetable illustration"/>
 				</section>
 			</main>
 		</>

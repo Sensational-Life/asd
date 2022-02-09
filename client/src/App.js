@@ -8,15 +8,13 @@ import Home from "./pages/Home/Home";
 import AboutUs from "./pages/Home/AboutUs/AboutUs";
 import About from "./pages/About/About";
 
-
-
 import AboutUsPage from "./pages/AboutUsPage/AboutUsPage";
 
 import WhatIsAutism from "./pages/WhatIsAutism/WhatIsAutism";
 import AdditionalSupport from "./pages/AdditionalSupport/AdditionalSupport";
 // Resources:
 import Resources from "./pages/Resources/Resources";
-import TimetableNotRegistered from "~/pages/Timetables/TimetableNotRegistered";
+import TimetableNotRegistered from "~/pages/Resources/Timetable/NotRegistered/TimetableNotRegistered";
 // Contacts:
 import Contact from "./pages/Contact/Contact";
 // Registration:
