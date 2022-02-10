@@ -2,7 +2,6 @@ import React, { useState, useLayoutEffect } from "react";
 import "./FrequentlyAskedQuestions.css";
 import "./VideoModel.css";
 import faqs from "./Faq";
-
 import { IoCloseOutline } from "react-icons/io5";
 import { BiLoaderAlt } from "react-icons/bi";
 
@@ -92,7 +91,7 @@ function FrequentlyAskedQuestions() {
 							<button className="question_del_button" onClick={()=>deletFaq(i)}>-</button>
 						</div>
 					</div>
-				);
+    			);
 			})}
 		</div>
 	);
