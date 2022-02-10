@@ -1,0 +1,71 @@
+.JoinUs-container {
+	width: 1240px;
+	height: 700px;
+	display: flex;
+}
+.JoinUs-container-img {
+	width: 620px;
+	height: 700px;
+}
+.JoinUs-container-text-header {
+	width: 620px;
+	height: 700px;
+	margin: 80px;
+}
+
+.JoinUs-text-header {
+	width: 500px;
+	height: 400px;
+}
+.JoinUs-tilte-header {
+	text-align: left;
+	font: normal normal normal 48px/64px Roboto Slab;
+	letter-spacing: 0.48px;
+	color: #0f2420;
+	opacity: 1;
+	margin: 12px;
+}
+.JoiunUs-p {
+	width: 460px;
+	margin: 12px;
+	color: var(--unnamed-color-000000);
+	text-align: left;
+	letter-spacing: 0.2px;
+	color: #000000;
+}
+.Joinus-checkout-text {
+	font: var(--unnamed-font-style-normal) normal 600 var(--unnamed-font-size-20) /
+		var(--unnamed-line-spacing-25) var(--unnamed-font-family-ambit);
+	letter-spacing: var(--unnamed-character-spacing-0-2);
+	color: var(--unnamed-color-000000);
+	text-align: left;
+	font: normal normal 600 20px/25px Ambit;
+	width: 960px;
+	margin: 20px;
+	text-align: left;
+	letter-spacing: 0.2px;
+	color: #000000;
+}
+
+.JoinUs-img-color {
+	width: 497px;
+	height: 344px;
+	background-color: #a4e4db;
+	margin: 160px;
+	position: relative;
+	top: 10px;
+	right: 70px;
+	border-radius: 20px;
+	opacity: 1;
+}
+.JoinUs-img {
+	width: 428px;
+	height: 424px;
+	margin: 0px 50px 0px 32px;
+}
+.JoinUs-main-img {
+	position: relative;
+	width: 428px;
+	height: 424px;
+	bottom: 130px;
+}
