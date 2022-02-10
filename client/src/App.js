@@ -29,7 +29,6 @@ import TimetableNotRegistered from "~/pages/Resources/Timetable/NotRegistered/Ti
 
 // Contacts:
 import Contact from "./pages/Contact/Contact";
-
 // User and Authorisation:
 import SignUpPage from "./pages/User/SignUpPage";
 import SignInPage from "./pages/User/SignInPage";
