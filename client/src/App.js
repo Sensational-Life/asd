@@ -18,8 +18,14 @@ import OurEvents from "./pages/OurEvents/OurEvents";
 
 // Resources:
 import Resources from "./pages/Resources/Resources";
+
+import Advice from "./pages/Advice/Advice";
+
+
 import SelfReferralPathway from "./pages/Resources/Referrals/NotRegistered/SelfReferralPathway";
+
 import TimetableNotRegistered from "~/pages/Resources/Timetable/NotRegistered/TimetableNotRegistered";
+
 
 // Contacts:
 import Contact from "./pages/Contact/Contact";
@@ -58,10 +64,14 @@ function App() {
 					<Route path="/about/events" component={OurEvents} />
 
 					<Route exact path="/resources" component={Resources} />
+					<Route exact path="/resources/advice" component={Advice} />
+
+         
+
 					<Route path="/resources/self-referral-pathway" component={SelfReferralPathway} />
           <Route path="/resources/timetables" component={TimetableNotRegistered}/>
 
-          
+            
 					<Route path="/contact" component={Contact} />
 
 					{/* User Authantication: */}
