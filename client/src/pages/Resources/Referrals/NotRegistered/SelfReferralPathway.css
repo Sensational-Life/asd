@@ -1,0 +1,122 @@
+.referral-main-container {
+	background-color: var(--main-bg-color);
+	padding-top: 6rem;
+    padding-bottom: 4rem;
+}
+.referral-content-container {
+    
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+    align-items: center;
+	margin: auto;
+	max-width: 1200px;
+}
+
+.referral-text-container {
+	display: flex;
+	flex-direction: column;
+	height: 27rem;
+	justify-content: start;
+	row-gap: 1.6875rem;
+	width: 50%;
+}
+.referral-text-container > h1 {
+	font-family: "RobotoSlab-Regular";
+	font-size: 3rem;
+	letter-spacing: 0.48px;
+	font-weight: normal;
+}
+.referral-text-container p:nth-child(2) {
+	max-width: 520px;
+	max-height: 6.125em;
+	font-family: "RobotoSlab-Regular";
+	letter-spacing: 0.014rem;
+	line-height: 1.9rem;
+	font-size: 1.438rem;
+}
+.referral-text-container p:nth-child(3) {
+	font-family: "Ambit Light";
+	width: 81%;
+	font-size: 1.25rem;
+	line-height: 1.6rem;
+	letter-spacing: 0.2px;
+}
+.referral-text-container > p:nth-child(3) a {
+	font-family: "Ambit Bold";
+	color: var(--blue-color);
+	text-decoration: none;
+}
+.referral-text-container > p:nth-child(3) a:hover {
+	text-decoration: underline;
+}
+.referral-register-button {
+	background-color: var(--blue-color);
+	padding: 1rem 2rem;
+	border: none;
+	font-size: 1.313rem;
+	font-family: "Ambit Regular";
+	color: var(--white-color);
+    letter-spacing: 0.35px;
+}
+.referral-register-button:hover {
+	background-color: var(--darkgreen-color);
+	cursor: pointer;
+}
+.referral-register-button-hover {
+	background-color: var(--blue-color);
+	width: 200px;
+	height: 40px;
+	border: none;
+	font-size: 1.1rem;
+	font-family: "Ambit SemiBold";
+	color: var(--white-color);
+	margin-top: -0.7rem;
+	margin-left: 140px;
+	z-index: 10;
+}
+.referral-img-container img {
+	max-height: 100%;
+	max-width: 100%;
+	z-index: 0;
+}
+
+@media only screen and (max-width: 1023px) {
+	.referral-img-container img {
+		margin-top: 0;
+	}
+}
+@media only screen and (min-width: 1024px) {
+	.referral-content-container {
+		padding: 10px;
+        margin-top: -3rem;
+	}
+	.referral-content-container {
+		flex-direction: row;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.referral-content-container {
+		margin-top: -2rem;
+	}
+	.referral-content-container {
+		flex-direction: row;
+        align-items: unset;
+	}
+
+	.referral-img-container img {
+		max-height: 100%;
+		max-width: 100%;
+	}
+}
+@media only screen and (min-width: 1400px) {
+	.referral-content-container {
+		flex-direction: row;
+        align-items: unset;
+	}
+	.referral-img-container img {
+		max-height: 100%;
+		max-width: 100%;
+	}
+}
