@@ -108,16 +108,23 @@
 	justify-content: end;
 }
 
-.timetable-icon{
+.timetable-icon-download{
 	padding:8px 20px 0 0;
 	width: 25px;
 	height: 25px;
 }
 
-.timetable-icon-heart{
+.timetable-icon-heart-not-saved{
 	padding:10px 20px 0 0;
 	width: 24px;
 	height: 24px;
+}
+
+.timetable-icon-heart-saved{
+	padding:10px 20px 0 0;
+	width: 24px;
+	height: 24px;
+	color: var(--blue-color);
 }
 
 
@@ -149,6 +156,7 @@
 .timetable-registered-section .video-link{
 	font-size: 19px;
 	font-family: "Ambit SemiBold";
+	padding-left: 15px;
 }
 
 .timetable-registered-section .video-link:hover{

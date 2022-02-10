@@ -1,18 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import "./TimetableRegistered.css";
 import CardContent from "./CardContent.js";
-import { BsHeart, BsDownload } from "react-icons/bs";
+import { BsHeart, BsFillHeartFill, BsDownload } from "react-icons/bs";
 import ResponsivePlayer from "react-player";
 import { BsPlayCircleFill } from "react-icons/bs";
 import TimetableVideoImg from "~/assets/images/timetable-video.jpg";
 
 
 function TimetableRegistered() {
+	const [saved, setSaved] = useState(false);
 	return (
 		<div className="timetable-registered-container">
 			<div className="timetable-registered-section">
 				<div className="timetable-registered-wrapper">
-					{/* <div className="timetable-registered-grid"> */}
 					<div className="timetable-registered-container">
 						<div className="cards-bg">
 							<div className="header-container">
@@ -21,9 +21,8 @@ function TimetableRegistered() {
 						</div>
 						<div className="card-container">
 							{CardContent.map((card) => {
-								const cardKey = card.title.toLowerCase().replace(/\s/gi, "");
 								return (
-									<div className="card" key={cardKey}>
+									<div className="card" key={card.id}>
 										<h3 className="card-header">{card.title}</h3>
 										<div dangerouslySetInnerHTML={{ __html: card.text }} />
 										<div>
@@ -34,9 +33,24 @@ function TimetableRegistered() {
 											/>
 										</div>
 										<div className="timetable-icon-container">
-											<BsHeart className="timetable-icon-heart" />
+											{saved ? (
+												<BsHeart
+													className="timetable-icon-heart-not-saved"
+													onClick={() => {
+														setSaved(false);
+													}}
+												/>
+											) : (
+												<BsFillHeartFill
+													className="timetable-icon-heart-saved"
+													onClick={() => {
+														setSaved(true);
+													}}
+												/>
+											)}
+
 											<a href={card.pdflink}>
-												<BsDownload className="timetable-icon" />
+												<BsDownload className="timetable-icon-download" />
 											</a>
 										</div>
 									</div>

@@ -8,6 +8,7 @@ import TimetableMixMatchRoutine from "~/assets/images/timetable-mix-match-routin
 
 export const CardContent = [
 	{
+		id: 0,
 		title: "Early routine cards",
 		text: "<p>Suitable for age: 2 – 4</p><p>Quantity: 40</p>",
 		src: Timetable2to4,
@@ -16,6 +17,7 @@ export const CardContent = [
 			"https://drive.google.com/file/d/1JY-gs3S27LQGsxsN64f_JQbPJzXbHaaM/view",
 	},
 	{
+		id: 1,
 		title: "Homework cards",
 		text: "<p>Suitable for age: 3 – 5</p><p>Quantity: 54</p>",
 		src: Timetable3to5,
@@ -24,6 +26,7 @@ export const CardContent = [
 			"https://drive.google.com/file/d/10usfMuYAVesK8Hbt8N8zmH_BjYl8eNi7/view",
 	},
 	{
+		id: 2,
 		title: "Organisational cards",
 		text: "<p>Suitable for age: 7 – 11</p><p>Quantity: 54</p>",
 		src: Timetable7to11,
@@ -32,6 +35,7 @@ export const CardContent = [
 			"https://drive.google.com/file/d/1HKA5pI9wXQNlVzRyCjSek9JjvXUfkCRk/view",
 	},
 	{
+		id: 3,
 		title: "Organisational cards",
 		text: "<p>Suitable for age: 9 – 14</p><p>Quantity: 54</p>",
 		src: Timetable9to14,
@@ -40,6 +44,7 @@ export const CardContent = [
 			"https://drive.google.com/file/d/113EgZb-o2v0KWSjV1QOXlNJzk9feYn5x/view",
 	},
 	{
+		id: 4,
 		title: "Mix & Match routine cards",
 		text: "<p>Suitable for all ages</p>",
 		src: TimetableMixMatchRoutine,
