@@ -46,7 +46,7 @@
 	background-color: var(--green-bg-color);
 }
 
-.timetable-registered-wrapper .card-container {
+.timetable-registered-wrapper .cards-container {
 	justify-self: center;
 	grid-row: 2/9;
 	grid-column: 4/7;
@@ -59,44 +59,47 @@
 }
 
 @media screen and (max-width: 992px) {
-	.timetable-registered-wrapper .card-container {
+	.timetable-registered-wrapper .cards-container {
 		grid-template-columns: repeat(1, 1fr);
 		grid-template-rows: repeat(1, 1fr);
 	}
 }
 
-.timetable-registered-wrapper .card {
+.timetable-registered-wrapper .card-container {
 	background: var(--white-color);
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 	height: 430px;
-	width: 240px;
-	padding: 30px 30px 0 30px;
+	width: 250px;
+	padding: 30px 25px 0 25px;
 	box-shadow: 3px 3px 6px var(--black-shadow-color);
 	border: 1px solid rgb(190, 190, 190);
 	line-height: 27px;
 	letter-spacing: 0.2px;
 }
 
-.timetable-registered-wrapper .card .card-header {
+.timetable-registered-wrapper .card-items{
+	margin-bottom: 1rem;
+} 
+
+.timetable-registered-wrapper .card-container .card-header {
 	font-family: "Ambit SemiBold";
 	font-size: 25px;
 }
 
-.timetable-registered-wrapper .card p {
+.timetable-registered-wrapper .card-container p {
 	font-family: "Ambit Light";
 	font-size: 20px;
 }
 
-.timetable-registered-wrapper .card p:first-of-type {
+.timetable-registered-wrapper .card-container p:first-of-type {
 	margin-top: 30px;
 }
 
-/* .timetable-registered-wrapper .card .options li {
-	font-family: "Ambit Light";
-	font-size: 16px;
-	list-style-type: disc;
-} */
+.card-image-container{
+	margin-top: 1rem;
+}
 
 .card-image{
 	max-width: 15rem;

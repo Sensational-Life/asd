@@ -19,13 +19,14 @@ function TimetableRegistered() {
 								<h1 className="header">Resources</h1>
 							</div>
 						</div>
-						<div className="card-container">
+						<div className="cards-container">
 							{CardContent.map((card) => {
 								return (
-									<div className="card" key={card.id}>
-										<h3 className="card-header">{card.title}</h3>
+									<div className="card-container" key={card.id}>
+										<div className="card-header">{card.title}</div>
+										<div className="card-items">
 										<div dangerouslySetInnerHTML={{ __html: card.text }} />
-										<div>
+										<div className="card-image-container">
 											<img
 												className="card-image"
 												src={card.src}
@@ -37,6 +38,7 @@ function TimetableRegistered() {
 											<a href={card.pdflink}>
 												<BsDownload className="timetable-icon-download" />
 											</a>
+										</div>
 										</div>
 									</div>
 								);
