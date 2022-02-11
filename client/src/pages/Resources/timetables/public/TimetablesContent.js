@@ -1,5 +1,5 @@
 import React from "react";
-import "./TimetableNotRegistered.css";
+import "./TimetablesContent.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import motherAndDaughterImg from "~/images/mother-daughter-laptop-lowres.png";
