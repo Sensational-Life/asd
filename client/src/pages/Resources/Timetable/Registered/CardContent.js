@@ -10,7 +10,8 @@ export const CardContent = [
 	{
 		id: "f59bc2e3-dda5-4c58-8677-aca84ad948e0",
 		title: "Early routine cards",
-		text: "<p>Suitable for age: 2 – 4</p><p>Quantity: 40</p>",
+		age: "2 – 4",
+		quontity: "40",
 		src: Timetable2to4,
 		alt: "Timetable for age from 2 years to 4 years",
 		pdflink:
@@ -20,7 +21,8 @@ export const CardContent = [
 	{
 		id: "199e246d-6739-43ff-8a81-f7927e285d9e",
 		title: "Homework cards",
-		text: "<p>Suitable for age: 3 – 5</p><p>Quantity: 54</p>",
+		age: "3 – 5",
+		quontity: "54",
 		src: Timetable3to5,
 		alt: "Timetable for age from 3 years to 5 years",
 		pdflink:
@@ -30,7 +32,8 @@ export const CardContent = [
 	{
 		id: "e901f37b-e0b5-43bd-a0ea-65045a420691",
 		title: "Organisational cards",
-		text: "<p>Suitable for age: 7 – 11</p><p>Quantity: 54</p>",
+		age: "7 – 11",
+		quontity: "54",
 		src: Timetable7to11,
 		alt: "Timetable for age from 7 years to 11 years",
 		pdflink:
@@ -40,7 +43,8 @@ export const CardContent = [
 	{
 		id: "bb385e29-acb2-43d0-9941-c38fae750e2c",
 		title: "Organisational cards",
-		text: "<p>Suitable for age: 9 – 14</p><p>Quantity: 54</p>",
+		age: "9 – 14",
+		quontity: "54",
 		src: Timetable9to14,
 		alt: "Timetable for age from 9 years to 14 years",
 		pdflink:
@@ -50,7 +54,8 @@ export const CardContent = [
 	{
 		id: "2e576946-e038-4f78-9a03-328d04e8d085",
 		title: "Mix & Match routine cards",
-		text: "<p>Suitable for all ages</p>",
+		age: "all ages",
+		quontity: "0",
 		src: TimetableMixMatchRoutine,
 		alt: "Timetable for mix match routine",
 		pdflink:

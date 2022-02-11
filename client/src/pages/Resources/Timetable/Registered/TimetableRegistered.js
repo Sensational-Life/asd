@@ -24,7 +24,10 @@ function TimetableRegistered() {
 									<div className="card-container" key={card.id}>
 										<div className="card-header">{card.title}</div>
 										<div className="card-items">
-											<div dangerouslySetInnerHTML={{ __html: card.text }} />
+											<div className="card-description">
+												<p>Suitable for age: {card.age}</p>
+												<p>Quantity: {card.quontity}</p>
+											</div>
 											<div className="card-image-container">
 												<img
 													className="card-image"

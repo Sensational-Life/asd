@@ -76,7 +76,7 @@
 	font-size: 25px;
 }
 
-.timetable-registered-wrapper .card-container p {
+.timetable-registered-wrapper .card-container .card-description {
 	font-family: "Ambit Light";
 	font-size: 20px;
 }
