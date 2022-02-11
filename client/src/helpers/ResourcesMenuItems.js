@@ -21,7 +21,7 @@ export const ResourcesMenuItems = [
   },
   {
     title: "Useful Links",
-    path: "/links",
+    path: "/resources/UesfulLinks",
     cName: "dropdown-link",
   },
 

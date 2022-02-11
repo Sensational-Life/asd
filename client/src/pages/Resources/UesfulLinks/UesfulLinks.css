@@ -1,0 +1,58 @@
+.UesfulLink-container {
+	display: flex;
+	height: 648px;
+	width: 1260px;
+}
+.UesfulLinks-img-conatiner {
+	width: 570px;
+}
+.UesfulLinks-img-color {
+	position: relative;
+	top: 128px;
+	width: 570px;
+	height: 520px;
+	background-color: #a4e4db;
+}
+.UesfulLink-img {
+	position: relative;
+	width: 500px;
+	height: 648px;
+	bottom: 128px;
+}
+.UesfulLinks-text-links-conatiner {
+	width: 690px;
+}
+.UesfulLink-hesdr-text {
+	width: 513px;
+	height: 400px;
+	position: relative;
+	top: 150px;
+	left: 50px;
+}
+.UesfulLink-text {
+	font-size: 48px;
+	text-align: left;
+	font: normal normal normal 48px/64px Roboto Slab;
+	letter-spacing: 0.48px;
+	opacity: 1;
+}
+.UesfulLinks-links {
+	margin-top: 20px;
+}
+
+.U-links {
+	width: 120x;
+	height: 80px;
+}
+.UesfulLink-p {
+	font-size: 20px;
+	font-family: Ambit Regular;
+}
+.UesfulLinks-a {
+	font-family: "Ambit Light";
+	text-decoration: none;
+}
+.UesfulLinks-a:hover {
+	text-decoration: underline;
+	color: red;
+}

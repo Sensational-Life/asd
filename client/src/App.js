@@ -25,6 +25,7 @@ import Advice from "./pages/Advice/Advice";
 import SelfReferralPathway from "./pages/Resources/Referrals/NotRegistered/SelfReferralPathway";
 
 import TimetableNotRegistered from "~/pages/Resources/Timetable/NotRegistered/TimetableNotRegistered";
+import UesfulLinks from "./pages/Resources/UesfulLinks/UesfulLinks";
 
 
 // Contacts:
@@ -69,6 +70,8 @@ function App() {
 
 					<Route path="/resources/self-referral-pathway" component={SelfReferralPathway} />
           <Route path="/resources/timetables" component={TimetableNotRegistered}/>
+                       <Route path="/resources/UesfulLinks" component={UesfulLinks} />
+
 
             
 					<Route path="/contact" component={Contact} />
