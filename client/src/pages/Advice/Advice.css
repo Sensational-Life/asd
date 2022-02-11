@@ -1,0 +1,73 @@
+.Advice-container {
+	display: flex;
+	height: 700px;
+	width: 1440;
+}
+.Advice-img-container {
+	width: 490px;
+	height: 700px;
+}
+.Advice-text-container {
+	height: 700px;
+	width: 950px;
+}
+
+.Advice-header-text {
+	text-align: left;
+	font: normal normal normal 45px/64px Roboto Slab;
+	letter-spacing: 0.45px;
+	color: #0f2420;
+	opacity: 1;
+	margin: 50px;
+	width: 655px;
+	height: 59px;
+}
+
+.Advice-img-color {
+	height: 517px;
+	background-color: #ffffff;
+	box-shadow: 5px 5px 6px #00000029;
+	width: 362px;
+	margin: 20px 15px auto 100px;
+}
+.Advice-img {
+	height: 456px;
+	width: 344px;
+}
+.Advice-main-img {
+	height: 456px;
+	width: 344px;
+	margin: 12px 0px 0px 8px;
+}
+
+.Advice-but {
+	display: flex;
+	justify-content: right;
+	margin: 50px 150px;
+}
+.Advice_button {
+	width: 243px;
+	background-color: var(--darkgreen-color);
+	border: none;
+	height: 70px;
+	color: var(--white-color);
+	font-size: 24px;
+	font-family: "Ambit SemiBold";
+}
+
+.Advice_button:hover {
+	background-color: var(--blue-color);
+	cursor: pointer;
+}
+.Advice_button_hover {
+	background-color: var(--darkgreen-color);
+	width: 200px;
+	height: 40px;
+	border: none;
+	font-size: 18px;
+	font-family: "Ambit SemiBold";
+	color: var(--white-color);
+	margin-right: -100px;
+	margin-top: 80px;
+	position: absolute;
+}
