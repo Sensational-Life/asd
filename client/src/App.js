@@ -18,12 +18,7 @@ import OurEvents from "./pages/OurEvents/OurEvents";
 
 // Resources:
 import Resources from "./pages/Resources/Resources";
-
-import Advice from "./pages/Advice/Advice";
-
-import SelfReferralPathway from "./pages/Resources/Referrals/NotRegistered/SelfReferralPathway";
-
-import TimetableNotRegistered from "~/pages/Resources/Timetable/NotRegistered/TimetableNotRegistered";
+import TimetableNotRegistered from "./pages/Resources/Timetable/NotRegistered/TimetableNotRegistered";
 
 // Contacts:
 import Contact from "./pages/Contact/Contact";
