@@ -17,7 +17,7 @@ import OurEvents from "./pages/OurEvents/OurEvents";
 
 // Resources:
 import Resources from "./pages/Resources/Resources";
-import TimetableNotRegistered from "~/pages/Resources/Timetable/NotRegistered/TimetableNotRegistered";
+import Timetables from "~/pages/Resources/Timetable/Timetables";
 
 // Contacts:
 import Contact from "./pages/Contact/Contact";
@@ -55,7 +55,7 @@ function App() {
 						<Route path="/about/events" component={OurEvents} />
 
 					<Route exact path="/resources" component={Resources} />
-          <Route path="/resources/timetables" component={TimetableNotRegistered}/>
+          			<Route path="/resources/timetables" component={Timetables}/>
 
 					<Route path="/contact" component={Contact} />
 
