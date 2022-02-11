@@ -18,13 +18,8 @@ import OurEvents from "./pages/OurEvents/OurEvents";
 
 // Resources:
 import Resources from "./pages/Resources/Resources";
-
 import Advice from "./pages/Advice/Advice";
-
-
 import SelfReferralsPathway from "./pages/Resources/Referrals/SelfReferralsPathway";
-import TimetableNotRegistered from "~/pages/Resources/Timetable/NotRegistered/TimetableNotRegistered";
-
 
 // Contacts:
 import Contact from "./pages/Contact/Contact";
@@ -58,10 +53,7 @@ function App() {
 					<Route exact path="/about" component={AboutUsPage} />
 					<Route path="/about/what-is-autism" component={WhatIsAutism} />
 					<Route path="/about/signs-of-autism" component={SignsOfAutism} />
-					<Route
-						path="/about/additional-support"
-						component={AdditionalSupport}
-					/>
+					<Route path="/about/additional-support" component={AdditionalSupport}/>
 					<Route path="/about/events" component={OurEvents} />
 
 					<Route exact path="/resources" component={Resources} />
