@@ -55,7 +55,7 @@ export const CardContent = [
 		id: "2e576946-e038-4f78-9a03-328d04e8d085",
 		title: "Mix & Match routine cards",
 		age: "all ages",
-		quontity: "0",
+		quontity: "0`",
 		src: TimetableMixMatchRoutine,
 		alt: "Timetable for mix match routine",
 		pdflink:
