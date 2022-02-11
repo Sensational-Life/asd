@@ -21,7 +21,12 @@ function JoinUs() {
 						along with non - judgemental fellow parents who ‘get it’!
 					</p>
 					<h6 className="Joinus-checkout-text">
-						Check Out Our FREE Facebook Support Group.
+						<a
+							className="Join-link-faceBook"
+							href="https://www.facebook.com/groups/autismandparentsupport/"
+						>
+							Check Out Our FREE Facebook Support Group.
+						</a>
 					</h6>
 				</div>
 			</div>
