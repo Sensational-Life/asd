@@ -13,7 +13,7 @@ const dbScript = fs.readFileSync("./server/dbsetup.sql").toString();
 
 pool.query(dbScript)
     .then(() => console.info("running db restore script..."))
-    .catch((error) => {
-        console.error(error);
+    .catch((err) => {
+        console.error(err);
         process.exit(1);
     });

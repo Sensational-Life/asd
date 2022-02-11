@@ -31,7 +31,7 @@ export const connectDb = async () => {
 	let client;
 	try {
 		client = await pool.connect();
-	} catch (err) {
+	} catch(err) {
 		console.error(err);
 		process.exit(1);
 	}
