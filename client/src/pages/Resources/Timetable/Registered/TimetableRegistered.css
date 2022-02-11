@@ -101,6 +101,10 @@
 	height: 25px;
 }
 
+.timetable-icon-download:active{
+	color: var(--blue-color);
+}
+
 .timetable-icon-heart-not-saved {
 	padding: 10px 20px 0 0;
 	width: 24px;
