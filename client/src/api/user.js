@@ -10,7 +10,7 @@ export const signApi = async (email, pwd) => {
 		const res = await fetch("/api/auth/login", opts);
 		const data = await res.json();
 		return data;
-	} catch (err) {
+	} catch(err) {
 		return console.log(err);
 	}
 };

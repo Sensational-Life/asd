@@ -16,8 +16,8 @@ passport.use(
 			} else {
 				return done(null, false);
 			}
-		} catch (e) {
-			return done(e, false);
+		} catch(err) {
+			return done(err, false);
 		}
 	})
 );
