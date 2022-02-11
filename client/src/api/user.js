@@ -7,16 +7,16 @@ export const signApi = async (email, pwd) => {
 		},
 	};
 	try {
-		const res = await fetch("http://localhost:3100/auth/login", opts);
+		const res = await fetch("/api/auth/login", opts);
 		const data = await res.json();
 		return data;
-	} catch (err) {
+	} catch(err) {
 		return console.log(err);
 	}
 };
 
 export const createNewUser = async (userInputs) => {
-	const res = await fetch("http://localhost:3100/auth/register", {
+	const res = await fetch("/api/auth/register", {
 		method: "POST",
 		body: JSON.stringify(userInputs),
 		headers: { "Content-Type": "application/json" },
@@ -24,7 +24,7 @@ export const createNewUser = async (userInputs) => {
 	return await res.json();
 };
 export const changePassword = async (userId, newPassword) => {
-	const res = await fetch("http://localhost:3100/api/users/change-password", {
+	const res = await fetch("/api/users/change-password", {
 		method: "PUT",
 		body: JSON.stringify({ userId, newPassword }),
 		headers: {
