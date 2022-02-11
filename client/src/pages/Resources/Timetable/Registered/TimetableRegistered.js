@@ -1,14 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import "./TimetableRegistered.css";
 import CardContent from "./CardContent.js";
-import { BsHeart, BsFillHeartFill, BsDownload } from "react-icons/bs";
+import { BsDownload } from "react-icons/bs";
 import ResponsivePlayer from "react-player";
 import { BsPlayCircleFill } from "react-icons/bs";
 import TimetableVideoImg from "~/assets/images/timetable-video.jpg";
+import Bookmark from "./Bookmark";
 
 
 function TimetableRegistered() {
-	const [saved, setSaved] = useState(false);
 	return (
 		<div className="timetable-registered-container">
 			<div className="timetable-registered-section">
@@ -33,22 +33,7 @@ function TimetableRegistered() {
 											/>
 										</div>
 										<div className="timetable-icon-container">
-											{saved ? (
-												<BsHeart
-													className="timetable-icon-heart-not-saved"
-													onClick={() => {
-														setSaved(false);
-													}}
-												/>
-											) : (
-												<BsFillHeartFill
-													className="timetable-icon-heart-saved"
-													onClick={() => {
-														setSaved(true);
-													}}
-												/>
-											)}
-
+									        <Bookmark card={card} />
 											<a href={card.pdflink}>
 												<BsDownload className="timetable-icon-download" />
 											</a>

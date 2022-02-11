@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar/Navbar";
 // Home dependant pages:
 import Home from "./pages/Home/Home";
 import WhatWeDoPage from "./pages/WhatWeDoPage/WhatWeDoPage";
+import JoinUs from "./pages/JoinUs/JoinUs";
 
 // About:
 import AboutUsPage from "./pages/AboutUsPage/AboutUsPage";
@@ -18,9 +19,16 @@ import OurEvents from "./pages/OurEvents/OurEvents";
 // Resources:
 import TimetableRegistered from "./pages/Resources/Timetable/Registered/TimetableRegistered";
 
+import Advice from "./pages/Advice/Advice";
+
+
+import SelfReferralPathway from "./pages/Resources/Referrals/NotRegistered/SelfReferralPathway";
+
+import TimetableNotRegistered from "~/pages/Resources/Timetable/NotRegistered/TimetableNotRegistered";
+
+
 // Contacts:
 import Contact from "./pages/Contact/Contact";
-
 // User and Authorisation:
 import SignUpPage from "./pages/User/SignUpPage";
 import SignInPage from "./pages/User/SignInPage";
@@ -45,6 +53,7 @@ function App() {
 
 					{/* routes from home page: */}
 					<Route path="/what-we-do" component={WhatWeDoPage} />
+					<Route path="/JoinUs" component={JoinUs} />
 
 					{/* routes from nav bar: */}
 					<Route exact path="/about" component={AboutUsPage} />
@@ -55,9 +64,20 @@ function App() {
 						component={AdditionalSupport}
 					/>
 					<Route path="/about/events" component={OurEvents} />
+					<Route
+						path="/resources/timetables/download"
+						component={TimetableRegistered}
+					/>
+					<Route exact path="/resources/advice" component={Advice} />
 
-					{/* <Route exact path="/resources" component={Resources} /> */}
-					<Route path="/resources/timetables/download" component={TimetableRegistered} />
+					<Route
+						path="/resources/self-referral-pathway"
+						component={SelfReferralPathway}
+					/>
+					<Route
+						path="/resources/timetables"
+						component={TimetableNotRegistered}
+					/>
 
 					<Route path="/contact" component={Contact} />
 
