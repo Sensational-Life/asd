@@ -40,7 +40,7 @@ function FrequentlyAskedQuestions() {
 			{faqList.map((faq, i) => {
 				return (
 					<div className="question_faq" key={i}>
-						<div>{i + 1}</div>
+						<div>{i+1}</div>
 						<div>
 							<h3>{faq.question}</h3> <br />
 							<p>{faq.answer}</p>
@@ -72,8 +72,7 @@ function FrequentlyAskedQuestions() {
 															loading="lazy"
 															width="800"
 															height="500"
-															// src={faq.link}
-															src="https://www.youtube.com/embed/S2bLMai0UaM"
+															src={faq.link}
 															title="YouTube video player"
 															frameBorder="0"
 															allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

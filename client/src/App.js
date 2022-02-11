@@ -21,11 +21,9 @@ import Resources from "./pages/Resources/Resources";
 
 import Advice from "./pages/Advice/Advice";
 
-
 import SelfReferralPathway from "./pages/Resources/Referrals/NotRegistered/SelfReferralPathway";
 
 import TimetableNotRegistered from "~/pages/Resources/Timetable/NotRegistered/TimetableNotRegistered";
-
 
 // Contacts:
 import Contact from "./pages/Contact/Contact";
@@ -36,7 +34,7 @@ import PasswordResetPage from "./pages/User/PasswordResetPage";
 
 // Footer:
 import Footer from "./components/Footer/Footer";
-
+import FrequentlyAskedQuestions from "./pages/FrequentlyAskedQuestions/FrequentlyAskedQuestions";
 //Not Found Page:
 import NotFound from "./pages/NotFound/NotFound";
 
@@ -55,22 +53,32 @@ function App() {
 					<Route path="/what-we-do" component={WhatWeDoPage} />
 					<Route path="/JoinUs" component={JoinUs} />
 
-					{/* routes from nav bar: */}			
+					{/* routes from nav bar: */}
 					<Route exact path="/about" component={AboutUsPage} />
 					<Route path="/about/what-is-autism" component={WhatIsAutism} />
 					<Route path="/about/signs-of-autism" component={SignsOfAutism} />
-					<Route path="/about/additional-support" component={AdditionalSupport}/>
+					<Route
+						path="/about/additional-support"
+						component={AdditionalSupport}
+					/>
 					<Route path="/about/events" component={OurEvents} />
+					<Route
+						path="/frequently-asked-questions"
+						component={FrequentlyAskedQuestions}
+					/>
 
 					<Route exact path="/resources" component={Resources} />
 					<Route exact path="/resources/advice" component={Advice} />
 
-         
+					<Route
+						path="/resources/self-referral-pathway"
+						component={SelfReferralPathway}
+					/>
+					<Route
+						path="/resources/timetables"
+						component={TimetableNotRegistered}
+					/>
 
-					<Route path="/resources/self-referral-pathway" component={SelfReferralPathway} />
-          <Route path="/resources/timetables" component={TimetableNotRegistered}/>
-
-            
 					<Route path="/contact" component={Contact} />
 
 					{/* User Authantication: */}
