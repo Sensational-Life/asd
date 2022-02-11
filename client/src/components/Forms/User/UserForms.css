@@ -115,3 +115,7 @@
 .user-form-footer a:hover {
     text-decoration: underline;
 }
+.error-message{
+    text-align: center;
+    color: red;
+}
