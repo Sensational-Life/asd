@@ -8,7 +8,7 @@ import leftTopImg from "~/images/timetable-small-top.jpg";
 import rightImg from "~/images/timetable-illustration-large.jpg";
 import leftBottomImg from "~/images/timetable-small-bottom.jpg";
 
-function TimetableNotRegistered() {
+export default function TimetablesContent() {
 	const [buttonShow, setButtonShow] = useState(false);
 	return (
 		<>
@@ -66,4 +66,4 @@ function TimetableNotRegistered() {
 		</>
 	);
 }
-export default TimetableNotRegistered;
+export {TimetablesContent};
