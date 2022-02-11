@@ -11,7 +11,7 @@ export const signApi = async (email, pwd) => {
 		const data = await res.json();
 		return data;
 	} catch(err) {
-		return console.log(err);
+		console.log(err);
 	}
 };
 
