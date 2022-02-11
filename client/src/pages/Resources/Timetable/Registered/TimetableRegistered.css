@@ -20,16 +20,6 @@
 	background-color: var(--main-bg-color);
 }
 
-/* .timetable-registered-grid {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	/* align-items: center; */
-	/* min-height: 700px;
-	max-width: 700px;
-	min-width: 350px; */
-/* }  */
-
 .timetable-registered-container {
 	position: relative;
 	display: grid;
@@ -53,7 +43,7 @@
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(2, 1fr);
-	grid-gap: 40px;
+	grid-gap: 2.5rem;
 	margin-top: 10rem;
 	margin-bottom: 5rem;
 }
@@ -66,22 +56,20 @@
 }
 
 .timetable-registered-wrapper .card-container {
-	background: var(--white-color);
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	height: 430px;
 	width: 250px;
 	padding: 30px 25px 0 25px;
-	box-shadow: 3px 3px 6px var(--black-shadow-color);
-	border: 1px solid rgb(190, 190, 190);
 	line-height: 27px;
 	letter-spacing: 0.2px;
+	background: var(--white-color);
 }
 
-.timetable-registered-wrapper .card-items{
+.timetable-registered-wrapper .card-items {
 	margin-bottom: 1rem;
-} 
+}
 
 .timetable-registered-wrapper .card-container .card-header {
 	font-family: "Ambit SemiBold";
@@ -93,76 +81,72 @@
 	font-size: 20px;
 }
 
-.timetable-registered-wrapper .card-container p:first-of-type {
-	margin-top: 30px;
-}
-
-.card-image-container{
+.timetable-registered-wrapper .card-image-container {
 	margin-top: 1rem;
 }
 
-.card-image{
+.timetable-registered-wrapper .card-image {
 	max-width: 15rem;
 	border: 2px solid var(--blue-color);
 }
 
-.timetable-icon-container{
+.timetable-icon-container {
 	display: flex;
 	justify-content: end;
 }
 
-.timetable-icon-download{
-	padding:8px 20px 0 0;
+.timetable-icon-download {
+	padding: 8px 20px 0 0;
 	width: 25px;
 	height: 25px;
 }
 
-.timetable-icon-heart-not-saved{
-	padding:10px 20px 0 0;
+.timetable-icon-heart-not-saved {
+	padding: 10px 20px 0 0;
 	width: 24px;
 	height: 24px;
 }
 
-.timetable-icon-heart-saved{
-	padding:10px 20px 0 0;
+.timetable-icon-heart-saved {
+	padding: 10px 20px 0 0;
 	width: 24px;
 	height: 24px;
 	color: var(--blue-color);
 }
 
-
-.timetable-registered-section .video-container{
+.timetable-registered-section .video-container {
 	display: flex;
 	flex-direction: column;
 	justify-content: top;
-	width: 300px;
+	/* width: 300px; */
+	width: 18.8rem;
 }
 
 .timetable-registered-section .video-wrapper {
 	min-height: 250px;
 }
 
-.timetable-registered-section .player-button{
+.timetable-registered-section .player-button {
 	width: 75px;
 	height: 75px;
 	color: var(--blue-color);
 }
 
-.timetable-registered-section .video-description{
-	padding:15px;
+.timetable-registered-section .video-description {
+	padding: 15px;
 	font-size: 20px;
 	font-family: "Ambit Light";
 	line-height: 27px;
 	letter-spacing: 0.2px;
 }
 
-.timetable-registered-section .video-link{
+.timetable-registered-section .video-link {
 	font-size: 19px;
 	font-family: "Ambit SemiBold";
 	padding-left: 15px;
 }
 
-.timetable-registered-section .video-link:hover{
+.timetable-registered-section .video-link:hover {
 	text-shadow: 0 0 1px var(--blue-color);
 	text-decoration: underline;
 }

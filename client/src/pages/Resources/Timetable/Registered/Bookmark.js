@@ -5,23 +5,24 @@ import { BsHeart, BsFillHeartFill } from "react-icons/bs";
 
 function Bookmark(props) {
 	const [saved, setSaved] = useState(props.card.saved);
-return (
-    <div>
-    {saved ? (
-			<BsHeart
-				className="timetable-icon-heart-not-saved"
-				onClick={() => {
+	return (
+		<div>
+			{saved ? (
+				<BsHeart
+					className="timetable-icon-heart-not-saved"
+					onClick={() => {
 						setSaved(false);
-				}}
-			/>
+					}}
+				/>
 			) : (
-			<BsFillHeartFill
-				className="timetable-icon-heart-saved"
-				onClick={() => {
+				<BsFillHeartFill
+					className="timetable-icon-heart-saved"
+					onClick={() => {
 						setSaved(true);
-				}}
-			/>
+					}}
+				/>
 			)}
-            </div>);
+		</div>
+	);
 }
 export default Bookmark;
