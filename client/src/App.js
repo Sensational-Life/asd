@@ -17,7 +17,7 @@ import OurEvents from "./pages/OurEvents/OurEvents";
 
 // Resources:
 import Resources from "./pages/Resources/Resources";
-import Timetables from "~/pages/Resources/Timetable/Timetables";
+import Timetables from "~/pages/Resources/timetables/Timetables";
 
 // Contacts:
 import Contact from "./pages/Contact/Contact";
