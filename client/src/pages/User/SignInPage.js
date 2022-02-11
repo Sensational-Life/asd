@@ -1,7 +1,9 @@
 import React, { useLayoutEffect } from "react";
 import SignInForm from "~/components/Forms/User/SignInForm";
-import SignInimg from "./SignInPage.png";
+import SignInImg from "./SignInPage.png";
 import "./UserPage.css";
+
+
 
 function SignInPage() {
 	useLayoutEffect(() => {
@@ -14,7 +16,7 @@ function SignInPage() {
 			</div>
 
 			<div className="image-container">
-				<img src={SignInimg} alt="signin-img" />
+				<img src={SignInImg} alt="signIn-img" />
 			</div>
 		</div>
 	);

@@ -1,8 +1,15 @@
 import express from "express";
 import morgan from "morgan";
 import path from "path";
+import router from "./api/index";
+const  cors = require("cors");
 
-import router from "./api";
+
+const bodyParser = require("body-parser");
+const auth = require("./auth/routes");
+
+require("./auth/passport");
+
 import {
 	configuredHelmet,
 	permissionsPolicy,
@@ -16,6 +23,8 @@ const staticDir = path.join(__dirname, "static");
 
 const app = express();
 
+app.use(cors());
+app.use(bodyParser.json());
 app.use(express.json());
 app.use(configuredHelmet());
 app.use(permissionsPolicy());
@@ -27,6 +36,7 @@ if (app.get("env") === "production") {
 }
 
 app.use(apiRoot, router);
+app.use("/auth",auth);
 
 app.use(express.static(staticDir));
 app.use(pushStateRouting(apiRoot, staticDir));
