@@ -5,10 +5,15 @@ import faqs from "./Faq";
 import { IoCloseOutline } from "react-icons/io5";
 import { BiLoaderAlt } from "react-icons/bi";
 
+
 function FrequentlyAskedQuestions() {
     const [faqList, setFaqList] = useState(faqs);
 	const [modal, setModal] = useState(false);
 	const [videoLoading, setVideoLoading] = useState(true);
+
+	const getLoggedInUserData = () => {
+		return JSON.parse(localStorage.getItem("userData"));
+	};
 
 	const openModal = () => {
 		setModal(!modal);
@@ -32,7 +37,7 @@ function FrequentlyAskedQuestions() {
 		<div className="question_container">
 			<div className="question_id">
 				<span>FAQ</span>
-				<span>How you doing ID</span>
+				<span>How you doing{` ${getLoggedInUserData()?.user.name || ""}`}</span>
 			</div>
 			<div className="question_title">
 				<h1>Frequently Asked Questions</h1>
