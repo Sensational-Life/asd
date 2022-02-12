@@ -1,7 +1,7 @@
 const fs = require("fs");
 const { Pool } = require("pg");
 
-const dbUrl = process.env.DATABASE_URL || "postgres://localhost:5432/albums";
+const dbUrl = process.env.DATABASE_URL || "postgres://localhost:5432/asd";
 
 const pool = new Pool({
 	connectionString: dbUrl,
@@ -13,7 +13,7 @@ const dbScript = fs.readFileSync("./server/dbsetup.sql").toString();
 
 pool.query(dbScript)
     .then(() => console.info("running db restore script..."))
-    .catch((error) => {
-        console.error(error);
+    .catch((err) => {
+        console.error(err);
         process.exit(1);
     });

@@ -2,25 +2,16 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./UserForms.css";
 
-const SignInForm = () => {
+const PasswordResetForm = () => {
     const [showSubmitBtnToolTip, setShowSubmitBtnToolTip] = useState(false);
     return (
         <div className="user-form-container">
 				<div className="user-form-header">
-					<h1>Sign In</h1>
-					<p>to continue</p>
+					<h1>Reset Password</h1>
+					<p>Please type your new password</p>
 				</div>
 
 				<form className="user-form">
-					{/*Email  */}
-					<input
-						className="text-field"
-						required
-						id="email"
-						type="text"
-						placeholder="Email"
-						name="email"
-					/>
 
 					<input
 						className="text-field"
@@ -30,45 +21,39 @@ const SignInForm = () => {
 						placeholder="Password"
 						name="Password"
 					/>
+
+                    <input
+						className="text-field"
+						required
+						id="Confirm-password"
+						type="password"
+						placeholder="Confirm Password"
+						name="password-confirm"
+					/>
+
+					{/* Sign in-Button */}
 					<button
 						className="submit-button"
 						onMouseEnter={() => setShowSubmitBtnToolTip(true)}
 						onMouseLeave={() => setShowSubmitBtnToolTip(false)}
-						>
-							Sign In
-					</button>
+					>Submit</button>
+
 					<div className="submit-button-tooltip-container">
 						{
 							showSubmitBtnToolTip && (
-								<button className="submit-button-tooltip">Sign In</button>)
-						}
+								<button className="submit-button-tooltip">Submit</button>
+						)}
 					</div>
-					<label htmlFor="remember-me">
-						<input
-							type="checkbox"
-							name="remember-me"
-						/>{" "}Remember me</label>
 
 					<div className="user-form-footer">
 						<p>
 							<span className="text">
-								Don&apos;t have an account?
+								Already have an account?
 							</span>
 							{" "}
 							<span className="link">
-								<Link to="/signup">
-									Sign Up
-								</Link>
-							</span>
-						</p>
-						<p>
-							<span className="text">
-								Forgot your password?
-							</span>
-							{" "}
-							<span className="link">
-								<Link to="/password-reset">
-									Reset Password
+								<Link to="/signin">
+									Sign In
 								</Link>
 							</span>
 						</p>
@@ -78,4 +63,4 @@ const SignInForm = () => {
     );
 };
 
-export default SignInForm;
+export default PasswordResetForm;
