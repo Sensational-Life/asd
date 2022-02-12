@@ -11,17 +11,33 @@ const pool = new Pool({
 		: { rejectUnauthorized: false },
 });
 
-const dbScript = fs.readFileSync("./server/dbSetup.sql").toString();
-const populateDb = fs.readFileSync("./server/testUsers.sql").toString();
-const timetables = fs.readFileSync("./server/timetables.sql").toString();
+
+/**
+ * this routine supposed to be executed during the build process
+ * if in case process.env.DATABASE_RESET is set to `true`
+ * for more info see "postbuild" jon in packaje.json.
+ */
+const dbsetup = fs.readFileSync("./server/dbsetup.sql").toString();
 pool
-	.query(dbScript)
-	.then(() => console.info("running db restore script..."))
-	.then(() => pool.query(populateDb))
-	.then(() => console.info("running  sample users..."))
-	.then(() => pool.query(timetables))
-	.then(() => console.info("running timetables  script..."))
-	.catch((error) => {
-		console.error(error);
+	.query(dbsetup)
+	.then(() => console.info("running db setup script..."))
+	.then(() => {
+		if (String(process.env.DATABASE_SEED) === "true") {
+			/**
+			 * dbseed.sql has testing data that can be populated
+			 * if process.env.DATABASE_SEED is set and to "true"
+			 */
+			const dbseed = fs.readFileSync("./server/dbseed.sql").toString();
+			pool.query(dbseed)
+				.then(() => console.info("running db seed script..."))
+				.catch((err) => {
+					// if caught an Error here, then throw it further
+					// into the next catch() where we print it and exit the process.
+					throw err;
+				});
+		}
+	})
+	.catch((err) => {
+		console.error(err);
 		process.exit(1);
 	});
