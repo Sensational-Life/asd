@@ -39,12 +39,11 @@ function FrequentlyAskedQuestions() {
 			</div>
 			{faqList.map((faq, i) => {
 				return (
-					<div className="question_faq" key={i}>
-						<div>{i + 1}</div>
+					<div className="question_faq" key={faq.id}>
+						<div>{String(i + 1).padStart(2, "0")}</div>
 						<div>
-							<h3>{faq.question}</h3> <br />
+							<h3>{faq.question}</h3>
 							<p>{faq.answer}</p>
-							<br />
 							<div className="video_model">
 								<span onClick={openModal}>
 									{faq.link}
@@ -72,12 +71,11 @@ function FrequentlyAskedQuestions() {
 															loading="lazy"
 															width="800"
 															height="500"
-															// src={faq.link}
-															src="https://www.youtube.com/embed/S2bLMai0UaM"
+															src={faq.link}
 															title="YouTube video player"
 															frameBorder="0"
 															allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-															allowfullscreen
+															allowFullScreen
 														></iframe>
 													</div>
 												</div>
@@ -91,7 +89,7 @@ function FrequentlyAskedQuestions() {
 							<button className="question_del_button" onClick={()=>deletFaq(i)}>-</button>
 						</div>
 					</div>
-    			);
+		);
 			})}
 		</div>
 	);

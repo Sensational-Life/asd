@@ -30,7 +30,7 @@ import PasswordReset from "./pages/User/PasswordReset";
 
 // Footer:
 import Footer from "./components/Footer/Footer";
-
+import FrequentlyAskedQuestions from "./pages/FrequentlyAskedQuestions/FrequentlyAskedQuestions";
 //Not Found Page:
 import NotFound from "./pages/NotFound/NotFound";
 
@@ -66,6 +66,9 @@ function App() {
 					<Route path="/signin" component={SignIn} />
 					<Route path="/signup" component={SignUp} />
 					<Route path="/password-reset" component={PasswordReset} />
+
+					{/* Footer Links: */}
+					<Route path="/frequently-asked-questions" component={FrequentlyAskedQuestions} />
 
 					{/* Default route for 'Not Found' page */}
 					<Route component={NotFound} />
