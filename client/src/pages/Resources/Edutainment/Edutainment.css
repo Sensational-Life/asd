@@ -1,0 +1,40 @@
+.edutainment-text-container {
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+	grid-template-areas: "header description feel-free";
+}
+.edutainment-row {
+}
+.header-column {
+	
+	grid-area: "header";
+	font-family: "RobotoSlab-Regular";
+	font-size: 48px;
+	text-align: center;
+   padding-top: 10px;
+}
+.description-column {
+	
+	grid-area: "description";
+	padding: 15px;
+	text-align: left;
+	font-size: 20px;
+	font-family: "Ambit Light";
+     padding-top: 10px;
+}
+.feel-free-column {
+	
+	grid-area: "feel-free";
+	display: grid;
+     padding-top: 10px;
+}
+.text1 {
+	font-family: "Ambit SemiBold";
+	font-size: 24px;
+	text-align: center;
+}
+.text2 {
+    font-family: "RobotoSlab-Regular";
+	font-size: 38px;
+	text-align: center;
+}
