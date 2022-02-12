@@ -19,24 +19,20 @@ import OurEvents from "./pages/OurEvents/OurEvents";
 // Resources:
 import TimetableRegistered from "./pages/Resources/Timetable/Registered/TimetableRegistered";
 
+import Resources from "./pages/Resources/Resources";
 import Advice from "./pages/Advice/Advice";
-
-
-import SelfReferralPathway from "./pages/Resources/Referrals/NotRegistered/SelfReferralPathway";
-
-import TimetableNotRegistered from "~/pages/Resources/Timetable/NotRegistered/TimetableNotRegistered";
-
+import SelfReferralsPathway from "./pages/Resources/Referrals/SelfReferralsPathway";
 
 // Contacts:
 import Contact from "./pages/Contact/Contact";
 // User and Authorisation:
-import SignUpPage from "./pages/User/SignUpPage";
-import SignInPage from "./pages/User/SignInPage";
-import PasswordResetPage from "./pages/User/PasswordResetPage";
+import SignUp from "./pages/User/SignUp";
+import SignIn from "./pages/User/SignIn";
+import PasswordReset from "./pages/User/PasswordReset";
 
 // Footer:
 import Footer from "./components/Footer/Footer";
-
+import FrequentlyAskedQuestions from "./pages/FrequentlyAskedQuestions/FrequentlyAskedQuestions";
 //Not Found Page:
 import NotFound from "./pages/NotFound/NotFound";
 
@@ -49,11 +45,11 @@ function App() {
 			<Router>
 				<Navbar />
 				<Switch>
-					<Route path="/" exact component={Home} />
+					<Route exact path="/" component={Home} />
 
 					{/* routes from home page: */}
 					<Route path="/what-we-do" component={WhatWeDoPage} />
-					<Route path="/JoinUs" component={JoinUs} />
+					<Route path="/join-us" component={JoinUs} />
 
 					{/* routes from nav bar: */}
 					<Route exact path="/about" component={AboutUsPage} />
@@ -79,12 +75,24 @@ function App() {
 						component={TimetableNotRegistered}
 					/>
 
+						<Route path="/about/what-is-autism" component={WhatIsAutism} />
+						<Route path="/about/signs-of-autism" component={SignsOfAutism} />
+						<Route path="/about/additional-support" component={AdditionalSupport} />
+						<Route path="/about/events" component={OurEvents} />
+
+					<Route exact path="/resources" component={Resources} />
+						<Route path="/resources/advice" component={Advice} />
+						<Route path="/resources/self-referral-pathway" component={SelfReferralsPathway} />
+
 					<Route path="/contact" component={Contact} />
 
 					{/* User Authantication: */}
-					<Route path="/signin" component={SignInPage} />
-					<Route path="/signup" component={SignUpPage} />
-					<Route path="/password-reset" component={PasswordResetPage} />
+					<Route path="/signin" component={SignIn} />
+					<Route path="/signup" component={SignUp} />
+					<Route path="/password-reset" component={PasswordReset} />
+
+					{/* Footer Links: */}
+					<Route path="/frequently-asked-questions" component={FrequentlyAskedQuestions} />
 
 					{/* Default route for 'Not Found' page */}
 					<Route component={NotFound} />

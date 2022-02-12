@@ -4,11 +4,7 @@ export const ResourcesMenuItems = [
     path: "/resources/timetables",
     cName: "dropdown-link",
   },
-  {
-    title: "Referrals",
-    path: "/referrals",
-    cName: "dropdown-link",
-  },
+
   {
     title: "Edutainment",
     path: "/edutainment",
@@ -24,4 +20,11 @@ export const ResourcesMenuItems = [
     path: "/links",
     cName: "dropdown-link",
   },
+
+	{
+		title: "Referrals",
+		path: "/resources/self-referral-pathway",
+		cName: "dropdown-link",
+	},
+
 ];
