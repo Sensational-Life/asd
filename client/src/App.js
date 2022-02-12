@@ -18,7 +18,8 @@ import OurEvents from "./pages/OurEvents/OurEvents";
 
 // Resources:
 import Resources from "./pages/Resources/Resources";
-import TimetableNotRegistered from "./pages/Resources/Timetable/NotRegistered/TimetableNotRegistered";
+import Advice from "./pages/Advice/Advice";
+import SelfReferralsPathway from "./pages/Resources/Referrals/SelfReferralsPathway";
 
 // Contacts:
 import Contact from "./pages/Contact/Contact";
@@ -50,27 +51,14 @@ function App() {
 
 					{/* routes from nav bar: */}
 					<Route exact path="/about" component={AboutUsPage} />
-					<Route path="/about/what-is-autism" component={WhatIsAutism} />
-					<Route path="/about/signs-of-autism" component={SignsOfAutism} />
-					<Route
-						path="/about/additional-support"
-						component={AdditionalSupport}
-					/>
-					<Route path="/about/events" component={OurEvents} />
-					<Route
-						path="/frequently-asked-questions"
-						component={FrequentlyAskedQuestions}
-					/>
 						<Route path="/about/what-is-autism" component={WhatIsAutism} />
 						<Route path="/about/signs-of-autism" component={SignsOfAutism} />
 						<Route path="/about/additional-support" component={AdditionalSupport} />
 						<Route path="/about/events" component={OurEvents} />
 
 					<Route exact path="/resources" component={Resources} />
-						{/* <Route path="/resources/advice" component={Advice} /> */}
-						{/* <Route path="/resources/self-referral-pathway" component={SelfReferralPathway} /> */}
-						<Route path="/resources/timetables" component={TimetableNotRegistered} />
-
+						<Route path="/resources/advice" component={Advice} />
+						<Route path="/resources/self-referral-pathway" component={SelfReferralsPathway} />
 
 					<Route path="/contact" component={Contact} />
 
@@ -78,6 +66,9 @@ function App() {
 					<Route path="/signin" component={SignIn} />
 					<Route path="/signup" component={SignUp} />
 					<Route path="/password-reset" component={PasswordReset} />
+
+					{/* Footer Links: */}
+					<Route path="/frequently-asked-questions" component={FrequentlyAskedQuestions} />
 
 					{/* Default route for 'Not Found' page */}
 					<Route component={NotFound} />
