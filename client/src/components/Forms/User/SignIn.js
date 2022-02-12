@@ -19,7 +19,6 @@ const SignInForm = () => {
 		const { name, value } = target;
 		setLoginInputs({ ...loginInputs, [name]: value });
 	};
-	console.log(loginInputs);
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		signApi(loginInputs.email,loginInputs.pwd).then((userData) => {

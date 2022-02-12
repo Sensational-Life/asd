@@ -1,25 +1,23 @@
 import React, { useLayoutEffect } from "react";
-import SignInForm from "~/components/Forms/User/SignInForm";
-import SignInImg from "./SignInPage.png";
+import SignUpForm from "~/components/Forms/User/SignUp";
+import SignUpImage from "./SignUp.png";
 import "./UserPage.css";
 
-
-
-function SignInPage() {
+function SignUpPage() {
 	useLayoutEffect(() => {
         window.scrollTo(0, 0);
     });
 	return (
 		<div className="user-page-container">
 			<div className="form-container">
-				<SignInForm />
+				<SignUpForm />
 			</div>
 
 			<div className="image-container">
-				<img src={SignInImg} alt="signIn-img" />
+				<img src={SignUpImage} alt="signup-img" />
 			</div>
 		</div>
 	);
 }
 
-export default SignInPage;
+export default SignUpPage;

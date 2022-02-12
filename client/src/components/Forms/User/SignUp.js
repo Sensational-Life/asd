@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { createNewUser } from "../../../api/user";
+import { createNewUser } from "~/api/user";
 import "./UserForms.css";
 
 function SignUpForm() {
@@ -8,7 +8,7 @@ function SignUpForm() {
 		name: "",
 		email: "",
 		pwd: "",
-		confirmPassword: ""
+		confirmPassword: "",
 	};
 	const [showSubmitBtnToolTip, setShowSubmitBtnToolTip] = useState(false);
 	const [signUpInputs, setSignUpInputs] = useState(initialState);
@@ -24,14 +24,13 @@ function SignUpForm() {
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		signUpInputs.pwd === signUpInputs.confirmPassword
-			? createNewUser(userInputs).then((userData) => {
+			? createNewUser(userInputs)
+				.then((userData) => {
 					userData.success
 						? (document.location.href = "/")
 						: (SetErrorMessage(userData.message), setShowError(true));
-			  // eslint-disable-next-line no-mixed-spaces-and-tabs
-			  })
-			: (setShowError(true),
-			  SetErrorMessage("Password don't Match Confirm Password"));
+					})
+			: (setShowError(true), SetErrorMessage("Password doesn't Match Confirm Password"));
 	};
 	return (
 		<div className="user-form-container">

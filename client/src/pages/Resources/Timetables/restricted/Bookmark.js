@@ -1,7 +1,6 @@
 import { useState } from "react";
-import "./TimetableRegistered.css";
+import "./TimetablesContent.css";
 import { BsHeart, BsFillHeartFill } from "react-icons/bs";
-// import { Bookmark } from "grommet-icons";
 
 function Bookmark(props) {
 	const [saved, setSaved] = useState(props.card.saved);

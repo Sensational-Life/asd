@@ -1,13 +1,13 @@
 import React from "react";
-import "./TimetableRegistered.css";
 import CardContent from "./CardContent.js";
 import { BsDownload } from "react-icons/bs";
 import ResponsivePlayer from "react-player";
 import { BsPlayCircleFill } from "react-icons/bs";
 import TimetableVideoImg from "~/assets/images/timetable-video.jpg";
 import Bookmark from "./Bookmark";
+import "./TimetablesContent.css";
 
-function TimetableRegistered() {
+function TimetableContent() {
 	return (
 		<div className="timetable-registered-container">
 			<div className="timetable-registered-section">
@@ -75,4 +75,4 @@ function TimetableRegistered() {
 	);
 }
 
-export default TimetableRegistered;
+export default TimetableContent;
