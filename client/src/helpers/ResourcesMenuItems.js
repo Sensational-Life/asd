@@ -1,7 +1,9 @@
+import { getLoggedInUserData } from "../assets/storage";
+
 export const ResourcesMenuItems = [
   {
     title: "Timetables",
-    path: "/resources/timetables",
+    ...(getLoggedInUserData()? { path: "/resources/timetables" }:{ path:"/NotFound" }),
     cName: "dropdown-link",
   },
 
