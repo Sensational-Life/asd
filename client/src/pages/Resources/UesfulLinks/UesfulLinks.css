@@ -1,59 +1,61 @@
-.UesfulLink-container {
+.uesful-links-container {
 	display: flex;
 	height: 648px;
-	width: 1260px;
-    background-color: #FFF8F3;
+	width: 78.75rem;
+	background-color: #fff8f3;
 }
-.UesfulLinks-img-conatiner {
-	width: 570px;
+.uesful-links-img-conatiner {
+	width: 35.625remx;
 }
-.UesfulLinks-img-color {
+.uesflu-links-img-color {
 	position: relative;
-	top: 128px;
-	width: 570px;
-	height: 520px;
+	top: 8rem;
+	width: 35.625rem;
+	height: 32.5rem;
 	background-color: #a4e4db;
 }
-.UesfulLink-img {
+.uesful-links-img {
 	position: relative;
-	width: 500px;
-	height: 648px;
-	bottom: 128px;
+	width: 31.25rem;
+	height: 40.5rem;
+	bottom: 8rem;
 }
-.UesfulLinks-text-links-conatiner {
-	width: 690px;
+.uesful-link-text-conatiner {
+	width: 43.125rem;
 }
-.UesfulLink-hesdr-text {
-	width: 513px;
-	height: 400px;
+.uesful-links-hesdr-text {
+	width: 32.0625rem;
+	height: 25rem;
 	position: relative;
-	top: 150px;
-	left: 50px;
+	top: 9.375rem;
+	left: 3.125rem;
 }
-.UesfulLink-text {
+.uesful-links-text {
 	font-size: 48px;
 	text-align: left;
-	font: normal normal normal 48px/64px Roboto Slab;
 	letter-spacing: 0.48px;
 	opacity: 1;
+	font-weight: bold;
+	font-family: "RobotoSlab-Regular";
 }
-.UesfulLinks-links {
-	margin-top: 20px;
+.uesful-links-links {
+	margin-top: 1.25rem;
 }
 
-.U-links {
-	width: 120x;
-	height: 80px;
+.uesful-main-links {
+	width: 25.5rem;
+	height: 5rem;
 }
-.UesfulLink-p {
+.uesful-links-p {
 	font-size: 20px;
-	font-family: Ambit Regular;
+	font-weight: bold;
+	font-family: "Ambit Regular";
 }
-.UesfulLinks-a {
-	font-family: "Ambit Light";
+.uesful-links-a {
+	font-family: Ambit Light;
 	text-decoration: none;
 }
-.UesfulLinks-a:hover {
+.uesful-links-a:hover {
 	text-decoration: underline;
 	color: red;
 }
