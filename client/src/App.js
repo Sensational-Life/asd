@@ -18,7 +18,7 @@ import OurEvents from "./pages/OurEvents/OurEvents";
 
 // Resources:
 import Resources from "./pages/Resources/Resources";
-import Timetables from "./pages/Resources/timetables/Timetables";
+import Timetables from "./pages/Resources/Timetables/Timetables";
 import Advice from "./pages/Advice/Advice";
 import SelfReferralsPathway from "./pages/Resources/Referrals/SelfReferralsPathway";
 
