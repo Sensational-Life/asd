@@ -18,8 +18,6 @@ import OurEvents from "./pages/OurEvents/OurEvents";
 
 // Resources:
 import TimetableRegistered from "./pages/Resources/Timetable/Registered/TimetableRegistered";
-
-import Resources from "./pages/Resources/Resources";
 import Advice from "./pages/Advice/Advice";
 import SelfReferralsPathway from "./pages/Resources/Referrals/SelfReferralsPathway";
 
@@ -64,25 +62,12 @@ function App() {
 						path="/resources/timetables/download"
 						component={TimetableRegistered}
 					/>
-					<Route exact path="/resources/advice" component={Advice} />
-
+					{/* <Route exact path="/resources" component={Resources} /> */}
+					<Route path="/resources/advice" component={Advice} />
 					<Route
 						path="/resources/self-referral-pathway"
-						component={SelfReferralPathway}
+						component={SelfReferralsPathway}
 					/>
-					<Route
-						path="/resources/timetables"
-						component={TimetableNotRegistered}
-					/>
-
-						<Route path="/about/what-is-autism" component={WhatIsAutism} />
-						<Route path="/about/signs-of-autism" component={SignsOfAutism} />
-						<Route path="/about/additional-support" component={AdditionalSupport} />
-						<Route path="/about/events" component={OurEvents} />
-
-					<Route exact path="/resources" component={Resources} />
-						<Route path="/resources/advice" component={Advice} />
-						<Route path="/resources/self-referral-pathway" component={SelfReferralsPathway} />
 
 					<Route path="/contact" component={Contact} />
 
@@ -92,7 +77,10 @@ function App() {
 					<Route path="/password-reset" component={PasswordReset} />
 
 					{/* Footer Links: */}
-					<Route path="/frequently-asked-questions" component={FrequentlyAskedQuestions} />
+					<Route
+						path="/frequently-asked-questions"
+						component={FrequentlyAskedQuestions}
+					/>
 
 					{/* Default route for 'Not Found' page */}
 					<Route component={NotFound} />
