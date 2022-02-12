@@ -31,9 +31,9 @@ import UesfulLinks from "./pages/Resources/UesfulLinks/UesfulLinks";
 // Contacts:
 import Contact from "./pages/Contact/Contact";
 // User and Authorisation:
-import SignUpPage from "./pages/User/SignUpPage";
-import SignInPage from "./pages/User/SignInPage";
-import PasswordResetPage from "./pages/User/PasswordResetPage";
+import SignUp from "./pages/User/SignUp";
+import SignIn from "./pages/User/SignIn";
+import PasswordReset from "./pages/User/PasswordReset";
 
 // Footer:
 import Footer from "./components/Footer/Footer";
@@ -50,23 +50,25 @@ function App() {
 			<Router>
 				<Navbar />
 				<Switch>
-					<Route path="/" exact component={Home} />
+					<Route exact path="/" component={Home} />
 
 					{/* routes from home page: */}
 					<Route path="/what-we-do" component={WhatWeDoPage} />
-					<Route path="/JoinUs" component={JoinUs} />
+					<Route path="/join-us" component={JoinUs} />
 
-					{/* routes from nav bar: */}			
+					{/* routes from nav bar: */}
 					<Route exact path="/about" component={AboutUsPage} />
-					<Route path="/about/what-is-autism" component={WhatIsAutism} />
-					<Route path="/about/signs-of-autism" component={SignsOfAutism} />
-					<Route path="/about/additional-support" component={AdditionalSupport}/>
-					<Route path="/about/events" component={OurEvents} />
+						<Route path="/about/what-is-autism" component={WhatIsAutism} />
+						<Route path="/about/signs-of-autism" component={SignsOfAutism} />
+						<Route path="/about/additional-support" component={AdditionalSupport} />
+						<Route path="/about/events" component={OurEvents} />
 
 					<Route exact path="/resources" component={Resources} />
-					<Route exact path="/resources/advice" component={Advice} />
+						<Route path="/resources/advice" component={Advice} />
+						<Route path="/resources/self-referral-pathway" component={SelfReferralPathway} />
+						<Route path="/resources/timetables" component={TimetableNotRegistered} />
 
-         
+
 
 					<Route path="/resources/self-referral-pathway" component={SelfReferralPathway} />
           <Route path="/resources/timetables" component={TimetableNotRegistered}/>
@@ -74,12 +76,13 @@ function App() {
 
 
             
+
 					<Route path="/contact" component={Contact} />
 
 					{/* User Authantication: */}
-					<Route path="/signin" component={SignInPage} />
-					<Route path="/signup" component={SignUpPage} />
-					<Route path="/password-reset" component={PasswordResetPage} />
+					<Route path="/signin" component={SignIn} />
+					<Route path="/signup" component={SignUp} />
+					<Route path="/password-reset" component={PasswordReset} />
 
 					{/* Default route for 'Not Found' page */}
 					<Route component={NotFound} />
