@@ -18,7 +18,6 @@ import OurEvents from "./pages/OurEvents/OurEvents";
 
 // Resources:
 import Resources from "./pages/Resources/Resources";
-
 import Advice from "./pages/Advice/Advice";
 
 
@@ -26,6 +25,9 @@ import SelfReferralPathway from "./pages/Resources/Referrals/NotRegistered/SelfR
 
 import TimetableNotRegistered from "~/pages/Resources/Timetable/NotRegistered/TimetableNotRegistered";
 import UesfulLinks from "./pages/Resources/UesfulLinks/UesfulLinks";
+
+
+import SelfReferralsPathway from "./pages/Resources/Referrals/SelfReferralsPathway";
 
 
 // Contacts:
@@ -37,7 +39,7 @@ import PasswordReset from "./pages/User/PasswordReset";
 
 // Footer:
 import Footer from "./components/Footer/Footer";
-
+import FrequentlyAskedQuestions from "./pages/FrequentlyAskedQuestions/FrequentlyAskedQuestions";
 //Not Found Page:
 import NotFound from "./pages/NotFound/NotFound";
 
@@ -65,9 +67,7 @@ function App() {
 
 					<Route exact path="/resources" component={Resources} />
 						<Route path="/resources/advice" component={Advice} />
-						<Route path="/resources/self-referral-pathway" component={SelfReferralPathway} />
-						<Route path="/resources/timetables" component={TimetableNotRegistered} />
-
+						<Route path="/resources/self-referral-pathway" component={SelfReferralsPathway} />
 
 
 					<Route path="/resources/self-referral-pathway" component={SelfReferralPathway} />
@@ -83,6 +83,9 @@ function App() {
 					<Route path="/signin" component={SignIn} />
 					<Route path="/signup" component={SignUp} />
 					<Route path="/password-reset" component={PasswordReset} />
+
+					{/* Footer Links: */}
+					<Route path="/frequently-asked-questions" component={FrequentlyAskedQuestions} />
 
 					{/* Default route for 'Not Found' page */}
 					<Route component={NotFound} />
