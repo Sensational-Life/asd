@@ -1,23 +1,23 @@
 import React, { useLayoutEffect } from "react";
-import SignUpForm from "~/components/Forms/User/SignUpForm";
-import SignUpImage from "./SignUpPage.png";
+import PasswordResetForm from "~/components/Forms/User/PasswordReset";
+import PasswordResetimg from "./PasswordReset.png";
 import "./UserPage.css";
 
-function SignUpPage() {
+function PasswordResetPage() {
 	useLayoutEffect(() => {
         window.scrollTo(0, 0);
     });
 	return (
 		<div className="user-page-container">
 			<div className="form-container">
-				<SignUpForm />
+				<PasswordResetForm />
 			</div>
 
 			<div className="image-container">
-				<img src={SignUpImage} alt="signup-img" />
+				<img src={PasswordResetimg} alt="password-reset-img" />
 			</div>
 		</div>
 	);
 }
 
-export default SignUpPage;
+export default PasswordResetPage;
