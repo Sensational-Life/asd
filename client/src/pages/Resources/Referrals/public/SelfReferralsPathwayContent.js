@@ -46,7 +46,6 @@ export default function SelfReferralsPathwayContent() {
 							src={questionmarkImg}
 							alt="mother and daughter browsing internet"
 						/>
-			
 					</section>
 				</section>
 			</main>
