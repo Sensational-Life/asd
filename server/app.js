@@ -6,9 +6,8 @@ const  cors = require("cors");
 
 
 const bodyParser = require("body-parser");
-const auth = require("./auth/routes");
 
-require("./auth/passport");
+require("./passport");
 
 import {
 	configuredHelmet,
@@ -36,7 +35,6 @@ if (app.get("env") === "production") {
 }
 
 app.use(apiRoot, router);
-app.use("/auth",auth);
 
 app.use(express.static(staticDir));
 app.use(pushStateRouting(apiRoot, staticDir));

@@ -1,11 +1,11 @@
 import React from "react";
-import "./SelfReferralPathway.css";
+import "./SelfReferralsPathwayContent.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import questionmarkImg from "~/assets/images/question-mark-low-res.png";
 
 
-function SelfReferralPathway() {
+export default function SelfReferralsPathwayContent() {
 	const [buttonShow, setButtonShow] = useState(false);
 	return (
 		<>
@@ -53,4 +53,4 @@ function SelfReferralPathway() {
 		</>
 	);
 }
-export default SelfReferralPathway;
+export { SelfReferralsPathwayContent };
