@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./LoginIcon.css";
-import { getLoggedInUserData, removeUserData } from "../../assets/storage";
+import { getLoggedInUserData, removeUserData } from "~/assets/storage";
 
 function LoginIcon() {
 	const logout = (event) => {
