@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./WhatWeDoPage.css";
-import momAndGirlImg from "~/images/mom-and-girl.png";
+import momAndGirlImg from "~/assets/images/mom-and-girl.png";
 
 function WhatWeDoPage() {
 	return (
