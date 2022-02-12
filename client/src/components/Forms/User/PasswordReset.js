@@ -25,7 +25,7 @@ const PasswordResetForm = () => {
                     <input
 						className="text-field"
 						required
-						id="password"
+						id="Confirm-password"
 						type="password"
 						placeholder="Confirm Password"
 						name="password-confirm"

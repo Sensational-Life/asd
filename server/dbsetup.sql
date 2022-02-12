@@ -1,4 +1,4 @@
---  load uuid extention:
+-- load uuid extention:
 create extension if not exists "uuid-ossp";
 
 -- drop existing tables:
@@ -17,10 +17,10 @@ CREATE TABLE public.users (
 
 CREATE TABLE public.timetables (
 	id uuid NOT NULL DEFAULT uuid_generate_v4(),
-    title varchar NOT NULL,
-    age_group  varchar,
+  title varchar NOT NULL,
+  age_group  varchar,
 	quantity varchar,
-    link varchar NOT NULL,
+  link varchar NOT NULL,
 	CONSTRAINT timetables_pk PRIMARY KEY (id)
 );
 
@@ -31,7 +31,7 @@ CREATE TABLE public.bookmarks (
 	resource_type varchar,
 	CONSTRAINT bookmarks_un UNIQUE (user_id, resource_id),
 	CONSTRAINT users_fk FOREIGN KEY (user_id) 
-		REFERENCES public.users(id) ON DELETE CASCADE
-		DEFERRABLE INITIALLY deferred
+	REFERENCES public.users(id) ON DELETE CASCADE
+	DEFERRABLE INITIALLY deferred
 	
 );
