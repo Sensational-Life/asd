@@ -2,7 +2,16 @@
     font-family: "Ambit SemiBold";
     color: var(--blue-color);
 }
-  .modal__bg {
+.video_model span {
+  text-decoration: none;
+}
+
+.video_model span:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.modal__bg {
     position: fixed;
     top: 0;
     left: 0;
