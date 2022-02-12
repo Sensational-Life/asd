@@ -19,7 +19,6 @@ import OurEvents from "./pages/OurEvents/OurEvents";
 // Resources:
 import TimetableRegistered from "./pages/Resources/Timetable/Registered/TimetableRegistered";
 // import Resources from "./pages/Resources/Resources";
-import Timetables from "./pages/Resources/Timetables/Timetables";
 import Advice from "./pages/Advice/Advice";
 import SelfReferralsPathway from "./pages/Resources/Referrals/SelfReferralsPathway";
 
@@ -57,19 +56,14 @@ function App() {
 						path="/resources/self-referral-pathway"
 						component={SelfReferralsPathway}
 					/>
-						<Route path="/about/what-is-autism" component={WhatIsAutism} />
-						<Route path="/about/signs-of-autism" component={SignsOfAutism} />
-						<Route path="/about/additional-support" component={AdditionalSupport} />
-						<Route path="/about/events" component={OurEvents} />
+					<Route path="/about/what-is-autism" component={WhatIsAutism} />
+					<Route path="/about/signs-of-autism" component={SignsOfAutism} />
+					<Route path="/about/additional-support" component={AdditionalSupport} />
+					<Route path="/about/events" component={OurEvents} />
 
-					{/* <Route exact path="/resources" component={Resources} /> */}
-						<Route path="/resources/timetables" component={Timetables} />
-					<Route
-						path="/resources/timetables/download"
-						component={TimetableRegistered}
-					/>
-						<Route path="/resources/advice" component={Advice} />
-						<Route path="/resources/self-referral-pathway" component={SelfReferralsPathway} />
+					<Route path="/resources/timetables/download" component={TimetableRegistered} />
+					<Route path="/resources/advice" component={Advice} />
+					<Route path="/resources/self-referral-pathway" component={SelfReferralsPathway} />
 
 					<Route path="/contact" component={Contact} />
 

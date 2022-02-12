@@ -3,7 +3,7 @@ import { getLoggedInUserData } from "../assets/storage";
 export const ResourcesMenuItems = [
   {
     title: "Timetables",
-    ...(getLoggedInUserData()? { path: "/resources/timetables/download" }:{ path:"/NotFound" }),
+    ...(getLoggedInUserData()? { path: "/resources/timetables/download" }:{ path:"/download" }),
     cName: "dropdown-link",
   },
 
