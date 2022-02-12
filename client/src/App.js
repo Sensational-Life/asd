@@ -67,8 +67,8 @@ function App() {
 						<Route path="/about/events" component={OurEvents} />
 
 					<Route exact path="/resources" component={Resources} />
-						<Route path="/resources/advice" component={Advice} />
-						<Route path="/resources/self-referral-pathway" component={SelfReferralPathway} />
+						{/* <Route path="/resources/advice" component={Advice} /> */}
+						{/* <Route path="/resources/self-referral-pathway" component={SelfReferralPathway} /> */}
 						<Route path="/resources/timetables" component={TimetableNotRegistered} />
 
 
