@@ -17,7 +17,6 @@ import AdditionalSupport from "./pages/AdditionalSupport/AdditionalSupport";
 import OurEvents from "./pages/OurEvents/OurEvents";
 
 // Resources:
-import Resources from "./pages/Resources/Resources";
 import Timetables from "./pages/Resources/Timetables/Timetables";
 import Advice from "./pages/Advice/Advice";
 import SelfReferralsPathway from "./pages/Resources/Referrals/SelfReferralsPathway";
@@ -57,7 +56,12 @@ function App() {
 						<Route path="/about/additional-support" component={AdditionalSupport} />
 						<Route path="/about/events" component={OurEvents} />
 
-					<Route exact path="/resources" component={Resources} />
+					{/*
+						"/resources" is mapped to Timetables and will show
+						either public or restricted  content from there
+						until we have something better to put into root of "/resources"
+					*/}
+					<Route exact path="/resources" component={Timetables} />
 						<Route path="/resources/timetables" component={Timetables} />
 						<Route path="/resources/advice" component={Advice} />
 						<Route path="/resources/self-referral-pathway" component={SelfReferralsPathway} />

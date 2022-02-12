@@ -4,8 +4,6 @@ import Timetable7to11 from "~/assets/images/timetable7-11age.jpg";
 import Timetable9to14 from "~/assets/images/timetable-9-14.jpg";
 import TimetableMixMatchRoutine from "~/assets/images/timetable-mix-match-routine.jpg";
 
-
-
 export const CardContent = [
 	{
 		id: "f59bc2e3-dda5-4c58-8677-aca84ad948e0",

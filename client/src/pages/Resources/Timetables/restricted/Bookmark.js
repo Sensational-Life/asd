@@ -1,6 +1,6 @@
 import { useState } from "react";
-import "./TimetablesContent.css";
 import { BsHeart, BsFillHeartFill } from "react-icons/bs";
+import "./TimetablesContent.css";
 
 function Bookmark(props) {
 	const [saved, setSaved] = useState(props.card.saved);

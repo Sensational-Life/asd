@@ -7,7 +7,7 @@ import TimetableVideoImg from "~/assets/images/timetable-video.jpg";
 import Bookmark from "./Bookmark";
 import "./TimetablesContent.css";
 
-function TimetableContent() {
+export default function TimetablesContent() {
 	return (
 		<div className="timetable-registered-container">
 			<div className="timetable-registered-section">
@@ -75,4 +75,4 @@ function TimetableContent() {
 	);
 }
 
-export default TimetableContent;
+export { TimetablesContent };
