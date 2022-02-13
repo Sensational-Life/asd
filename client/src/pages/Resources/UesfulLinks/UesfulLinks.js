@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./UesfulLinks.css";
 import UesfulLinkImg from "~/assets/images/sea.jpg";
 
@@ -16,24 +15,24 @@ function UesfulLinks() {
 			<div className="content">
 					<h1>Useful Links</h1>
 					<p>Autism Network Scotland </p>
-					<Link to="https://www.autismnetworkscotland.org.uk/pages/home" >
+					<a href="https://www.autismnetworkscotland.org.uk/pages/home">
 						https://www.autismnetworkscotland.org.uk/pages/home
-					</Link>
+					</a>
 
 					<p>Scottish Autism</p>
-					<Link to="https://www.scottishautism.org">
+					<a href="https://www.scottishautism.org">
 						https://www.scottishautism.org/
-					</Link>
+					</a>
 
 					<p>National Autistic Society</p>
-					<Link to="https://www.autism.org.uk">
+					<a href="https://www.autism.org.uk">
 						https://www.autism.org.uk/
-					</Link>
+					</a>
 
 					<p>Different minds One Scotland</p>
-					<Link to="https://differentminds.scot">
+					<a href="https://differentminds.scot">
 						https://differentminds.scot/
-					</Link>
+					</a>
 			</div>
 		</div>
 	);
