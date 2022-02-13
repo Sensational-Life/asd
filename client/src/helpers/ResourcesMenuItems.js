@@ -1,5 +1,4 @@
 export const ResourcesMenuItems = [
-
   {
     title: "Timetables",
     path: "/resources/timetables",
@@ -22,10 +21,7 @@ export const ResourcesMenuItems = [
   },
   {
     title: "Useful Links",
-    path: "/resources/UesfulLinks",
+    path: "/resources/useful-links",
     cName: "dropdown-link",
   },
-
-
-
 ];

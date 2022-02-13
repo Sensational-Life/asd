@@ -20,13 +20,7 @@ import OurEvents from "./pages/OurEvents/OurEvents";
 import Resources from "./pages/Resources/Resources";
 import Timetables from "./pages/Resources/Timetables/Timetables";
 import Advice from "./pages/Advice/Advice";
-
-
-import SelfReferralPathway from "./pages/Resources/Referrals/NotRegistered/SelfReferralPathway";
-
-import TimetableNotRegistered from "~/pages/Resources/Timetable/NotRegistered/TimetableNotRegistered";
 import UesfulLinks from "./pages/Resources/UesfulLinks/UesfulLinks";
-
 
 import SelfReferralsPathway from "./pages/Resources/Referrals/SelfReferralsPathway";
 
@@ -71,13 +65,7 @@ function App() {
 						<Route path="/resources/advice" component={Advice} />
 						<Route path="/resources/self-referral-pathway" component={SelfReferralsPathway} />
 
-
-					<Route path="/resources/self-referral-pathway" component={SelfReferralPathway} />
-          <Route path="/resources/timetables" component={TimetableNotRegistered}/>
-                       <Route path="/resources/UesfulLinks" component={UesfulLinks} />
-
-
-            
+						<Route path="/resources/useful-links" component={UesfulLinks} />
 
 					<Route path="/contact" component={Contact} />
 

@@ -1,61 +1,60 @@
-.uesful-links-container {
+.useful-links-container {
 	display: flex;
-	height: 648px;
-	width: 78.75rem;
+	height: fit-content;
+	width: 100%;
 	background-color: #fff8f3;
 }
-.uesful-links-img-conatiner {
-	width: 35.625remx;
+.useful-links-container .img-conatiner {
+	display: flex;
+	align-items: flex-end;
 }
-.uesflu-links-img-color {
-	position: relative;
-	top: 8rem;
-	width: 35.625rem;
-	height: 32.5rem;
+
+.useful-links-container img {
+	border: 0;
+}
+
+.useful-links-container .img-bg {
+	min-width: 4rem;
+	height: 85%;
 	background-color: #a4e4db;
 }
-.uesful-links-img {
-	position: relative;
-	width: 31.25rem;
-	height: 40.5rem;
-	bottom: 8rem;
+
+.useful-links-container .content {
+	margin-left: 4rem;
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
-.uesful-link-text-conatiner {
-	width: 43.125rem;
-}
-.uesful-links-hesdr-text {
-	width: 32.0625rem;
-	height: 25rem;
-	position: relative;
-	top: 9.375rem;
-	left: 3.125rem;
-}
-.uesful-links-text {
+
+.useful-links-container h1 {
 	font-size: 48px;
 	text-align: left;
 	letter-spacing: 0.48px;
-	opacity: 1;
-	font-weight: bold;
+	font-weight: 500;
 	font-family: "RobotoSlab-Regular";
-}
-.uesful-links-links {
-	margin-top: 1.25rem;
+	margin-bottom: 1.5rem;
 }
 
-.uesful-main-links {
-	width: 25.5rem;
-	height: 5rem;
-}
-.uesful-links-p {
+.useful-links-container p {
 	font-size: 20px;
 	font-weight: bold;
 	font-family: "Ambit Regular";
+	margin-top: 1.25rem;
 }
-.uesful-links-a {
-	font-family: Ambit Light;
+
+.useful-links-container a,
+.useful-links-container a:visited {
+	font-size: large;
+	font-weight: 400;
+	font-family: "Ambit Regular";
 	text-decoration: none;
+	color: var(--blue-color);
 }
-.uesful-links-a:hover {
+
+.useful-links-container a:hover {
+	font-size: large;
+	font-weight: 600;
+	font-family: "Ambit Regular";
 	text-decoration: underline;
-	color: red;
 }
