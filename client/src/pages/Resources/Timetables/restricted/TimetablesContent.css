@@ -83,11 +83,14 @@
 
 .timetable-registered-wrapper .card-image-container {
 	margin-top: 1rem;
+	display: flex;
+	justify-content: center;
+	border: 2px solid var(--blue-color);
 }
 
 .timetable-registered-wrapper .card-image {
-	max-width: 15rem;
-	border: 2px solid var(--blue-color);
+	max-width: 10rem;
+    max-height: 15rem;
 }
 
 .timetable-icon-container {
