@@ -9,7 +9,7 @@ export const EdutainmentMenuItems = [
 	},
 	{
 		title: "Relaxing",
-		link: "https://youtu.be/8jmK6C3Q6ys",
+		link: "https://youtu.be/8UL89A0nkgI",
 	},
 	{
 		title: "Learning shapes",
