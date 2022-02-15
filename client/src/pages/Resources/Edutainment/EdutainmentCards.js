@@ -1,25 +1,30 @@
 import React from "react";
 import { EdutainmentMenuItems } from "../../../helpers/EdutainmentMenuitems";
+import "./EdutainmentCard.css";
 import ResponsivePlayer from "react-player";
-
 export default function EdutainmentCards() {
-	return (
-		<div className="grid-container">
-			{EdutainmentMenuItems.map((item, index) => (
-				<div className="grid-item" key={index}>
-					<div className="video-wrapper">
-						<ResponsivePlayer
-							className="player"
-							url={item.link}
-							// playing={true}
-							controls={true}
-							width="100%"
-							height="100%"
-						/>
-					</div>
-					<h4 className="card-header">{item.title}</h4>
-				</div>
-			))}
-		</div>
-	);
+    return (
+        <div className="edutainment-grid-container">
+            <div className="edutainment-wrapper-color"></div>
+            <div className="edutainment-main-container">
+                {EdutainmentMenuItems.map((item, index) => (
+                    <div className="edutainment-grid-item" key={index}>
+                        <div className="video-wrapper">
+                            <ResponsivePlayer
+                                className="player"
+                                url={item.link}
+                                // playing={true}
+                                controls={true}
+                                width="100%"
+                                height="100%"
+                            />
+                        </div>
+                        <div className="edutainment-card-header">
+                            <h4 className="edutainment-video-title">{item.title}</h4>
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </div>
+    );
 }

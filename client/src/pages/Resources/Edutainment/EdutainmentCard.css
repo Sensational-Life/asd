@@ -1,0 +1,36 @@
+.edutainment-grid-container {
+	height: 31rem;
+}
+.edutainment-wrapper-color {
+	background-color: #a4e4db;
+	position: absolute;
+	height: 40rem;
+	width: 100%;
+	bottom: -17.2rem;
+}
+.edutainment-main-container {
+	margin: 2.5rem 0rem 0rem 0rem;
+	grid-column-gap: 6rem;
+	grid-row-gap: 1rem;
+	display: grid;
+	grid-template-columns: 20% 20% 20%;
+}
+.edutainment-grid-item {
+	border: 2px solid #1e6dd0;
+	width: 18rem;
+	position: relative;
+	left: 9rem;
+}
+.edutainment-card-header {
+	background-color: #1e6dd0;
+	height: 3rem;
+	text-align: center;
+}
+.edutainment-video-title {
+	position: relative;
+	top: 12px;
+	color: #f6f7fa;
+	text-align: center;
+	font-family: "Ambit light";
+	font-size: 24px;
+}

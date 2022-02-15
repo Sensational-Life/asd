@@ -2,8 +2,7 @@
 	display: grid;
 	grid-template-columns: 33% 33% 33%;
 	grid-template-areas: "header description feel-free";
-}
-.edutainment-row {
+	margin: 2rem 0rem 0rem 0rem;
 }
 .header-column {
 	grid-area: "header";
@@ -35,10 +34,5 @@
 	font-size: 38px;
 	text-align: center;
 }
-/* .grid-container {
-	background-color: var(--green-bg-color);
-    min-height: 150px;
-} */
-
 
 
