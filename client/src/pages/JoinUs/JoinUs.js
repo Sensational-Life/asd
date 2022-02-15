@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import JoinUsimg from "~/assets/images/Join-us.jpg";
 import "./JoinUs.css";
 
@@ -14,16 +13,21 @@ function JoinUs() {
 				</div>
 				<div className="text-container">
 					<div className="wrapper">
-						<h1 >Come along!</h1>
+						<h1>Come along!</h1>
 						<p>
-							Come and join our FREE parent support group - a great online support
-							community, with regular guest speakers, advice from autistic members
-							along with non - judgemental fellow parents who &apos;get it&apos;!
+							Come and join our FREE parent support group - a great online
+							support community, with regular guest speakers, advice from
+							autistic members along with non - judgemental fellow parents who
+							&apos;get it&apos;!
 						</p>
 						<p>
-							<Link to="https://www.facebook.com/groups/autismandparentsupport">
+							<a
+								target={"_blank"}
+								href="https://www.facebook.com/groups/autismandparentsupport"
+								rel="noreferrer"
+							>
 								Check Out Our FREE Facebook Support Group.
-							</Link>
+							</a>
 						</p>
 					</div>
 				</div>
