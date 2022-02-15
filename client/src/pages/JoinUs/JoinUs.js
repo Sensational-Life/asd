@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import JoinUsimg from "~/assets/images/Join-us.jpg";
 import "./JoinUs.css";
 
@@ -21,9 +20,11 @@ function JoinUs() {
 							along with non - judgemental fellow parents who &apos;get it&apos;!
 						</p>
 						<p>
-							<Link to="https://www.facebook.com/groups/autismandparentsupport">
+							<a
+							target={"_blank"}
+							href="https://www.facebook.com/groups/autismandparentsupport" rel="noreferrer">
 								Check Out Our FREE Facebook Support Group.
-							</Link>
+							</a>
 						</p>
 					</div>
 				</div>
