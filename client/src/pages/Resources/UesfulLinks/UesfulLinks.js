@@ -15,22 +15,30 @@ function UesfulLinks() {
 			<div className="content">
 					<h1>Useful Links</h1>
 					<p>Autism Network Scotland </p>
-					<a href="https://www.autismnetworkscotland.org.uk/pages/home">
+					<a
+					target={"_blank"}
+					href="https://www.autismnetworkscotland.org.uk/pages/home" rel="noreferrer">
 						https://www.autismnetworkscotland.org.uk/pages/home
 					</a>
 
 					<p>Scottish Autism</p>
-					<a href="https://www.scottishautism.org">
+					<a
+					target={"_blank"}
+					href="https://www.scottishautism.org" rel="noreferrer">
 						https://www.scottishautism.org/
 					</a>
 
 					<p>National Autistic Society</p>
-					<a href="https://www.autism.org.uk">
+					<a
+					target={"_blank"}
+					href="https://www.autism.org.uk" rel="noreferrer">
 						https://www.autism.org.uk/
 					</a>
 
 					<p>Different minds One Scotland</p>
-					<a href="https://differentminds.scot">
+					<a
+					target={"_blank"}
+					href="https://differentminds.scot" rel="noreferrer">
 						https://differentminds.scot/
 					</a>
 			</div>
