@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useLayoutEffect } from "react";
 import "./AboutUsPage.css";
 import KellyAnneImg from "~/images/KellyAnneSmithProfilePic.png";
+
 function AboutUsPage() {
 
-  return (
+	useLayoutEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
+
+	return (
 		<>
 			<main className="about-us-main-container">
 				<section className="about-us-content">
