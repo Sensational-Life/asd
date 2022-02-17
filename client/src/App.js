@@ -11,10 +11,10 @@ import JoinUs from "./pages/JoinUs/JoinUs";
 
 // About:
 import AboutUsPage from "./pages/AboutUsPage/AboutUsPage";
-import WhatIsAutism from "./pages/WhatIsAutism/WhatIsAutism";
-import SignsOfAutism from "./pages/SignsOfAutism/SignsOfAutism";
-import AdditionalSupport from "./pages/AdditionalSupport/AdditionalSupport";
-import OurEvents from "./pages/OurEvents/OurEvents";
+import WhatIsAutism from "./pages/About/WhatIsAutism/WhatIsAutism";
+import SignsOfAutism from "./pages/About/SignsOfAutism/SignsOfAutism";
+import AdditionalSupport from "./pages/About/AdditionalSupport/AdditionalSupport";
+import OurEvents from "./pages/About/OurEvents/OurEvents";
 
 // Resources:
 import Resources from "./pages/Resources/Resources";

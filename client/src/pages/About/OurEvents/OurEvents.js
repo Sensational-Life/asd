@@ -4,7 +4,7 @@ import "./OurEvents.css";
 import Events from "./OurEvents.json";
 import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
 
-const images = require.context("../../assets/images", true);
+const images = require.context("../../../assets/images", true);
 
 function OurEvents() {
 	const [startLength, setStartLength] = useState(0);
@@ -62,7 +62,7 @@ function OurEvents() {
 					return (
 						<div key={i} className="ourevent_container">
 							<div className="ourevent_small_img">
-								<img src={images(`./${event.img}`).default} alt="img" />
+								<img src={images(`/${event.img}`).default} alt="img" />
 							</div>
 							<div className="ourevent_title_date">
 								<h3 className="ourevent_title">{event.title}</h3>
