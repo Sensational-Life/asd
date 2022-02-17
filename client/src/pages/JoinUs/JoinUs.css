@@ -1,71 +1,105 @@
-.JoinUs-container {
-	width: 1240px;
-	height: 700px;
+.join-us-container {
+	width: 100%;
+	height: fit-content;
+	min-height: 80vh;
+	background-color: var(--main-bg-color);
+}
+
+.join-us-container .content { 
 	display: flex;
-}
-.JoinUs-container-img {
-	width: 620px;
-	height: 700px;
-}
-.JoinUs-container-text-header {
-	width: 620px;
-	height: 700px;
-	margin: 80px;
+	justify-content: center;
+	padding: 2rem;
 }
 
-.JoinUs-text-header {
-	width: 500px;
-	height: 400px;
-}
-.JoinUs-tilte-header {
-	text-align: left;
-	font: normal normal normal 48px/64px Roboto Slab;
-	letter-spacing: 0.48px;
-	color: #0f2420;
-	opacity: 1;
-	margin: 12px;
-}
-.JoiunUs-p {
-	width: 460px;
-	margin: 12px;
-	color: var(--unnamed-color-000000);
-	text-align: left;
-	letter-spacing: 0.2px;
-	color: #000000;
-}
-.Joinus-checkout-text {
-	font: var(--unnamed-font-style-normal) normal 600 var(--unnamed-font-size-20) /
-		var(--unnamed-line-spacing-25) var(--unnamed-font-family-ambit);
-	letter-spacing: var(--unnamed-character-spacing-0-2);
-	color: var(--unnamed-color-000000);
-	text-align: left;
-	font: normal normal 600 20px/25px Ambit;
-	width: 960px;
-	margin: 20px;
-	text-align: left;
-	letter-spacing: 0.2px;
-	color: #000000;
+.join-us-container .image-container {
+	margin: 2rem;
+	width: 35rem;
+	min-width: 35rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
 }
 
-.JoinUs-img-color {
-	width: 497px;
-	height: 344px;
-	background-color: #a4e4db;
-	margin: 160px;
+.join-us-container .image-shadow {
+	border-radius: 1rem;
+	width: 80%;
+	height: 70%;
+	margin-top: 3rem;
+	background-color: var(--green-bg-color);
 	position: relative;
-	top: 10px;
-	right: 70px;
-	border-radius: 20px;
-	opacity: 1;
 }
-.JoinUs-img {
-	width: 428px;
-	height: 424px;
-	margin: 0px 50px 0px 32px;
-}
-.JoinUs-main-img {
+
+.join-us-container .image-container img {
+	max-width: 85%;
 	position: relative;
-	width: 428px;
-	height: 424px;
-	bottom: 130px;
+	bottom: 8rem;
+	left: 1.5rem
+}
+
+.join-us-container .text-container {
+	max-width: 90%;
+	margin: 0 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+
+}
+
+.join-us-container .text-container .wrapper {
+	max-width: 90%;
+	margin-top: 2rem;
+}
+
+.join-us-container h1 {
+	font-family: "RobotoSlab-Regular";
+	font-size: 3rem;
+	font-weight: 400;
+	margin: 1rem 0;
+} 
+
+.join-us-container p {
+	font-family: "Ambit Regular";
+	font-size: 1.5rem;
+	margin-top: 2rem;
+} 
+
+.join-us-container a {
+	color: var(--blue-color);
+	text-decoration: none;
+}
+
+.join-us-container a:visited {
+	color: var(--blue-color);
+}
+
+.join-us-container a:hover {
+	text-decoration: underline;
+	cursor: pointer;
+	font-weight: 700;
+} 
+
+@media screen and (max-width: 1200px) {
+	.join-us-container .content {
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.join-us-container .image-container img {
+		bottom: 2rem;
+		left: 1.5rem
+	}
+
+	.join-us-container .text-container {
+		max-width: 90%;
+		height: fit-content;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.join-us-container p {
+		font-size: 2rem;
+		margin-top: 2rem;
+	} 
 }

@@ -1,7 +1,9 @@
+import { getLoggedInUserData } from "../../../assets/storage";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "~/assets/images/Logo.jpg";
 import "./FooterLogo.css";
+
 
 export function FooterLogo() {
 	const [isShown, setIsShown] = useState(false);
@@ -19,6 +21,7 @@ export function FooterLogo() {
 					<div>
 						<p>Do you want to be part of us?</p>
 					</div>
+					{!getLoggedInUserData()&&
 					<div>
 						<Link to="/signup"
 							target="_blank"
@@ -30,7 +33,7 @@ export function FooterLogo() {
 							Get started
 						</Link>
 						{isShown && <div className="footer_buttun_tooltip"> Get started</div>}
-					</div>
+					</div>}
 				</div>
 			</div>
 		</div>
