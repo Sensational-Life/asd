@@ -1,11 +1,13 @@
 .additional-support-container {
 	background-color: #fff8f3;
 }
-.hero-image {
+
+.additional-support-container .hero-image {
 	width: 100%;
     padding: 50px 0 0 0;
 }
-.content {
+
+.additional-support-container .content {
 	display: flex;
 	flex-direction: row;
 	height: 50vh;
@@ -13,14 +15,16 @@
 	align-items: center;
 	column-gap: 90px;
 }
-.content-left-container {
+
+.additional-support-container .content-left-container {
 	display: flex;
 	flex-direction: column;
 	height: 50vh;
 	justify-content: center;
 	row-gap:27px;
 }
-.content-left-container p:nth-child(1) {
+
+.additional-support-container .content-left-container p:nth-child(1) {
 	width: 522px;
 	height: 98px;
 	font-family: "Ambit Light";
@@ -28,23 +32,27 @@
 	line-height: 21px;
 	font-size: 20px
 }
-.content-left-container p:nth-child(2) a{
+
+.additional-support-container .content-left-container p:nth-child(2) a{
 	font-family: "Ambit Regular";
 }
-.content-left-container p:nth-child(2) a:hover{
+
+.additional-support-container .content-left-container p:nth-child(2) a:hover{
 	font-weight: bold;
 }
 
-.content-left-container > p:nth-child(2) {
+.additional-support-container .content-left-container > p:nth-child(2) {
 	width: 410px;
 	font-family: "Ambit Light";
 	font-size: 20px;
 	line-height: 21px;
 }
-.content-left-container > p:nth-child(2) a {
+
+.additional-support-container .content-left-container > p:nth-child(2) a {
 	color: var(--blue-color);
 }
-.content-right-container {
+
+.additional-support-container .content-right-container {
 	display: flex;
 	flex-direction: column;
 	width: 438px;
@@ -54,12 +62,14 @@
 	font-family: "Ambit Light";
 	padding: 0 0 30px 0;
 }
-.content-right-container > h2 {
+
+.additional-support-container .content-right-container > h2 {
 	font-size: 20px;
 	font-family: "Ambit SemiBold";
 	padding-bottom: 20px;
 }
-.content-right-container a {
+
+.additional-support-container .content-right-container a {
 	font-size: 20px;
 	line-height: 20px;
 	width: 547px;
@@ -68,7 +78,8 @@
 	color: var(--blue-color);
     text-decoration: none;
 }
-.content-right-container a:hover{
+
+.additional-support-container .content-right-container a:hover{
 	font-weight: bold;
 	text-decoration: underline;
 }

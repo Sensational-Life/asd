@@ -1,0 +1,105 @@
+.join-us-container {
+	width: 100%;
+	height: fit-content;
+	min-height: 80vh;
+	background-color: var(--main-bg-color);
+}
+
+.join-us-container .content { 
+	display: flex;
+	justify-content: center;
+	padding: 2rem;
+}
+
+.join-us-container .image-container {
+	margin: 2rem;
+	width: 35rem;
+	min-width: 35rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.join-us-container .image-shadow {
+	border-radius: 1rem;
+	width: 80%;
+	height: 70%;
+	margin-top: 3rem;
+	background-color: var(--green-bg-color);
+	position: relative;
+}
+
+.join-us-container .image-container img {
+	max-width: 85%;
+	position: relative;
+	bottom: 8rem;
+	left: 1.5rem
+}
+
+.join-us-container .text-container {
+	max-width: 90%;
+	margin: 0 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+
+}
+
+.join-us-container .text-container .wrapper {
+	max-width: 90%;
+	margin-top: 2rem;
+}
+
+.join-us-container h1 {
+	font-family: "RobotoSlab-Regular";
+	font-size: 3rem;
+	font-weight: 400;
+	margin: 1rem 0;
+} 
+
+.join-us-container p {
+	font-family: "Ambit Regular";
+	font-size: 1.5rem;
+	margin-top: 2rem;
+} 
+
+.join-us-container a {
+	color: var(--blue-color);
+	text-decoration: none;
+}
+
+.join-us-container a:visited {
+	color: var(--blue-color);
+}
+
+.join-us-container a:hover {
+	text-decoration: underline;
+	cursor: pointer;
+	font-weight: 700;
+} 
+
+@media screen and (max-width: 1200px) {
+	.join-us-container .content {
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.join-us-container .image-container img {
+		bottom: 2rem;
+		left: 1.5rem
+	}
+
+	.join-us-container .text-container {
+		max-width: 90%;
+		height: fit-content;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.join-us-container p {
+		font-size: 2rem;
+		margin-top: 2rem;
+	} 
+}

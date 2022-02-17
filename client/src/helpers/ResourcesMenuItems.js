@@ -6,22 +6,22 @@ export const ResourcesMenuItems = [
 	},
 	{
 		title: "Referrals",
-		path: "/referrals",
+		path: "/resources/self-referral-pathway",
 		cName: "dropdown-link",
 	},
 	{
 		title: "Edutainment",
-		path: "/resources/edutainment",
+		path: "/edutainment",
 		cName: "dropdown-link",
 	},
 	{
 		title: "Advice",
-		path: "/advice",
+		path: "/resources/advice",
 		cName: "dropdown-link",
 	},
 	{
 		title: "Useful Links",
-		path: "/links",
+		path: "/resources/useful-links",
 		cName: "dropdown-link",
 	},
 ];

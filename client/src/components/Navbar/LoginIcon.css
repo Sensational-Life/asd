@@ -3,8 +3,15 @@
 	text-decoration: none;
 	padding: 0.5rem 0.5rem;
 	text-transform: uppercase;
-		border: 3px solid transparent;
+	border: 3px solid transparent;
+}
 
+.signOut-icon {
+	color: black;
+	text-decoration: none;
+	padding: 0.5rem 0.5rem;
+	text-transform: uppercase;
+	border: 3px solid transparent;
 }
 
 .login-icon:hover {
@@ -16,7 +23,6 @@
 
 @media screen and (min-device-width: 1200px) and (max-device-width: 1770px) and (-webkit-min-device-pixel-ratio: 1) {
 	.login-icon {
-		width: 85px;
+		width: 90px;
 	}
 }
-
