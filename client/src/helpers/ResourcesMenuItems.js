@@ -11,7 +11,7 @@ export const ResourcesMenuItems = [
 	},
 	{
 		title: "Edutainment",
-		path: "/edutainment",
+		path: "/resources/edutainment",
 		cName: "dropdown-link",
 	},
 	{
