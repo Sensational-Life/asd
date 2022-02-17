@@ -1,6 +1,6 @@
 import React from "react";
-import "./Edutainment.css";
 import EdutainmentCards from "./EdutainmentCards";
+import "./Edutainment.css";
 
 const Edutainment = () => {
 	return (
@@ -17,12 +17,12 @@ const Edutainment = () => {
 					helping a child to go to bed or perform a certain task.
 				</div>
 				<div className="feel-free-column">
-					<h3 className="text1">
+					<h3>
 						Feel free to browse
 						<br />
 						through our videos.
 					</h3>
-					<h3 className="text2">Enjoy!</h3>
+					<h3>Enjoy!</h3>
 				</div>
 			</div>
 			<div>

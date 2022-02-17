@@ -1,7 +1,8 @@
 import React from "react";
-import { EdutainmentMenuItems } from "../../../helpers/EdutainmentMenuitems";
-import "./EdutainmentCard.css";
 import ResponsivePlayer from "react-player";
+import EdutainmentMenuItems from "./EdutainmentCards.json";
+import "./EdutainmentCards.css";
+
 export default function EdutainmentCards() {
     return (
         <div className="edutainment-grid-container">
