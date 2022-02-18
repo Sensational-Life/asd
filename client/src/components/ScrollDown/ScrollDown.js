@@ -9,7 +9,7 @@ function ScrollDown() {
 	return (
 		<button
 			className="scrolldown-container"
-			onClick={() => scrollTo({ top: 1100, left: 0, behavior: "smooth" })}
+			onClick={() => scrollTo({ top: 780, left: 0, behavior: "smooth" })}
 		>
 			<span className="scrolldown-text">SCROLL DOWN</span>
 			<HiOutlineChevronDoubleDown className="scrolldown_icon" />
