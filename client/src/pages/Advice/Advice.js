@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Advice.css";
-import AdviceImg from "~/assets/images/Advice.jpg";
+import AdviceImg from "~/assets/images/advice.jpg";
 import AdviceCard from "./AdviceCard";
 
 function Advice() {

@@ -8,7 +8,7 @@ function AdviceCard() {
 		<div className="Advice-card-container">
 			{AdviceCardContent.map((value, index) => (
 				<div className="Advice-card-index" key={index}>
-					<h3 className="Advice-Vlue-Title">{value.Advicetitle}</h3>
+					<p className="Advice-Vlue-Title">{value.Advicetitle}</p>
 					<p className="Advice-value-content">{value.AdviceContent}</p>
 				</div>
 			))}
