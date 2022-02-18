@@ -6,9 +6,9 @@ function AboutUsPage() {
 
 	useLayoutEffect(() => {
 		window.scrollTo(0, 0);
- }, []);
+	}, []);
 
-  return (
+	return (
 		<>
 			<main className="about-us-main-container">
 				<section className="about-us-content">

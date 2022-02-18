@@ -21,9 +21,8 @@ import Resources from "./pages/Resources/Resources";
 import Timetables from "./pages/Resources/Timetables/Timetables";
 import Advice from "./pages/Advice/Advice";
 import UesfulLinks from "./pages/Resources/UesfulLinks/UesfulLinks";
-
 import SelfReferralsPathway from "./pages/Resources/Referrals/SelfReferralsPathway";
-
+import Edutainment from "./pages/Resources/Edutainment/Edutainment";
 
 // Contacts:
 import Contact from "./pages/Contact/Contact";
@@ -62,13 +61,12 @@ function App() {
 
 					<Route exact path="/resources" component={Resources} />
 						<Route path="/resources/timetables" component={Timetables} />
+						<Route path="/resources/edutainment" component={Edutainment} />
 						<Route path="/resources/advice" component={Advice} />
 						<Route path="/resources/self-referral-pathway" component={SelfReferralsPathway} />
-
 						<Route path="/resources/useful-links" component={UesfulLinks} />
 
 					<Route path="/contact" component={Contact} />
-
 					{/* User Authantication: */}
 					<Route path="/signin" component={SignIn} />
 					<Route path="/signup" component={SignUp} />
