@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./WeSupportYou.css";
 import ImgHands from "~/assets/images/supporting-elderly-woman.jpg";
-import { getLoggedInUserData } from "../../../assets/storage";
+import { getLoggedInUserData } from "~/assets/storage";
 export function WeSupportYou() {
 	const [isShown, setIsShown] = useState(false);
 	return (
@@ -20,7 +20,6 @@ export function WeSupportYou() {
 					<div className="wesupportyou_join-us">
 						<Link
 							to="./join-us"
-							target="_blank"
 							rel="noreferrer"
 							className="wesupportyou_button"
 							onMouseEnter={() => setIsShown(true)}
