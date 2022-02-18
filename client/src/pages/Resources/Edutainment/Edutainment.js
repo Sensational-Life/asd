@@ -22,9 +22,9 @@ const Edutainment = () => {
 							Feel free to browse
 							<br />
 							through our videos.
-						<p>
-
 						</p>
+
+						<p>
 							Enjoy!
 						</p>
 					</div>

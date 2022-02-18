@@ -14,15 +14,12 @@ export default function EdutainmentCards() {
                             <ResponsivePlayer
                                 className="player"
                                 url={item.link}
-                                // playing={true}
                                 controls={true}
                                 width="100%"
                                 height="100%"
                             />
                         </div>
-                        <div className="edutainment-card-header">
-                            <h4 className="edutainment-video-title">{item.title}</h4>
-                        </div>
+                        <div className="video-description">{item.title}</div>
                     </div>
                 ))}
             </div>
