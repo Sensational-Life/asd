@@ -1,19 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import Bookmark from "./Bookmark";
 import { BsDownload } from "react-icons/bs";
-
-import { Document, Page, pdfjs } from "react-pdf";
-import pdfjsWorker from "pdfjs-dist/build/pdf.worker.entry";
 import "./CardComponent.css";
 
 export default function CardComponent({ card }) {
-    const [pageNumber, setPageNumber] = useState(1);
-    pdfjs.GlobalWorkerOptions.workerSrc = pdfjsWorker;
-
-    function onDocumentLoadSuccess() {
-        setPageNumber(1);
-    }
-
     return (
         <div className="card-container" key={card.id}>
         <div className="card-header">{card.title}</div>
@@ -23,14 +13,7 @@ export default function CardComponent({ card }) {
                 <p>Quantity: {card.quontity}</p>
             </div>
             <div className="card-image-container">
-                <Document
-                    className="card-image"
-                    file={card.pdflink}
-                    renderMode="canvas"
-                    onLoadSuccess={onDocumentLoadSuccess}
-                >
-                    <Page pageNumber={pageNumber} />
-                </Document>
+                <img src={card.thumbnail} alt={card.alt} />
             </div>
             <div className="timetable-icon-container">
                 <Bookmark card={card} />

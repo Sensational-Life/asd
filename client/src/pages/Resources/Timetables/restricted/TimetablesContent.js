@@ -6,7 +6,10 @@ import TimetableVideoImg from "~/assets/images/timetable-video.jpg";
 import CardComponent from "./CardComponent";
 import "./TimetablesContent.css";
 
+const thumbnails = require.context("./thumbnails", true);
+
 export default function TimetablesContent() {
+
 	return (
 		<div className="timetable-registered-container">
 			<div className="timetable-registered-section">
@@ -19,6 +22,7 @@ export default function TimetablesContent() {
 						</div>
 						<div className="cards-container">
 							{TimetablesCards.map((card) => {
+								card.thumbnail = thumbnails(`./${card.thumbnail}`).default;
 								return (
 									<CardComponent key={card.id} card={card} />
 								);

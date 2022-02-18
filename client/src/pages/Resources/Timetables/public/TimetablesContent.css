@@ -19,36 +19,34 @@
 	row-gap: 1.6875rem;
 	width: 50%;
 }
+
+.timestables-text-container p {
+	width: 90%;
+	line-height: 1.5rem;
+	font-size: 1.25rem;
+}
+
 .timestables-text-container p:nth-child(1) {
 	max-width: 450px;
-	width: 90%;
 	max-height: 6.125em;
 	font-family: "Ambit Light";
 	letter-spacing: 0.0125rem;
-	line-height: 1.3125rem;
-	font-size: 1.25rem;
 }
+
 .timestables-text-container p:nth-child(2) {
 	font-family: "Ambit SemiBold";
 	font-weight: bold;
 	width: 90%;
-	font-size: 1.25rem;
-	line-height: 1.3125rem;
-}
-.timestables-text-container p:nth-child(2) a {
 	text-decoration: none;
-}
-
-.timestables-text-container > p:nth-child(3) {
-	width: 90%;
-	font-family: "Ambit SemiBold";
-	font-size: 1.25rem;
-	line-height: 1.3125rem;
-	font-weight: bold;
-}
-.timestables-text-container > p:nth-child(2) a {
 	color: var(--blue-color);
 }
+
+.timestables-text-container p:nth-child(3) {
+	width: 90%;
+	font-family: "Ambit SemiBold";
+	font-weight: bold;
+}
+
 
 .register-button {
 	background-color: var(--blue-color);
@@ -58,6 +56,7 @@
 	font-family: "Ambit SemiBold";
 	color: var(--white-color);
 }
+
 .register-button:hover {
 	background-color: var(--darkgreen-color);
 	cursor: pointer;
