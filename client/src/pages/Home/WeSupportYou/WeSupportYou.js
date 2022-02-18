@@ -20,7 +20,6 @@ export function WeSupportYou() {
 					<div className="wesupportyou_join-us">
 						<Link
 							to="./join-us"
-							target="_blank"
 							rel="noreferrer"
 							className="wesupportyou_button"
 							onMouseEnter={() => setIsShown(true)}
