@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./Welcome.css";
 import { FaCheck } from "react-icons/fa";
 import GirlImg from "~/assets/images/autistic-little-girl-close-up.jpg";
-import { getLoggedInUserData } from "../../../assets/storage";
+import { getLoggedInUserData } from "~/assets/storage";
 
 function Welcome() {
 	const [buttonShow, setButtonShow] = useState(false);

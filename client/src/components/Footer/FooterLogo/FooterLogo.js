@@ -1,4 +1,4 @@
-import { getLoggedInUserData } from "../../../assets/storage";
+import { getLoggedInUserData } from "~/assets/storage";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "~/assets/images/Logo.jpg";

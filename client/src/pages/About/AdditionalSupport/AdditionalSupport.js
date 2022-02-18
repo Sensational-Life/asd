@@ -31,18 +31,24 @@ function AdditionalSupport() {
 					<section className="content-right-container">
 						<h2>Useful links:</h2>
 						<p>
-							<a href="https://www.autism.org.uk/advice-and-guidance/topics/education/extra-help-at-school/scotland">
-								https://www.autism.org.uk/advice-and-guidance/topics/education/extra-help-at-school/scotland
+							<a href="https://www.autism.org.uk/advice-and-guidance/topics/education/extra-help-at-school/scotland"
+								target="_blank"
+								rel="noreferrer">
+									https://www.autism.org.uk/advice-and-guidance/topics/education/extra-help-at-school/scotland
 							</a>
 						</p>
 						<p>
-							<a href="https://enquire.org.uk/parents/what-is-asl/">
-								https://enquire.org.uk/parents/what-is-asl/
+							<a href="https://enquire.org.uk/parents/what-is-asl/"
+								target="_blank"
+								rel="noreferrer">
+									https://enquire.org.uk/parents/what-is-asl/
 							</a>
 						</p>
 						<p>
-							<a href="https://www.nhs.uk/conditions/autism/autism-and-everyday-life/help-for-families/">
-								https://www.nhs.uk/conditions/autism/autism-and-everyday-life/help-for-families/
+							<a href="https://www.nhs.uk/conditions/autism/autism-and-everyday-life/help-for-families/"
+								target="_blank"
+								rel="noreferrer">
+									https://www.nhs.uk/conditions/autism/autism-and-everyday-life/help-for-families/
 							</a>
 						</p>
 					</section>
