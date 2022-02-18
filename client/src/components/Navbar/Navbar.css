@@ -18,7 +18,6 @@
 	height: 70px;
 }
 
-
 .nav-menu {
 	display: flex;
 	margin-left: 5%;
@@ -81,3 +80,8 @@ a.nav-links {
 	font-weight: bold;
 }
 
+@media screen and (max-width: 992px) {
+	.nav-menu {
+		width: 69vw;
+	}
+}
