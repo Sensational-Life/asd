@@ -7,7 +7,6 @@ import ResourcesDropdown from "./ResourcesDropdown";
 import AboutDropdown from "./AboutDropdown";
 import LoginIcon from "./LoginIcon";
 
-import SearchBox from "./SearchBox";
 import logo from "~/assets/images/Logo.jpg";
 function Navbar() {
 	const [isClicked, setIsClicked] = useState(false);

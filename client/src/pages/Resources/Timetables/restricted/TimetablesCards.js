@@ -5,7 +5,7 @@ export const TimetablesCards = [
 		age: "2 - 4",
 		quontity: "40",
 		alt: "Timetable for age from 2 years to 4 years",
-		pdflink: "/Age 2 - 4.pdf",
+		pdflink: "/Age_2-4.pdf",
 		saved: "false",
 	},
 	{
@@ -14,7 +14,7 @@ export const TimetablesCards = [
 		age: "3 - 5",
 		quontity: "54",
 		alt: "Timetable for age from 3 years to 5 years",
-		pdflink: "/Age 3 - 5.pdf",
+		pdflink: "/Age_3-5.pdf",
 		saved: "false",
 	},
 	{
@@ -23,7 +23,7 @@ export const TimetablesCards = [
 		age: "7 - 11",
 		quontity: "54",
 		alt: "Timetable for age from 7 years to 11 years",
-		pdflink: "/Age 7 - 11.pdf",
+		pdflink: "/Age_7-11.pdf",
 		saved: "false",
 	},
 	{
@@ -32,7 +32,7 @@ export const TimetablesCards = [
 		age: "9 - 14",
 		quontity: "54",
 		alt: "Timetable for age from 9 years to 14 years",
-		pdflink: "/Age 9 - 14.pdf",
+		pdflink: "/Age_9-14.pdf",
 		saved: "false",
 	},
 	{
@@ -41,7 +41,7 @@ export const TimetablesCards = [
 		age: "all ages",
 		quontity: "0`",
 		alt: "Timetable for mix match routine",
-		pdflink: "/All Ages.pdf",
+		pdflink: "/All_Ages.pdf",
 		saved: "false",
 	},
 ];
