@@ -5,8 +5,8 @@ export const ResourcesMenuItems = [
 		cName: "dropdown-link",
 	},
 	{
-		title: "Referrals",
-		path: "/resources/self-referral-pathway",
+		title: "Advice",
+		path: "/resources/advice",
 		cName: "dropdown-link",
 	},
 	{
@@ -15,8 +15,8 @@ export const ResourcesMenuItems = [
 		cName: "dropdown-link",
 	},
 	{
-		title: "Advice",
-		path: "/resources/advice",
+		title: "Referrals",
+		path: "/resources/self-referral-pathway",
 		cName: "dropdown-link",
 	},
 	{

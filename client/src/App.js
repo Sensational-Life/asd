@@ -17,6 +17,7 @@ import AdditionalSupport from "./pages/About/AdditionalSupport/AdditionalSupport
 import OurEvents from "./pages/About/OurEvents/OurEvents";
 
 // Resources:
+// import Resources from "./pages/Resources/Resources";
 import Timetables from "./pages/Resources/Timetables/Timetables";
 import Advice from "./pages/Advice/Advice";
 import UesfulLinks from "./pages/Resources/UesfulLinks/UesfulLinks";
@@ -53,22 +54,28 @@ function App() {
 
 					{/* routes from nav bar: */}
 					<Route exact path="/about" component={AboutUsPage} />
-						<Route path="/about/what-is-autism" component={WhatIsAutism} />
-						<Route path="/about/signs-of-autism" component={SignsOfAutism} />
-						<Route path="/about/additional-support" component={AdditionalSupport} />
-						<Route path="/about/events" component={OurEvents} />
+					<Route path="/about/what-is-autism" component={WhatIsAutism} />
+					<Route path="/about/signs-of-autism" component={SignsOfAutism} />
+					<Route
+						path="/about/additional-support"
+						component={AdditionalSupport}
+					/>
+					<Route path="/about/events" component={OurEvents} />
 
 					{/*
 						"/resources" path is mapped to "Timetables" and will show
 						either public or restricted  content from there
 						until we have something better to put into root of "/resources"
 					*/}
-					<Route exact path="/resources" component={Timetables} />
-						<Route path="/resources/timetables" component={Timetables} />
-						<Route path="/resources/edutainment" component={Edutainment} />
-						<Route path="/resources/advice" component={Advice} />
-						<Route path="/resources/self-referral-pathway" component={SelfReferralsPathway} />
-						<Route path="/resources/useful-links" component={UesfulLinks} />
+
+					<Route path="/resources/timetables" component={Timetables} />
+					<Route path="/resources/edutainment" component={Edutainment} />
+					<Route path="/resources/advice" component={Advice} />
+					<Route
+						path="/resources/self-referral-pathway"
+						component={SelfReferralsPathway}
+					/>
+					<Route path="/resources/useful-links" component={UesfulLinks} />
 
 					<Route path="/contact" component={Contact} />
 					{/* User Authantication: */}
@@ -77,7 +84,10 @@ function App() {
 					<Route path="/password-reset" component={PasswordReset} />
 
 					{/* Footer Links: */}
-					<Route path="/frequently-asked-questions" component={FrequentlyAskedQuestions} />
+					<Route
+						path="/frequently-asked-questions"
+						component={FrequentlyAskedQuestions}
+					/>
 
 					{/* Default route for 'Not Found' page */}
 					<Route component={NotFound} />
