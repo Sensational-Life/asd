@@ -17,9 +17,8 @@ import AdditionalSupport from "./pages/About/AdditionalSupport/AdditionalSupport
 import OurEvents from "./pages/About/OurEvents/OurEvents";
 
 // Resources:
-import TimetableRegistered from "./pages/Resources/Timetables/restricted/TimetablesContent";
 // import Resources from "./pages/Resources/Resources";
-import publicTimetables from "./pages/Resources/Timetables/public/TimetablesContent";
+import Timetables from "./pages/Resources/Timetables/Timetables";
 import Advice from "./pages/Advice/Advice";
 import UesfulLinks from "./pages/Resources/UesfulLinks/UesfulLinks";
 import SelfReferralsPathway from "./pages/Resources/Referrals/SelfReferralsPathway";
@@ -68,11 +67,8 @@ function App() {
 						either public or restricted  content from there
 						until we have something better to put into root of "/resources"
 					*/}
-					<Route
-						path="/resources/timetables/download"
-						component={TimetableRegistered}
-					/>
-					<Route path="/resources/timetables/public" component={publicTimetables} />
+
+					<Route path="/resources/timetables" component={Timetables} />
 					<Route path="/resources/edutainment" component={Edutainment} />
 					<Route path="/resources/advice" component={Advice} />
 					<Route
