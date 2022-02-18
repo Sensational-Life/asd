@@ -25,7 +25,7 @@ export default function CardComponent({ card }) {
             <div className="card-image-container">
                 <Document
                     className="card-image"
-                    file="./Age 2-4.pdf"
+                    file={card.pdflink}
                     renderMode="canvas"
                     onLoadSuccess={onDocumentLoadSuccess}
                 >

@@ -1,5 +1,5 @@
 import React from "react";
-import CardContent from "./CardContent.js";
+import TimetablesCards from "./TimetablesCards.js";
 import ResponsivePlayer from "react-player";
 import { BsPlayCircleFill } from "react-icons/bs";
 import TimetableVideoImg from "~/assets/images/timetable-video.jpg";
@@ -18,11 +18,12 @@ export default function TimetablesContent() {
 							</div>
 						</div>
 						<div className="cards-container">
-							{CardContent.map((card) => {
+							{TimetablesCards.map((card) => {
 								return (
 									<CardComponent key={card.id} card={card} />
 								);
 							})}
+
 							<div className="video-container">
 								<div className="video-wrapper">
 									<ResponsivePlayer
@@ -36,14 +37,15 @@ export default function TimetablesContent() {
 										height="100%"
 									/>
 								</div>
-								<div>
-									<p className="video-description">
-										How do I use these visual timetables?
-									</p>
+
+								<p className="video-description">
+									How do I use these visual timetables?
+								</p>
+								<p>
 									<a href="https://youtu.be/S2bLMai0UaM" className="video-link">
 										https://youtu.be/S2bLMai0UaM
 									</a>
-								</div>
+								</p>
 							</div>
 						</div>
 					</div>
