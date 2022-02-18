@@ -5,7 +5,7 @@ import WhatWeDo from "./WhatWeDo/WhatWeDo";
 import WeSupportYou from "./WeSupportYou/WeSupportYou";
 import MemberSays from "./MemberSays/MemberSays";
 import SubscribeNews from "./SubscribeNews/SubscribeNews";
-import ScrollDown from "./ScrollDown/ScrollDown";
+import ScrollDown from "~/components/ScrollDown/ScrollDown";
 import Faq from "./Faq/Faq";
 
 export function Home() {

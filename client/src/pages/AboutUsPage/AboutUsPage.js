@@ -5,7 +5,7 @@ import KellyAnneImg from "~/assets/images/KellyAnneSmithProfilePic.png";
 function AboutUsPage() {
 	useLayoutEffect(() => {
         window.scrollTo(0, 0);
-    });
+    }, []);
 	return (
 		<>
 			<main className="about-us-main-container">

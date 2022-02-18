@@ -11,7 +11,7 @@ export const ResourcesMenuItems = [
 	},
 	{
 		title: "Edutainment",
-		path: "/edutainment",
+		path: "/resources/edutainment",
 		cName: "dropdown-link",
 	},
 	{
@@ -21,7 +21,7 @@ export const ResourcesMenuItems = [
 	},
 	{
 		title: "Useful Links",
-		path: "/links",
+		path: "/resources/useful-links",
 		cName: "dropdown-link",
 	},
 ];

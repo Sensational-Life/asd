@@ -19,13 +19,13 @@ export function FooterNav() {
 					</div>
 					<div className="nav_box">
 						<p>Resources</p>
-						<Link to="/timetables" className="footernav_link">
+						<Link to="/resources/timetables" className="footernav_link">
 							Timetables
 						</Link>
-						<Link to="/referrals" className="footernav_link">
+						<Link to="/resources/self-referral-pathway" className="footernav_link">
 							Referrals
 						</Link>
-						<Link to="/links" className="footernav_link">
+						<Link to="/resources/useful-links" className="footernav_link">
 							Useful Links
 						</Link>
 					</div>
