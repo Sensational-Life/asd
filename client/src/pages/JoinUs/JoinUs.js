@@ -21,8 +21,7 @@ function JoinUs() {
 						</p>
 						<p>
 							<a
-							target={"_blank"}
-							href="https://www.facebook.com/groups/autismandparentsupport" rel="noreferrer">
+								href="https://www.facebook.com/groups/autismandparentsupport" rel="noreferrer">
 								Check Out Our FREE Facebook Support Group.
 							</a>
 						</p>
