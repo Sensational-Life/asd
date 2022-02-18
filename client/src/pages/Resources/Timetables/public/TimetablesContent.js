@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useLayoutEffect } from "react";
 import "./TimetablesContent.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
@@ -10,6 +10,9 @@ import leftBottomImg from "~/assets/images/timetable-small-bottom.jpg";
 
 export default function TimetablesContent() {
 	const [buttonShow, setButtonShow] = useState(false);
+	useLayoutEffect(() => {
+		window.scrollTo(0, 0);
+ }, []);
 	return (
 		<>
 			<main className="timetables-main-container">
