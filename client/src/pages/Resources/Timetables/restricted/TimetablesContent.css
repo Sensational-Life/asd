@@ -1,0 +1,161 @@
+.header-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 3rem;
+}
+
+.timetable-registered-container .header {
+	font-family: "RobotoSlab-Regular";
+	font-size: 48px;
+	color: var(--black-title-color);
+}
+
+.timetable-registered-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	background-color: var(--main-bg-color);
+}
+
+.timetable-registered-container {
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: repeat(1, 1fr);
+	height: fit-content;
+}
+
+.timetable-registered-container .cards-bg {
+	justify-self: center;
+	grid-row: 1/10;
+	grid-column: 4/7;
+	min-width: 110%;
+	background-color: var(--green-bg-color);
+}
+
+.timetable-registered-wrapper .cards-container {
+	justify-self: center;
+	grid-row: 2/9;
+	grid-column: 4/7;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-gap: 2.5rem;
+	margin-top: 10rem;
+	margin-bottom: 5rem;
+}
+
+@media screen and (max-width: 992px) {
+	.timetable-registered-wrapper .cards-container {
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: repeat(1, 1fr);
+	}
+}
+
+.timetable-registered-wrapper .card-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 28rem;
+	max-width: 18rem;
+	padding: 30px 25px 0 25px;
+	line-height: 27px;
+	letter-spacing: 0.2px;
+	background: var(--white-color);
+}
+
+.timetable-registered-wrapper .card-items {
+	margin-bottom: 1rem;
+}
+
+.timetable-registered-wrapper .card-container .card-header {
+	font-family: "Ambit SemiBold";
+	font-size: 25px;
+}
+
+.timetable-registered-wrapper .card-container .card-description {
+	font-family: "Ambit Light";
+	font-size: 20px;
+}
+
+.timetable-registered-wrapper .card-image-container {
+	margin-top: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid var(--blue-color);
+	min-height: 15rem;
+}
+
+.timetable-registered-wrapper .card-image {
+	max-width: 10rem;
+    max-height: 15rem;
+}
+
+.timetable-icon-container {
+	display: flex;
+	justify-content: end;
+}
+
+.timetable-icon-download {
+	padding: 8px 20px 0 0;
+	width: 25px;
+	height: 25px;
+}
+
+.timetable-icon-download:active{
+	color: var(--blue-color);
+}
+
+.timetable-icon-heart-not-saved {
+	padding: 10px 20px 0 0;
+	width: 24px;
+	height: 24px;
+}
+
+.timetable-icon-heart-saved {
+	padding: 10px 20px 0 0;
+	width: 24px;
+	height: 24px;
+	color: var(--blue-color);
+}
+
+.timetable-registered-section .video-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: top;
+	/* width: 300px; */
+	width: 18.8rem;
+}
+
+.timetable-registered-section .video-wrapper {
+	min-height: 250px;
+}
+
+.timetable-registered-section .player-button {
+	width: 75px;
+	height: 75px;
+	color: var(--blue-color);
+}
+
+.timetable-registered-section .video-description {
+	padding: 15px;
+	font-size: 20px;
+	font-family: "Ambit Light";
+	line-height: 27px;
+	letter-spacing: 0.2px;
+}
+
+.timetable-registered-section .video-link {
+	font-size: 19px;
+	font-family: "Ambit SemiBold";
+	padding-left: 15px;
+}
+
+.timetable-registered-section .video-link:hover {
+	text-shadow: 0 0 1px var(--blue-color);
+	text-decoration: underline;
+}

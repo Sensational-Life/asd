@@ -1,0 +1,55 @@
+.edutainment-text-container {
+	height: fit-content;
+	width: 100%;
+	margin: 2rem 0rem 0rem 0rem;
+	display: flex;
+	justify-content: center;
+}
+
+.edutainment-text-grid {
+	display: flex;
+	justify-self: center;
+}
+
+.edutainment-text-grid .text-column {
+	width: 33%;
+}
+
+.header-column {
+	grid-area: "header";
+	font-family: "RobotoSlab-Regular";
+	font-size: 48px;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.description-column {
+	padding: 15px;
+	text-align: left;
+	font-size: 20px;
+	font-family: "Ambit Light";
+	padding-top: 10px;
+}
+
+.feel-free-column {
+	padding-top: 10px;
+	font-family: "Ambit SemiBold";
+	font-size: 24px;
+	text-align: center;
+}
+
+.feel-free-column p {
+	margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 992px) {
+	.edutainment-text-grid {
+		flex-direction: column;
+		width: 60%;
+	}
+
+	.edutainment-text-grid .text-column {
+		width: 100%;
+	}
+}
+

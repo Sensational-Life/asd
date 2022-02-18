@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useLayoutEffect } from "react";
 import JoinUsimg from "~/assets/images/Join-us.jpg";
 import "./JoinUs.css";
 
 function JoinUs() {
+	useLayoutEffect(() => {
+		window.scrollTo(0, 0);
+ }, []);
 	return (
 		<div className="join-us-container">
 			<div className="content">
@@ -21,8 +24,7 @@ function JoinUs() {
 						</p>
 						<p>
 							<a
-							target={"_blank"}
-							href="https://www.facebook.com/groups/autismandparentsupport" rel="noreferrer">
+								href="https://www.facebook.com/groups/autismandparentsupport" rel="noreferrer">
 								Check Out Our FREE Facebook Support Group.
 							</a>
 						</p>

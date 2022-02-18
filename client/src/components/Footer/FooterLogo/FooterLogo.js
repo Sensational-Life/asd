@@ -1,4 +1,4 @@
-import { getLoggedInUserData } from "../../../assets/storage";
+import { getLoggedInUserData } from "~/assets/storage";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "~/assets/images/Logo.jpg";
@@ -24,7 +24,6 @@ export function FooterLogo() {
 					{!getLoggedInUserData()&&
 					<div>
 						<Link to="/signup"
-							target="_blank"
 							rel="noreferrer"
 							className="footer_button"
 							onMouseEnter={() => setIsShown(true)}
