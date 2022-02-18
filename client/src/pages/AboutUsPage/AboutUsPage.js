@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useLayoutEffect } from "react";
 import "./AboutUsPage.css";
 import KellyAnneImg from "~/assets/images/KellyAnneSmithProfilePic.png";
+
 function AboutUsPage() {
+
+	useLayoutEffect(() => {
+		window.scrollTo(0, 0);
+ }, []);
 
   return (
 		<>

@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useLayoutEffect } from "react";
 import { Link } from "react-router-dom";
 import "./AdditionalSupport.css";
 import additionalSupportImg from "~/assets/images/additional-support.jpg";
 
 function AdditionalSupport() {
+	useLayoutEffect(() => {
+		window.scrollTo(0, 0);
+ }, []);
 	return (
 		<>
 			<main className="additional-support-container">

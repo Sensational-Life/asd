@@ -1,9 +1,11 @@
-import React from "react";
-
+import React, { useLayoutEffect } from "react";
 import "./WhatWeDoPage.css";
 import momAndGirlImg from "~/assets/images/mom-and-girl.png";
 
 function WhatWeDoPage() {
+	useLayoutEffect(() => {
+		window.scrollTo(0, 0);
+ }, []);
 	return (
 		<>
 			<main className="what-we-do-main-container">
