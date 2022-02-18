@@ -1,15 +1,18 @@
-import React from "react";
+import React, { useLayoutEffect } from "react";
 import "./TimetablesContent.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import motherAndDaughterImg from "~/images/mother-daughter-laptop-lowres.png";
-import arrowImg from "~/images/arrow-heart.png";
-import leftTopImg from "~/images/timetable-small-top.jpg";
-import rightImg from "~/images/timetable-illustration-large.jpg";
-import leftBottomImg from "~/images/timetable-small-bottom.jpg";
+import motherAndDaughterImg from "~/assets/images/mother-daughter-laptop-lowres.png";
+import arrowImg from "~/assets/images/arrow-heart.png";
+import leftTopImg from "~/assets/images/timetable-small-top.jpg";
+import rightImg from "~/assets/images/timetable-illustration-large.jpg";
+import leftBottomImg from "~/assets/images/timetable-small-bottom.jpg";
 
 export default function TimetablesContent() {
 	const [buttonShow, setButtonShow] = useState(false);
+	useLayoutEffect(() => {
+		window.scrollTo(0, 0);
+ }, []);
 	return (
 		<>
 			<main className="timetables-main-container">
@@ -56,11 +59,11 @@ export default function TimetablesContent() {
 				</section>
 				<section className="bottom-container">
 					<div className="bottom-two-cards">
-						<img className="left-top-img" src={leftTopImg} alt="timetable illustration"/>
-						<img className="left-bottom-img" src={leftBottomImg} alt="timetable illustration"/>
+						<img className="left-top-img" src={leftTopImg} alt="timetable illustration" />
+						<img className="left-bottom-img" src={leftBottomImg} alt="timetable illustration" />
 					</div>
-					<img className="arrow-img" src={arrowImg} alt="an arrow forming a heart"/>
-					<img className="right-image-card-lg" src={rightImg} alt="timetable illustration"/>
+					<img className="arrow-img" src={arrowImg} alt="an arrow forming a heart" />
+					<img className="right-image-card-lg" src={rightImg} alt="timetable illustration" />
 				</section>
 			</main>
 		</>

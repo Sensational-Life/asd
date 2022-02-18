@@ -24,7 +24,6 @@ export function FooterLogo() {
 					{!getLoggedInUserData()&&
 					<div>
 						<Link to="/signup"
-							target="_blank"
 							rel="noreferrer"
 							className="footer_button"
 							onMouseEnter={() => setIsShown(true)}

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useLayoutEffect } from "react";
 import "./SelfReferralsPathwayContent.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
@@ -7,6 +7,9 @@ import questionmarkImg from "~/assets/images/question-mark-low-res.png";
 
 export default function SelfReferralsPathwayContent() {
 	const [buttonShow, setButtonShow] = useState(false);
+	useLayoutEffect(() => {
+		window.scrollTo(0, 0);
+ }, []);
 	return (
 		<>
 			<main className="referral-main-container">

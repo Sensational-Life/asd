@@ -1,6 +1,6 @@
 import React, { useLayoutEffect } from "react";
 import "./AboutUsPage.css";
-import KellyAnneImg from "~/images/KellyAnneSmithProfilePic.png";
+import KellyAnneImg from "~/assets/images/KellyAnneSmithProfilePic.png";
 
 function AboutUsPage() {
 

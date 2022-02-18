@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useLayoutEffect } from "react";
 import "./UesfulLinks.css";
 import UesfulLinkImg from "~/assets/images/sea.jpg";
 
 function UesfulLinks() {
+	useLayoutEffect(() => {
+		window.scrollTo(0, 0);
+ }, []);
 	return (
 		<div className="useful-links-container">
 			<div className="img-conatiner">
