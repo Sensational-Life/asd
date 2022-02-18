@@ -87,7 +87,7 @@
 	justify-content: center;
 	align-items: center;
 	border: 2px solid var(--blue-color);
-	min-height: 15rem;
+	min-height: 20rem;
 }
 
 .timetable-registered-wrapper .card-image {
