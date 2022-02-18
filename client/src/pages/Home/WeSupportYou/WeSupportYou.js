@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./WeSupportYou.css";
 import ImgHands from "~/assets/images/supporting-elderly-woman.jpg";
-
+import { getLoggedInUserData } from "~/assets/storage";
 export function WeSupportYou() {
 	const [isShown, setIsShown] = useState(false);
 	return (
@@ -15,11 +15,11 @@ export function WeSupportYou() {
 					winded journey or just having some <br />
 					concerns), then this is the group for you!
 				</p>
+					{!getLoggedInUserData()&&
 				<div>
 					<div className="wesupportyou_join-us">
 						<Link
 							to="./join-us"
-							target="_blank"
 							rel="noreferrer"
 							className="wesupportyou_button"
 							onMouseEnter={() => setIsShown(true)}
@@ -31,7 +31,7 @@ export function WeSupportYou() {
 					{isShown && (
 						<div className="wesupportyou_button_tooltip"> Join Us</div>
 					)}
-				</div>
+				</div>}
 			</div>
 			<div className="wesupportyou_img_container">
 				<div className="wesupportyou_img_color">children1</div>

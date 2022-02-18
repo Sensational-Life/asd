@@ -38,8 +38,6 @@ function AboutUs() {
 
 					<Link to="about">
 
-					
-
 						<button
 							className="aboutus_button"
 							onMouseEnter={() => setButtonShow(true)}

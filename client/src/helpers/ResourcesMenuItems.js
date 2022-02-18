@@ -1,32 +1,31 @@
 import { getLoggedInUserData } from "../assets/storage";
 
 export const ResourcesMenuItems = [
-  {
-    title: "Timetables",
-    ...(getLoggedInUserData()? { path: "/resources/timetables/download" }:{ path:"/download" }),
-    cName: "dropdown-link",
-  },
-
-  {
-    title: "Edutainment",
-    path: "/edutainment",
-    cName: "dropdown-link",
-  },
-  {
-    title: "Advice",
-    path: "/resources/advice",
-    cName: "dropdown-link",
-  },
-  {
-    title: "Useful Links",
-    path: "/links",
-    cName: "dropdown-link",
-  },
-
+	{
+		title: "Timetables",
+		...(getLoggedInUserData()
+			? { path: "/resources/timetables/download" }
+			: { path: "/resources/timetables/public" }),
+		cName: "dropdown-link",
+	},
+	{
+		title: "Advice",
+		path: "/resources/advice",
+		cName: "dropdown-link",
+	},
+	{
+		title: "Edutainment",
+		path: "/resources/edutainment",
+		cName: "dropdown-link",
+	},
 	{
 		title: "Referrals",
 		path: "/resources/self-referral-pathway",
 		cName: "dropdown-link",
 	},
-
+	{
+		title: "Useful Links",
+		path: "/resources/useful-links",
+		cName: "dropdown-link",
+	},
 ];

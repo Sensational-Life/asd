@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { signApi } from "../../../api/user";
-import { saveLoggedInUserData } from "../../../assets/storage";
+import { signApi } from "~/api/user";
+import { saveLoggedInUserData } from "~/assets/storage";
 
 import "./UserForms.css";
 
