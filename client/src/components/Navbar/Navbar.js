@@ -95,9 +95,6 @@ function Navbar() {
 						</NavLink>
 					</li>
 					<li className="nav-item">
-						<SearchBox />
-					</li>
-					<li className="nav-item">
 						<LoginIcon />
 					</li>
 				</ul>
