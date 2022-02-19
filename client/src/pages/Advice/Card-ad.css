@@ -1,0 +1,24 @@
+.Advice-card-container {
+	display: flex;
+	width: 100%;
+	height: fit-content;
+}
+
+.Advice-card-container div {
+	width: 30%;
+	margin: 1rem 2rem 0rem 2rem;
+}
+
+div .title {
+	margin-top: 1.5rem;
+	color: black;
+	font-size: 24px;
+	font-family: "Ambit SemiBold";
+}
+div .content {
+	margin-top: 2.5rem;
+	font-size: 20px;
+	font-family: "Ambit Light";
+	color: #000000;
+	opacity: 1;
+}

@@ -1,53 +1,45 @@
-.Advice-container {
+.advice-container {
 	display: flex;
-	height: 43.75rem;
-	width: 78.9rem;
+	height: fit-content;
+	width: 100%;
 	background-color: #fff8f3;
 }
-.Advice-img-container {
-	width: 30.625rem;
-	height: 43.75rem;
+.advice-container .img-container {
+	height: fit-content;
+	width: 40%;
 }
-.Advice-text-container {
-	height: 43.75rem;
-	width: 59.375rem;
-}
-
-.Advice-header-text {
-	text-align: left;
-	font-family: "RobotoSlab-Regular";
-	font-size: 2.813rem;
-	font-weight: 400;
-	color: #0f2420;
-	opacity: 1;
-	margin: 3.125rem;
-	width: 40.938rem;
-	height: 3.688rem;
+.advice-container .text-container {
+	height: fit-content;
+	width: 65%;
 }
 
-.Advice-img-color {
+.img-container .color {
 	height: 32.313rem;
 	background-color: #ffffff;
 	box-shadow: 5px 5px 6px #00000029;
 	width: 22.625rem;
-	margin: 20px 15px auto 100px;
-}
-.Advice-img {
-	height: 28.5rem;
-	width: 21.5rem;
-}
-.Advice-main-img {
-	height: 28.5rem;
-	width: 21.5rem;
-	margin: 12px 0px 0px 8px;
+	margin: 20px 15px auto 50px;
 }
 
-.Advice-but {
+.main-img img {
+	height: 28.5rem;
+	min-width: 21.5rem;
+	margin: 12px 0px 0px 8px;
+}
+.text-container .header {
+	font-weight: 400;
+	font-size: 45px;
+	opacity: 1;
+	margin-top: 2rem;
+	margin-left: 4rem;
+	font-family: "RobotoSlab-Regular";
+}
+.advice-but {
 	display: flex;
 	justify-content: right;
 	margin: 5.125rem 4.375rem;
 }
-.Advice_button {
+.a-button {
 	width: 15.188rem;
 	background-color: var(--darkgreen-color);
 	border: none;
@@ -57,11 +49,11 @@
 	font-family: "Ambit SemiBold";
 }
 
-.Advice_button:hover {
+.a-button:hover {
 	background-color: var(--blue-color);
 	cursor: pointer;
 }
-.Advice_button_hover {
+.advice-but .button-hover {
 	background-color: var(--darkgreen-color);
 	width: 12.5rem;
 	height: 2.5rem;
