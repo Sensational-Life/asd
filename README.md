@@ -30,7 +30,8 @@ Main features include:
 - RESOURCES ( Timetables / Referrals / Edutainment / Advice / Useful Links )
 - Only for registered user ( Timetables download )
 
-<img width="600" alt="SENsational Life application landing page" src="https://folio.ink/NvDM1m">
+<img width="400" alt="SENsational Life application landing page" src="client/src/assets/images/landingpage-screenshot.png">
+
 
 ## NEXT NEW FEATURES 
 
