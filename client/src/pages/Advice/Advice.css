@@ -1,73 +1,67 @@
-.Advice-container {
+.advice-container {
 	display: flex;
-	height: 700px;
-	width: 1440;
+	height: fit-content;
+	width: 100%;
+	background-color: #fff8f3;
 }
-.Advice-img-container {
-	width: 490px;
-	height: 700px;
+.advice-container .img-container {
+	height: fit-content;
+	width: 40%;
 }
-.Advice-text-container {
-	height: 700px;
-	width: 950px;
-}
-
-.Advice-header-text {
-	text-align: left;
-	font: normal normal normal 45px/64px Roboto Slab;
-	letter-spacing: 0.45px;
-	color: #0f2420;
-	opacity: 1;
-	margin: 50px;
-	width: 655px;
-	height: 59px;
+.advice-container .text-container {
+	height: fit-content;
+	width: 65%;
 }
 
-.Advice-img-color {
-	height: 517px;
+.img-container .color {
+	height: 32.313rem;
 	background-color: #ffffff;
 	box-shadow: 5px 5px 6px #00000029;
-	width: 362px;
-	margin: 20px 15px auto 100px;
-}
-.Advice-img {
-	height: 456px;
-	width: 344px;
-}
-.Advice-main-img {
-	height: 456px;
-	width: 344px;
-	margin: 12px 0px 0px 8px;
+	width: 22.625rem;
+	margin: 20px 15px auto 50px;
 }
 
-.Advice-but {
+.main-img img {
+	height: 28.5rem;
+	min-width: 21.5rem;
+	margin: 12px 0px 0px 8px;
+}
+.text-container .header {
+	font-weight: 400;
+	font-size: 45px;
+	opacity: 1;
+	margin-top: 2rem;
+	margin-left: 4rem;
+	font-family: "RobotoSlab-Regular";
+}
+.advice-but {
 	display: flex;
 	justify-content: right;
-	margin: 50px 150px;
+	margin: 5.125rem 4.375rem;
 }
-.Advice_button {
-	width: 243px;
+.a-button {
+	width: 15.188rem;
 	background-color: var(--darkgreen-color);
 	border: none;
-	height: 70px;
+	height: 4.375rem;
 	color: var(--white-color);
 	font-size: 24px;
 	font-family: "Ambit SemiBold";
 }
 
-.Advice_button:hover {
+.a-button:hover {
 	background-color: var(--blue-color);
 	cursor: pointer;
 }
-.Advice_button_hover {
+.advice-but .button-hover {
 	background-color: var(--darkgreen-color);
-	width: 200px;
-	height: 40px;
+	width: 12.5rem;
+	height: 2.5rem;
 	border: none;
 	font-size: 18px;
 	font-family: "Ambit SemiBold";
 	color: var(--white-color);
-	margin-right: -100px;
+	margin-right: 100px;
 	margin-top: 80px;
 	position: absolute;
 }
