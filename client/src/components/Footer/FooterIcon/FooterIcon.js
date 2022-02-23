@@ -8,8 +8,8 @@ function FooterIcon() {
     <div className='footericon_container'>
         <div  className='footericon_iconstext' >
            <div className='footericon_icons'>
-           <a href="https://www.facebook.com">  <GrFacebookOption className='footericon_icon' /></a>
-           <a href="https://www.twitter.com">    <GrTwitter className='footericon_icon' /></a>
+           <a href=" https://www.facebook.com/groups/autismandparentsupport/">  <GrFacebookOption className='footericon_icon' /></a>
+           <a href="https://twitter.com/SensationalLive">    <GrTwitter className='footericon_icon' /></a>
            <a href="https://www.instagram.com">    <GrInstagram className='footericon_icon' /></a>
             </div>
             <div >
