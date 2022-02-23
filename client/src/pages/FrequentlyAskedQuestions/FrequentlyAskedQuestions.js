@@ -37,7 +37,7 @@ function FrequentlyAskedQuestions() {
 		<div className="question_container">
 			<div className="question_id">
 				<span>FAQ</span>
-				<span>How you doing{` ${getLoggedInUserData()?.user.name || ""}`}</span>
+				<span>How you doing{` ${getLoggedInUserData()?.user.name || ""}`}?</span>
 			</div>
 			<div className="question_title">
 				<h1>Frequently Asked Questions</h1>
