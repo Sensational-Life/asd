@@ -11,7 +11,7 @@ function LoginIcon() {
 	};
 
 	return (
-		<div>
+		<>
 			{getLoggedInUserData() ? (
 				<NavLink
 					to="/signOut"
@@ -30,7 +30,7 @@ function LoginIcon() {
 					Login <i className="fas fa-user "></i>
 				</NavLink>
 			)}
-		</div>
+		</>
 	);
 }
 export default LoginIcon;
