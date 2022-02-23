@@ -1,35 +1,59 @@
-# Starter Kit
+# CYF SENsational Life App
 
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+## Description
 
-- [x] Full stack ES8+ with [Babel]
-- [x] [Node] LTS support (verified working on 12.x and 14.x LTS releases)
-- [x] [Express] server
-- [x] [React] client with [Webpack]
-- [x] Client-side routing with [React Router]
-- [x] Linting with [ESLint] and [Prettier]
-- [x] Dev mode (watch modes for client and server, proxy to avoid CORS issues)
-- [x] Production build (single deployment artifact, React loaded via CDN)
-- [x] [Heroku] deployment
-- [x] [Cloud Foundry] deployment
-- [x] [Docker] build
-- [x] [Postgres] database with [node-postgres]
+Our application helps the family who is waiting for a diagnosis for Autism Spectrum Disorder(ASD) for a long time with little to no support in Scotland. 
+Built with React / CSS / node.js / HELMET / Express.js / passport / PostgreSQL / HEROKU.
+This was the final project for the Code Your Future Full Stack Web Development course in 2022.
+We had 4 weeks (3 Splints) to build it and present it to external audience in February 2022.
 
-## Setup
 
-Pick one member of the team to own the repository and pipeline. That person should do the following:
+View it here: https://sensational-life-asd.herokuapp.com/
 
-1.  Click the "Use this template" button above (see [GitHub's docs][1]) to create your team repository, select "Include all branches" and name it something appropriate for your project.
-2.  In your new repo, go to "Settings", then "Branches", then switch the default branch to `postgres` (_optional_: you can now delete the old `main` branch and rename `postgres` to `main`, `master` or whatever else you'd like) - see [GitHub's docs][2] again
-3.  In your repo, click the "Deploy to Heroku" button at the top of the README and create a Heroku account when prompted.
-4.  Fill in the name of the application, select Europe and then click "Deploy App".
-5.  Once it has deployed successfully, click the "Manage app" button to view the application details.
-6.  Go to the "Deploy" tab, select "Connect to GitHub" and choose your repo.
-7.  Click "Enable automatic deploys".
+## Benefits of our App
 
-Whenever you commit to main (or e.g. merge a [pull request]) it will get automatically deployed!
+- Useful information.
+- Friendly and easy to navigate
+- Helps users to Access online facebook community.
+- Helps people to stay connected. (The journey can be lonely).
+- Offers FREE useful resources tailored to the needs of individuals.
+- Provides FREE support for families. Eg. free Personal guide
 
-You should now make sure all of the project team are [collaborators] on the repository.
+
+## Main Features 
+
+Main features include:
+
+- Sign up to register and log in / out 
+- HOME ( Nav bar / Log in icon / About us / What we do / We support you / What Our Beloved Members Say / Subscribe to our newsletter / FAQ / Footer )
+- ABOUT ( What is Autism / Signs of Autism / Additional Support / Our Events )
+- RESOURCES ( Timetables / Referrals / Edutainment / Advice / Useful Links )
+- Only for registered user ( Timetables download )
+
+<img width="400" alt="SENsational Life application landing page" src="client/src/assets/images/landingpage-screenshot.png">
+
+
+## NEXT NEW FEATURES 
+
+- Self Refferal Pathway 
+- Online Community 
+
+## Contributors 
+- Andrejs  https://www.linkedin.com/in/andrejs-kalnins-81849349/
+
+- Dilek    https://www.linkedin.com/in/dilek-canturk-aba94b1b8/
+
+- Megan    https://www.linkedin.com/in/megan-sen-5429b6218/
+
+- Tandy    https://www.linkedin.com/in/tandy-nicole-53267a93/
+
+
+## Postgres Dev Setup
+
+You need to run the script
+```
+npm run dbsetup
+```
 
 ## Scripts
 
@@ -40,48 +64,3 @@ commonly use:
   the frontend is proxied to it).
 - `lint`: runs ESLint and Prettier against all the code in the project.
 - `serve`: builds and starts the app in production mode locally.
-
-### Debugging
-
-While running the dev mode using `npm run dev`, you can attach the Node debugger to the server process via port 9229.
-If you're using VS Code, a debugging configuration is provided for this.
-
-There is also a VS Code debugging configuration for the Chrome debugger, which requires the recommended Chrome
-extension, for debugging the client application.
-
-### Security
-
-If the project handles **any kind of** Personally Identifiable Information (PII) then make sure the following
-principles are followed:
-
-- Only collect **strictly necessary** PII;
-- Access to PII should be as restricted as possible;
-- Access to PII should only be possible after authentication. Authentication **must be done** via GitHub. **Ad hoc
-  authentication solutions are not allowed**;
-- Admins must be able to control who has access to the platform and at which levels using only GitHub groups;
-- There must be an audit mechanism in place. It is required by law to know who accessed what and when;
-- Code must be reviewed by senior developers before being pushed to production;
-- APIs must be secure. Make sure we are not handling security on the frontend.
-
-### Troubleshooting
-
-See the guidance in the [wiki].
-
-[1]: https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template#creating-a-repository-from-a-template
-[2]: https://docs.github.com/en/github/administering-a-repository/managing-branches-in-your-repository
-[babel]: https://babeljs.io/
-[cloud foundry]: https://www.cloudfoundry.org/
-[collaborators]: https://help.github.com/en/articles/inviting-collaborators-to-a-personal-repository
-[docker]: https://www.docker.com
-[eslint]: https://eslint.org/
-[express]: https://expressjs.com/
-[heroku]: https://www.heroku.com/
-[node]: https://nodejs.org/en/
-[node-postgres]: https://node-postgres.com/
-[postgres]: https://www.postgresql.org/
-[prettier]: https://prettier.io/
-[pull request]: https://help.github.com/en/articles/about-pull-requests
-[react]: https://reactjs.org/
-[react router]: https://reactrouter.com/web
-[webpack]: https://webpack.js.org/
-[wiki]: https://github.com/textbook/starter-kit/wiki
